@@ -17,4 +17,13 @@
     <string name="walk_15">Allow precise location to record a route. Step counting works without it.</string>
     <string name="walk_16">Turn on device location, then start your walk.</string>
     <string name="walk_minutes">" min"</string>
+    <string name="map_style_0">No GPS points</string>
+    <string name="map_style_1">Waiting for GPS</string>
+    <string name="map_style_2">Your route starts here</string>
+    <string name="map_style_3">The map appears after the first fix</string>
+    <string name="map_style_4">Start a walk to see the map</string>
+    <string name="map_style_5">GPS distance</string>
+    <string name="map_style_6">Walking time</string>
+    <string name="map_style_7">Zoom out</string>
+    <string name="map_style_8">Zoom in</string>
 </resources>

@@ -17,4 +17,13 @@
     <string name="walk_15">Для маршрута разреши точную геолокацию. Шагомер работает и без неё.</string>
     <string name="walk_16">Включи геолокацию телефона, затем начни прогулку.</string>
     <string name="walk_minutes">" мин"</string>
+    <string name="map_style_0">Нет точек GPS</string>
+    <string name="map_style_1">Ожидаем сигнал GPS</string>
+    <string name="map_style_2">Твой маршрут начинается здесь</string>
+    <string name="map_style_3">Карта появится после первой точки</string>
+    <string name="map_style_4">Начни прогулку, чтобы увидеть карту</string>
+    <string name="map_style_5">Расстояние GPS</string>
+    <string name="map_style_6">Время прогулки</string>
+    <string name="map_style_7">Уменьшить карту</string>
+    <string name="map_style_8">Увеличить карту</string>
 </resources>
