@@ -1,110 +1,112 @@
 # Trace
 
-**Твой план тренировок — всегда под рукой.**
+**Your training plan, always within reach.**
 
-Trace помогает тренироваться без Excel: показывает следующий подход, рассчитывает веса и сохраняет результаты. Отмечай подходы прямо в приложении или через панель над уведомлениями.
+Train without opening a spreadsheet. Trace shows your next set, calculates your weights, and keeps your workout history. Log sets in the app or use the workout controls in your phone's system panel.
 
-**Android 8.0+ · Русский / English · Без регистрации · Работает офлайн**
+**Android 8.0+ · English / Russian · No account required · Works offline**
 
-## Скачать и установить
+## Download and install
 
-### [Скачать Trace для Android — APK](https://github.com/david-daveee/Trace/releases/latest/download/Trace.apk)
+### [Download Trace for Android — APK](https://github.com/david-daveee/Trace/releases/latest/download/Trace.apk)
 
-[Все версии и список изменений](https://github.com/david-daveee/Trace/releases)
+[All releases and release notes](https://github.com/david-daveee/Trace/releases)
 
-1. Открой эту страницу **на телефоне** и нажми «Скачать Trace для Android».
-2. Открой скачанный файл **Trace.apk** — он будет в загрузках браузера или папке «Загрузки».
-3. Если Android запросит разрешение на установку из этого источника, открой предложенные настройки и разреши установку для браузера или файлового менеджера, из которого открыл APK. Названия пунктов могут отличаться на разных телефонах.
-4. Вернись к файлу и нажми **«Установить»**, затем **«Открыть»**.
-5. При первом запуске тренировки разреши уведомления, чтобы управлять подходами из системной панели.
+1. Open this page **on your Android phone** and tap **Download Trace for Android**.
+2. Open **Trace.apk** from your browser's downloads or your Downloads folder.
+3. If Android asks you to allow installation from this source, open the suggested settings and allow it for the browser or file manager you used to open the APK. The exact wording varies by phone.
+4. Return to the file, tap **Install**, then **Open**.
+5. When you start your first workout, allow notifications to use the system workout controls.
 
-Android Studio и компьютер для установки не нужны. Для iPhone приложение пока недоступно.
+You do not need Android Studio or a computer. An iPhone version is not available yet.
 
-## Первая тренировка за пару минут
+**To switch the app to English:** tap the settings icon at the top and select **English** in the language selector.
 
-1. Открой **«Планы»** и выбери программу. Нажми **«Добавить в мои»**.
-2. Задай свои веса в карточке программы. Для Шейко это **максимумы приседа, жима и тяги**, от которых считаются проценты. Для Злата — **дополнительный рабочий вес** на турнике и брусьях.
-3. Во вкладке **«Мои»** открой нужную программу и начни тренировку.
-4. Выполни подход и отметь его. Следующий подход появится сразу — таймера отдыха нет.
-5. В конце нажми **«Сохранить тренировку»**. Результат попадёт в историю и прогресс, а следующим откроется новый день.
+## Start your first workout
 
-Веса, которые уже стоят в планах Шейко, взяты из таблиц. Перед стартом замени их своими. В подсобных упражнениях без заданного веса приложение предложит указать его вручную.
+1. Open **Plans**, choose a program, and tap **Add to my plans**.
+2. Enter your weights in the program card. Sheiko plans use your **squat, bench press, and deadlift maxes** to calculate percentages. The Zlat plan uses **added working weight** for pull-ups and dips.
+3. Open your program in **My plans** and start a workout.
+4. Complete a set and mark it done. The next set appears immediately; there is no rest timer.
+5. At the end, tap **Save workout**. Your results appear in history and progress, and the next session advances to the next day.
 
-<img src="docs/trace-plan.png" alt="План Шейко в Trace: максимумы на всю программу и расписание занятий" width="320">
+The default maxes in Sheiko plans come from the source spreadsheets. Replace them with your own before starting. For accessory exercises without a prescribed weight, enter your working weight manually.
 
-## Что где находится
+<img src="docs/trace-plan.png" alt="A Sheiko plan in Trace with program maxes and a workout schedule" width="320">
 
-| Вкладка | Что можно сделать |
+## Find your way around
+
+| Tab | What you can do |
 | --- | --- |
-| **Планы** | Выбрать готовую программу, импортировать таблицу или собрать свой план. |
-| **Мои** | Найти свои программы, изменить веса и продолжить занятия. Последняя использованная программа — сверху. |
-| **Тренировка** | Смотреть подходы, менять вес и повторения, отмечать выполненное или снимать любую отметку. |
-| **Прогресс** | Смотреть календарь активности, статистику и историю сохранённых тренировок. |
+| **Plans** | Browse ready-made programs, import a spreadsheet, or create a custom plan. |
+| **My plans** | Find your programs, change weights, and continue training. Your most recently used program appears first. |
+| **Workout** | Review sets, edit weight and reps, and mark or unmark any set. |
+| **Progress** | View your activity calendar, stats, and saved workout history. |
 
-## Удобно во время занятия
+## During your workout
 
-- **Управление из системной панели.** Разверни шторку телефона: там будут текущее упражнение и действия для подходов. Вид панели зависит от версии Android и оболочки телефона.
-- **Ошибся с отметкой?** Во вкладке «Тренировка» можно снять отметку с любого подхода. Кнопка отмены снимает последнюю поставленную отметку.
-- **Изменился максимум?** Введи его один раз в программе. Будущие процентные веса пересчитаются, выполненные подходы сохранят свои значения.
-- **Переключился на другую программу?** Незавершённое занятие останется на паузе; к нему можно вернуться.
-- **Программа больше не нужна в списке?** Нажми «Убрать из моих». История сохранится, а программу можно снова добавить из «Планов».
+- **Keep controls within reach.** Pull down your phone's system panel to see the current exercise and set actions. Its appearance depends on your Android version and phone software.
+- **Fix an accidental tap.** Unmark any set in the Workout tab. Undo removes the most recent completion mark.
+- **Update a max once.** Future percentage-based weights update throughout that program. Completed sets keep their recorded weights.
+- **Switch programs freely.** Your unfinished session stays paused so you can return to it later.
+- **Keep your list tidy.** Use **Remove from my plans** to hide a program from your list. Its history stays, and you can add it again from Plans.
 
-## Готовые программы
+## Included programs
 
-| Программа | Что внутри |
+| Program | What's inside |
 | --- | --- |
-| **Шейко · КМС / МС** | Подготовительный цикл: 4 недели, 16 занятий. |
-| **Шейко · 12 недель к соревнованиям** | 8 недель подготовки и 4 недели соревновательного этапа: 35 тренировок, затем отметка о соревнованиях. |
-| **Матвей Злат · турник и брусья** | Базовая схема 2018 года с дополнительным весом. Прибавка для следующего занятия рассчитывается после подтверждения результата. |
+| **Sheiko · CMS / MS** | A four-week preparation cycle with 16 workouts. |
+| **Sheiko · 12 weeks to competition** | Eight weeks of preparation and a four-week competition phase: 35 workouts followed by a competition event. |
+| **Matvey Zlat · pull-ups and dips** | A basic weighted routine from 2018. Next-session increases are calculated after you confirm your results. |
 
-У Шейко нагрузка меняется по процентам, заданным в плане. У Злата прибавка зависит от результата последнего запланированного подхода каждого упражнения. Это разные способы расчёта.
+Sheiko weights follow the percentages prescribed in each plan. Zlat increases depend on the result of the final planned set of each exercise.
 
-## Можно добавить свою программу?
+## Bring your own plan
 
-Да. Открой **«Планы» → «Из таблицы»** или **«Свой план»**.
+Open **Plans** to import a file or choose **Custom plan**.
 
-Поддерживаются JSON, CSV и XLSX по шаблону, а также исходная XLS-таблица Шейко поддерживаемого формата. Шаблон можно скачать прямо в приложении. Произвольная Excel-таблица с любой разметкой не распознаётся автоматически; новый 12-недельный цикл уже добавлен в каталог отдельно.
+Trace supports JSON, CSV and XLSX using the in-app template, plus the supported original Sheiko XLS format. You can download the template from the app. Arbitrarily formatted Excel workbooks are not automatically recognized; the 12-week Sheiko cycle is already included separately in the catalog.
 
-## Как обновить Trace
+## Update Trace
 
-Скачай свежий **Trace.apk** по ссылке выше и установи **поверх текущей версии**. Удалять приложение перед обновлением не нужно.
+Download the latest **Trace.apk** using the link above and install it **over your current version**. You do not need to uninstall Trace first.
 
-Перед обновлением удобно сохранить копию: **Настройки → «Сохранить копию»**. В неё входят программы, история и незавершённое занятие.
+Before updating, save a backup through **Settings → Save backup**. It includes your programs, history, and unfinished workout.
 
-## Частые вопросы
+## Frequently asked questions
 
-**Где мои данные?**  
-На твоём телефоне. Аккаунта и облачной синхронизации нет. Чтобы перенести данные на другой телефон, сохрани копию и выбери там **Настройки → «Восстановить из файла»**. Восстановление заменит текущие данные после подтверждения.
+**Where is my data stored?**  
+On your phone. There is no account or cloud sync. To move to another phone, save a backup, transfer the file, and choose **Settings → Restore from file** on the new device. Restoring replaces its current data after confirmation.
 
-**Почему день не появился в прогрессе?**  
-Календарь учитывает сохранённые тренировки. После отметки всех подходов нажми **«Сохранить тренировку»**.
+**Why isn't my workout showing in Progress?**  
+The calendar counts saved workouts. After completing all sets, tap **Save workout**.
 
-**Где сменить язык?**  
-Нажми значок настроек вверху и выбери **Русский** или **English**.
+**How do I change the language?**  
+Tap the settings icon at the top and choose English or Russian.
 
-**Не вижу панель тренировки.**  
-Начни занятие и проверь, разрешены ли уведомления для Trace в настройках Android. После принудительной остановки приложения открой его снова. Отображение на заблокированном экране зависит от настроек телефона.
+**Why can't I see the workout panel?**  
+Start a workout and check that notifications are enabled for Trace in Android settings. If the app was force-stopped, open it again. Lock-screen visibility depends on your phone settings.
 
-**Android пишет «Приложение не установлено».**  
-Убедись, что файл скачался полностью и на телефоне есть свободное место. Если уже установлена сборка Trace с другой подписью, обновление может не установиться. Сначала сохрани резервную копию; не удаляй приложение с единственной копией истории.
+**Android says “App not installed.”**  
+Check that the download finished and your phone has enough free space. An existing Trace build signed with a different key may prevent the update from installing. Save a backup first; do not uninstall the only copy of your workout history.
 
-## Нашёл проблему или есть идея?
+## Have an idea or found a problem?
 
-[Написать в Issues](https://github.com/david-daveee/Trace/issues) — укажи модель телефона, версию Android и что произошло. Для ошибки пригодится скриншот без личных данных.
+[Open an issue](https://github.com/david-daveee/Trace/issues) with your phone model, Android version, and what happened. A screenshot without personal information can help explain a bug.
 
 <details>
-<summary>Для разработчиков</summary>
+<summary>For developers</summary>
 
-Java 17, Android Views, Android SDK 35. Минимальная версия Android — 8.0 (API 26).
+Java 17, Android Views, and Android SDK 35. Minimum Android version: 8.0 (API 26).
 
-Открой корневую папку проекта в Android Studio и дождись синхронизации Gradle. Проверки и сборка на Windows:
+Open the project root in Android Studio and wait for Gradle sync. Build and run checks on Windows:
 
 ```powershell
 ./gradlew.bat assembleDebug testDebugUnitTest lintDebug
 ```
 
-APK: `app/build/outputs/apk/debug/app-debug.apk`. Текущая загружаемая сборка подписана debug-ключом и распространяется через GitHub Releases.
+APK output: `app/build/outputs/apk/debug/app-debug.apk`. The downloadable build uses a debug signing key and is distributed through GitHub Releases.
 
-[Подробности реализации и история разработки](docs/DEVELOPMENT.md).
+[Implementation details and development notes](docs/DEVELOPMENT.md).
 
 </details>
