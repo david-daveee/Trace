@@ -14,6 +14,9 @@ public final class Steps {
     public static boolean permitted(Context c){return Build.VERSION.SDK_INT<29||c.checkSelfPermission(Manifest.permission.ACTIVITY_RECOGNITION)==PackageManager.PERMISSION_GRANTED;}
     public static boolean enabled(Context c){return prefs(c).getBoolean("enabled",false);}
     public static int goal(Context c){return prefs(c).getInt("goal",8000);}
+    public static double stepLength(Context c){return prefs(c).getFloat("stepLengthCm",70f);}
+    public static void stepLength(Context c,double cm){if(!Double.isFinite(cm)||cm<20||cm>200)throw new IllegalArgumentException(Lang.t("Длина шага — от 20 до 200 см"));prefs(c).edit().putFloat("stepLengthCm",(float)cm).apply();}
+    public static String distance(Context c,long steps){java.text.NumberFormat f=java.text.NumberFormat.getNumberInstance(Lang.locale());f.setMinimumFractionDigits(2);f.setMaximumFractionDigits(2);return "≈ "+f.format(steps*stepLength(c)/100000.0)+Lang.t(" км");}
     public static void goal(Context c,int n){if(n<100||n>100000)throw new IllegalArgumentException(Lang.t("Цель — от 100 до 100 000 шагов"));prefs(c).edit().putInt("goal",n).apply();}
     static synchronized JSONObject data(Context c){return Engine.obj(prefs(c).getString("data","{}"));}
     public static long today(Context c){return StepData.count(data(c),LocalDate.now().toString());}

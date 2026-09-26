@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="distance_0" formatted="false">" км"</string>
+    <string name="distance_1" formatted="false">" см"</string>
+    <string name="distance_2" formatted="false">"Примерное расстояние"</string>
+    <string name="distance_3" formatted="false">"Длина шага"</string>
+    <string name="distance_4" formatted="false">"Длина шага, см"</string>
+    <string name="distance_5" formatted="false">"Длина шага — от 20 до 200 см"</string>
+    <string name="distance_6" formatted="false">"Расстояние = шаги × длина шага. По умолчанию 70 см — настрой под себя. Для калибровки раздели известное расстояние в сантиметрах на число шагов."</string>
+</resources>

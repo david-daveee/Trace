@@ -31,7 +31,7 @@ public final class StepsService extends Service implements SensorEventListener {
         Intent open=new Intent(this,MainActivity.class).putExtra("steps",true).addFlags(Intent.FLAG_ACTIVITY_SINGLE_TOP|Intent.FLAG_ACTIVITY_CLEAR_TOP);
         PendingIntent pending=PendingIntent.getActivity(this,81,open,PendingIntent.FLAG_UPDATE_CURRENT|PendingIntent.FLAG_IMMUTABLE);
         Notification n=new Notification.Builder(this,"steps").setSmallIcon(R.drawable.ic_trace_notification).setContentTitle(Lang.t("Шаги за сегодня")+": "+Steps.today(this))
-            .setContentText(Lang.t("Цель на день")+": "+Steps.goal(this)).setContentIntent(pending).setOngoing(true).setOnlyAlertOnce(true).setShowWhen(false).setCategory(Notification.CATEGORY_PROGRESS).build();
+            .setContentText(Steps.distance(this,Steps.today(this))+" · "+Lang.t("Цель на день")+": "+Steps.goal(this)).setContentIntent(pending).setOngoing(true).setOnlyAlertOnce(true).setShowWhen(false).setCategory(Notification.CATEGORY_PROGRESS).build();
         if(Build.VERSION.SDK_INT>=34)startForeground(81,n,ServiceInfo.FOREGROUND_SERVICE_TYPE_HEALTH);else startForeground(81,n);
         notified=SystemClock.elapsedRealtime();
     }

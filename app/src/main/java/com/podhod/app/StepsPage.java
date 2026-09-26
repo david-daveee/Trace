@@ -12,7 +12,7 @@ import java.text.NumberFormat;
 final class StepsPage {
     final MainActivity a;
     final Ring ring;
-    final TextView remaining,status,date;
+    final TextView remaining,status,date,distance;
     StepsPage(MainActivity a){
         this.a=a;
         a.badge(a.body,Lang.t("ДВИЖЕНИЕ КАЖДЫЙ ДЕНЬ"),0xFFFFC88C);a.space(a.body,12);
@@ -20,12 +20,19 @@ final class StepsPage {
         LinearLayout hero=a.card(a.body);hero.setBackground(a.shape(0xFF29251F,28));
         status=a.text("",13,0xFFFFC88C);status.setGravity(Gravity.CENTER);hero.addView(status);
         ring=new Ring(a);hero.addView(ring,new LinearLayout.LayoutParams(-1,a.dp(245)));
+        distance=a.title("",30);distance.setTextColor(0xFFFFC88C);distance.setGravity(Gravity.CENTER);hero.addView(distance);a.space(hero,6);
+        TextView estimate=a.text(Lang.t("Примерное расстояние"),13,a.MUTED);estimate.setGravity(Gravity.CENTER);hero.addView(estimate);a.space(hero,18);
         remaining=a.text("",16,a.TEXT);remaining.setGravity(Gravity.CENTER);hero.addView(remaining);a.space(hero,12);
         TextView goal=a.text(Lang.t("Цель на день")+" · "+format(Steps.goal(a)),14,a.MUTED);goal.setGravity(Gravity.CENTER);hero.addView(goal);
         a.button(hero,Lang.t("Изменить цель"),false,()->{
             EditText input=new EditText(a);input.setInputType(android.text.InputType.TYPE_CLASS_NUMBER);input.setText(String.valueOf(Steps.goal(a)));input.setSelectAllOnFocus(true);input.setTextColor(a.TEXT);input.setPadding(a.dp(24),a.dp(16),a.dp(24),a.dp(16));
             AlertDialog dialog=new AlertDialog.Builder(a).setTitle(Lang.t("Цель на день")).setView(input).setPositiveButton(Lang.t("Сохранить"),null).setNegativeButton(Lang.t("Отмена"),null).create();
             dialog.setOnShowListener(v->dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(w->{try{Steps.goal(a,Integer.parseInt(input.getText().toString()));dialog.dismiss();a.render();}catch(IllegalArgumentException e){input.setError(Lang.t("Цель — от 100 до 100 000 шагов"));}}));dialog.show();
+        });
+        a.link(hero,Lang.t("Длина шага")+" · "+NumberFormat.getNumberInstance(Lang.locale()).format(Steps.stepLength(a))+Lang.t(" см"),()->{
+            LinearLayout form=a.form();form.addView(a.text(Lang.t("Расстояние = шаги × длина шага. По умолчанию 70 см — настрой под себя. Для калибровки раздели известное расстояние в сантиметрах на число шагов."),14,a.MUTED));
+            EditText input=a.input(form,Lang.t("Длина шага, см"),NumberFormat.getNumberInstance(Lang.locale()).format(Steps.stepLength(a)),true);
+            a.formDialog(Lang.t("Длина шага"),form,Lang.t("Сохранить"),()->{double cm;try{cm=Double.parseDouble(input.getText().toString().trim().replace(',','.'));}catch(NumberFormatException e){throw new IllegalArgumentException(Lang.t("Длина шага — от 20 до 200 см"));}Steps.stepLength(a,cm);a.render();});
         });
         LinearLayout controls=a.card(a.body);
         if(!Steps.available(a)){
@@ -41,6 +48,7 @@ final class StepsPage {
     }
     static String format(long n){return NumberFormat.getIntegerInstance(Lang.locale()).format(n);}
     void refresh(){date.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, d MMMM",Lang.locale())));long count=Steps.today(a);int goal=Steps.goal(a);ring.count=count;ring.goal=goal;ring.invalidate();ring.setContentDescription(format(count)+" / "+format(goal)+" · "+Lang.t("Шаги"));
+        distance.setText(Steps.distance(a,count));
         remaining.setText(count>=goal?Lang.t("Цель достигнута"):Lang.t("До цели: ")+format(goal-count));
         status.setText(!Steps.available(a)?Lang.t("Датчик шагов недоступен"):Steps.enabled(a)&&Steps.permitted(a)&&StepsService.running?Lang.t("ПОДСЧЁТ ВКЛЮЧЁН"):Lang.t("ПОДСЧЁТ ВЫКЛЮЧЕН"));
     }

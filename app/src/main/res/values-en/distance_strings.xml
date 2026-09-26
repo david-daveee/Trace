@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="distance_0" formatted="false">" km"</string>
+    <string name="distance_1" formatted="false">" cm"</string>
+    <string name="distance_2" formatted="false">"Estimated distance"</string>
+    <string name="distance_3" formatted="false">"Step length"</string>
+    <string name="distance_4" formatted="false">"Step length, cm"</string>
+    <string name="distance_5" formatted="false">"Step length must be between 20 and 200 cm"</string>
+    <string name="distance_6" formatted="false">"Distance = steps × step length. The default is 70 cm; adjust it for your stride. To calibrate, divide a known distance in centimeters by your step count."</string>
+</resources>
