@@ -8,8 +8,9 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Таблица или полученный план",R.string.import_file_hint);
         ids.put("Поделиться планом",R.string.share_0);
-        ids.put("План для Trace. Сохрани файл и открой в приложении: Планы → Из таблицы.",R.string.share_1);
+        ids.put("План для Trace. Сохрани файл и открой в приложении: Планы → Из файла.",R.string.share_1);
 
         ids.put("Настроить обложку",R.string.crop_0);
         ids.put("Двигай фото пальцем. Разведи два пальца, чтобы увеличить.",R.string.crop_1);
@@ -181,7 +182,7 @@ public final class Lang {
         ids.put("КАТАЛОГ ПРОГРАММ",R.string.tr_088);
         ids.put("Найди свой план",R.string.tr_089);
         ids.put("Готовые программы и твои собственные идеи.",R.string.tr_090);
-        ids.put("Из таблицы",R.string.tr_091);
+        ids.put("Из файла",R.string.tr_091);
         ids.put("Свой план",R.string.tr_092);
         ids.put("Собери по упражнениям",R.string.tr_093);
         ids.put("Скачать шаблон таблицы",R.string.tr_094);
@@ -464,7 +465,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.18.0",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.18.1",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

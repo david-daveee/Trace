@@ -88,7 +88,7 @@ Trace supports JSON, CSV and XLSX using the in-app template, plus the supported 
 
 Tap **Share plan** on a card in **Plans**, or open the plan and use the same action. Choose a messaging app, email, or another destination from the Android share sheet. Trace attaches a JSON file with the exercises, weights, cover, and cover framing. Workout history and session progress are excluded.
 
-The recipient saves the attachment and imports it through **Plans → From spreadsheet** in Trace. It becomes a separate plan starting from day one; they can then adjust its weights.
+The recipient saves the attachment and imports it through **Plans → From file** in Trace. It becomes a separate plan starting from day one; they can then adjust its weights.
 
 ### Make a plan yours
 

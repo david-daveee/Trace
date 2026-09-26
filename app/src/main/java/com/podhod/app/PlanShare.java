@@ -16,7 +16,7 @@ final class PlanShare {
         Uri uri=new Uri.Builder().scheme("content").authority(context.getPackageName()+".plans").appendPath(file.getName()).build();
         Intent send=new Intent(Intent.ACTION_SEND).setType("application/json").putExtra(Intent.EXTRA_STREAM,uri)
             .putExtra(Intent.EXTRA_SUBJECT,Lang.content(plan.optString("name")))
-            .putExtra(Intent.EXTRA_TEXT,Lang.content(plan.optString("name"))+"\n"+Lang.t("План для Trace. Сохрани файл и открой в приложении: Планы → Из таблицы."))
+            .putExtra(Intent.EXTRA_TEXT,Lang.content(plan.optString("name"))+"\n"+Lang.t("План для Trace. Сохрани файл и открой в приложении: Планы → Из файла."))
              .addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
         send.setClipData(ClipData.newUri(context.getContentResolver(),"Trace plan",uri));return send;
     }
