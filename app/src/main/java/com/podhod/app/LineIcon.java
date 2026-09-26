@@ -8,6 +8,7 @@ public final class LineIcon extends Drawable {
     void line(Canvas c,float x,float y,float xx,float yy){c.drawLine(x,y,xx,yy,p);}
     @Override public void draw(Canvas c){c.save();c.translate(getBounds().left,getBounds().top);c.scale(getBounds().width()/24f,getBounds().height()/24f);
         switch(name){
+            case "steps":c.drawOval(4,3,10,12,p);c.drawOval(14,9,20,18,p);c.drawArc(4,13,10,19,0,180,false,p);c.drawArc(14,19,20,23,0,180,false,p);break;
             case "file":c.drawRoundRect(5,3,19,21,2,2,p);line(c,8,8,16,8);line(c,8,12,16,12);line(c,8,16,13,16);break;
             case "export":line(c,12,3,12,15);line(c,8,7,12,3);line(c,12,3,16,7);line(c,4,13,4,21);line(c,4,21,20,21);line(c,20,21,20,13);break;
             case "home": {Path q=new Path();q.moveTo(3,10);q.lineTo(12,3);q.lineTo(21,10);q.moveTo(5,9);q.lineTo(5,21);q.lineTo(10,21);q.lineTo(10,15);q.lineTo(14,15);q.lineTo(14,21);q.lineTo(19,21);q.lineTo(19,9);c.drawPath(q,p);break;}

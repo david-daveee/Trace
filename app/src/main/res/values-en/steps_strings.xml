@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_00" formatted="false">"Steps"</string>
+    <string name="steps_01" formatted="false">"Today's steps"</string>
+    <string name="steps_02" formatted="false">"MOVE EVERY DAY"</string>
+    <string name="steps_03" formatted="false">"Daily goal"</string>
+    <string name="steps_04" formatted="false">"Edit goal"</string>
+    <string name="steps_05" formatted="false">"Choose a goal from 100 to 100,000 steps"</string>
+    <string name="steps_06" formatted="false">"Step sensor unavailable"</string>
+    <string name="steps_07" formatted="false">"This phone does not provide a built-in step counter."</string>
+    <string name="steps_08" formatted="false">"Counted by your phone"</string>
+    <string name="steps_09" formatted="false">"Carry your phone with you. Steps are recorded with the screen off too."</string>
+    <string name="steps_10" formatted="false">"Turn off tracking"</string>
+    <string name="steps_11" formatted="false">"Turn on tracking"</string>
+    <string name="steps_12" formatted="false">"How tracking works"</string>
+    <string name="steps_13" formatted="false">"Tracking begins when enabled. Earlier steps today are unavailable. Open Trace again after a reboot or force-stop. Android may interrupt background tracking; missing steps cannot always be recovered. Across midnight, readings use the date of the sensor event. Steps are stored separately on this phone and are not yet included in workout backups."</string>
+    <string name="steps_14" formatted="false">"Goal reached"</string>
+    <string name="steps_15" formatted="false">"Remaining: "</string>
+    <string name="steps_16" formatted="false">"TRACKING ON"</string>
+    <string name="steps_17" formatted="false">"TRACKING OFF"</string>
+    <string name="steps_18" formatted="false">"steps today"</string>
+    <string name="steps_19" formatted="false">"Allow physical activity in Trace settings to track steps."</string>
+    <string name="steps_20" formatted="false">"Open settings"</string>
+    <string name="steps_21" formatted="false">"Physical activity permission needed"</string>
+</resources>

@@ -46,6 +46,15 @@ The default maxes in Sheiko plans come from the source spreadsheets. Replace the
 | **My plans** | Find your programs, change weights, and continue training. Your most recently used program appears first. |
 | **Workout** | Review sets, edit weight and reps, and mark or unmark any set. |
 | **Progress** | View your activity calendar, stats, and saved workout history. |
+| **Steps** | Track today's steps with your phone's sensor and set a daily goal. |
+
+## Today's steps
+
+Open **Steps → Turn on tracking** and allow physical activity access. Carry your phone with you to record steps, including with the screen off. The daily goal starts at 8,000 and can be changed with **Edit goal**.
+
+Tracking begins when you enable it; steps from earlier today cannot be recovered. A quiet notification keeps background tracking visible. After a reboot or force-stop, open Trace again. Android may interrupt background work, so some steps can be missed. A built-in step counter is required; GPS is not used.
+
+Step totals are stored separately on the phone and are not yet included in workout backups.
 
 ## During your workout
 

@@ -2,6 +2,9 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_SPECIAL_USE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE_HEALTH" />
+    <uses-feature android:name="android.hardware.sensor.stepcounter" android:required="false" />
     <permission android:name="com.podhod.app.INTERNAL" android:protectionLevel="signature"/>
     <uses-permission android:name="com.podhod.app.INTERNAL"/>
     <application android:name=".TraceApplication" android:allowBackup="false" android:fullBackupContent="false" android:dataExtractionRules="@xml/backup_rules" android:label="Trace" android:icon="@mipmap/ic_launcher" android:roundIcon="@mipmap/ic_launcher" android:theme="@style/AppTheme" android:supportsRtl="true">
@@ -12,5 +15,6 @@
             <property android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE" android:value="User-started strength workout session controls while the screen is off; no audio playback" />
         </service>
         <receiver android:name=".WorkoutReceiver" android:exported="false"/>
+        <service android:name=".StepsService" android:exported="false" android:foregroundServiceType="health" />
     </application>
 </manifest>

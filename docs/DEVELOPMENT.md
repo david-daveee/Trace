@@ -1,6 +1,6 @@
 # Trace development notes
 
-Trace 0.14.0 is an offline Android workout journal. Its application ID is `com.podhod.app`.
+Trace 0.15.0 is an offline Android workout journal. Its application ID is `com.podhod.app`.
 
 ## Build
 
@@ -28,7 +28,7 @@ The build script uses temporary ASCII-only directory junctions to avoid Java/Gra
 
 ## App structure
 
-The four tabs are Plans, My plans, Workout, and Progress. Program cards combine the schedule, editable maxes or working weights, and session actions. Local photos and vector icons work offline.
+The five tabs are Plans, My plans, Workout, Progress, and Steps. Program cards combine the schedule, editable maxes or working weights, and session actions. Local photos and vector icons work offline.
 
 `Engine` owns data operations, percentage calculations, set completion, and program switching. `Store` persists state synchronously in private SharedPreferences. Completed workouts retain snapshots of their actual sets and weights.
 
@@ -95,7 +95,15 @@ Progress uses saved workouts and local completion dates. Calendar intensity refl
 
 ## Validation
 
-The 30 unit tests cover source formula preservation, recalculation, completed and manually overridden weights, program switching, max validation, independent completion and undo, imports, progress aggregation, and catalog insertion.
+The 36 unit tests cover source formula preservation, recalculation, completed and manually overridden weights, program switching, max validation, independent completion and undo, imports, progress aggregation, catalog insertion, and step counter baselines, day transitions, resets, restarts, and duplicate readings.
+
+## Phone step tracking
+
+The optional Steps tab uses `TYPE_STEP_COUNTER`, with runtime `ACTIVITY_RECOGNITION` permission on Android 10+. A user-enabled health foreground service keeps the listener registered and uses a separate low-importance notification. On Android 14+, the service declares `FOREGROUND_SERVICE_HEALTH`. There is no GPS tracking or Health Connect integration. See [Android foreground service types](https://developer.android.com/develop/background-work/services/fgs/service-types).
+
+The first reading establishes a baseline instead of importing the device's lifetime count. Persisted deltas are grouped by the local date of the sensor event. A batch spanning midnight is assigned to the event date because individual step timestamps are unavailable. Reboots and decreasing counters establish a fresh baseline; disabling and re-enabling excludes the disabled interval. Duplicate and older readings from the same boot are ignored. After reboot or force-stop, the user must open Trace again; there is no boot receiver. Gaps in sensor delivery or service execution are not guaranteed to be recoverable.
+
+Step data and goals use separate private preferences and are not included in workout backups. Workout state is unchanged by step tracking.
 
 Device instrumentation checks UI rendering, language switching, and system-panel actions. Tests that use temporary data restore original state. The latest competition-cycle verification checked both interface languages and exact data equality before and after installation, apart from the new catalog entry.
 

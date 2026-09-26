@@ -8,6 +8,28 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Шаги",R.string.steps_00);
+        ids.put("Шаги за сегодня",R.string.steps_01);
+        ids.put("ДВИЖЕНИЕ КАЖДЫЙ ДЕНЬ",R.string.steps_02);
+        ids.put("Цель на день",R.string.steps_03);
+        ids.put("Изменить цель",R.string.steps_04);
+        ids.put("Цель — от 100 до 100 000 шагов",R.string.steps_05);
+        ids.put("Датчик шагов недоступен",R.string.steps_06);
+        ids.put("Этот телефон не предоставляет встроенный счётчик шагов.",R.string.steps_07);
+        ids.put("Считает твой телефон",R.string.steps_08);
+        ids.put("Бери телефон с собой — шаги записываются и при закрытом экране.",R.string.steps_09);
+        ids.put("Выключить подсчёт",R.string.steps_10);
+        ids.put("Включить подсчёт",R.string.steps_11);
+        ids.put("Как работает подсчёт",R.string.steps_12);
+        ids.put("Подсчёт начинается после включения. Прошлые шаги за сегодня недоступны. После перезагрузки или принудительной остановки открой Trace снова. Система может прерывать фоновую работу; пропущенные шаги не всегда восстановятся. При смене дня показания относятся к дате события датчика. Шаги хранятся отдельно на этом телефоне и пока не входят в резервную копию тренировок.",R.string.steps_13);
+        ids.put("Цель достигнута",R.string.steps_14);
+        ids.put("До цели: ",R.string.steps_15);
+        ids.put("ПОДСЧЁТ ВКЛЮЧЁН",R.string.steps_16);
+        ids.put("ПОДСЧЁТ ВЫКЛЮЧЕН",R.string.steps_17);
+        ids.put("шагов сегодня",R.string.steps_18);
+        ids.put("Разреши физическую активность для подсчёта шагов в настройках Trace.",R.string.steps_19);
+        ids.put("Открыть настройки",R.string.steps_20);
+        ids.put("Нужно разрешение на физическую активность",R.string.steps_21);
         ids.put("Шейко · 12 недель к соревнованиям",R.string.cycle_00);
         ids.put("Цикл для разрядников из файла sheyko.xlsx: недели 1–8 — подготовка, 9–12 — соревновательный этап. 35 тренировок; затем соревнования №36 без заданных попыток. Веса — проценты от твоих максимумов, округление 0,5 кг. Подсобные веса выбираются вручную. В расхождениях между краткой записью и ячейками использованы подробные ячейки подходов.",R.string.cycle_01);
         ids.put("Неделя 12 · Соревнования №36. В таблице нет весов и попыток для этого дня.",R.string.cycle_02);
@@ -406,7 +428,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.14.0",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.15.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

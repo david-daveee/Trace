@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="steps_00" formatted="false">"Шаги"</string>
+    <string name="steps_01" formatted="false">"Шаги за сегодня"</string>
+    <string name="steps_02" formatted="false">"ДВИЖЕНИЕ КАЖДЫЙ ДЕНЬ"</string>
+    <string name="steps_03" formatted="false">"Цель на день"</string>
+    <string name="steps_04" formatted="false">"Изменить цель"</string>
+    <string name="steps_05" formatted="false">"Цель — от 100 до 100 000 шагов"</string>
+    <string name="steps_06" formatted="false">"Датчик шагов недоступен"</string>
+    <string name="steps_07" formatted="false">"Этот телефон не предоставляет встроенный счётчик шагов."</string>
+    <string name="steps_08" formatted="false">"Считает твой телефон"</string>
+    <string name="steps_09" formatted="false">"Бери телефон с собой — шаги записываются и при закрытом экране."</string>
+    <string name="steps_10" formatted="false">"Выключить подсчёт"</string>
+    <string name="steps_11" formatted="false">"Включить подсчёт"</string>
+    <string name="steps_12" formatted="false">"Как работает подсчёт"</string>
+    <string name="steps_13" formatted="false">"Подсчёт начинается после включения. Прошлые шаги за сегодня недоступны. После перезагрузки или принудительной остановки открой Trace снова. Система может прерывать фоновую работу; пропущенные шаги не всегда восстановятся. При смене дня показания относятся к дате события датчика. Шаги хранятся отдельно на этом телефоне и пока не входят в резервную копию тренировок."</string>
+    <string name="steps_14" formatted="false">"Цель достигнута"</string>
+    <string name="steps_15" formatted="false">"До цели: "</string>
+    <string name="steps_16" formatted="false">"ПОДСЧЁТ ВКЛЮЧЁН"</string>
+    <string name="steps_17" formatted="false">"ПОДСЧЁТ ВЫКЛЮЧЕН"</string>
+    <string name="steps_18" formatted="false">"шагов сегодня"</string>
+    <string name="steps_19" formatted="false">"Разреши физическую активность для подсчёта шагов в настройках Trace."</string>
+    <string name="steps_20" formatted="false">"Открыть настройки"</string>
+    <string name="steps_21" formatted="false">"Нужно разрешение на физическую активность"</string>
+</resources>
