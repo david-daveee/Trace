@@ -1,0 +1,11 @@
+<resources>
+<string name="auto_backup_0">Автобэкап каждые 2 недели</string>
+<string name="auto_backup_1">Выбери папку — дальше всё автоматически</string>
+<string name="auto_backup_2">Не удалось сохранить копию. Проверь доступ к папке и свободное место.</string>
+<string name="auto_backup_3">Первая копия ожидает сохранения</string>
+<string name="auto_backup_4">Автокопия: </string>
+<string name="auto_backup_5">Следующая — после </string>
+<string name="auto_backup_6">Первая копия сохранится после выбора папки. Затем — раз в 14 дней, когда Android разрешит фоновую задачу. Старые файлы не удаляются.</string>
+<string name="auto_backup_7">Выбрать папку</string>
+<string name="auto_backup_8">Отключить</string>
+</resources>

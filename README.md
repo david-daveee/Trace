@@ -153,3 +153,6 @@ APK output: `app/build/outputs/apk/debug/app-debug.apk`. The downloadable build 
 [Implementation details and development notes](docs/DEVELOPMENT.md).
 
 </details>
+
+### Automatic backups
+In Settings, select **Automatic backup every 2 weeks** and choose a folder. Trace saves a complete JSON backup there, verifies the written file, and keeps previous copies. A background job checks daily and saves when 14 days have passed since the last successful automatic backup. Android may delay background work; force-stopping Trace pauses it until the app is opened again. Settings show the last automatic backup and any save failure. Use Restore from file to recover a copy. Folder permissions are device-specific and must be configured again after reinstalling.

@@ -1,0 +1,11 @@
+<resources>
+<string name="auto_backup_0">Automatic backup every 2 weeks</string>
+<string name="auto_backup_1">Choose a folder to enable automatic backups</string>
+<string name="auto_backup_2">Backup failed. Check folder access and free space.</string>
+<string name="auto_backup_3">First backup is pending</string>
+<string name="auto_backup_4">Automatic backup: </string>
+<string name="auto_backup_5">Next backup after </string>
+<string name="auto_backup_6">The first backup will be saved after you choose a folder. Then every 14 days, when Android allows background work. Previous files are kept.</string>
+<string name="auto_backup_7">Choose folder</string>
+<string name="auto_backup_8">Turn off</string>
+</resources>
