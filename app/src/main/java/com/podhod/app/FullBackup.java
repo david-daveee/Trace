@@ -7,7 +7,7 @@ final class FullBackup {
  static JSONObject create(Context c,JSONObject workouts){
   JSONObject result=new JSONObject(),steps=new JSONObject(),settings=new JSONObject();Engine.put(result,"format","trace-backup");Engine.put(result,"version",2);Engine.put(result,"createdAt",System.currentTimeMillis());Engine.put(result,"workouts",Engine.copy(workouts));
   synchronized(Steps.class){JSONObject days=Steps.data(c).optJSONObject("days");Engine.put(steps,"days",days==null?new JSONObject():Engine.copy(days));Engine.put(steps,"goal",Steps.goal(c));Engine.put(steps,"stepLengthCm",Steps.stepLength(c));Engine.put(steps,"enabled",Steps.enabled(c));}
-  Engine.put(settings,"language",Lang.english()?"en":"ru");Engine.put(settings,"lastBackupAt",c.getSharedPreferences("trace-settings",0).getLong("lastBackupAt",0));Engine.put(result,"steps",steps);Engine.put(result,"settings",settings);return result;
+  Engine.put(settings,"language",Lang.english()?"en":"ru");Engine.put(settings,"lastBackupAt",c.getSharedPreferences("trace-settings",0).getLong("lastBackupAt",0));Engine.put(result,"walks",Walks.data(c));Engine.put(result,"steps",steps);Engine.put(result,"settings",settings);return result;
  }
  static JSONObject workouts(JSONObject backup){
   if(!backup.has("format"))return backup;
@@ -16,20 +16,23 @@ final class FullBackup {
    JSONObject steps=backup.getJSONObject("steps"),settings=backup.getJSONObject("settings"),days=steps.getJSONObject("days");int goal=steps.getInt("goal");double length=steps.getDouble("stepLengthCm");steps.getBoolean("enabled");String language=settings.getString("language");
    if(goal<100||goal>100000||!Double.isFinite(length)||length<20||length>200||!(language.equals("ru")||language.equals("en")))throw new IllegalArgumentException();
    java.util.Iterator<String> it=days.keys();while(it.hasNext()){String day=it.next();java.time.LocalDate.parse(day);Object value=days.get(day);if(!(value instanceof Number)||((Number)value).doubleValue()<0||((Number)value).doubleValue()!=((Number)value).longValue())throw new IllegalArgumentException();}
+   if(backup.has("walks"))WalkData.validate(backup.getJSONObject("walks"));
    return backup.getJSONObject("workouts");
   }catch(Exception e){throw new IllegalArgumentException(Lang.t("Повреждена полная резервная копия"));}
  }
  static void apply(Context c,Store store,JSONObject backup,JSONObject workouts){
-  JSONObject previous=store.data;SharedPreferences steps=Steps.prefs(c),settings=c.getSharedPreferences("trace-settings",0);java.util.Map<String,?> oldSteps=steps.getAll(),oldSettings=settings.getAll();
+  JSONObject previous=store.data;SharedPreferences steps=Steps.prefs(c),settings=c.getSharedPreferences("trace-settings",0);java.util.Map<String,?> oldSteps=steps.getAll(),oldSettings=settings.getAll(),oldWalks=Walks.prefs(c).getAll();
   synchronized(Steps.class){try{
    store.data=workouts;Zlat.ensure(store.data);store.ensureCatalog();store.save();
    if(backup.has("format"))restoreSettings(c,backup);
-  }catch(Exception e){store.data=previous;store.save();restorePrefs(steps,oldSteps);restorePrefs(settings,oldSettings);Lang.init(c);throw new IllegalArgumentException(Lang.t("Не удалось восстановить копию"),e);}}
+  }catch(Exception e){store.data=previous;store.save();restorePrefs(steps,oldSteps);restorePrefs(settings,oldSettings);restorePrefs(Walks.prefs(c),oldWalks);Lang.init(c);throw new IllegalArgumentException(Lang.t("Не удалось восстановить копию"),e);}}
+  if(backup.has("walks"))c.stopService(new Intent(c,WalkService.class));
   if(!Steps.enabled(c))c.stopService(new Intent(c,StepsService.class));
  }
  static void restoreSettings(Context c,JSONObject backup){
   workouts(backup);JSONObject s=backup.optJSONObject("steps"),data=new JSONObject();Engine.put(data,"days",Engine.copy(s.optJSONObject("days")));
   if(!Steps.prefs(c).edit().putString("data",data.toString()).putInt("goal",s.optInt("goal")).putFloat("stepLengthCm",(float)s.optDouble("stepLengthCm")).putBoolean("enabled",s.optBoolean("enabled")).commit())throw new IllegalStateException();
+  if(backup.has("walks")){JSONObject walks=Engine.copy(backup.optJSONObject("walks")),active=walks.optJSONObject("active");if(active!=null){Engine.put(active,"ended",active.optLong("lastFix",active.optLong("started")));Engine.put(active,"interrupted",true);walks.optJSONArray("history").put(active);walks.remove("active");}Walks.save(c,walks);}
   JSONObject config=backup.optJSONObject("settings");
   if(!c.getSharedPreferences("trace-settings",0).edit().putString("language",config.optString("language")).putLong("lastBackupAt",backup.optLong("createdAt",config.optLong("lastBackupAt"))).commit())throw new IllegalStateException();Lang.init(c);
  }

@@ -12,11 +12,13 @@ import java.text.NumberFormat;
 final class StepsPage {
     final MainActivity a;
     final Ring ring;
+    final WalkPanel walk;
     final TextView remaining,status,date,distance;
     StepsPage(MainActivity a){
         this.a=a;
         a.badge(a.body,Lang.t("ДВИЖЕНИЕ КАЖДЫЙ ДЕНЬ"),0xFFFFC88C);a.space(a.body,12);
         a.body.addView(a.title(Lang.t("Шаги"),30));a.space(a.body,6);date=a.text("",15,a.MUTED);a.body.addView(date);a.space(a.body,22);
+        walk=new WalkPanel(a);
         LinearLayout hero=a.card(a.body);hero.setBackground(a.shape(0xFF29251F,28));
         status=a.text("",13,0xFFFFC88C);status.setGravity(Gravity.CENTER);hero.addView(status);
         ring=new Ring(a);hero.addView(ring,new LinearLayout.LayoutParams(-1,a.dp(245)));
@@ -47,7 +49,7 @@ final class StepsPage {
         refresh();
     }
     static String format(long n){return NumberFormat.getIntegerInstance(Lang.locale()).format(n);}
-    void refresh(){date.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, d MMMM",Lang.locale())));long count=Steps.today(a);int goal=Steps.goal(a);ring.count=count;ring.goal=goal;ring.invalidate();ring.setContentDescription(format(count)+" / "+format(goal)+" · "+Lang.t("Шаги"));
+    void refresh(){walk.refresh();date.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, d MMMM",Lang.locale())));long count=Steps.today(a);int goal=Steps.goal(a);ring.count=count;ring.goal=goal;ring.invalidate();ring.setContentDescription(format(count)+" / "+format(goal)+" · "+Lang.t("Шаги"));
         distance.setText(Steps.distance(a,count));
         remaining.setText(count>=goal?Lang.t("Цель достигнута"):Lang.t("До цели: ")+format(goal-count));
         status.setText(!Steps.available(a)?Lang.t("Датчик шагов недоступен"):Steps.enabled(a)&&Steps.permitted(a)&&StepsService.running?Lang.t("ПОДСЧЁТ ВКЛЮЧЁН"):Lang.t("ПОДСЧЁТ ВЫКЛЮЧЕН"));

@@ -1,0 +1,20 @@
+<resources>
+    <string name="walk_0">Walk</string>
+    <string name="walk_1">Recording walk</string>
+    <string name="walk_2">Finding GPS…</string>
+    <string name="walk_3">Finish walk</string>
+    <string name="walk_4">Walk map</string>
+    <string name="walk_5">Start walk</string>
+    <string name="walk_6">About maps and recording</string>
+    <string name="walk_7">GPS is recorded only during a walk. OpenStreetMap loads over the internet; the map server receives requests for map areas. Routes stay on your phone and are included in full backups. Without internet the route is saved, but map tiles may be unavailable. GPS may not get a fix indoors. Recording is limited to 24 hours.</string>
+    <string name="walk_8">Fit route</string>
+    <string name="walk_9">Waiting for a fresh GPS fix</string>
+    <string name="walk_10">Recording interrupted. Start a new walk.</string>
+    <string name="walk_11">Latest walk</string>
+    <string name="walk_12">Tap start and take your phone with you</string>
+    <string name="walk_13">Walk history</string>
+    <string name="walk_14">Recording was interrupted</string>
+    <string name="walk_15">Allow precise location to record a route. Step counting works without it.</string>
+    <string name="walk_16">Turn on device location, then start your walk.</string>
+    <string name="walk_minutes">" min"</string>
+</resources>

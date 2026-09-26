@@ -56,9 +56,17 @@ The Steps tab and tracking notification also show **estimated distance in kilome
 
 In **Progress**, the **Your daily rhythm** card shows today's steps and estimated distance, an interactive seven-day chart, and weekly and all-time totals. Tap a bar to view that day's numbers. A dash means no records; walking stays separate from your saved workout calendar. Distance estimates use your current step length.
 
-Tracking begins when you enable it; steps from earlier today cannot be recovered. A quiet notification keeps background tracking visible. After a reboot or force-stop, open Trace again. Android may interrupt background work, so some steps can be missed. A built-in step counter is required; GPS is not used.
+Tracking begins when you enable it; steps from earlier today cannot be recovered. A quiet notification keeps background tracking visible. After a reboot or force-stop, open Trace again. Android may interrupt background work, so some steps can be missed. A built-in step counter is required; step counting does not use GPS.
 
 Step history, goal, step length, and tracking preference are included in full backups. Android permissions are granted separately on each phone.
+
+### Record a walk
+
+In **Steps**, tap **Start walk**, allow precise location, and take your phone outside. The map records your route; **Finish walk** saves its GPS distance and duration. You can also finish from the ongoing notification. Recording continues with the screen off while Android keeps the service running. Trace does not start location recording automatically or track you all day.
+
+Saved walks are listed below the map. Drag the map, use +/− to zoom, or tap **Fit route**. GPS gaps are displayed as breaks rather than invented paths. Recording stops at 24 hours or 10,000 accepted points. After a force-stop or service interruption, start a new walk; the previous points are retained. GPS recording needs precise location and may not work indoors. The daily distance estimate from steps remains separate from GPS walk distance.
+
+The map uses © OpenStreetMap contributors tiles. Internet is needed for uncached map areas; the map server receives tile-area requests and your IP address. Routes stay on your phone and are included in full backups. Without internet, GPS points can still be recorded and the route line displayed, but some map tiles may be missing. Restoring a backup never starts location recording.
 
 ## During your workout
 

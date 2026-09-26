@@ -1,0 +1,20 @@
+<resources>
+    <string name="walk_0">Прогулка</string>
+    <string name="walk_1">Запись прогулки</string>
+    <string name="walk_2">Ищем GPS…</string>
+    <string name="walk_3">Завершить прогулку</string>
+    <string name="walk_4">Карта прогулки</string>
+    <string name="walk_5">Начать прогулку</string>
+    <string name="walk_6">О карте и записи</string>
+    <string name="walk_7">GPS записывается только во время прогулки. Карта OpenStreetMap загружается через интернет; сервер карты получает запросы участков карты. Маршруты хранятся на телефоне и входят в полную копию. Без сети линия маршрута сохраняется, но фон карты может быть недоступен. В помещении GPS может не найти точку. Ограничение записи — 24 часа.</string>
+    <string name="walk_8">Весь маршрут</string>
+    <string name="walk_9">Нет свежего сигнала GPS</string>
+    <string name="walk_10">Запись прервана. Начни новую прогулку.</string>
+    <string name="walk_11">Последняя прогулка</string>
+    <string name="walk_12">Нажми начать и бери телефон с собой</string>
+    <string name="walk_13">История прогулок</string>
+    <string name="walk_14">Запись была прервана</string>
+    <string name="walk_15">Для маршрута разреши точную геолокацию. Шагомер работает и без неё.</string>
+    <string name="walk_16">Включи геолокацию телефона, затем начни прогулку.</string>
+    <string name="walk_minutes">" мин"</string>
+</resources>

@@ -8,6 +8,25 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put(" мин",R.string.walk_minutes);
+        ids.put("Прогулка",R.string.walk_0);
+        ids.put("Запись прогулки",R.string.walk_1);
+        ids.put("Ищем GPS…",R.string.walk_2);
+        ids.put("Завершить прогулку",R.string.walk_3);
+        ids.put("Карта прогулки",R.string.walk_4);
+        ids.put("Начать прогулку",R.string.walk_5);
+        ids.put("О карте и записи",R.string.walk_6);
+        ids.put("GPS записывается только во время прогулки. Карта OpenStreetMap загружается через интернет; сервер карты получает запросы участков карты. Маршруты хранятся на телефоне и входят в полную копию. Без сети линия маршрута сохраняется, но фон карты может быть недоступен. В помещении GPS может не найти точку. Ограничение записи — 24 часа.",R.string.walk_7);
+        ids.put("Весь маршрут",R.string.walk_8);
+        ids.put("Нет свежего сигнала GPS",R.string.walk_9);
+        ids.put("Запись прервана. Начни новую прогулку.",R.string.walk_10);
+        ids.put("Последняя прогулка",R.string.walk_11);
+        ids.put("Нажми начать и бери телефон с собой",R.string.walk_12);
+        ids.put("История прогулок",R.string.walk_13);
+        ids.put("Запись была прервана",R.string.walk_14);
+        ids.put("Для маршрута разреши точную геолокацию. Шагомер работает и без неё.",R.string.walk_15);
+        ids.put("Включи геолокацию телефона, затем начни прогулку.",R.string.walk_16);
+
         ids.put("Силовой план",R.string.category_0);
         ids.put("Стритлифтинг",R.string.category_1);
         ids.put("Пауэрлифтинг",R.string.category_2);
@@ -489,7 +508,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.19.2",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.20.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}
