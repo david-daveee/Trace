@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cycle_00" formatted="false">"Sheiko · 12 weeks to competition"</string>
+    <string name="cycle_01" formatted="false">"A graded-lifter cycle from sheyko.xlsx: weeks 1–8 build up, weeks 9–12 prepare for competition. 35 workouts, then competition #36 with no prescribed attempts. Weights follow your maxes, rounded to 0.5 kg. Choose accessory weights manually. Where the summary and detailed cells differ, the detailed set cells are used."</string>
+    <string name="cycle_02" formatted="false">"Week 12 · Competition #36. The spreadsheet does not specify weights or attempts for this day."</string>
+    <string name="cycle_03" formatted="false">"Preparation · Block 1"</string>
+    <string name="cycle_04" formatted="false">"Preparation · Block 2"</string>
+    <string name="cycle_05" formatted="false">"Competition · Block 3"</string>
+    <string name="cycle_06" formatted="false">"Max test: the source plan includes sets up to 105% of the entered maxes."</string>
+    <string name="cycle_07" formatted="false">"Front squat"</string>
+    <string name="cycle_08" formatted="false">"Deficit deadlift"</string>
+    <string name="cycle_09" formatted="false">"Seated alternating dumbbell press"</string>
+    <string name="cycle_10" formatted="false">"Dumbbell fly"</string>
+    <string name="cycle_11" formatted="false">"Standing good morning"</string>
+    <string name="cycle_12" formatted="false">"Incline seated press"</string>
+    <string name="cycle_13" formatted="false">"Barbell split squat"</string>
+    <string name="cycle_14" formatted="false">"Barbell triceps extension"</string>
+    <string name="cycle_15" formatted="false">"Seated good morning"</string>
+    <string name="cycle_16" formatted="false">"Shoulder-width push-ups"</string>
+    <string name="cycle_17" formatted="false">"Lat pulldown"</string>
+    <string name="cycle_18" formatted="false">"Back extension"</string>
+    <string name="cycle_19" formatted="false">"Wide-grip push-ups"</string>
+    <string name="cycle_20" formatted="false">"Deep squat"</string>
+    <string name="cycle_21" formatted="false">"Lat exercise"</string>
+    <string name="cycle_22" formatted="false">"Leg press"</string>
+    <string name="cycle_23" formatted="false">"Machine hip extension"</string>
+</resources>

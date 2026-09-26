@@ -1,0 +1,377 @@
+<resources>
+    <string name="tr_000" formatted="false">"Настройки"</string>
+    <string name="tr_001" formatted="false">"Планы"</string>
+    <string name="tr_002" formatted="false">"Мои"</string>
+    <string name="tr_003" formatted="false">"Тренировка"</string>
+    <string name="tr_004" formatted="false">"Прогресс"</string>
+    <string name="tr_005" formatted="false">"Мои тренировки"</string>
+    <string name="tr_006" formatted="false">"Библиотека программ"</string>
+    <string name="tr_007" formatted="false">" · быстрый выбор"</string>
+    <string name="tr_008" formatted="false">"Дальше: "</string>
+    <string name="tr_009" formatted="false">" кг"</string>
+    <string name="tr_010" formatted="false">"Введи фактические повторы выше"</string>
+    <string name="tr_011" formatted="false">"Твои максимумы"</string>
+    <string name="tr_012" formatted="false">"кг"</string>
+    <string name="tr_013" formatted="false">"Один раз на всю программу"</string>
+    <string name="tr_014" formatted="false">"Присед"</string>
+    <string name="tr_015" formatted="false">"Жим"</string>
+    <string name="tr_016" formatted="false">"Тяга"</string>
+    <string name="tr_017" formatted="false">"Максимум: "</string>
+    <string name="tr_018" formatted="false">"Изменить максимумы"</string>
+    <string name="tr_019" formatted="false">"Как считаются веса"</string>
+    <string name="tr_020" formatted="false">"Введи максимумы один раз. Проценты плана пересчитают рабочие веса всех будущих дней; выполненные подходы останутся в истории."</string>
+    <string name="tr_021" formatted="false">"Рабочие веса"</string>
+    <string name="tr_022" formatted="false">"Приложение повышает их после занятия"</string>
+    <string name="tr_023" formatted="false">"Турник"</string>
+    <string name="tr_024" formatted="false">"Брусья"</string>
+    <string name="tr_025" formatted="false">"3 дня / нед"</string>
+    <string name="tr_026" formatted="false">" подхода"</string>
+    <string name="tr_027" formatted="false">"5–8 повторов"</string>
+    <string name="tr_028" formatted="false">"Настроить рабочие веса"</string>
+    <string name="tr_029" formatted="false">"Прибавка после занятия"</string>
+    <string name="tr_030" formatted="false">"Правила и источник"</string>
+    <string name="tr_031" formatted="false">"Оригинальное видео Злата"</string>
+    <string name="tr_032" formatted="false">"Русский перевод · сообщение №68"</string>
+    <string name="tr_033" formatted="false">"Как работает программа"</string>
+    <string name="tr_034" formatted="false">"Понятно"</string>
+    <string name="tr_035" formatted="false">"Дополнительный вес, без массы тела. Для будущих занятий."</string>
+    <string name="tr_036" formatted="false">"Подтягивания, кг"</string>
+    <string name="tr_037" formatted="false">"Брусья, кг"</string>
+    <string name="tr_038" formatted="false">"Подходов на упражнение: 3 или 4"</string>
+    <string name="tr_039" formatted="false">"Настройка программы Злата"</string>
+    <string name="tr_040" formatted="false">"Сохранить"</string>
+    <string name="tr_041" formatted="false">"Сколько повторов вышло в последних подходах? Следующий вес посчитаем сами."</string>
+    <string name="tr_042" formatted="false">"В программе должны быть подтягивания и брусья"</string>
+    <string name="tr_043" formatted="false">"Турник · последний подход"</string>
+    <string name="tr_044" formatted="false">"Брусья · последний подход"</string>
+    <string name="tr_045" formatted="false">"Результат занятия"</string>
+    <string name="tr_046" formatted="false">"Сохранить и рассчитать веса"</string>
+    <string name="tr_047" formatted="false">"Подходы изменились. Открой сохранение заново."</string>
+    <string name="tr_048" formatted="false">"Сегодня"</string>
+    <string name="tr_049" formatted="false">"В ПРОЦЕССЕ"</string>
+    <string name="tr_050" formatted="false">"СЛЕДУЮЩАЯ ТРЕНИРОВКА"</string>
+    <string name="tr_051" formatted="false">" из "</string>
+    <string name="tr_052" formatted="false">" подходов"</string>
+    <string name="tr_053" formatted="false">"Продолжить тренировку  →"</string>
+    <string name="tr_054" formatted="false">" блоков"</string>
+    <string name="tr_055" formatted="false">"Начать тренировку  →"</string>
+    <string name="tr_056" formatted="false">"Все дни завершены"</string>
+    <string name="tr_057" formatted="false">"Начать новый цикл"</string>
+    <string name="tr_058" formatted="false">"Открыть программу"</string>
+    <string name="tr_059" formatted="false">"ДАЛЬШЕ ПО ПЛАНУ"</string>
+    <string name="tr_060" formatted="false">"Моя программа и веса"</string>
+    <string name="tr_061" formatted="false">"Максимумы и расписание — во вкладке «Мои»"</string>
+    <string name="tr_062" formatted="false">"Твой первый план"</string>
+    <string name="tr_063" formatted="false">"Выбери программу или добавь свою."</string>
+    <string name="tr_064" formatted="false">"Открыть библиотеку"</string>
+    <string name="tr_065" formatted="false">"Твой прогресс"</string>
+    <string name="tr_066" formatted="false">"тренировок"</string>
+    <string name="tr_067" formatted="false">"подходов"</string>
+    <string name="tr_068" formatted="false">" подходов\n"</string>
+    <string name="tr_069" formatted="false">"ЛИЧНЫЙ ПЛАН"</string>
+    <string name="tr_070" formatted="false">"Мои программы"</string>
+    <string name="tr_071" formatted="false">"Твои дни и рабочие веса"</string>
+    <string name="tr_072" formatted="false">"История тренировок"</string>
+    <string name="tr_073" formatted="false">" завершённых занятий"</string>
+    <string name="tr_074" formatted="false">"ПОСЛЕДНЯЯ ПРОГРАММА"</string>
+    <string name="tr_075" formatted="false">"МОЯ ПРОГРАММА"</string>
+    <string name="tr_076" formatted="false">"Пройдено "</string>
+    <string name="tr_077" formatted="false">" дней"</string>
+    <string name="tr_078" formatted="false">"СЛЕДУЮЩЕЕ ЗАНЯТИЕ"</string>
+    <string name="tr_079" formatted="false">"ТЕКУЩЕЕ ЗАНЯТИЕ"</string>
+    <string name="tr_080" formatted="false">" подходов уже выполнено"</string>
+    <string name="tr_081" formatted="false">"Вся программа"</string>
+    <string name="tr_082" formatted="false">"Расписание и упражнения"</string>
+    <string name="tr_083" formatted="false">"Убрать из моих"</string>
+    <string name="tr_084" formatted="false">"Пока нет программ"</string>
+    <string name="tr_085" formatted="false">"Выбери план из каталога или создай свой."</string>
+    <string name="tr_086" formatted="false">"Добавить программу"</string>
+    <string name="tr_087" formatted="false">"Перейти к каталогу и импорту"</string>
+    <string name="tr_088" formatted="false">"КАТАЛОГ ПРОГРАММ"</string>
+    <string name="tr_089" formatted="false">"Найди свой план"</string>
+    <string name="tr_090" formatted="false">"Готовые программы и твои собственные идеи."</string>
+    <string name="tr_091" formatted="false">"Из таблицы"</string>
+    <string name="tr_092" formatted="false">"Свой план"</string>
+    <string name="tr_093" formatted="false">"Собери по упражнениям"</string>
+    <string name="tr_094" formatted="false">"Скачать шаблон таблицы"</string>
+    <string name="tr_095" formatted="false">"ВСЕ ПРОГРАММЫ · "</string>
+    <string name="tr_096" formatted="false">"СТРИТЛИФТИНГ"</string>
+    <string name="tr_097" formatted="false">"СИЛОВОЙ ПЛАН"</string>
+    <string name="tr_098" formatted="false">"✓ В моих"</string>
+    <string name="tr_099" formatted="false">"Добавь в мои"</string>
+    <string name="tr_100" formatted="false">"Посмотреть план"</string>
+    <string name="tr_101" formatted="false">"Упражнения и расписание"</string>
+    <string name="tr_102" formatted="false">"Добавить в мои"</string>
+    <string name="tr_103" formatted="false">"ПРОГРАММА · "</string>
+    <string name="tr_104" formatted="false">" ЗАНЯТИЙ"</string>
+    <string name="tr_105" formatted="false">"О программе"</string>
+    <string name="tr_106" formatted="false">"Начать следующий день  →"</string>
+    <string name="tr_107" formatted="false">"Продолжить эту программу  →"</string>
+    <string name="tr_108" formatted="false">"Расписание программы"</string>
+    <string name="tr_109" formatted="false">"Завершено"</string>
+    <string name="tr_110" formatted="false">"Следующая тренировка"</string>
+    <string name="tr_111" formatted="false">"Запланировано"</string>
+    <string name="tr_112" formatted="false">"УПРАВЛЕНИЕ ПРОГРАММОЙ"</string>
+    <string name="tr_113" formatted="false">"Добавить день"</string>
+    <string name="tr_114" formatted="false">"Расширить тренировочный план"</string>
+    <string name="tr_115" formatted="false">"Экспортировать программу"</string>
+    <string name="tr_116" formatted="false">"Сохранить план в JSON"</string>
+    <string name="tr_117" formatted="false">"Создать копию для нового цикла"</string>
+    <string name="tr_118" formatted="false">"Убрать программу из моих?"</string>
+    <string name="tr_119" formatted="false">"\n\nИстория и рабочие веса сохранятся. Незавершённое занятие останется на паузе. Программу можно снова добавить из «Планов»."</string>
+    <string name="tr_120" formatted="false">"Оставить"</string>
+    <string name="tr_121" formatted="false">"Убрать"</string>
+    <string name="tr_122" formatted="false">"Программа убрана из моих"</string>
+    <string name="tr_123" formatted="false">"ТВОЯ АКТИВНОСТЬ"</string>
+    <string name="tr_124" formatted="false">"Каждая сохранённая тренировка — часть истории"</string>
+    <string name="tr_125" formatted="false">"ЗА ПОСЛЕДНИЕ 30 ДНЕЙ"</string>
+    <string name="tr_126" formatted="false">"сохранённых тренировок"</string>
+    <string name="tr_127" formatted="false">"активных дней"</string>
+    <string name="tr_128" formatted="false">"недель подряд"</string>
+    <string name="tr_129" formatted="false">"Календарь активности"</string>
+    <string name="tr_130" formatted="false">"Последние 12 месяцев · листай вбок"</string>
+    <string name="tr_131" formatted="false">"Пн"</string>
+    <string name="tr_132" formatted="false">"Вт"</string>
+    <string name="tr_133" formatted="false">"Ср"</string>
+    <string name="tr_134" formatted="false">"Чт"</string>
+    <string name="tr_135" formatted="false">"Пт"</string>
+    <string name="tr_136" formatted="false">"Сб"</string>
+    <string name="tr_137" formatted="false">"Вс"</string>
+    <string name="tr_138" formatted="false">"Нет сохранённых тренировок"</string>
+    <string name="tr_139" formatted="false">" занятий · "</string>
+    <string name="tr_140" formatted="false">" тренировок, "</string>
+    <string name="tr_141" formatted="false">"Меньше  "</string>
+    <string name="tr_142" formatted="false">"  Больше подходов"</string>
+    <string name="tr_143" formatted="false">"Сохрани первую завершённую тренировку — здесь появится первая зелёная клетка."</string>
+    <string name="tr_144" formatted="false">"ЗА ВСЁ ВРЕМЯ"</string>
+    <string name="tr_145" formatted="false">"Как считаем активность"</string>
+    <string name="tr_146" formatted="false">"Клетка — день сохранения занятия по времени телефона. Яркость зависит от выполненных подходов: 1–5, 6–10, 11–20, 21 и больше. Серия недель продолжается, если на прошлой неделе была тренировка: текущую неделю ещё можно заполнить. Незавершённые занятия не учитываются."</string>
+    <string name="tr_147" formatted="false">"Вся история"</string>
+    <string name="tr_148" formatted="false">"Открыть результаты тренировок"</string>
+    <string name="tr_149" formatted="false">"Новый цикл"</string>
+    <string name="tr_150" formatted="false">"Создать копию программы с первого дня? История прошлого цикла останется."</string>
+    <string name="tr_151" formatted="false">"Создать"</string>
+    <string name="tr_152" formatted="false">" · новый цикл"</string>
+    <string name="tr_153" formatted="false">"Отмена"</string>
+    <string name="tr_154" formatted="false">"Отметка снята. Подход снова доступен."</string>
+    <string name="tr_155" formatted="false">"↶  Отменить"</string>
+    <string name="tr_156" formatted="false">"Отменить последний подход"</string>
+    <string name="tr_157" formatted="false">"Сначала укажи вес: 0 — без отягощения"</string>
+    <string name="tr_158" formatted="false">"Начни занятие — здесь будут твои подходы."</string>
+    <string name="tr_159" formatted="false">"ГОТОВ К ТРЕНИРОВКЕ"</string>
+    <string name="tr_160" formatted="false">"Все дни программы завершены"</string>
+    <string name="tr_161" formatted="false">"Выбрать программу"</string>
+    <string name="tr_162" formatted="false">"Включить панель в уведомлениях"</string>
+    <string name="tr_163" formatted="false">"Готово к сохранению"</string>
+    <string name="tr_164" formatted="false">"Тренировка на паузе"</string>
+    <string name="tr_165" formatted="false">"Двигайся в своём темпе"</string>
+    <string name="tr_166" formatted="false">"ТРЕНИРОВКА ВЫПОЛНЕНА"</string>
+    <string name="tr_167" formatted="false">"Отличная работа."</string>
+    <string name="tr_168" formatted="false">"Все подходы готовы. Осталось сохранить результат."</string>
+    <string name="tr_169" formatted="false">"Сохранить тренировку  ✓"</string>
+    <string name="tr_170" formatted="false">"ПАУЗА"</string>
+    <string name="tr_171" formatted="false">"ТЕКУЩИЙ ПОДХОД"</string>
+    <string name="tr_172" formatted="false">"Подход "</string>
+    <string name="tr_173" formatted="false">"РАБОЧИЙ ВЕС"</string>
+    <string name="tr_174" formatted="false">"ПОВТОРЕНИЯ"</string>
+    <string name="tr_175" formatted="false">"раз"</string>
+    <string name="tr_176" formatted="false">"Изменить вес и повторения текущего подхода"</string>
+    <string name="tr_177" formatted="false">"% от максимума · "</string>
+    <string name="tr_178" formatted="false">"Вес изменён вручную для этого подхода"</string>
+    <string name="tr_179" formatted="false">"Вес и повторы  ›"</string>
+    <string name="tr_180" formatted="false">"ЦЕЛЬ  5–8 ПОВТОРОВ"</string>
+    <string name="tr_181" formatted="false">"Изменить максимумы всей программы"</string>
+    <string name="tr_182" formatted="false">"Продолжить тренировку"</string>
+    <string name="tr_183" formatted="false">"Указать вес"</string>
+    <string name="tr_184" formatted="false">"✓  Подход выполнен"</string>
+    <string name="tr_185" formatted="false">"Пауза"</string>
+    <string name="tr_186" formatted="false">"ДАЛЕЕ"</string>
+    <string name="tr_187" formatted="false">"Укажи вес"</string>
+    <string name="tr_188" formatted="false">"  ·  подход "</string>
+    <string name="tr_189" formatted="false">"МАРШРУТ ТРЕНИРОВКИ"</string>
+    <string name="tr_190" formatted="false">" · выполнен"</string>
+    <string name="tr_191" formatted="false">"Изменить"</string>
+    <string name="tr_192" formatted="false">"Другая программа"</string>
+    <string name="tr_193" formatted="false">"Текущая сохранится на паузе"</string>
+    <string name="tr_194" formatted="false">"Как отмечать подходы"</string>
+    <string name="tr_195" formatted="false">"Нажми на галочку любого подхода, чтобы отметить или отменить его. Нажми на вес, чтобы записать фактический результат."</string>
+    <string name="tr_196" formatted="false">"Отменить занятие без сохранения"</string>
+    <string name="tr_197" formatted="false">"Отменить тренировку?"</string>
+    <string name="tr_198" formatted="false">"Отметки текущего занятия будут удалены. Этот день можно начать заново."</string>
+    <string name="tr_199" formatted="false">"Отменить занятие"</string>
+    <string name="tr_200" formatted="false">"Введите число "</string>
+    <string name="tr_201" formatted="false">"от 0"</string>
+    <string name="tr_202" formatted="false">"больше 0"</string>
+    <string name="tr_203" formatted="false">" до 2000"</string>
+    <string name="tr_204" formatted="false">"Нужно целое число от 1 до "</string>
+    <string name="tr_205" formatted="false">"Рабочий вес, кг · 0 = без отягощения"</string>
+    <string name="tr_206" formatted="false">"Повторения"</string>
+    <string name="tr_207" formatted="false">"Остальные подходы этого блока"</string>
+    <string name="tr_208" formatted="false">"Этот подход уже выполнен"</string>
+    <string name="tr_209" formatted="false">"Введи максимумы, от которых строится план. Все процентные веса обновятся сразу — во всех днях и в оставшихся подходах текущего занятия."</string>
+    <string name="tr_210" formatted="false">"Присед · 100%, кг"</string>
+    <string name="tr_211" formatted="false">"Жим лёжа · 100%, кг"</string>
+    <string name="tr_212" formatted="false">"Становая тяга · 100%, кг"</string>
+    <string name="tr_213" formatted="false">"Выполненные подходы и вручную выбранные веса сохранятся."</string>
+    <string name="tr_214" formatted="false">"Максимумы на всю программу"</string>
+    <string name="tr_215" formatted="false">"Применить ко всем дням"</string>
+    <string name="tr_216" formatted="false">"Веса программы обновлены"</string>
+    <string name="tr_217" formatted="false">"Рабочие веса уже рассчитаны от твоих максимумов. Чтобы изменить вес сразу во всех днях, открой «Твои максимумы» в программе."</string>
+    <string name="tr_218" formatted="false">"Вес выбирается в зале"</string>
+    <string name="tr_219" formatted="false">"＋ Добавить упражнение"</string>
+    <string name="tr_220" formatted="false">"Закрыть"</string>
+    <string name="tr_221" formatted="false">"Упражнение"</string>
+    <string name="tr_222" formatted="false">"Фиксированный вес, кг (пусто = выбрать в зале)"</string>
+    <string name="tr_223" formatted="false">"Подходы"</string>
+    <string name="tr_224" formatted="false">"Сохранить расчёт от максимума"</string>
+    <string name="tr_225" formatted="false">"Редактировать блок"</string>
+    <string name="tr_226" formatted="false">"Укажи название"</string>
+    <string name="tr_227" formatted="false">"ЖУРНАЛ РЕЗУЛЬТАТОВ"</string>
+    <string name="tr_228" formatted="false">"Прошлые занятия, веса и повторения."</string>
+    <string name="tr_229" formatted="false">"Прогресс начинается здесь"</string>
+    <string name="tr_230" formatted="false">"Заверши первое занятие — результат появится здесь."</string>
+    <string name="tr_231" formatted="false">"К тренировке"</string>
+    <string name="tr_232" formatted="false">"ИТОГО ЗА ВСЁ ВРЕМЯ"</string>
+    <string name="tr_233" formatted="false">" подходов выполнено"</string>
+    <string name="tr_234" formatted="false">"Посмотреть результат"</string>
+    <string name="tr_235" formatted="false">"Упражнения, веса и повторения"</string>
+    <string name="tr_236" formatted="false">"ТРЕНИРОВКА СОХРАНЕНА"</string>
+    <string name="tr_237" formatted="false">"Без веса"</string>
+    <string name="tr_238" formatted="false">"Готово"</string>
+    <string name="tr_239" formatted="false">"Название программы"</string>
+    <string name="tr_240" formatted="false">"Моя программа"</string>
+    <string name="tr_241" formatted="false">"Своя программа"</string>
+    <string name="tr_242" formatted="false">"Добавить первый день"</string>
+    <string name="tr_243" formatted="false">"Введи название программы"</string>
+    <string name="tr_244" formatted="false">"Название дня"</string>
+    <string name="tr_245" formatted="false">"День "</string>
+    <string name="tr_246" formatted="false">"Первое упражнение"</string>
+    <string name="tr_247" formatted="false">"Вес, кг · пусто = выбрать в зале"</string>
+    <string name="tr_248" formatted="false">"Новый тренировочный день"</string>
+    <string name="tr_249" formatted="false">"Добавить"</string>
+    <string name="tr_250" formatted="false">"Введи название дня и упражнения"</string>
+    <string name="tr_251" formatted="false">"Добавить упражнение"</string>
+    <string name="tr_252" formatted="false">"Введи название упражнения"</string>
+    <string name="tr_253" formatted="false">"Название"</string>
+    <string name="tr_254" formatted="false">" дней · "</string>
+    <string name="tr_255" formatted="false">"В "</string>
+    <string name="tr_256" formatted="false">" блоках вес не указан: выберешь его перед подходом."</string>
+    <string name="tr_257" formatted="false">"ДЕНЬ "</string>
+    <string name="tr_258" formatted="false">"Проверка импорта"</string>
+    <string name="tr_259" formatted="false">"Твои данные. Твои правила."</string>
+    <string name="tr_260" formatted="false">"Твой дневник силы"</string>
+    <string name="tr_261" formatted="false">"НА ТЕЛЕФОНЕ · БЕЗ АККАУНТА"</string>
+    <string name="tr_262" formatted="false">"ДАННЫЕ И РЕЗЕРВНЫЕ КОПИИ"</string>
+    <string name="tr_263" formatted="false">"Сохранить копию"</string>
+    <string name="tr_264" formatted="false">"Программы, история и текущее занятие"</string>
+    <string name="tr_265" formatted="false">"Восстановить из файла"</string>
+    <string name="tr_266" formatted="false">"Загрузить ранее сохранённую копию"</string>
+    <string name="tr_267" formatted="false">"КАК ЭТО РАБОТАЕТ"</string>
+    <string name="tr_268" formatted="false">"Добавление программ"</string>
+    <string name="tr_269" formatted="false">"XLS Шейко · CSV · XLSX · JSON"</string>
+    <string name="tr_270" formatted="false">"Можно загрузить исходную XLS-таблицу Шейко, JSON программы или CSV / XLSX по шаблону. В XLSX используется первый лист с пятью колонками."</string>
+    <string name="tr_271" formatted="false">"Импорт программы"</string>
+    <string name="tr_272" formatted="false">"Trace  /  ВЕРСИЯ 0.12.1"</string>
+    <string name="tr_273" formatted="false">"Повреждены сохранённые занятия"</string>
+    <string name="tr_274" formatted="false">"Повреждена связь занятия с программой"</string>
+    <string name="tr_275" formatted="false">"Это не резервная копия Trace"</string>
+    <string name="tr_276" formatted="false">"Повреждена программа в копии"</string>
+    <string name="tr_277" formatted="false">"В копии отсутствует активная программа"</string>
+    <string name="tr_278" formatted="false">"Восстановить копию?"</string>
+    <string name="tr_279" formatted="false">"Текущие данные будут заменены: "</string>
+    <string name="tr_280" formatted="false">" программ, "</string>
+    <string name="tr_281" formatted="false">" тренировок. Сначала сохрани текущую копию, если она нужна."</string>
+    <string name="tr_282" formatted="false">"Восстановить"</string>
+    <string name="tr_283" formatted="false">"Повреждена тренировка в копии"</string>
+    <string name="tr_284" formatted="false">"Повреждён прогресс"</string>
+    <string name="tr_285" formatted="false">"Повреждены подходы"</string>
+    <string name="tr_286" formatted="false">"Файл сохранён"</string>
+    <string name="tr_287" formatted="false">"Импортированная программа"</string>
+    <string name="tr_288" formatted="false">"Читаю файл…"</string>
+    <string name="tr_289" formatted="false">"Не получилось"</string>
+    <string name="tr_290" formatted="false">"Проверь данные и попробуй ещё раз."</string>
+    <string name="tr_291" formatted="false">"Сохрани результат занятия"</string>
+    <string name="tr_292" formatted="false">"Укажи вес в приложении"</string>
+    <string name="tr_293" formatted="false">" кг  ×  "</string>
+    <string name="tr_294" formatted="false">" повт."</string>
+    <string name="tr_295" formatted="false">"Тренировка выполнена"</string>
+    <string name="tr_296" formatted="false">"Указать повторы и сохранить"</string>
+    <string name="tr_297" formatted="false">"Сохранить тренировку"</string>
+    <string name="tr_298" formatted="false">"Указать рабочий вес"</string>
+    <string name="tr_299" formatted="false">"Подход выполнен"</string>
+    <string name="tr_300" formatted="false">"ГОТОВО"</string>
+    <string name="tr_301" formatted="false">"ПОДХОД "</string>
+    <string name="tr_302" formatted="false">"Выполнено "</string>
+    <string name="tr_303" formatted="false">"Отменить последний выполненный подход"</string>
+    <string name="tr_304" formatted="false">"Продолжить"</string>
+    <string name="tr_305" formatted="false">"Текущая тренировка"</string>
+    <string name="tr_306" formatted="false">"Сохрани тренировку в историю"</string>
+    <string name="tr_307" formatted="false">" кг × "</string>
+    <string name="tr_308" formatted="false">" · готово "</string>
+    <string name="tr_309" formatted="false">"Отменить"</string>
+    <string name="tr_310" formatted="false">"Сохрани результат"</string>
+    <string name="tr_311" formatted="false">"Укажи вес в Trace"</string>
+    <string name="tr_312" formatted="false">"Готово "</string>
+    <string name="tr_313" formatted="false">" · сохрани результат"</string>
+    <string name="tr_314" formatted="false">" · выполнено "</string>
+    <string name="tr_315" formatted="false">"Отменить подход"</string>
+    <string name="tr_316" formatted="false">"Все подходы · выполнено "</string>
+    <string name="tr_317" formatted="false">"Некорректный JSON"</string>
+    <string name="tr_318" formatted="false">"Максимум должен быть больше 0 и не больше 2000 кг"</string>
+    <string name="tr_319" formatted="false">"Программа завершена"</string>
+    <string name="tr_320" formatted="false">"Нужны название и 1–366 тренировочных дней"</string>
+    <string name="tr_321" formatted="false">": нет упражнений"</string>
+    <string name="tr_322" formatted="false">"Проверь упражнение, подходы и повторения в дне "</string>
+    <string name="tr_323" formatted="false">"Некорректный вес"</string>
+    <string name="tr_324" formatted="false">"Некорректный процент или исходный максимум"</string>
+    <string name="tr_325" formatted="false">"В программе слишком много подходов"</string>
+    <string name="tr_326" formatted="false">"Файл больше 5 МБ"</string>
+    <string name="tr_327" formatted="false">"Нужна таблица с заголовком и упражнениями"</string>
+    <string name="tr_328" formatted="false">"Поддерживается XLS Шейко или таблица с 5 колонками: день;упражнение;подходы;повторения;вес. Шаблон доступен в библиотеке."</string>
+    <string name="tr_329" formatted="false">"Строка "</string>
+    <string name="tr_330" formatted="false">": нужны ровно 5 колонок"</string>
+    <string name="tr_331" formatted="false">": укажи день"</string>
+    <string name="tr_332" formatted="false">": проверь числа"</string>
+    <string name="tr_333" formatted="false">"Неизвестная структура листа План"</string>
+    <string name="tr_334" formatted="false">" · День "</string>
+    <string name="tr_335" formatted="false">"Не найдено начало дня"</string>
+    <string name="tr_336" formatted="false">"Не распознаны подходы в строке "</string>
+    <string name="tr_337" formatted="false">"Неизвестная формула в строке "</string>
+    <string name="tr_338" formatted="false">". Импорт остановлен, чтобы не потерять пересчёт весов."</string>
+    <string name="tr_339" formatted="false">"Распакованная таблица слишком большая"</string>
+    <string name="tr_340" formatted="false">"Не найден первый лист XLSX"</string>
+    <string name="tr_341" formatted="false">"В XLSX должно быть 5 колонок по шаблону"</string>
+    <string name="tr_342" formatted="false">"Для импорта XLSX сохрани значения вместо формул. Процентные формулы поддержаны в XLS Шейко."</string>
+    <string name="tr_343" formatted="false">"Не удалось загрузить программу"</string>
+    <string name="tr_344" formatted="false">"Не удалось сохранить тренировку"</string>
+    <string name="tr_345" formatted="false">"Сначала задай рабочие веса Злата"</string>
+    <string name="tr_346" formatted="false">"Неделя "</string>
+    <string name="tr_347" formatted="false">"Подтягивания с весом"</string>
+    <string name="tr_348" formatted="false">"Брусья с весом"</string>
+    <string name="tr_349" formatted="false">"Укажи дополнительный вес от 0 до 1995 кг и 3 или 4 подхода"</string>
+    <string name="tr_350" formatted="false">"Подтягивания: "</string>
+    <string name="tr_351" formatted="false">"Брусья: "</string>
+    <string name="tr_352" formatted="false">"Шейко · КМС / МС"</string>
+    <string name="tr_353" formatted="false">"Матвей Злат · турник и брусья"</string>
+    <string name="tr_354" formatted="false">"Жим из-за головы"</string>
+    <string name="tr_355" formatted="false">"Жим лёжа"</string>
+    <string name="tr_356" formatted="false">"Наклонный жим"</string>
+    <string name="tr_357" formatted="false">"Наклоны сидя"</string>
+    <string name="tr_358" formatted="false">"Наклоны стоя"</string>
+    <string name="tr_359" formatted="false">"наклоны стоя"</string>
+    <string name="tr_360" formatted="false">"Пресс"</string>
+    <string name="tr_361" formatted="false">"Разводка"</string>
+    <string name="tr_362" formatted="false">"Разгибания рук"</string>
+    <string name="tr_363" formatted="false">"Становая тяга"</string>
+    <string name="tr_364" formatted="false">"Тяга до колен"</string>
+    <string name="tr_365" formatted="false">"Тяга из ямы"</string>
+    <string name="tr_366" formatted="false">"Тяга с плинтов"</string>
+    <string name="tr_367" formatted="false">"Язык приложения"</string>
+    <string name="tr_368" formatted="false">"Русский"</string>
+    <string name="tr_369" formatted="false">"English"</string>
+    <string name="tr_370" formatted="false">"Выбери язык интерфейса"</string>
+    <string name="tr_371" formatted="false">"Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются."</string>
+    <string name="tr_372" formatted="false">"день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n"</string>
+    <string name="tr_373" formatted="false">"Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию."</string>
+    <string name="tr_374" formatted="false">"Trace  /  ВЕРСИЯ 0.14.0"</string>
+</resources>

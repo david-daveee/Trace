@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cycle_00" formatted="false">"Шейко · 12 недель к соревнованиям"</string>
+    <string name="cycle_01" formatted="false">"Цикл для разрядников из файла sheyko.xlsx: недели 1–8 — подготовка, 9–12 — соревновательный этап. 35 тренировок; затем соревнования №36 без заданных попыток. Веса — проценты от твоих максимумов, округление 0,5 кг. Подсобные веса выбираются вручную. В расхождениях между краткой записью и ячейками использованы подробные ячейки подходов."</string>
+    <string name="cycle_02" formatted="false">"Неделя 12 · Соревнования №36. В таблице нет весов и попыток для этого дня."</string>
+    <string name="cycle_03" formatted="false">"План 1 подготовительный"</string>
+    <string name="cycle_04" formatted="false">"План 2 подготовительный"</string>
+    <string name="cycle_05" formatted="false">"План 3 соревновательный"</string>
+    <string name="cycle_06" formatted="false">"Проходка: в исходном плане есть подходы до 105% от заданных максимумов."</string>
+    <string name="cycle_07" formatted="false">"Присед со штангой на груди"</string>
+    <string name="cycle_08" formatted="false">"Тяга на подставке"</string>
+    <string name="cycle_09" formatted="false">"Попеременный жим гантелей сидя"</string>
+    <string name="cycle_10" formatted="false">"Разведение рук с гантелями лежа"</string>
+    <string name="cycle_11" formatted="false">"Наклоны со штангой стоя"</string>
+    <string name="cycle_12" formatted="false">"Жим сидя под углом"</string>
+    <string name="cycle_13" formatted="false">"Приседания со штангой в \"ножницах\""</string>
+    <string name="cycle_14" formatted="false">"Подъем штанги на трицепсы"</string>
+    <string name="cycle_15" formatted="false">"Наклон со штангой сидя"</string>
+    <string name="cycle_16" formatted="false">"Отжимания от пола (руки на ширине плеч)"</string>
+    <string name="cycle_17" formatted="false">"Широчайшие на блоке"</string>
+    <string name="cycle_18" formatted="false">"Гиперэкстензии"</string>
+    <string name="cycle_19" formatted="false">"Отжимания от пола (руки шире плеч)"</string>
+    <string name="cycle_20" formatted="false">"Приседания в глубину"</string>
+    <string name="cycle_21" formatted="false">"Широчайшие мышцы"</string>
+    <string name="cycle_22" formatted="false">"Жим ногами"</string>
+    <string name="cycle_23" formatted="false">"Разгибание бедра в тренажере"</string>
+</resources>

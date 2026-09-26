@@ -1,0 +1,5514 @@
+{
+  "id": "builtin-sheiko-12-week",
+  "routine": "sheiko-12-week",
+  "mine": false,
+  "nextDay": 0,
+  "name": "Шейко · 12 недель к соревнованиям",
+  "description": "Цикл для разрядников из файла sheyko.xlsx: недели 1–8 — подготовка, 9–12 — соревновательный этап. 35 тренировок; затем соревнования №36 без заданных попыток. Веса — проценты от твоих максимумов, округление 0,5 кг. Подсобные веса выбираются вручную. В расхождениях между краткой записью и ячейками использованы подробные ячейки подходов.",
+  "source": "sheyko.xlsx · План тренировок разрядников из книги Б. И. Шейко «Пауэрлифтинг»",
+  "terminalNote": "Неделя 12 · Соревнования №36. В таблице нет весов и попыток для этого дня.",
+  "maxima": {
+    "squat": 175,
+    "bench": 150,
+    "deadlift": 180
+  },
+  "step": 0.5,
+  "days": [
+    {
+      "name": "Неделя 1 · День 1",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 1,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Попеременный жим гантелей сидя",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 12,
+          "kg": -1,
+          "reps": 6
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 13,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 14,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 1 · День 2",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 2,
+      "groups": [
+        {
+          "exercise": "Тяга до колен",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 15,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 15,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 15,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 15,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим сидя под углом",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 19,
+          "kg": -1,
+          "reps": 4
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 20,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 99.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 117.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 153.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Приседания со штангой в \"ножницах\"",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 25,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 26,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 1 · День 3",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 3,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 27,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 8
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 31,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 32,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 32,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 32,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 32,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Подъем штанги на трицепсы",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 36,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 37,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 2 · День 1",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 4,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 38,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 38,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 38,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 38,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 42,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 42,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 42,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 42,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 46,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Отжимания от пола (руки на ширине плеч)",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 47,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Присед со штангой на груди",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 48,
+          "lift": "squat",
+          "factor": 0.4,
+          "round": 0.5,
+          "kg": 70.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед со штангой на груди",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 48,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед со штангой на груди",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 48,
+          "lift": "squat",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 96.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 52,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 2 · День 2",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 5,
+      "groups": [
+        {
+          "exercise": "Тяга до колен",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 53,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 53,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 53,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 53,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 57,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 57,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 57,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 6
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 61,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 62,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 62,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 62,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 62,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Широчайшие на блоке",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 66,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 67,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 2 · День 3",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 6,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 68,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 68,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 68,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 68,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 72,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 7
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 76,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Гиперэкстензии",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 81,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 82,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 3 · День 1",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 7,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 96.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 114.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 149.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 91,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Отжимания от пола (руки шире плеч)",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 92,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Приседания в глубину",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 93,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 94,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 3 · День 2",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 8,
+      "groups": [
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 95,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 95,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 95,
+          "lift": "deadlift",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 117.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 99,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 99,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 99,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 99,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 99,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 99,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 103,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 3,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 162.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Приседания со штангой в \"ножницах\"",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 108,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 109,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 3 · День 3",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 9,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 110,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 110,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 110,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 110,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 114,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 114,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 114,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 7,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 114,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 118,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Жим сидя под углом",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 119,
+          "kg": -1,
+          "reps": 4
+        },
+        {
+          "exercise": "Широчайшие мышцы",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 120,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 121,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 4 · День 1",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 10,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 122,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 122,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 122,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 122,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 126,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 126,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 126,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 130,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 131,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Присед со штангой на груди",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 132,
+          "lift": "squat",
+          "factor": 0.4,
+          "round": 0.5,
+          "kg": 70.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед со штангой на груди",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 132,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед со штангой на груди",
+          "sets": 3,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 132,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Гиперэкстензии",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 136,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 4 · День 2",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 11,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 137,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 137,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 137,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 137,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 137,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 141,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 141,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 141,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 141,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 3,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 141,
+          "lift": "deadlift",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 153.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 141,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 145,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 145,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 145,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Широчайшие мышцы",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 149,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 4,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 150,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 4 · День 3",
+      "phase": "План 1 подготовительный",
+      "sourceNumber": 12,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 151,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 151,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 151,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 6,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 151,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 155,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 8
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 159,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 160,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 1",
+          "sourceRow": 161,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 5 · День 1",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 13,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 4,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 8,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 12,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 12,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 12,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 16,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Жим ногами",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 17,
+          "kg": -1,
+          "reps": 6
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 18,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 5 · День 2",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 14,
+      "groups": [
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 19,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 19,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 19,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 19,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 19,
+          "lift": "deadlift",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 153.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 8
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 7
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 8
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 10
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 23,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 12
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 27,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 28,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 28,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 28,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 28,
+          "lift": "deadlift",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 162.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 28,
+          "lift": "deadlift",
+          "factor": 1.0,
+          "round": 0.5,
+          "kg": 180.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Приседания со штангой в \"ножницах\"",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 32,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 33,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 5 · День 3",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 15,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 34,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 34,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 34,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 34,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 34,
+          "lift": "squat",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 149.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 38,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 38,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 38,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 38,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 42,
+          "kg": -1,
+          "reps": 6
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 43,
+          "lift": "squat",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 96.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 43,
+          "lift": "squat",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 114.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 43,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Подъем штанги на трицепсы",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 47,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 48,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 6 · День 1",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 16,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 49,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 49,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 49,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 49,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 57,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 58,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 59,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 59,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 59,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 59,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 63,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 6 · День 2",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 17,
+      "groups": [
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 64,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 64,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 64,
+          "lift": "deadlift",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 117.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 7
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 68,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 9
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 72,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 73,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 73,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 73,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 73,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим ногами",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 77,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 78,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 6 · День 3",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 18,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 79,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 79,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 79,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 7,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 79,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 83,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Отжимания от пола (руки шире плеч)",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 87,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Разгибание бедра в тренажере",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 88,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 89,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 7 · День 1",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 19,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 90,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 90,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 90,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 90,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 90,
+          "lift": "squat",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 157.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 94,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 94,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 94,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 94,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 94,
+          "lift": "bench",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 98,
+          "lift": "squat",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 96.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 98,
+          "lift": "squat",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 114.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 98,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 102,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 103,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 7 · День 2",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 20,
+      "groups": [
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 162.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 104,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 9
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 108,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 11
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 112,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 113,
+          "lift": "deadlift",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 117.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 113,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Тяга с плинтов",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 113,
+          "lift": "deadlift",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 153.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Приседания со штангой в \"ножницах\"",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 117,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 118,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 7 · День 3",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 21,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 123,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 123,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 123,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 123,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 123,
+          "lift": "squat",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 149.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 127,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 127,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 127,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 131,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Жим ногами",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 132,
+          "kg": -1,
+          "reps": 6
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 133,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 8 · День 1",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 22,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 134,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 134,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 134,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 134,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 138,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 138,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 138,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 138,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 138,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 142,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Брусья с весом",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 143,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 144,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 144,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 144,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 144,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 148,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 8 · День 2",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 23,
+      "groups": [
+        {
+          "exercise": "Тяга до колен",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 149,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 149,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 149,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга до колен",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 149,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 6
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 8
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 10
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 153,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 10
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 157,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 157,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 157,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 157,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 161,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Приседания со штангой в \"ножницах\"",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 162,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 163,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 8 · День 3",
+      "phase": "План 2 подготовительный",
+      "sourceNumber": 24,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 164,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 5
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 164,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 164,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 164,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 164,
+          "lift": "squat",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 149.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 164,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 168,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 5
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 168,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 168,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 168,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 172,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 173,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 6
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 173,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 173,
+          "lift": "squat",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 114.0,
+          "reps": 6
+        },
+        {
+          "exercise": "Наклон со штангой сидя",
+          "sets": 5,
+          "sourceSheet": "План подг. 2",
+          "sourceRow": 177,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 9 · День 1",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 25,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 4,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 4,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 4,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 4,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 8,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 8,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 8,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 8,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 12,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 9 · День 2",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 26,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 157.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 1.0,
+          "round": 0.5,
+          "kg": 175.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 13,
+          "lift": "squat",
+          "factor": 1.05,
+          "round": 0.5,
+          "kg": 184.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 1.0,
+          "round": 0.5,
+          "kg": 150.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 17,
+          "lift": "bench",
+          "factor": 1.05,
+          "round": 0.5,
+          "kg": 157.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 0.9,
+          "round": 0.5,
+          "kg": 162.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 1.0,
+          "round": 0.5,
+          "kg": 180.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 21,
+          "lift": "deadlift",
+          "factor": 1.05,
+          "round": 0.5,
+          "kg": 189.0,
+          "reps": 1
+        }
+      ],
+      "note": "Проходка: в исходном плане есть подходы до 105% от заданных максимумов."
+    },
+    {
+      "name": "Неделя 9 · День 3",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 27,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 25,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 25,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 25,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 25,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 29,
+          "lift": "bench",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 82.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 29,
+          "lift": "bench",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 97.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 6,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 29,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 33,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 34,
+          "kg": -1,
+          "reps": 5
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 35,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 10 · День 1",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 28,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 36,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 36,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 36,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 36,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 40,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 40,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 40,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 40,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 44,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 45,
+          "lift": "squat",
+          "factor": 0.55,
+          "round": 0.5,
+          "kg": 96.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 45,
+          "lift": "squat",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 114.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 45,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 3
+        }
+      ]
+    },
+    {
+      "name": "Неделя 10 · День 2",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 29,
+      "groups": [
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 49,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 49,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 49,
+          "lift": "deadlift",
+          "factor": 0.65,
+          "round": 0.5,
+          "kg": 117.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Тяга на подставке",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 49,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 1
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 53,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 57,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 58,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 58,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 58,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 58,
+          "lift": "deadlift",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 144.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 62,
+          "kg": -1,
+          "reps": 10
+        }
+      ]
+    },
+    {
+      "name": "Неделя 10 · День 3",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 30,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 63,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 63,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 63,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 63,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 67,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 67,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 67,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 6,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 67,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 71,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 71,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 71,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 4
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 75,
+          "kg": -1,
+          "reps": 10
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 76,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 11 · День 1",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 31,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 77,
+          "lift": "squat",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 140.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 81,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 81,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 81,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 81,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 81,
+          "lift": "bench",
+          "factor": 0.85,
+          "round": 0.5,
+          "kg": 127.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 85,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 86,
+          "kg": -1,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Неделя 11 · День 2",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 32,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 87,
+          "lift": "bench",
+          "factor": 0.8,
+          "round": 0.5,
+          "kg": 120.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Разведение рук с гантелями лежа",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 91,
+          "kg": -1,
+          "reps": 8
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 92,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 92,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 92,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 5,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 92,
+          "lift": "deadlift",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 135.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Наклоны со штангой стоя",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 96,
+          "kg": -1,
+          "reps": 5
+        }
+      ]
+    },
+    {
+      "name": "Неделя 11 · День 3",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 33,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 97,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 97,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 97,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 97,
+          "lift": "squat",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 131.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 101,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 101,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 101,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 101,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 105,
+          "kg": -1,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Неделя 12 · День 1",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 34,
+      "groups": [
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 106,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 106,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 106,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 106,
+          "lift": "bench",
+          "factor": 0.75,
+          "round": 0.5,
+          "kg": 112.5,
+          "reps": 1
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 110,
+          "lift": "deadlift",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 110,
+          "lift": "deadlift",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 108.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Становая тяга",
+          "sets": 4,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 110,
+          "lift": "deadlift",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 126.0,
+          "reps": 2
+        },
+        {
+          "exercise": "Пресс",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 114,
+          "kg": -1,
+          "reps": 8
+        }
+      ]
+    },
+    {
+      "name": "Неделя 12 · День 2",
+      "phase": "План 3 соревновательный",
+      "sourceNumber": 35,
+      "groups": [
+        {
+          "exercise": "Присед",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 115,
+          "lift": "squat",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 87.5,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 115,
+          "lift": "squat",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Присед",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 115,
+          "lift": "squat",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 122.5,
+          "reps": 2
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 1,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.5,
+          "round": 0.5,
+          "kg": 75.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 2,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.6,
+          "round": 0.5,
+          "kg": 90.0,
+          "reps": 3
+        },
+        {
+          "exercise": "Жим лёжа",
+          "sets": 3,
+          "sourceSheet": "План соревн. 3",
+          "sourceRow": 119,
+          "lift": "bench",
+          "factor": 0.7,
+          "round": 0.5,
+          "kg": 105.0,
+          "reps": 2
+        }
+      ]
+    }
+  ]
+}

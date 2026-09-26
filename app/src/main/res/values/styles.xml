@@ -1,0 +1,21 @@
+<resources>
+    <style name="AppTheme" parent="android:style/Theme.Material.NoActionBar">
+        <item name="android:fontFamily">sans</item>
+        <item name="android:alertDialogTheme">@style/PodhodDialog</item>
+        <item name="android:colorAccent">#6FE3CB</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowActionModeOverlay">true</item>
+        <item name="android:windowBackground">#0C111B</item>
+        <item name="android:navigationBarColor">#171F2D</item>
+        <item name="android:statusBarColor">#0C111B</item>
+    </style>
+    <style name="PodhodDialog" parent="android:style/Theme.Material.Dialog.Alert">
+        <item name="android:fontFamily">sans-serif</item>
+        <item name="android:colorAccent">#6FE3CB</item>
+        <item name="android:colorBackground">#18212E</item>
+        <item name="android:textColorPrimary">#F5F8FF</item>
+        <item name="android:textColorSecondary">#ADBACD</item>
+        <item name="android:windowMinWidthMajor">92%</item>
+        <item name="android:windowMinWidthMinor">92%</item>
+    </style>
+</resources>

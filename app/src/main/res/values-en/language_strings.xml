@@ -1,0 +1,377 @@
+<resources>
+    <string name="tr_000" formatted="false">"Settings"</string>
+    <string name="tr_001" formatted="false">"Plans"</string>
+    <string name="tr_002" formatted="false">"My plans"</string>
+    <string name="tr_003" formatted="false">"Workout"</string>
+    <string name="tr_004" formatted="false">"Progress"</string>
+    <string name="tr_005" formatted="false">"My workouts"</string>
+    <string name="tr_006" formatted="false">"Plan library"</string>
+    <string name="tr_007" formatted="false">" · quick selection"</string>
+    <string name="tr_008" formatted="false">"Next: "</string>
+    <string name="tr_009" formatted="false">" kg"</string>
+    <string name="tr_010" formatted="false">"Enter your actual reps above"</string>
+    <string name="tr_011" formatted="false">"Your maxes"</string>
+    <string name="tr_012" formatted="false">"kg"</string>
+    <string name="tr_013" formatted="false">"Set once for the whole plan"</string>
+    <string name="tr_014" formatted="false">"Squat"</string>
+    <string name="tr_015" formatted="false">"Bench"</string>
+    <string name="tr_016" formatted="false">"Deadlift"</string>
+    <string name="tr_017" formatted="false">"Max: "</string>
+    <string name="tr_018" formatted="false">"Edit maxes"</string>
+    <string name="tr_019" formatted="false">"How weights are calculated"</string>
+    <string name="tr_020" formatted="false">"Set your maxes once. The plan percentages update weights for every upcoming day. Completed sets stay unchanged in your history."</string>
+    <string name="tr_021" formatted="false">"Working weights"</string>
+    <string name="tr_022" formatted="false">"Weights increase after each workout"</string>
+    <string name="tr_023" formatted="false">"Pull-ups"</string>
+    <string name="tr_024" formatted="false">"Dips"</string>
+    <string name="tr_025" formatted="false">"3 days / week"</string>
+    <string name="tr_026" formatted="false">" sets"</string>
+    <string name="tr_027" formatted="false">"5–8 reps"</string>
+    <string name="tr_028" formatted="false">"Edit working weights"</string>
+    <string name="tr_029" formatted="false">"Weight increases"</string>
+    <string name="tr_030" formatted="false">"Rules and source"</string>
+    <string name="tr_031" formatted="false">"Zlat\'s original video"</string>
+    <string name="tr_032" formatted="false">"Russian translation · post #68"</string>
+    <string name="tr_033" formatted="false">"How this plan works"</string>
+    <string name="tr_034" formatted="false">"Got it"</string>
+    <string name="tr_035" formatted="false">"Additional weight, excluding body weight. Applies to future workouts."</string>
+    <string name="tr_036" formatted="false">"Pull-ups, kg"</string>
+    <string name="tr_037" formatted="false">"Dips, kg"</string>
+    <string name="tr_038" formatted="false">"Sets per exercise: 3 or 4"</string>
+    <string name="tr_039" formatted="false">"Zlat plan settings"</string>
+    <string name="tr_040" formatted="false">"Save"</string>
+    <string name="tr_041" formatted="false">"How many reps did you complete in your final sets? We will calculate your next weights."</string>
+    <string name="tr_042" formatted="false">"The plan must include pull-ups and dips"</string>
+    <string name="tr_043" formatted="false">"Pull-ups · final set"</string>
+    <string name="tr_044" formatted="false">"Dips · final set"</string>
+    <string name="tr_045" formatted="false">"Workout results"</string>
+    <string name="tr_046" formatted="false">"Save and calculate weights"</string>
+    <string name="tr_047" formatted="false">"Your sets have changed. Open this dialog again."</string>
+    <string name="tr_048" formatted="false">"Today"</string>
+    <string name="tr_049" formatted="false">"IN PROGRESS"</string>
+    <string name="tr_050" formatted="false">"NEXT WORKOUT"</string>
+    <string name="tr_051" formatted="false">" of "</string>
+    <string name="tr_052" formatted="false">" sets"</string>
+    <string name="tr_053" formatted="false">"Resume workout  →"</string>
+    <string name="tr_054" formatted="false">" blocks"</string>
+    <string name="tr_055" formatted="false">"Start workout  →"</string>
+    <string name="tr_056" formatted="false">"All days completed"</string>
+    <string name="tr_057" formatted="false">"Start a new cycle"</string>
+    <string name="tr_058" formatted="false">"Open plan"</string>
+    <string name="tr_059" formatted="false">"UP NEXT"</string>
+    <string name="tr_060" formatted="false">"My plan and weights"</string>
+    <string name="tr_061" formatted="false">"Find maxes and your schedule in My plans"</string>
+    <string name="tr_062" formatted="false">"Your first plan"</string>
+    <string name="tr_063" formatted="false">"Choose a plan or add your own."</string>
+    <string name="tr_064" formatted="false">"Open library"</string>
+    <string name="tr_065" formatted="false">"Your progress"</string>
+    <string name="tr_066" formatted="false">"workouts"</string>
+    <string name="tr_067" formatted="false">"sets"</string>
+    <string name="tr_068" formatted="false">" sets\n"</string>
+    <string name="tr_069" formatted="false">"YOUR PLANS"</string>
+    <string name="tr_070" formatted="false">"My plans"</string>
+    <string name="tr_071" formatted="false">"Your schedule and working weights"</string>
+    <string name="tr_072" formatted="false">"Workout history"</string>
+    <string name="tr_073" formatted="false">" completed workouts"</string>
+    <string name="tr_074" formatted="false">"LAST USED PLAN"</string>
+    <string name="tr_075" formatted="false">"MY PLAN"</string>
+    <string name="tr_076" formatted="false">"Completed: "</string>
+    <string name="tr_077" formatted="false">" days"</string>
+    <string name="tr_078" formatted="false">"NEXT WORKOUT"</string>
+    <string name="tr_079" formatted="false">"CURRENT WORKOUT"</string>
+    <string name="tr_080" formatted="false">" sets already completed"</string>
+    <string name="tr_081" formatted="false">"Full plan"</string>
+    <string name="tr_082" formatted="false">"Schedule and exercises"</string>
+    <string name="tr_083" formatted="false">"Remove from my plans"</string>
+    <string name="tr_084" formatted="false">"No plans yet"</string>
+    <string name="tr_085" formatted="false">"Choose a plan from the library or create your own."</string>
+    <string name="tr_086" formatted="false">"Add a plan"</string>
+    <string name="tr_087" formatted="false">"Browse plans or import a file"</string>
+    <string name="tr_088" formatted="false">"PLAN LIBRARY"</string>
+    <string name="tr_089" formatted="false">"Find your plan"</string>
+    <string name="tr_090" formatted="false">"Ready-made plans and your own ideas."</string>
+    <string name="tr_091" formatted="false">"Import a file"</string>
+    <string name="tr_092" formatted="false">"Custom plan"</string>
+    <string name="tr_093" formatted="false">"Build it exercise by exercise"</string>
+    <string name="tr_094" formatted="false">"Download spreadsheet template"</string>
+    <string name="tr_095" formatted="false">"ALL PLANS · "</string>
+    <string name="tr_096" formatted="false">"STREETLIFTING"</string>
+    <string name="tr_097" formatted="false">"STRENGTH PLAN"</string>
+    <string name="tr_098" formatted="false">"✓ In my plans"</string>
+    <string name="tr_099" formatted="false">"Add to my plans"</string>
+    <string name="tr_100" formatted="false">"View plan"</string>
+    <string name="tr_101" formatted="false">"Exercises and schedule"</string>
+    <string name="tr_102" formatted="false">"Add to my plans"</string>
+    <string name="tr_103" formatted="false">"PLAN · "</string>
+    <string name="tr_104" formatted="false">" WORKOUTS"</string>
+    <string name="tr_105" formatted="false">"About this plan"</string>
+    <string name="tr_106" formatted="false">"Start next day  →"</string>
+    <string name="tr_107" formatted="false">"Resume this plan  →"</string>
+    <string name="tr_108" formatted="false">"Plan schedule"</string>
+    <string name="tr_109" formatted="false">"Completed"</string>
+    <string name="tr_110" formatted="false">"Next workout"</string>
+    <string name="tr_111" formatted="false">"Scheduled"</string>
+    <string name="tr_112" formatted="false">"MANAGE PLAN"</string>
+    <string name="tr_113" formatted="false">"Add a day"</string>
+    <string name="tr_114" formatted="false">"Extend your workout plan"</string>
+    <string name="tr_115" formatted="false">"Export plan"</string>
+    <string name="tr_116" formatted="false">"Save this plan as JSON"</string>
+    <string name="tr_117" formatted="false">"Copy for a new cycle"</string>
+    <string name="tr_118" formatted="false">"Remove from my plans?"</string>
+    <string name="tr_119" formatted="false">"\n\nYour history and working weights will be kept. Any unfinished workout will be paused. You can add the plan again from Plans."</string>
+    <string name="tr_120" formatted="false">"Keep"</string>
+    <string name="tr_121" formatted="false">"Remove"</string>
+    <string name="tr_122" formatted="false">"Removed from my plans"</string>
+    <string name="tr_123" formatted="false">"YOUR ACTIVITY"</string>
+    <string name="tr_124" formatted="false">"Every saved workout adds to your story"</string>
+    <string name="tr_125" formatted="false">"LAST 30 DAYS"</string>
+    <string name="tr_126" formatted="false">"saved workouts"</string>
+    <string name="tr_127" formatted="false">"active days"</string>
+    <string name="tr_128" formatted="false">"weeks in a row"</string>
+    <string name="tr_129" formatted="false">"Activity calendar"</string>
+    <string name="tr_130" formatted="false">"Last 12 months · swipe sideways"</string>
+    <string name="tr_131" formatted="false">"Mon"</string>
+    <string name="tr_132" formatted="false">"Tue"</string>
+    <string name="tr_133" formatted="false">"Wed"</string>
+    <string name="tr_134" formatted="false">"Thu"</string>
+    <string name="tr_135" formatted="false">"Fri"</string>
+    <string name="tr_136" formatted="false">"Sat"</string>
+    <string name="tr_137" formatted="false">"Sun"</string>
+    <string name="tr_138" formatted="false">"No saved workouts"</string>
+    <string name="tr_139" formatted="false">" workouts · "</string>
+    <string name="tr_140" formatted="false">" workouts, "</string>
+    <string name="tr_141" formatted="false">"Less  "</string>
+    <string name="tr_142" formatted="false">"  More sets"</string>
+    <string name="tr_143" formatted="false">"Save your first completed workout to light up your first green square."</string>
+    <string name="tr_144" formatted="false">"ALL TIME"</string>
+    <string name="tr_145" formatted="false">"How activity is counted"</string>
+    <string name="tr_146" formatted="false">"Each square is the day a workout was saved, in your phone\'s time zone. Color intensity reflects completed sets: 1–5, 6–10, 11–20, or 21+. Your weekly streak stays alive if you trained last week; you still have this week to continue it. Unfinished workouts are not counted."</string>
+    <string name="tr_147" formatted="false">"Full history"</string>
+    <string name="tr_148" formatted="false">"View workout results"</string>
+    <string name="tr_149" formatted="false">"New cycle"</string>
+    <string name="tr_150" formatted="false">"Create a copy starting from day one? Your previous cycle\'s history will be kept."</string>
+    <string name="tr_151" formatted="false">"Create"</string>
+    <string name="tr_152" formatted="false">" · new cycle"</string>
+    <string name="tr_153" formatted="false">"Cancel"</string>
+    <string name="tr_154" formatted="false">"Completion undone. The set is available again."</string>
+    <string name="tr_155" formatted="false">"↶  Undo"</string>
+    <string name="tr_156" formatted="false">"Undo last set"</string>
+    <string name="tr_157" formatted="false">"Enter a weight first: 0 means no added weight"</string>
+    <string name="tr_158" formatted="false">"Start a workout to see your sets here."</string>
+    <string name="tr_159" formatted="false">"READY TO TRAIN"</string>
+    <string name="tr_160" formatted="false">"All days in this plan are completed"</string>
+    <string name="tr_161" formatted="false">"Choose a plan"</string>
+    <string name="tr_162" formatted="false">"Enable the notification panel"</string>
+    <string name="tr_163" formatted="false">"Ready to save"</string>
+    <string name="tr_164" formatted="false">"Workout paused"</string>
+    <string name="tr_165" formatted="false">"Move at your own pace"</string>
+    <string name="tr_166" formatted="false">"WORKOUT COMPLETE"</string>
+    <string name="tr_167" formatted="false">"Great work."</string>
+    <string name="tr_168" formatted="false">"All sets completed. Save your results to finish."</string>
+    <string name="tr_169" formatted="false">"Save workout  ✓"</string>
+    <string name="tr_170" formatted="false">"PAUSED"</string>
+    <string name="tr_171" formatted="false">"CURRENT SET"</string>
+    <string name="tr_172" formatted="false">"Set "</string>
+    <string name="tr_173" formatted="false">"WORKING WEIGHT"</string>
+    <string name="tr_174" formatted="false">"REPS"</string>
+    <string name="tr_175" formatted="false">"reps"</string>
+    <string name="tr_176" formatted="false">"Edit weight and reps for this set"</string>
+    <string name="tr_177" formatted="false">"% of max · "</string>
+    <string name="tr_178" formatted="false">"Weight manually adjusted for this set"</string>
+    <string name="tr_179" formatted="false">"Weight and reps  ›"</string>
+    <string name="tr_180" formatted="false">"TARGET  5–8 REPS"</string>
+    <string name="tr_181" formatted="false">"Edit maxes for the whole plan"</string>
+    <string name="tr_182" formatted="false">"Resume workout"</string>
+    <string name="tr_183" formatted="false">"Set weight"</string>
+    <string name="tr_184" formatted="false">"✓  Set complete"</string>
+    <string name="tr_185" formatted="false">"Paused"</string>
+    <string name="tr_186" formatted="false">"UP NEXT"</string>
+    <string name="tr_187" formatted="false">"Set a weight"</string>
+    <string name="tr_188" formatted="false">"  ·  set "</string>
+    <string name="tr_189" formatted="false">"WORKOUT LINEUP"</string>
+    <string name="tr_190" formatted="false">" · completed"</string>
+    <string name="tr_191" formatted="false">"Edit"</string>
+    <string name="tr_192" formatted="false">"Switch plan"</string>
+    <string name="tr_193" formatted="false">"Your current workout will be saved and paused"</string>
+    <string name="tr_194" formatted="false">"How to mark sets"</string>
+    <string name="tr_195" formatted="false">"Tap any set\'s checkbox to mark it complete or undo it. Tap its weight to record your actual result."</string>
+    <string name="tr_196" formatted="false">"Discard workout"</string>
+    <string name="tr_197" formatted="false">"Discard this workout?"</string>
+    <string name="tr_198" formatted="false">"This workout\'s set marks will be removed. You can start this day again."</string>
+    <string name="tr_199" formatted="false">"Discard workout"</string>
+    <string name="tr_200" formatted="false">"Enter a number "</string>
+    <string name="tr_201" formatted="false">"from 0"</string>
+    <string name="tr_202" formatted="false">"greater than 0"</string>
+    <string name="tr_203" formatted="false">" up to 2000"</string>
+    <string name="tr_204" formatted="false">"Enter a whole number from 1 to "</string>
+    <string name="tr_205" formatted="false">"Working weight, kg · 0 = no added weight"</string>
+    <string name="tr_206" formatted="false">"Reps"</string>
+    <string name="tr_207" formatted="false">"Remaining sets in this block"</string>
+    <string name="tr_208" formatted="false">"This set has already been completed"</string>
+    <string name="tr_209" formatted="false">"Enter the maxes used by this plan. Percentage-based weights will update across all days and remaining sets of your current workout."</string>
+    <string name="tr_210" formatted="false">"Squat · 100%, kg"</string>
+    <string name="tr_211" formatted="false">"Bench press · 100%, kg"</string>
+    <string name="tr_212" formatted="false">"Deadlift · 100%, kg"</string>
+    <string name="tr_213" formatted="false">"Completed sets and manually adjusted weights stay unchanged."</string>
+    <string name="tr_214" formatted="false">"Maxes for the whole plan"</string>
+    <string name="tr_215" formatted="false">"Apply to all days"</string>
+    <string name="tr_216" formatted="false">"Plan weights updated"</string>
+    <string name="tr_217" formatted="false">"Working weights are calculated from your maxes. Open Your maxes in the plan to change weights across all days."</string>
+    <string name="tr_218" formatted="false">"Choose weight at the gym"</string>
+    <string name="tr_219" formatted="false">"＋ Add exercise"</string>
+    <string name="tr_220" formatted="false">"Close"</string>
+    <string name="tr_221" formatted="false">"Exercise"</string>
+    <string name="tr_222" formatted="false">"Fixed weight, kg (leave blank to choose at the gym)"</string>
+    <string name="tr_223" formatted="false">"Sets"</string>
+    <string name="tr_224" formatted="false">"Keep percentage-based calculation"</string>
+    <string name="tr_225" formatted="false">"Edit block"</string>
+    <string name="tr_226" formatted="false">"Enter a name"</string>
+    <string name="tr_227" formatted="false">"WORKOUT JOURNAL"</string>
+    <string name="tr_228" formatted="false">"Past workouts, weights and reps."</string>
+    <string name="tr_229" formatted="false">"Your progress starts here"</string>
+    <string name="tr_230" formatted="false">"Finish your first workout to see your results here."</string>
+    <string name="tr_231" formatted="false">"Go to workout"</string>
+    <string name="tr_232" formatted="false">"ALL-TIME TOTAL"</string>
+    <string name="tr_233" formatted="false">" sets completed"</string>
+    <string name="tr_234" formatted="false">"View results"</string>
+    <string name="tr_235" formatted="false">"Exercises, weights and reps"</string>
+    <string name="tr_236" formatted="false">"WORKOUT SAVED"</string>
+    <string name="tr_237" formatted="false">"No weight"</string>
+    <string name="tr_238" formatted="false">"Done"</string>
+    <string name="tr_239" formatted="false">"Plan name"</string>
+    <string name="tr_240" formatted="false">"My plan"</string>
+    <string name="tr_241" formatted="false">"Custom plan"</string>
+    <string name="tr_242" formatted="false">"Add first day"</string>
+    <string name="tr_243" formatted="false">"Enter a plan name"</string>
+    <string name="tr_244" formatted="false">"Day name"</string>
+    <string name="tr_245" formatted="false">"Day "</string>
+    <string name="tr_246" formatted="false">"First exercise"</string>
+    <string name="tr_247" formatted="false">"Weight, kg · blank = choose at the gym"</string>
+    <string name="tr_248" formatted="false">"New workout day"</string>
+    <string name="tr_249" formatted="false">"Add"</string>
+    <string name="tr_250" formatted="false">"Enter a day name and exercise"</string>
+    <string name="tr_251" formatted="false">"Add exercise"</string>
+    <string name="tr_252" formatted="false">"Enter an exercise name"</string>
+    <string name="tr_253" formatted="false">"Name"</string>
+    <string name="tr_254" formatted="false">" days · "</string>
+    <string name="tr_255" formatted="false">"In "</string>
+    <string name="tr_256" formatted="false">" blocks, weight is missing: choose it before the set."</string>
+    <string name="tr_257" formatted="false">"DAY "</string>
+    <string name="tr_258" formatted="false">"Review import"</string>
+    <string name="tr_259" formatted="false">"Your data. Your rules."</string>
+    <string name="tr_260" formatted="false">"Your strength journal"</string>
+    <string name="tr_261" formatted="false">"ON YOUR PHONE · NO ACCOUNT"</string>
+    <string name="tr_262" formatted="false">"DATA AND BACKUPS"</string>
+    <string name="tr_263" formatted="false">"Save backup"</string>
+    <string name="tr_264" formatted="false">"Plans, history and current workout"</string>
+    <string name="tr_265" formatted="false">"Restore from file"</string>
+    <string name="tr_266" formatted="false">"Load a previously saved backup"</string>
+    <string name="tr_267" formatted="false">"HOW IT WORKS"</string>
+    <string name="tr_268" formatted="false">"Adding plans"</string>
+    <string name="tr_269" formatted="false">"Sheiko XLS · CSV · XLSX · JSON"</string>
+    <string name="tr_270" formatted="false">"Import an original Sheiko XLS file, a plan in JSON, or a CSV / XLSX using the template. XLSX uses the first sheet with five columns."</string>
+    <string name="tr_271" formatted="false">"Import plan"</string>
+    <string name="tr_272" formatted="false">"Trace  /  VERSION 0.14.0"</string>
+    <string name="tr_273" formatted="false">"Saved workouts are corrupted"</string>
+    <string name="tr_274" formatted="false">"Workout-to-plan link is corrupted"</string>
+    <string name="tr_275" formatted="false">"This is not a Trace backup"</string>
+    <string name="tr_276" formatted="false">"A plan in this backup is corrupted"</string>
+    <string name="tr_277" formatted="false">"The active plan is missing from this backup"</string>
+    <string name="tr_278" formatted="false">"Restore backup?"</string>
+    <string name="tr_279" formatted="false">"Your current data will be replaced: "</string>
+    <string name="tr_280" formatted="false">" plans, "</string>
+    <string name="tr_281" formatted="false">" workouts. Save a backup of your current data first if you need it."</string>
+    <string name="tr_282" formatted="false">"Restore"</string>
+    <string name="tr_283" formatted="false">"A workout in this backup is corrupted"</string>
+    <string name="tr_284" formatted="false">"Progress data is corrupted"</string>
+    <string name="tr_285" formatted="false">"Set data is corrupted"</string>
+    <string name="tr_286" formatted="false">"File saved"</string>
+    <string name="tr_287" formatted="false">"Imported plan"</string>
+    <string name="tr_288" formatted="false">"Reading file…"</string>
+    <string name="tr_289" formatted="false">"Something went wrong"</string>
+    <string name="tr_290" formatted="false">"Check your data and try again."</string>
+    <string name="tr_291" formatted="false">"Save your workout results"</string>
+    <string name="tr_292" formatted="false">"Set a weight in the app"</string>
+    <string name="tr_293" formatted="false">" kg  ×  "</string>
+    <string name="tr_294" formatted="false">" reps"</string>
+    <string name="tr_295" formatted="false">"Workout complete"</string>
+    <string name="tr_296" formatted="false">"Enter reps and save"</string>
+    <string name="tr_297" formatted="false">"Save workout"</string>
+    <string name="tr_298" formatted="false">"Set working weight"</string>
+    <string name="tr_299" formatted="false">"Set complete"</string>
+    <string name="tr_300" formatted="false">"DONE"</string>
+    <string name="tr_301" formatted="false">"SET "</string>
+    <string name="tr_302" formatted="false">"Completed: "</string>
+    <string name="tr_303" formatted="false">"Undo the last completed set"</string>
+    <string name="tr_304" formatted="false">"Resume"</string>
+    <string name="tr_305" formatted="false">"Current workout"</string>
+    <string name="tr_306" formatted="false">"Save this workout to history"</string>
+    <string name="tr_307" formatted="false">" kg × "</string>
+    <string name="tr_308" formatted="false">" · completed "</string>
+    <string name="tr_309" formatted="false">"Undo"</string>
+    <string name="tr_310" formatted="false">"Save results"</string>
+    <string name="tr_311" formatted="false">"Set a weight in Trace"</string>
+    <string name="tr_312" formatted="false">"Completed: "</string>
+    <string name="tr_313" formatted="false">" · save your results"</string>
+    <string name="tr_314" formatted="false">" · completed "</string>
+    <string name="tr_315" formatted="false">"Undo set"</string>
+    <string name="tr_316" formatted="false">"All sets · completed "</string>
+    <string name="tr_317" formatted="false">"Invalid JSON"</string>
+    <string name="tr_318" formatted="false">"Max must be greater than 0 and no more than 2000 kg"</string>
+    <string name="tr_319" formatted="false">"Plan completed"</string>
+    <string name="tr_320" formatted="false">"Enter a name and 1–366 workout days"</string>
+    <string name="tr_321" formatted="false">": no exercises"</string>
+    <string name="tr_322" formatted="false">"Check the exercise, sets and reps on day "</string>
+    <string name="tr_323" formatted="false">"Invalid weight"</string>
+    <string name="tr_324" formatted="false">"Invalid percentage or starting max"</string>
+    <string name="tr_325" formatted="false">"Too many sets in this plan"</string>
+    <string name="tr_326" formatted="false">"File exceeds 5 MB"</string>
+    <string name="tr_327" formatted="false">"A header row and exercises are required"</string>
+    <string name="tr_328" formatted="false">"Use a Sheiko XLS file or a table with five columns: day;exercise;sets;reps;kg. A template is available in the library."</string>
+    <string name="tr_329" formatted="false">"Row "</string>
+    <string name="tr_330" formatted="false">": exactly 5 columns are required"</string>
+    <string name="tr_331" formatted="false">": enter a day"</string>
+    <string name="tr_332" formatted="false">": check the numbers"</string>
+    <string name="tr_333" formatted="false">"Unrecognized structure of the Plan sheet"</string>
+    <string name="tr_334" formatted="false">" · Day "</string>
+    <string name="tr_335" formatted="false">"Could not find the start of a day"</string>
+    <string name="tr_336" formatted="false">"Unrecognized sets on row "</string>
+    <string name="tr_337" formatted="false">"Unknown formula on row "</string>
+    <string name="tr_338" formatted="false">". Import stopped to preserve weight recalculation."</string>
+    <string name="tr_339" formatted="false">"The unpacked spreadsheet is too large"</string>
+    <string name="tr_340" formatted="false">"Could not find the first XLSX sheet"</string>
+    <string name="tr_341" formatted="false">"XLSX must have five columns matching the template"</string>
+    <string name="tr_342" formatted="false">"For XLSX import, save values instead of formulas. Percentage formulas are supported in Sheiko XLS."</string>
+    <string name="tr_343" formatted="false">"Could not load the plan"</string>
+    <string name="tr_344" formatted="false">"Could not save the workout"</string>
+    <string name="tr_345" formatted="false">"Set your Zlat working weights first"</string>
+    <string name="tr_346" formatted="false">"Week "</string>
+    <string name="tr_347" formatted="false">"Weighted pull-ups"</string>
+    <string name="tr_348" formatted="false">"Weighted dips"</string>
+    <string name="tr_349" formatted="false">"Enter additional weight from 0 to 1995 kg and 3 or 4 sets"</string>
+    <string name="tr_350" formatted="false">"Pull-ups: "</string>
+    <string name="tr_351" formatted="false">"Dips: "</string>
+    <string name="tr_352" formatted="false">"Sheiko · CMS / MS"</string>
+    <string name="tr_353" formatted="false">"Matvey Zlat · pull-ups and dips"</string>
+    <string name="tr_354" formatted="false">"Behind-the-neck press"</string>
+    <string name="tr_355" formatted="false">"Bench press"</string>
+    <string name="tr_356" formatted="false">"Incline bench press"</string>
+    <string name="tr_357" formatted="false">"Seated good mornings"</string>
+    <string name="tr_358" formatted="false">"Good mornings"</string>
+    <string name="tr_359" formatted="false">"Good mornings"</string>
+    <string name="tr_360" formatted="false">"Abs"</string>
+    <string name="tr_361" formatted="false">"Dumbbell fly"</string>
+    <string name="tr_362" formatted="false">"Triceps extensions"</string>
+    <string name="tr_363" formatted="false">"Deadlift"</string>
+    <string name="tr_364" formatted="false">"Deadlift to knees"</string>
+    <string name="tr_365" formatted="false">"Deficit deadlift"</string>
+    <string name="tr_366" formatted="false">"Block pull"</string>
+    <string name="tr_367" formatted="false">"App language"</string>
+    <string name="tr_368" formatted="false">"Русский"</string>
+    <string name="tr_369" formatted="false">"English"</string>
+    <string name="tr_370" formatted="false">"Choose the interface language"</string>
+    <string name="tr_371" formatted="false">"Zlat\'s public 2018 routine, based on the Russian translation of his video.\n\nFinal set: 8+ reps → +5 kg; 7 → +2.5 kg; 6 → +1.25 kg; 5 → +0.5 kg; fewer than 5 → no increase. Each exercise is calculated separately, using the weight of its final planned set.\n\nStart with a weight you can lift for 10–12 clean reps and train in the 5–8 range. Do warm-up sets separately.\n\nThe 12 workouts are a journal layout, not an author-imposed cycle length. Copy the cycle when you finish. Past results are not recalculated."</string>
+    <string name="tr_372" formatted="false">"day;exercise;sets;reps;kg\nDay 1;Squat;3;5;60\nDay 1;Bench press;3;5;40\nDay 2;Deadlift;3;5;80\n"</string>
+    <string name="tr_373" formatted="false">"Base routine from 2018: 3 workouts per week, 3–4 sets of 5–8 reps. The 12 workouts are a journal layout, not a prescribed cycle length. Take a rest day between workouts. Copy the plan for a new cycle."</string>
+    <string name="tr_374" formatted="false">"Trace  /  VERSION 0.14.0"</string>
+</resources>
