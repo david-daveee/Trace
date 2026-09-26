@@ -92,6 +92,8 @@ The recipient taps the attachment and chooses **Trace** in Android’s Open with
 
 ### Make a plan yours
 
+Open a plan and select **Change category**. Choose Strength, Streetlifting, Powerlifting, Bodybuilding, Calisthenics, Cardio, or a custom name. Categories are labels: changing one does not alter exercises or weight progression. They travel with shared plans and backups.
+
 Open a plan and tap **Change cover → Choose photo or screenshot**. Pick an image from your phone, including the Screenshots folder. Drag to reposition it, pinch or use the zoom slider, then tap **Save**. To adjust it later, choose **Change cover → Adjust cover**. Cancel leaves your previous cover unchanged. Trace keeps an optimized copy, so the cover stays available after restarting and travels with JSON exports and workout backups. Use **Reset cover** to restore the default image.
 
 To remove a custom or imported plan, tap **Delete plan** in Plans or at the bottom of its detail page and confirm. The plan disappears from both lists. Tap **Undo** above the bottom navigation to restore it, including its unfinished session on pause. Completed workout history stays. Undo also works after restarting Trace and restores deletions in reverse order. Built-in catalog plans remain available; **Remove from my plans** simply hides them from your personal list.

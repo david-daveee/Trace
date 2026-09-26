@@ -1,0 +1,13 @@
+<resources>
+    <string name="category_0">Strength</string>
+    <string name="category_1">Streetlifting</string>
+    <string name="category_2">Powerlifting</string>
+    <string name="category_3">Bodybuilding</string>
+    <string name="category_4">Calisthenics</string>
+    <string name="category_5">Cardio</string>
+    <string name="category_6">Custom category</string>
+    <string name="category_7">Category name must be 1–40 characters</string>
+    <string name="category_8">Change category</string>
+    <string name="category_9">Plan category</string>
+    <string name="category_10">Category name</string>
+</resources>

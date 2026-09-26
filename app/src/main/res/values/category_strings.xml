@@ -1,0 +1,13 @@
+<resources>
+    <string name="category_0">Силовой план</string>
+    <string name="category_1">Стритлифтинг</string>
+    <string name="category_2">Пауэрлифтинг</string>
+    <string name="category_3">Бодибилдинг</string>
+    <string name="category_4">Калистеника</string>
+    <string name="category_5">Кардио</string>
+    <string name="category_6">Своя категория</string>
+    <string name="category_7">Название категории — от 1 до 40 символов</string>
+    <string name="category_8">Изменить категорию</string>
+    <string name="category_9">Категория плана</string>
+    <string name="category_10">Название категории</string>
+</resources>
