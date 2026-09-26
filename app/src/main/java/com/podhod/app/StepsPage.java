@@ -13,6 +13,7 @@ final class StepsPage {
     final MainActivity a;
     final Ring ring;
     WalkPanel walk;
+    final WalkingProgress rhythm;
     final LinearLayout stepsContent,walkContent;
     final TextView stepsTab,walkTab,heading;
     final TextView remaining,status,date,distance;
@@ -42,6 +43,7 @@ final class StepsPage {
             EditText input=a.input(form,Lang.t("Длина шага, см"),NumberFormat.getNumberInstance(Lang.locale()).format(Steps.stepLength(a)),true);
             a.formDialog(Lang.t("Длина шага"),form,Lang.t("Сохранить"),()->{double cm;try{cm=Double.parseDouble(input.getText().toString().trim().replace(',','.'));}catch(NumberFormatException e){throw new IllegalArgumentException(Lang.t("Длина шага — от 20 до 200 см"));}Steps.stepLength(a,cm);a.render();});
         });
+        rhythm=new WalkingProgress(a,stepsContent);
         LinearLayout controls=a.card(stepsContent);
         if(!Steps.available(a)){
             controls.addView(a.title(Lang.t("Датчик шагов недоступен"),19));a.space(controls,8);controls.addView(a.text(Lang.t("Этот телефон не предоставляет встроенный счётчик шагов."),14,a.MUTED));
@@ -63,7 +65,7 @@ final class StepsPage {
         if(walking)walk.refresh();
     }
     static String format(long n){return NumberFormat.getIntegerInstance(Lang.locale()).format(n);}
-    void refresh(){if(a.walkTab&&walk!=null)walk.refresh();date.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, d MMMM",Lang.locale())));long count=Steps.today(a);int goal=Steps.goal(a);ring.count=count;ring.goal=goal;ring.invalidate();ring.setContentDescription(format(count)+" / "+format(goal)+" · "+Lang.t("Шаги"));
+    void refresh(){rhythm.refresh();if(a.walkTab&&walk!=null)walk.refresh();date.setText(LocalDate.now().format(DateTimeFormatter.ofPattern("EEEE, d MMMM",Lang.locale())));long count=Steps.today(a);int goal=Steps.goal(a);ring.count=count;ring.goal=goal;ring.invalidate();ring.setContentDescription(format(count)+" / "+format(goal)+" · "+Lang.t("Шаги"));
         distance.setText(Steps.distance(a,count));
         remaining.setText(count>=goal?Lang.t("Цель достигнута"):Lang.t("До цели: ")+format(goal-count));
         status.setText(!Steps.available(a)?Lang.t("Датчик шагов недоступен"):Steps.enabled(a)&&Steps.permitted(a)&&StepsService.running?Lang.t("ПОДСЧЁТ ВКЛЮЧЁН"):Lang.t("ПОДСЧЁТ ВЫКЛЮЧЕН"));

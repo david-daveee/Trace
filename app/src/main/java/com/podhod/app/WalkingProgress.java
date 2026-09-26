@@ -17,9 +17,9 @@ final class WalkingProgress {
     final LinearLayout chart;
     LocalDate selected=LocalDate.now(),shownToday=LocalDate.now();
     String signature="";
-    WalkingProgress(MainActivity a){
+    WalkingProgress(MainActivity a,LinearLayout parent){
         this.a=a;
-        LinearLayout card=a.card(a.body);
+        LinearLayout card=a.card(parent);
         GradientDrawable background=new GradientDrawable(GradientDrawable.Orientation.TL_BR,new int[]{0xFF322B22,0xFF1D2429});background.setCornerRadius(a.dp(26));background.setStroke(a.dp(1),0xFF564333);card.setBackground(background);
         LinearLayout heading=new LinearLayout(a);heading.setGravity(Gravity.CENTER_VERTICAL);
         ImageView icon=new ImageView(a);icon.setImageDrawable(new LineIcon("steps",amber));heading.addView(icon,new LinearLayout.LayoutParams(a.dp(25),a.dp(25)));
@@ -31,7 +31,6 @@ final class WalkingProgress {
         chart=new LinearLayout(a);chart.setGravity(Gravity.BOTTOM);card.addView(chart,new LinearLayout.LayoutParams(-1,a.dp(112)));
         a.space(card,12);detail=a.text("",14,a.TEXT);detail.setMinHeight(a.dp(40));card.addView(detail);a.divider(card);
         weekly=a.title("",17);card.addView(weekly);a.space(card,8);total=a.text("",12,a.MUTED);card.addView(total);
-        a.link(card,Lang.t("Открыть шагомер  →"),()->{a.page="steps";a.render();});
         a.hint(card,Lang.t("О данных ходьбы"),Lang.t("График показывает записанные шаги за последние 7 дней. Нажми на день, чтобы увидеть итог. Прочерк означает, что записей нет. Километры приблизительные и рассчитаны по текущей длине шага. Ходьба не добавляет тренировки в календарь."));
         refresh();
     }
