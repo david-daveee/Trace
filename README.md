@@ -84,6 +84,12 @@ Open **Plans** to import a file or choose **Custom plan**.
 
 Trace supports JSON, CSV and XLSX using the in-app template, plus the supported original Sheiko XLS format. You can download the template from the app. Arbitrarily formatted Excel workbooks are not automatically recognized; the 12-week Sheiko cycle is already included separately in the catalog.
 
+### Share a plan
+
+Tap **Share plan** on a card in **Plans**, or open the plan and use the same action. Choose a messaging app, email, or another destination from the Android share sheet. Trace attaches a JSON file with the exercises, weights, cover, and cover framing. Workout history and session progress are excluded.
+
+The recipient saves the attachment and imports it through **Plans → From spreadsheet** in Trace. It becomes a separate plan starting from day one; they can then adjust its weights.
+
 ### Make a plan yours
 
 Open a plan and tap **Change cover → Choose photo or screenshot**. Pick an image from your phone, including the Screenshots folder. Drag to reposition it, pinch or use the zoom slider, then tap **Save**. To adjust it later, choose **Change cover → Adjust cover**. Cancel leaves your previous cover unchanged. Trace keeps an optimized copy, so the cover stays available after restarting and travels with JSON exports and workout backups. Use **Reset cover** to restore the default image.

@@ -14,4 +14,6 @@
     <string name="crop_1">Drag to reposition. Pinch with two fingers to zoom.</string>
     <string name="crop_2">Cover zoom</string>
     <string name="crop_3">Reset position</string>
+    <string name="share_0">Share plan</string>
+    <string name="share_1">A plan for Trace. Save the file, then import it in the app: Plans → From spreadsheet.</string>
 </resources>

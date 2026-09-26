@@ -22,6 +22,15 @@ public class LanguageSmoke extends Instrumentation {
  Bitmap decoded=PlanImages.decode(Engine.copy(coverPlan).optString("coverImage"));
  check(decoded!=null&&decoded.getHeight()>decoded.getWidth()&&decoded.getHeight()<=1024,"Cover sizing, rotation or JSON persistence failed");
  check(PlanImages.decode("not an image")==null,"Invalid cover did not fall back");
+ JSONObject shareSource=Engine.copy(Store.get(getTargetContext()).program("builtin-sheiko-12-week"));Engine.put(shareSource,"coverImage",encoded);Engine.put(shareSource,"coverZoom",2);Engine.put(shareSource,"nextDay",8);Engine.put(shareSource,"lastProgression","private note");String sourceBefore=shareSource.toString();
+ Intent share=PlanShare.intent(getTargetContext(),shareSource);android.net.Uri shareUri=share.getParcelableExtra(Intent.EXTRA_STREAM);
+ check("content".equals(shareUri.getScheme())&&share.getClipData()!=null&&(share.getFlags()&Intent.FLAG_GRANT_READ_URI_PERMISSION)!=0,"Missing share permission or content URI");
+ try(InputStream stream=getTargetContext().getContentResolver().openInputStream(shareUri)){
+ byte[] payload=Importer.read(stream);JSONObject raw=Engine.obj(new String(payload,java.nio.charset.StandardCharsets.UTF_8));check(!raw.has("nextDay")&&!raw.has("id")&&!raw.has("lastProgression"),"Share contains personal progress");JSONObject imported=Importer.parse(payload,"plan.json");check(imported.optString("coverImage").equals(encoded)&&imported.optInt("coverZoom")==2,"Share lost cover");check(imported.optJSONArray("days").length()==shareSource.optJSONArray("days").length(),"Share lost days");}
+ check(sourceBefore.equals(shareSource.toString()),"Sharing changed source plan");
+ try(android.os.ParcelFileDescriptor ignored=getTargetContext().getContentResolver().openFileDescriptor(shareUri,"w")){throw new AssertionError("Shared plan is writable");}catch(java.io.FileNotFoundException expected){}
+ try(android.database.Cursor metadata=getTargetContext().getContentResolver().query(shareUri,null,null,null,null)){check(metadata!=null&&metadata.moveToFirst()&&metadata.getLong(metadata.getColumnIndexOrThrow(android.provider.OpenableColumns.SIZE))>0,"Missing shared file metadata");}
+
  main(()->Lang.set(getTargetContext(),"ru"));latest=(MainActivity)startActivitySync(new Intent(getTargetContext(),MainActivity.class).addFlags(Intent.FLAG_ACTIVITY_NEW_TASK));MainActivity before=latest;
  main(()->{before.page="settings";before.render();TextView choice=find(before.root,"English");check(choice!=null,"English selector missing");choice.performClick();});
  for(int i=0;i<30&&latest==before;i++)Thread.sleep(100);waitForIdleSync();check(latest!=before,"Language change did not recreate activity");check(latest.page.equals("settings"),"Language change left settings");check(Lang.english(),"English not selected");check(getTargetContext().getSharedPreferences("trace-settings",0).getString("language","").equals("en"),"Language not persisted");main(()->Lang.init(getTargetContext()));check(Lang.english(),"Language lost on initialization");
