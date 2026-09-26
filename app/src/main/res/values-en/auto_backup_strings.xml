@@ -8,4 +8,9 @@
 <string name="auto_backup_6">The first backup will be saved after you choose a folder. Then every 14 days, when Android allows background work. Previous files are kept.</string>
 <string name="auto_backup_7">Choose folder</string>
 <string name="auto_backup_8">Turn off</string>
+<string name="auto_folder_0">Off</string>
+<string name="auto_folder_1">Enable</string>
+<string name="auto_folder_2">Downloads → Trace → Backup</string>
+<string name="auto_folder_3">Downloads → Trace → Backup is created automatically with the first backup. Then a copy is saved every 14 days. Previous files are kept.</string>
+<string name="auto_folder_4">On Android 8–9, choose a folder once. Backups are then saved automatically.</string>
 </resources>

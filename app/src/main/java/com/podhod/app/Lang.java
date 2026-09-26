@@ -8,6 +8,12 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Выключен",R.string.auto_folder_0);
+        ids.put("Включить",R.string.auto_folder_1);
+        ids.put("Загрузки → Trace → Backup",R.string.auto_folder_2);
+        ids.put("Папка Загрузки → Trace → Backup создастся автоматически при первой копии. Затем копия сохраняется раз в 14 дней. Старые файлы остаются.",R.string.auto_folder_3);
+        ids.put("На Android 8–9 папку нужно выбрать один раз. Затем копии сохраняются автоматически.",R.string.auto_folder_4);
+
         ids.put("Автобэкап каждые 2 недели",R.string.auto_backup_0);
         ids.put("Выбери папку — дальше всё автоматически",R.string.auto_backup_1);
         ids.put("Не удалось сохранить копию. Проверь доступ к папке и свободное место.",R.string.auto_backup_2);
@@ -533,7 +539,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.21.0",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.21.1",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

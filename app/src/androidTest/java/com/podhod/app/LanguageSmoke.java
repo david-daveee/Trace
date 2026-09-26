@@ -43,6 +43,15 @@ public class LanguageSmoke extends Instrumentation {
  AutoBackup.prefs(isolated).edit().putString("tree","content://invalid.trace.backup/tree/missing").putLong("last",0).commit();
  check(!AutoBackup.run(isolated),"Invalid backup destination succeeded");check(AutoBackup.prefs(isolated).getLong("last",0)==0,"Failed backup advanced timestamp");check(AutoBackup.prefs(isolated).getBoolean("error",false),"Failed backup did not expose error");
  AutoBackup.prefs(isolated).edit().putLong("last",System.currentTimeMillis()).commit();check(AutoBackup.run(isolated),"Recent backup was not skipped");
+ if(android.os.Build.VERSION.SDK_INT>=29){
+ AutoBackup.prefs(isolated).edit().putString("tree","downloads").putLong("last",0).commit();
+ try{check(AutoBackup.run(isolated),"Automatic Downloads backup failed");long savedAt=AutoBackup.prefs(isolated).getLong("last",0);check(savedAt>0,"Backup timestamp missing");
+ android.net.Uri backupUri=android.net.Uri.parse(AutoBackup.prefs(isolated).getString("lastUri",""));
+ try(java.io.InputStream input=isolated.getContentResolver().openInputStream(backupUri)){JSONObject readBack=Engine.obj(new String(FullBackup.read(input),java.nio.charset.StandardCharsets.UTF_8));check(FullBackup.workouts(readBack).toString().equals(restored.optJSONObject("workouts").toString()),"Automatic backup round trip lost data");}
+ check(AutoBackup.run(isolated)&&AutoBackup.prefs(isolated).getLong("last",0)==savedAt,"Automatic backup repeated too early");
+ }finally{String created=AutoBackup.prefs(isolated).getString("lastUri","");if(!created.isEmpty())isolated.getContentResolver().delete(android.net.Uri.parse(created),null,null);}
+ }
+
  check(Steps.goal(isolated)==Steps.goal(getTargetContext()),"Restored goal mismatch");check(Steps.data(isolated).optJSONObject("days").toString().equals(restored.optJSONObject("steps").optJSONObject("days").toString()),"Restored step history mismatch");check(!Steps.data(isolated).has("counter"),"Restore retained hardware counter");}finally{isolated.getSharedPreferences("trace-auto-backup",0).edit().clear().commit();isolated.getSharedPreferences("podhod",0).edit().clear().commit();isolated.getSharedPreferences("trace-walks",0).edit().clear().commit();isolated.getSharedPreferences("trace-steps",0).edit().clear().commit();isolated.getSharedPreferences("trace-settings",0).edit().clear().commit();Lang.init(getTargetContext());}
  main(()->{JSONObject route=WalkData.start(1000);WalkData.add(route,50,30,1000,5);WalkData.add(route,50.0001,30,11000,5);WalkMap map=new WalkMap(latest);map.online=false;map.route(route);map.layout(0,0,700,400);Bitmap bitmap=Bitmap.createBitmap(700,400,Bitmap.Config.ARGB_8888);map.draw(new Canvas(bitmap));check(bitmap.getPixel(350,200)!=0,"Walk map did not render");bitmap.recycle();});
  MainActivity before=latest;

@@ -8,4 +8,9 @@
 <string name="auto_backup_6">Первая копия сохранится после выбора папки. Затем — раз в 14 дней, когда Android разрешит фоновую задачу. Старые файлы не удаляются.</string>
 <string name="auto_backup_7">Выбрать папку</string>
 <string name="auto_backup_8">Отключить</string>
+<string name="auto_folder_0">Выключен</string>
+<string name="auto_folder_1">Включить</string>
+<string name="auto_folder_2">Загрузки → Trace → Backup</string>
+<string name="auto_folder_3">Папка Загрузки → Trace → Backup создастся автоматически при первой копии. Затем копия сохраняется раз в 14 дней. Старые файлы остаются.</string>
+<string name="auto_folder_4">На Android 8–9 папку нужно выбрать один раз. Затем копии сохраняются автоматически.</string>
 </resources>
