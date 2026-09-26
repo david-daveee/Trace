@@ -75,7 +75,7 @@ for s in w.worksheets[1:]:
         day['groups'].extend(groups)
     counts.append((s.title,len([d for d in days if d['phase']==phase])))
 assert [d['sourceNumber'] for d in days]==list(range(1,36))
-p={'id':'builtin-sheiko-12-week','routine':'sheiko-12-week','mine':False,'nextDay':0,
+p={'id':'builtin-sheiko-12-week','routine':'sheiko-12-week','category':'powerlifting','mine':False,'nextDay':0,
    'name':'Шейко · 12 недель к соревнованиям',
    'description':'Цикл для разрядников из файла sheyko.xlsx: недели 1–8 — подготовка, 9–12 — соревновательный этап. 35 тренировок; затем соревнования №36 без заданных попыток. Веса — проценты от твоих максимумов, округление 0,5 кг. Подсобные веса выбираются вручную. В расхождениях между краткой записью и ячейками использованы подробные ячейки подходов.',
    'source':'sheyko.xlsx · План тренировок разрядников из книги Б. И. Шейко «Пауэрлифтинг»',
