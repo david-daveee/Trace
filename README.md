@@ -58,7 +58,7 @@ In **Progress**, the **Your daily rhythm** card shows today's steps and estimate
 
 Tracking begins when you enable it; steps from earlier today cannot be recovered. A quiet notification keeps background tracking visible. After a reboot or force-stop, open Trace again. Android may interrupt background work, so some steps can be missed. A built-in step counter is required; GPS is not used.
 
-Step totals are stored separately on the phone and are not yet included in workout backups.
+Step history, goal, step length, and tracking preference are included in full backups. Android permissions are granted separately on each phone.
 
 ## During your workout
 
@@ -88,24 +88,26 @@ Trace supports JSON, CSV and XLSX using the in-app template, plus the supported 
 
 Tap **Share plan** on a card in **Plans**, or open the plan and use the same action. Choose a messaging app, email, or another destination from the Android share sheet. Trace attaches a JSON file with the exercises, weights, cover, and cover framing. Workout history and session progress are excluded.
 
-The recipient saves the attachment and imports it through **Plans → From file** in Trace. It becomes a separate plan starting from day one; they can then adjust its weights.
+The recipient taps the attachment and chooses **Trace** in Android’s Open with menu. Trace shows a preview; the plan is added only after confirmation. If the messaging app does not offer Open with, use **Share → Trace**, or save the file and import it through **Plans → From file**. The imported plan starts separately from day one.
 
 ### Make a plan yours
 
 Open a plan and tap **Change cover → Choose photo or screenshot**. Pick an image from your phone, including the Screenshots folder. Drag to reposition it, pinch or use the zoom slider, then tap **Save**. To adjust it later, choose **Change cover → Adjust cover**. Cancel leaves your previous cover unchanged. Trace keeps an optimized copy, so the cover stays available after restarting and travels with JSON exports and workout backups. Use **Reset cover** to restore the default image.
 
-To permanently remove a custom or imported plan, tap **Delete plan** in Plans or at the bottom of its detail page and confirm. This removes the plan from both lists and discards its unfinished session. Completed workout history stays. Built-in catalog plans remain available; **Remove from my plans** simply hides them from your personal list.
+To remove a custom or imported plan, tap **Delete plan** in Plans or at the bottom of its detail page and confirm. The plan disappears from both lists. Tap **Undo** above the bottom navigation to restore it, including its unfinished session on pause. Completed workout history stays. Undo also works after restarting Trace and restores deletions in reverse order. Built-in catalog plans remain available; **Remove from my plans** simply hides them from your personal list.
+
+You can also delete an exercise from a day and use **Undo** to return it to its position. Keep at least one exercise per day. Existing workout sessions keep their recorded sets.
 
 ## Update Trace
 
 Download the latest **Trace.apk** using the link above and install it **over your current version**. You do not need to uninstall Trace first.
 
-Before updating, save a backup through **Settings → Save backup**. It includes your programs, history, and unfinished workout.
+Before updating, save a backup through **Settings → Save backup**. It includes plans, covers and their framing, history, unfinished workouts, recoverable deletions, step history, step goal and length, tracking preference, and language. Settings shows the last successful backup date.
 
 ## Frequently asked questions
 
 **Where is my data stored?**  
-On your phone. There is no account or cloud sync. To move to another phone, save a backup, transfer the file, and choose **Settings → Restore from file** on the new device. Restoring replaces its current data after confirmation.
+On your phone. There is no account or cloud sync. To move to another phone, save a backup, transfer the file, and choose **Settings → Restore from file** on the new device. Restoring a full backup replaces its current data after confirmation. Older workout-only backups still work and leave current steps and settings unchanged. Hardware step-counter baselines are reset on restore to avoid counting another device’s lifetime steps.
 
 **Why isn't my workout showing in Progress?**  
 The calendar counts saved workouts. After completing all sets, tap **Save workout**.

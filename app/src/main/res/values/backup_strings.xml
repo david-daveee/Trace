@@ -1,0 +1,13 @@
+<resources>
+    <string name="backup_0">"В дне должно остаться хотя бы одно упражнение"</string>
+    <string name="backup_1">"Повреждена полная резервная копия"</string>
+    <string name="backup_2">"Не удалось восстановить копию"</string>
+    <string name="backup_3">"Копия больше 50 МБ"</string>
+    <string name="backup_4">"Удалено: "</string>
+    <string name="backup_5">"Вернуть"</string>
+    <string name="backup_6">"Удалить упражнение"</string>
+    <string name="backup_7">"Планы, обложки, история, шаги и настройки"</string>
+    <string name="backup_8">"Копия ещё не сохранялась"</string>
+    <string name="backup_9">"Последняя копия: "</string>
+    <string name="backup_replace">"Шаги и настройки также будут заменены. "</string>
+</resources>

@@ -15,6 +15,6 @@
     <string name="crop_2">Масштаб обложки</string>
     <string name="crop_3">Сбросить положение</string>
     <string name="share_0">Поделиться планом</string>
-    <string name="share_1">План для Trace. Сохрани файл и открой в приложении: Планы → Из файла.</string>
+    <string name="share_1">Открой этот файл с помощью Trace и добавь план из превью. Или сохрани файл: Планы → Из файла.</string>
     <string name="import_file_hint">Таблица или полученный план</string>
 </resources>

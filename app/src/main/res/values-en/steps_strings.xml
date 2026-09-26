@@ -13,7 +13,7 @@
     <string name="steps_10" formatted="false">"Turn off tracking"</string>
     <string name="steps_11" formatted="false">"Turn on tracking"</string>
     <string name="steps_12" formatted="false">"How tracking works"</string>
-    <string name="steps_13" formatted="false">"Tracking begins when enabled. Earlier steps today are unavailable. Open Trace again after a reboot or force-stop. Android may interrupt background tracking; missing steps cannot always be recovered. Across midnight, readings use the date of the sensor event. Steps are stored separately on this phone and are not yet included in workout backups."</string>
+    <string name="steps_13" formatted="false">"Tracking begins when enabled. Earlier steps today are unavailable. Open Trace again after a reboot or force-stop. Android may interrupt background tracking; missing steps cannot always be recovered. Across midnight, readings use the date of the sensor event. Steps and settings are included in the full backup in Trace settings."</string>
     <string name="steps_14" formatted="false">"Goal reached"</string>
     <string name="steps_15" formatted="false">"Remaining: "</string>
     <string name="steps_16" formatted="false">"TRACKING ON"</string>

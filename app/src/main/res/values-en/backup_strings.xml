@@ -1,0 +1,13 @@
+<resources>
+    <string name="backup_0">"Keep at least one exercise in the day"</string>
+    <string name="backup_1">"Invalid full backup"</string>
+    <string name="backup_2">"Could not restore backup"</string>
+    <string name="backup_3">"Backup exceeds 50 MB"</string>
+    <string name="backup_4">"Deleted: "</string>
+    <string name="backup_5">"Undo"</string>
+    <string name="backup_6">"Delete exercise"</string>
+    <string name="backup_7">"Plans, covers, history, steps and settings"</string>
+    <string name="backup_8">"No backup saved yet"</string>
+    <string name="backup_9">"Last backup: "</string>
+    <string name="backup_replace">"Steps and settings will also be replaced. "</string>
+</resources>
