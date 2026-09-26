@@ -18,7 +18,6 @@ final class StepsPage {
         this.a=a;
         a.badge(a.body,Lang.t("ДВИЖЕНИЕ КАЖДЫЙ ДЕНЬ"),0xFFFFC88C);a.space(a.body,12);
         a.body.addView(a.title(Lang.t("Шаги"),30));a.space(a.body,6);date=a.text("",15,a.MUTED);a.body.addView(date);a.space(a.body,22);
-        walk=new WalkPanel(a);
         LinearLayout hero=a.card(a.body);hero.setBackground(a.shape(0xFF29251F,28));
         status=a.text("",13,0xFFFFC88C);status.setGravity(Gravity.CENTER);hero.addView(status);
         ring=new Ring(a);hero.addView(ring,new LinearLayout.LayoutParams(-1,a.dp(245)));
@@ -36,6 +35,7 @@ final class StepsPage {
             EditText input=a.input(form,Lang.t("Длина шага, см"),NumberFormat.getNumberInstance(Lang.locale()).format(Steps.stepLength(a)),true);
             a.formDialog(Lang.t("Длина шага"),form,Lang.t("Сохранить"),()->{double cm;try{cm=Double.parseDouble(input.getText().toString().trim().replace(',','.'));}catch(NumberFormatException e){throw new IllegalArgumentException(Lang.t("Длина шага — от 20 до 200 см"));}Steps.stepLength(a,cm);a.render();});
         });
+        walk=new WalkPanel(a);
         LinearLayout controls=a.card(a.body);
         if(!Steps.available(a)){
             controls.addView(a.title(Lang.t("Датчик шагов недоступен"),19));a.space(controls,8);controls.addView(a.text(Lang.t("Этот телефон не предоставляет встроенный счётчик шагов."),14,a.MUTED));
