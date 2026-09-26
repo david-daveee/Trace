@@ -55,6 +55,7 @@ final class StepsPage {
         select(a.walkTab);refresh();
     }
     void select(boolean walking){
+        for(View panel:new View[]{stepsContent,walkContent}){panel.animate().cancel();panel.setTranslationX(0);panel.setAlpha(1);}
         a.walkTab=walking;if(walking&&walk==null)walk=new WalkPanel(a,walkContent);
         stepsContent.setVisibility(walking?View.GONE:View.VISIBLE);walkContent.setVisibility(walking?View.VISIBLE:View.GONE);
         heading.setText(Lang.t(walking?"Прогулка":"Шаги"));

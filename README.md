@@ -62,7 +62,7 @@ Step history, goal, step length, and tracking preference are included in full ba
 
 ### Record a walk
 
-The Steps tab opens the step counter by default. Use the **Steps / Walk** switch at the top to view your route. Opening a walk notification goes directly to Walk.
+The Steps tab opens the step counter by default. Use the **Steps / Walk** switch at the top to view your route, or swipe left for Walk and right for Steps. Dragging directly on the map pans the map; swipe outside it to change sections. Opening a walk notification goes directly to Walk.
 
 In **Steps**, choose **Walk** using the top switch, then tap **Start walk**, allow precise location, and take your phone outside. The map records your route; **Finish walk** saves its GPS distance and duration. You can also finish from the ongoing notification. Recording continues with the screen off while Android keeps the service running. Trace does not start location recording automatically or track you all day.
 
