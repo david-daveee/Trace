@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="docs/trace-logo.svg" alt="Trace logo" width="112" height="112">
+</p>
+
 # Trace
 
 **Your training plan, always within reach.**
