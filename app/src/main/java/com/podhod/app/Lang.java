@@ -8,6 +8,18 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Удалить",R.string.plan_delete);
+        ids.put("Удалить план",R.string.plan_0);
+        ids.put("Удалить план?",R.string.plan_1);
+        ids.put("План исчезнет из «Планов» и «Моих планов». Незавершённое занятие будет удалено. История завершённых тренировок останется.",R.string.plan_2);
+        ids.put("Изменить обложку",R.string.plan_3);
+        ids.put("Выбрать фото или скриншот",R.string.plan_4);
+        ids.put("Вернуть стандартную обложку",R.string.plan_5);
+        ids.put("Обложка плана",R.string.plan_6);
+        ids.put("Сохраняем обложку…",R.string.plan_7);
+        ids.put("Не удалось открыть изображение",R.string.plan_8);
+        ids.put("Выбери изображение размером до 20 МБ",R.string.plan_9);
+
         ids.put("Твой ритм",R.string.walking_0);
         ids.put("ПОСЛЕДНИЕ 7 ДНЕЙ",R.string.walking_1);
         ids.put("За 7 дней: ",R.string.walking_2);
@@ -444,7 +456,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.16.2",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.17.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

@@ -84,6 +84,12 @@ Open **Plans** to import a file or choose **Custom plan**.
 
 Trace supports JSON, CSV and XLSX using the in-app template, plus the supported original Sheiko XLS format. You can download the template from the app. Arbitrarily formatted Excel workbooks are not automatically recognized; the 12-week Sheiko cycle is already included separately in the catalog.
 
+### Make a plan yours
+
+Open a plan and tap **Change cover → Choose photo or screenshot**. Pick an image from your phone, including the Screenshots folder. Trace keeps an optimized copy, so the cover stays available after restarting and travels with JSON exports and workout backups. Use **Reset cover** to restore the default image.
+
+To permanently remove a custom or imported plan, tap **Delete plan** in Plans or at the bottom of its detail page and confirm. This removes the plan from both lists and discards its unfinished session. Completed workout history stays. Built-in catalog plans remain available; **Remove from my plans** simply hides them from your personal list.
+
 ## Update Trace
 
 Download the latest **Trace.apk** using the link above and install it **over your current version**. You do not need to uninstall Trace first.

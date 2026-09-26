@@ -1,0 +1,13 @@
+<resources>
+    <string name="plan_0">Удалить план</string>
+    <string name="plan_1">Удалить план?</string>
+    <string name="plan_2">План исчезнет из «Планов» и «Моих планов». Незавершённое занятие будет удалено. История завершённых тренировок останется.</string>
+    <string name="plan_3">Изменить обложку</string>
+    <string name="plan_4">Выбрать фото или скриншот</string>
+    <string name="plan_5">Вернуть стандартную обложку</string>
+    <string name="plan_6">Обложка плана</string>
+    <string name="plan_7">Сохраняем обложку…</string>
+    <string name="plan_8">Не удалось открыть изображение</string>
+    <string name="plan_9">Выбери изображение размером до 20 МБ</string>
+    <string name="plan_delete">Удалить</string>
+</resources>

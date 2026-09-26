@@ -43,6 +43,7 @@ public final class Store {
         for(int i=0;i<a.length();i++) if(a.optJSONObject(i).optString("id").equals(id)) return a.optJSONObject(i);
         return null;
     }
+    public synchronized void deletePlan(String id){if(PlanManagement.delete(data,id))save();}
     public synchronized void removeFromMine(JSONObject p) {
         String id=p.optString("id");JSONObject current=active();
         if(current!=null&&id.equals(current.optString("programId"))){

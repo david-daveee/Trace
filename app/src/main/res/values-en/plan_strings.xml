@@ -1,0 +1,13 @@
+<resources>
+    <string name="plan_0">Delete plan</string>
+    <string name="plan_1">Delete plan?</string>
+    <string name="plan_2">The plan will be removed from Plans and My plans. Its unfinished session will be deleted. Completed workout history will remain.</string>
+    <string name="plan_3">Change cover</string>
+    <string name="plan_4">Choose photo or screenshot</string>
+    <string name="plan_5">Reset cover</string>
+    <string name="plan_6">Plan cover</string>
+    <string name="plan_7">Saving cover…</string>
+    <string name="plan_8">Could not open image</string>
+    <string name="plan_9">Choose an image up to 20 MB</string>
+    <string name="plan_delete">Delete</string>
+</resources>
