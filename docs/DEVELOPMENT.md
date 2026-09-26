@@ -1,6 +1,6 @@
 # Trace development notes
 
-Trace 0.15.1 is an offline Android workout journal. Its application ID is `com.podhod.app`.
+Trace 0.16.0 is an offline Android workout journal. Its application ID is `com.podhod.app`.
 
 ## Build
 
@@ -95,7 +95,9 @@ Progress uses saved workouts and local completion dates. Calendar intensity refl
 
 ## Validation
 
-The 36 unit tests cover source formula preservation, recalculation, completed and manually overridden weights, program switching, max validation, independent completion and undo, imports, progress aggregation, catalog insertion, and step counter baselines, day transitions, resets, restarts, and duplicate readings.
+The 37 unit tests cover source formula preservation, recalculation, completed and manually overridden weights, program switching, max validation, independent completion and undo, imports, progress aggregation, catalog insertion, step counter baselines, day transitions, resets, restarts, duplicate readings, and walking totals across calendar boundaries.
+
+The Progress screen includes a separate live walking card with today's steps and estimated kilometers, a selectable seven-day chart, and seven-day/all-time totals. Missing records are visually distinct from recorded zeros. Distance uses the current step length; walking never creates completed workout entries. Device checks verify chart selection and totals without modifying step records.
 
 ## Phone step tracking
 

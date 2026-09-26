@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="walking_0" formatted="false">"Your daily rhythm"</string>
+    <string name="walking_1" formatted="false">"LAST 7 DAYS"</string>
+    <string name="walking_2" formatted="false">"7 days: "</string>
+    <string name="walking_3" formatted="false">" steps"</string>
+    <string name="walking_4" formatted="false">"All recorded: "</string>
+    <string name="walking_5" formatted="false">"Open step tracker  →"</string>
+    <string name="walking_6" formatted="false">"About walking data"</string>
+    <string name="walking_7" formatted="false">"The chart shows recorded steps over the last 7 days. Tap a day to see its total. A dash means no records. Kilometers are estimates based on your current step length. Walking does not add workouts to the calendar."</string>
+    <string name="walking_8" formatted="false">"No step records"</string>
+</resources>

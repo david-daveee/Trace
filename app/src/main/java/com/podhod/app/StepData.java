@@ -18,4 +18,6 @@ public final class StepData {
         return true;
     }
     public static long count(JSONObject data,String day){JSONObject days=data.optJSONObject("days");return days==null?0:days.optLong(day);}
+    public static long week(JSONObject data,java.time.LocalDate today){long n=0;for(int i=0;i<7;i++)n+=count(data,today.minusDays(i).toString());return n;}
+    public static long total(JSONObject data,java.time.LocalDate today){long n=0;JSONObject days=data.optJSONObject("days");if(days!=null){java.util.Iterator<String> keys=days.keys();while(keys.hasNext()){String key=keys.next();try{if(!java.time.LocalDate.parse(key).isAfter(today))n+=days.optLong(key);}catch(java.time.format.DateTimeParseException ignored){}}}return n;}
 }

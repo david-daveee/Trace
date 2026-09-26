@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="walking_0" formatted="false">"Твой ритм"</string>
+    <string name="walking_1" formatted="false">"ПОСЛЕДНИЕ 7 ДНЕЙ"</string>
+    <string name="walking_2" formatted="false">"За 7 дней: "</string>
+    <string name="walking_3" formatted="false">" шагов"</string>
+    <string name="walking_4" formatted="false">"Всего записано: "</string>
+    <string name="walking_5" formatted="false">"Открыть шагомер  →"</string>
+    <string name="walking_6" formatted="false">"О данных ходьбы"</string>
+    <string name="walking_7" formatted="false">"График показывает записанные шаги за последние 7 дней. Нажми на день, чтобы увидеть итог. Прочерк означает, что записей нет. Километры приблизительные и рассчитаны по текущей длине шага. Ходьба не добавляет тренировки в календарь."</string>
+    <string name="walking_8" formatted="false">"Нет записей шагов"</string>
+</resources>

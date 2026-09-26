@@ -54,6 +54,8 @@ Open **Steps → Turn on tracking** and allow physical activity access. Carry yo
 
 The Steps tab and tracking notification also show **estimated distance in kilometers**. Tap **Step length** to adjust the default of 70 cm. Distance is calculated from step count and step length, not GPS. For calibration, divide a known walking distance in centimeters by the number of steps you took.
 
+In **Progress**, the **Your daily rhythm** card shows today's steps and estimated distance, an interactive seven-day chart, and weekly and all-time totals. Tap a bar to view that day's numbers. A dash means no records; walking stays separate from your saved workout calendar. Distance estimates use your current step length.
+
 Tracking begins when you enable it; steps from earlier today cannot be recovered. A quiet notification keeps background tracking visible. After a reboot or force-stop, open Trace again. Android may interrupt background work, so some steps can be missed. A built-in step counter is required; GPS is not used.
 
 Step totals are stored separately on the phone and are not yet included in workout backups.
