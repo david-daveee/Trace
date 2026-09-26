@@ -26,4 +26,5 @@
     <string name="map_style_6">Walking time</string>
     <string name="map_style_7">Zoom out</string>
     <string name="map_style_8">Zoom in</string>
+    <string name="walk_history_empty">Finish a walk to see its route, duration, and distance here.</string>
 </resources>
