@@ -27,4 +27,7 @@
     <string name="map_style_7">Zoom out</string>
     <string name="map_style_8">Zoom in</string>
     <string name="walk_history_empty">Finish a walk to see its route, duration, and distance here.</string>
+    <string name="walk_delete_0">Delete walk</string>
+    <string name="walk_delete_1">Delete walk?</string>
+    <string name="walk_delete_2">The route and this walk record will be deleted. Daily steps and other walks will remain.</string>
 </resources>

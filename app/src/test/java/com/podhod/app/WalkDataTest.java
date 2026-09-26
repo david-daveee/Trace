@@ -1,6 +1,8 @@
 package com.podhod.app;
 import org.junit.Test;import org.json.*;import static org.junit.Assert.*;
 public class WalkDataTest {
+ @Test public void deletionOnlyRemovesSelectedSavedWalk(){JSONObject d=Engine.obj("{\"history\":[{\"id\":\"first\"},{\"id\":\"second\"},{\"id\":\"third\"}],\"active\":{\"id\":\"current\"}}");String active=d.optJSONObject("active").toString();assertTrue(WalkData.deleteHistory(d,"second"));assertEquals(2,d.optJSONArray("history").length());assertEquals("first",d.optJSONArray("history").optJSONObject(0).optString("id"));assertEquals("third",d.optJSONArray("history").optJSONObject(1).optString("id"));assertFalse(WalkData.deleteHistory(d,"current"));assertFalse(WalkData.deleteHistory(d,""));assertFalse(WalkData.deleteHistory(d,"second"));assertEquals(active,d.optJSONObject("active").toString());}
+
  @Test public void validRouteAccumulatesDistance(){JSONObject w=WalkData.start(1000);assertTrue(WalkData.add(w,50,30,1000,5));assertTrue(WalkData.add(w,50.0001,30,11000,5));assertEquals(11.12,w.optDouble("meters"),.1);}
  @Test public void rejectsStaleNoisyAndImpossiblePoints(){JSONObject w=WalkData.start(1000);assertFalse(WalkData.add(w,50,30,900,5));assertFalse(WalkData.add(w,50,30,1000,100));assertFalse(WalkData.add(w,Double.NaN,30,1000,5));assertTrue(WalkData.add(w,50,30,1000,5));assertFalse(WalkData.add(w,50,30,1000,5));assertFalse(WalkData.add(w,51,30,2000,5));assertFalse(WalkData.add(w,50.000001,30,6000,5));assertEquals(1,w.optJSONArray("points").length());}
  @Test public void signalGapDoesNotInventDistance(){JSONObject w=WalkData.start(1000);WalkData.add(w,50,30,1000,5);assertTrue(WalkData.add(w,51,31,200000,5));assertTrue(w.optJSONArray("points").optJSONArray(1).optBoolean(4));assertEquals(0,w.optDouble("meters"),0);}

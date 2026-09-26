@@ -1,6 +1,10 @@
 package com.podhod.app;
 import org.json.*;
 final class WalkData {
+ static boolean deleteHistory(JSONObject data,String id){
+  if(id==null||id.isEmpty())return false;JSONArray history=data.optJSONArray("history");if(history==null)return false;
+  for(int i=0;i<history.length();i++){JSONObject walk=history.optJSONObject(i);if(walk!=null&&id.equals(walk.optString("id"))){history.remove(i);return true;}}return false;
+ }
  static JSONObject start(long now){JSONObject w=new JSONObject();Engine.put(w,"id",Engine.id());Engine.put(w,"started",now);Engine.put(w,"points",new JSONArray());Engine.put(w,"meters",0);return w;}
  static double distance(double lat,double lon,double lat2,double lon2){double a=Math.sin(Math.toRadians(lat2-lat)/2),b=Math.sin(Math.toRadians(lon2-lon)/2);double h=a*a+Math.cos(Math.toRadians(lat))*Math.cos(Math.toRadians(lat2))*b*b;return 6371000*2*Math.asin(Math.sqrt(Math.min(1,h)));}
  static boolean add(JSONObject w,double lat,double lon,long time,float accuracy){

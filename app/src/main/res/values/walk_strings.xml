@@ -27,4 +27,7 @@
     <string name="map_style_7">Уменьшить карту</string>
     <string name="map_style_8">Увеличить карту</string>
     <string name="walk_history_empty">Заверши прогулку — здесь появятся её маршрут, время и расстояние.</string>
+    <string name="walk_delete_0">Удалить прогулку</string>
+    <string name="walk_delete_1">Удалить прогулку?</string>
+    <string name="walk_delete_2">Маршрут и запись этой прогулки будут удалены. Шаги за день и другие прогулки сохранятся.</string>
 </resources>
