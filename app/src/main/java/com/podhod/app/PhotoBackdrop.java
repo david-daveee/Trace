@@ -8,8 +8,10 @@ final class PhotoBackdrop extends Drawable {
     private final Bitmap photo;
     private final float density;
     private final int mode;
+    private final CoverFrame frame;
     private final Paint paint=new Paint(Paint.ANTI_ALIAS_FLAG|Paint.FILTER_BITMAP_FLAG);
-    PhotoBackdrop(Bitmap photo,float density,int mode){this.photo=photo;this.density=density;this.mode=mode;}
+    PhotoBackdrop(Bitmap photo,float density,int mode){this(photo,density,mode,new CoverFrame(.5f,.5f,1));}
+    PhotoBackdrop(Bitmap photo,float density,int mode,CoverFrame frame){this.photo=photo;this.density=density;this.mode=mode;this.frame=frame;}
     @Override public void draw(Canvas canvas){
         Rect bounds=getBounds();float w=bounds.width(),h=bounds.height();
         if(w<=0||h<=0)return;
@@ -17,10 +19,9 @@ final class PhotoBackdrop extends Drawable {
         if(mode!=0){Path clip=new Path();clip.addRoundRect(new RectF(0,0,w,h),24*density,24*density,Path.Direction.CW);canvas.clipPath(clip);}
         canvas.drawColor(0xFF0D131C);
         float photoHeight=mode==0?Math.min(h,440*density):h;
-        float scale=Math.max(w/photo.getWidth(),photoHeight/photo.getHeight());
-        float pw=photo.getWidth()*scale,ph=photo.getHeight()*scale;
+        float[] crop=frame.bounds(photo.getWidth(),photo.getHeight(),w,photoHeight);
         paint.setShader(null);paint.setAlpha(mode==0?80:mode==2?95:255);
-        canvas.drawBitmap(photo,null,new RectF((w-pw)/2,(photoHeight-ph)/2,(w+pw)/2,(photoHeight+ph)/2),paint);
+        canvas.drawBitmap(photo,null,new RectF(crop[0],crop[1],crop[0]+crop[2],crop[1]+crop[3]),paint);
         paint.setAlpha(255);
         if(mode==0)paint.setShader(new LinearGradient(0,0,0,photoHeight,new int[]{0x280D131C,0x600D131C,0xFF0D131C},new float[]{0,.5f,1},Shader.TileMode.CLAMP));
         else if(mode==3)paint.setShader(new LinearGradient(0,0,w,h,new int[]{0xA00D131C,0x400D131C,0xC80D131C},null,Shader.TileMode.CLAMP));

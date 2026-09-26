@@ -10,4 +10,8 @@
     <string name="plan_8">Could not open image</string>
     <string name="plan_9">Choose an image up to 20 MB</string>
     <string name="plan_delete">Delete</string>
+    <string name="crop_0">Adjust cover</string>
+    <string name="crop_1">Drag to reposition. Pinch with two fingers to zoom.</string>
+    <string name="crop_2">Cover zoom</string>
+    <string name="crop_3">Reset position</string>
 </resources>

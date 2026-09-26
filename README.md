@@ -86,7 +86,7 @@ Trace supports JSON, CSV and XLSX using the in-app template, plus the supported 
 
 ### Make a plan yours
 
-Open a plan and tap **Change cover → Choose photo or screenshot**. Pick an image from your phone, including the Screenshots folder. Trace keeps an optimized copy, so the cover stays available after restarting and travels with JSON exports and workout backups. Use **Reset cover** to restore the default image.
+Open a plan and tap **Change cover → Choose photo or screenshot**. Pick an image from your phone, including the Screenshots folder. Drag to reposition it, pinch or use the zoom slider, then tap **Save**. To adjust it later, choose **Change cover → Adjust cover**. Cancel leaves your previous cover unchanged. Trace keeps an optimized copy, so the cover stays available after restarting and travels with JSON exports and workout backups. Use **Reset cover** to restore the default image.
 
 To permanently remove a custom or imported plan, tap **Delete plan** in Plans or at the bottom of its detail page and confirm. This removes the plan from both lists and discards its unfinished session. Completed workout history stays. Built-in catalog plans remain available; **Remove from my plans** simply hides them from your personal list.
 
