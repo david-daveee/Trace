@@ -42,7 +42,9 @@ public class WorkoutPanelService extends Service {
         String title=finished?Lang.t("Тренировка выполнена"):Lang.content(set.optString("exercise"));
         String weight=finished?Lang.t("Сохрани результат"):set.optDouble("kg",-1)<0?Lang.t("Укажи вес в Trace"):Engine.number(set.optDouble("kg"))+Lang.t(" кг × ")+set.optInt("reps");
         String status=finished?Lang.t("Готово"):paused?Lang.t("Пауза"):Lang.t("Подход ")+set.optInt("ordinal")+"/"+set.optInt("sets");
-        String subtitle=finished?Lang.t("Готово ")+done+Lang.t(" из ")+sets.length()+Lang.t(" · сохрани результат"):weight+"  ·  "+status;
+        String hint=finished?"✓ "+Lang.t("Сохранить тренировку"):paused?"▶ "+Lang.t("Продолжить тренировку"):set.optDouble("kg",-1)<0?Lang.t("Указать рабочий вес"):"✓ "+Lang.t("Закончил подход");
+        if(!finished)title+=" · "+weight;
+        String subtitle=hint+" · "+(finished?done+"/"+sets.length():status);
         MediaMetadata.Builder metadata=new MediaMetadata.Builder()
             .putString(MediaMetadata.METADATA_KEY_TITLE,title).putString(MediaMetadata.METADATA_KEY_DISPLAY_TITLE,title)
             .putString(MediaMetadata.METADATA_KEY_ARTIST,subtitle).putString(MediaMetadata.METADATA_KEY_DISPLAY_SUBTITLE,subtitle)
@@ -57,7 +59,7 @@ public class WorkoutPanelService extends Service {
         Bundle slots=new Bundle();slots.putBoolean("android.media.playback.ALWAYS_RESERVE_SPACE_FOR.ACTION_SKIP_TO_PREVIOUS",done==0);state.setExtras(slots);media.setExtras(slots);
         if(done>0)state.addCustomAction(button(s,"undo",Lang.t("Отменить подход"),R.drawable.notice_undo));
         if(finished)state.addCustomAction(button(s,"open",Lang.t("Сохранить тренировку"),R.drawable.notice_check));
-        else if(!paused)state.addCustomAction(button(s,set.optDouble("kg",-1)>=0?"next":"open",set.optDouble("kg",-1)>=0?Lang.t("Подход выполнен"):Lang.t("Указать вес"),R.drawable.notice_complete));
+        else if(!paused)state.addCustomAction(button(s,set.optDouble("kg",-1)>=0?"next":"open",set.optDouble("kg",-1)>=0?Lang.t("Закончил подход"):Lang.t("Указать вес"),R.drawable.notice_complete));
         if(!finished)state.addCustomAction(button(s,"open",Lang.t("Все подходы · выполнено ")+done+Lang.t(" из ")+sets.length(),R.drawable.notice_list));
         media.setPlaybackState(state.build());media.setActive(true);
         return media.getSessionToken();

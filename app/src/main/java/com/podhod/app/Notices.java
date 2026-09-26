@@ -27,7 +27,7 @@ public final class Notices {
         v.setTextViewText(R.id.notice_weight,weight);
         v.setImageViewBitmap(R.id.notice_art,artwork(c,s));
         boolean zlat=finished&&Zlat.is(Store.get(c).program(s.optString("programId")));
-        String nextLabel=finished?(zlat?Lang.t("Указать повторы и сохранить"):Lang.t("Сохранить тренировку")):paused?Lang.t("Продолжить тренировку"):missing?Lang.t("Указать рабочий вес"):Lang.t("Подход выполнен");
+        String nextLabel=finished?(zlat?Lang.t("Указать повторы и сохранить"):Lang.t("Сохранить тренировку")):paused?Lang.t("Продолжить тренировку"):missing?Lang.t("Указать рабочий вес"):Lang.t("Закончил подход");
         PendingIntent next=finished?(zlat?open(c):action(c,s,"finish")):paused?action(c,s,"pause"):missing?open(c):action(c,s,"next");
         v.setImageViewResource(R.id.notice_next,finished?R.drawable.notice_check:paused?R.drawable.notice_play:R.drawable.notice_complete);
         v.setContentDescription(R.id.notice_next,nextLabel);v.setOnClickPendingIntent(R.id.notice_next,next);
@@ -69,7 +69,7 @@ public final class Notices {
             b.setCustomContentView(null).setCustomBigContentView(null).setLargeIcon(artwork(c,s));
             b.addAction(new Notification.Action.Builder(R.drawable.notice_undo,Lang.t("Отменить"),action(c,s,"undo")).build());
             b.addAction(new Notification.Action.Builder(s.optBoolean("paused")?R.drawable.notice_play:R.drawable.notice_pause,s.optBoolean("paused")?Lang.t("Продолжить"):Lang.english()?"Pause":Lang.t("Пауза"),action(c,s,"pause")).build());
-            b.addAction(new Notification.Action.Builder(R.drawable.notice_complete,finished?Lang.t("Сохранить"):Lang.t("Подход выполнен"),finished?open(c):s.optBoolean("paused")?action(c,s,"pause"):set.optDouble("kg",-1)<0?open(c):action(c,s,"next")).build());
+            b.addAction(new Notification.Action.Builder(R.drawable.notice_complete,finished?Lang.t("Сохранить"):Lang.t("Закончил подход"),finished?open(c):s.optBoolean("paused")?action(c,s,"pause"):set.optDouble("kg",-1)<0?open(c):action(c,s,"next")).build());
             b.setStyle(new Notification.MediaStyle().setMediaSession(service.sync(s)).setShowActionsInCompactView(0,1,2));
             service.show(b.build());
         }else{
