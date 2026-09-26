@@ -1,0 +1,26 @@
+<resources>
+<string name="editor_backup_0">Заметка — до 2000 символов</string>
+<string name="editor_backup_1">Заметка сохраняется для этого упражнения в плане.</string>
+<string name="editor_backup_2">Заметка к упражнению</string>
+<string name="editor_backup_3">Изменения применяются к будущим занятиям. Текущая тренировка и история сохраняются.</string>
+<string name="editor_backup_4">Редактор плана</string>
+<string name="editor_backup_5">Копировать день</string>
+<string name="editor_backup_6"> · копия</string>
+<string name="editor_backup_7">← Все дни</string>
+<string name="editor_backup_8">Переименовать день</string>
+<string name="editor_backup_9">Удерживай ⋮⋮ и перетащи упражнение. Кнопки − / + меняют число подходов.</string>
+<string name="editor_backup_10">Переместить упражнение</string>
+<string name="editor_backup_11">Уменьшить подходы</string>
+<string name="editor_backup_12">Добавить подход</string>
+<string name="editor_backup_13">Переместить вверх</string>
+<string name="editor_backup_14">Переместить вниз</string>
+<string name="editor_backup_15">Копировать упражнение</string>
+<string name="editor_backup_16">Загрузка копий…</string>
+<string name="editor_backup_17">История резервных копий</string>
+<string name="editor_backup_18">Копии на этом устройстве. Для файла из другой папки используй «Восстановить из файла».</string>
+<string name="editor_backup_19">Сохранённых копий пока нет</string>
+<string name="editor_backup_20">Дни, упражнения, подходы и заметки</string>
+<string name="editor_backup_21">Дата, размер и восстановление</string>
+<string name="editor_extra_0">О редакторе</string>
+<string name="editor_extra_1">Действия упражнения</string>
+</resources>

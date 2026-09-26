@@ -41,7 +41,7 @@ final class AutoBackup {
    try(InputStream in=c.getContentResolver().openInputStream(file)){if(in==null||!Arrays.equals(bytes,FullBackup.read(in)))throw new IOException("Backup verification failed");}
    if(automatic&&android.os.Build.VERSION.SDK_INT>=29){ContentValues ready=new ContentValues();ready.put(android.provider.MediaStore.MediaColumns.IS_PENDING,0);if(c.getContentResolver().update(file,ready,null,null)!=1)throw new IOException("Cannot publish backup");}
    prefs(c).edit().putString("lastUri",file.toString()).commit();
-   long now=System.currentTimeMillis();prefs(c).edit().putLong("last",now).putBoolean("error",false).commit();c.getSharedPreferences("trace-settings",0).edit().putLong("lastBackupAt",now).commit();return true;
+   long now=System.currentTimeMillis();BackupHistory.record(c,file,now,bytes.length,name);prefs(c).edit().putLong("last",now).putBoolean("error",false).commit();c.getSharedPreferences("trace-settings",0).edit().putLong("lastBackupAt",now).commit();return true;
   }catch(Exception e){if(file!=null)try{if(automatic)c.getContentResolver().delete(file,null,null);else DocumentsContract.deleteDocument(c.getContentResolver(),file);}catch(Exception ignored){}prefs(c).edit().putBoolean("error",true).commit();return false;}
  }
  static String status(Context c){

@@ -1,0 +1,26 @@
+<resources>
+<string name="editor_backup_0">Notes can contain up to 2000 characters</string>
+<string name="editor_backup_1">This note is saved for this exercise in the plan.</string>
+<string name="editor_backup_2">Exercise note</string>
+<string name="editor_backup_3">Changes apply to future sessions. Your current workout and history are preserved.</string>
+<string name="editor_backup_4">Plan editor</string>
+<string name="editor_backup_5">Duplicate day</string>
+<string name="editor_backup_6"> · copy</string>
+<string name="editor_backup_7">← All days</string>
+<string name="editor_backup_8">Rename day</string>
+<string name="editor_backup_9">Hold ⋮⋮ to drag an exercise. Use − / + to change the number of sets.</string>
+<string name="editor_backup_10">Move exercise</string>
+<string name="editor_backup_11">Remove one set</string>
+<string name="editor_backup_12">Add one set</string>
+<string name="editor_backup_13">Move up</string>
+<string name="editor_backup_14">Move down</string>
+<string name="editor_backup_15">Duplicate exercise</string>
+<string name="editor_backup_16">Loading backups…</string>
+<string name="editor_backup_17">Backup history</string>
+<string name="editor_backup_18">Backups on this device. For a file in another folder, use Restore from file.</string>
+<string name="editor_backup_19">No saved backups yet</string>
+<string name="editor_backup_20">Days, exercises, sets and notes</string>
+<string name="editor_backup_21">Date, size and restore</string>
+<string name="editor_extra_0">About the editor</string>
+<string name="editor_extra_1">Exercise actions</string>
+</resources>

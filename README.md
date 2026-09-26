@@ -156,3 +156,11 @@ APK output: `app/build/outputs/apk/debug/app-debug.apk`. The downloadable build 
 
 ### Automatic backups
 In Settings, select **Automatic backup every 2 weeks** and turn on **Enable**. On Android 10+, Trace automatically creates **Downloads/Trace/Backup** when saving the first copy. Android 8–9 requires choosing a folder once. Trace saves a complete JSON backup there, verifies the written file, and keeps previous copies. A background job checks daily and saves when 14 days have passed since the last successful automatic backup. Android may delay background work; force-stopping Trace pauses it until the app is opened again. Settings show the last automatic backup and any save failure. Use Restore from file to recover a copy. After reinstalling, enable automatic backups again. Existing copies can be restored with the file picker. Previously configured custom folders continue to work until automatic backup is switched off and on.
+
+## Exercise notes and plan editor
+Open a plan and choose **Plan editor**. Duplicate days or exercises, rename days, hold the grip to drag exercises, or use the up/down buttons. The −/+ controls adjust sets. Exercise forms edit weight and repetitions while preserving percentage-based calculation when selected. Existing workout sessions and saved history keep their snapshots.
+
+Add **Exercise note** from the editor, a day preview, or your current workout. Notes are shared by exercises with the same name within a plan. They are included in shared plans and backups, and workout history retains its note snapshot.
+
+## Backup history
+Open **Settings → Backup history** for dates, file sizes, and Restore buttons. Automatic copies in Downloads/Trace/Backup and the configured custom folder are discovered, and newly saved manual copies are recorded. Restoring uses the existing validation and confirmation before replacing data. Files removed or made inaccessible outside Trace cannot be restored; use **Restore from file** for older manual copies or copies from another device. Android folder permissions are not transferred in a backup.

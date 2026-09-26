@@ -8,6 +8,32 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("О редакторе",R.string.editor_extra_0);
+        ids.put("Действия упражнения",R.string.editor_extra_1);
+
+        ids.put("Заметка — до 2000 символов",R.string.editor_backup_0);
+        ids.put("Заметка сохраняется для этого упражнения в плане.",R.string.editor_backup_1);
+        ids.put("Заметка к упражнению",R.string.editor_backup_2);
+        ids.put("Изменения применяются к будущим занятиям. Текущая тренировка и история сохраняются.",R.string.editor_backup_3);
+        ids.put("Редактор плана",R.string.editor_backup_4);
+        ids.put("Копировать день",R.string.editor_backup_5);
+        ids.put(" · копия",R.string.editor_backup_6);
+        ids.put("← Все дни",R.string.editor_backup_7);
+        ids.put("Переименовать день",R.string.editor_backup_8);
+        ids.put("Удерживай ⋮⋮ и перетащи упражнение. Кнопки − / + меняют число подходов.",R.string.editor_backup_9);
+        ids.put("Переместить упражнение",R.string.editor_backup_10);
+        ids.put("Уменьшить подходы",R.string.editor_backup_11);
+        ids.put("Добавить подход",R.string.editor_backup_12);
+        ids.put("Переместить вверх",R.string.editor_backup_13);
+        ids.put("Переместить вниз",R.string.editor_backup_14);
+        ids.put("Копировать упражнение",R.string.editor_backup_15);
+        ids.put("Загрузка копий…",R.string.editor_backup_16);
+        ids.put("История резервных копий",R.string.editor_backup_17);
+        ids.put("Копии на этом устройстве. Для файла из другой папки используй «Восстановить из файла».",R.string.editor_backup_18);
+        ids.put("Сохранённых копий пока нет",R.string.editor_backup_19);
+        ids.put("Дни, упражнения, подходы и заметки",R.string.editor_backup_20);
+        ids.put("Дата, размер и восстановление",R.string.editor_backup_21);
+
         ids.put("Закончил подход",R.string.panel_set_done);
         ids.put("Выключен",R.string.auto_folder_0);
         ids.put("Включить",R.string.auto_folder_1);
@@ -540,7 +566,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.21.5",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.22.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

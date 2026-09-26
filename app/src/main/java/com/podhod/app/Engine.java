@@ -67,7 +67,7 @@ public final class Engine {
         JSONObject s=new JSONObject();
         put(s,"id",id());put(s,"programId",program.optString("id"));put(s,"programName",program.optString("name"));
         put(s,"day",day);put(s,"dayName",plan.optString("name"));put(s,"started",now);put(s,"sets",sets);
-        put(s,"cursor",0);put(s,"revision",0);
+        put(s,"cursor",0);put(s,"revision",0);put(s,"exerciseNotes",program.optJSONObject("exerciseNotes")==null?new JSONObject():copy(program.optJSONObject("exerciseNotes")));
         return s;
     }
     public static void selectProgram(JSONObject data,JSONObject program,long now){
