@@ -2,4 +2,5 @@
 <string name="catalog_filter_0">All</string>
 <string name="catalog_filter_1">No plans in this category yet</string>
 <string name="catalog_filter_2">Create or import a plan and assign it to this category.</string>
+<string name="category_home_training">Home training</string>
 </resources>
