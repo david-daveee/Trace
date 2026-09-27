@@ -1,0 +1,5 @@
+<resources>
+<string name="catalog_filter_0">Все</string>
+<string name="catalog_filter_1">В этой категории пока нет планов</string>
+<string name="catalog_filter_2">Создай или импортируй план и выбери для него эту категорию.</string>
+</resources>

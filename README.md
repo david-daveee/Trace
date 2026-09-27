@@ -42,7 +42,7 @@ The default maxes in Sheiko plans come from the source spreadsheets. Replace the
 
 | Tab | What you can do |
 | --- | --- |
-| **Plans** | Browse ready-made programs, import a spreadsheet, or create a custom plan. |
+| **Plans** | Filter by Powerlifting, Streetlifting, or your other categories; browse programs, import a file, or create a custom plan. |
 | **My plans** | Find your programs, change weights, and continue training. Your most recently used program appears first. |
 | **Workout** | Review sets, edit weight and reps, and mark or unmark any set. |
 | **Progress** | View your activity calendar, stats, and saved workout history. |
