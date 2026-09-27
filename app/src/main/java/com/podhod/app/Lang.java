@@ -8,6 +8,28 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("6+ повторов: +2,5 кг · 5: +1,25 кг · 4 и меньше: без прибавки",R.string.intermediate_finish);
+        ids.put("Три разных дня: объём, лёгкая техника, контрольный подход. Адаптация Trace: без прибавок 0,5 кг и без автоматических тестов 1ПМ. 12 занятий — четыре обычные недели.",R.string.intermediate_0);
+        ids.put("Злат · intermediate",R.string.intermediate_1);
+        ids.put("Объём",R.string.intermediate_2);
+        ids.put("Лёгкая техника",R.string.intermediate_3);
+        ids.put("Контрольный день",R.string.intermediate_4);
+        ids.put("Укажи максимумы от 1,25 до 1900 кг",R.string.intermediate_5);
+        ids.put("Пауза в полном висе, затем быстрый подъём. Без раскачки.",R.string.intermediate_6);
+        ids.put("Пауза на 3 счёта внизу каждого повторения.",R.string.intermediate_7);
+        ids.put("Объёмный блок · 4–6 повторений. Прогрессия по худшему подходу.",R.string.intermediate_8);
+        ids.put("Контрольный подход · 4–6 повторений. Результат задаёт вес следующей недели.",R.string.intermediate_9);
+        ids.put("Тяжёлый блок · 3 подхода по 3 повторения.",R.string.intermediate_10);
+        ids.put("Объём → техника → контроль. Прибавки 1,25 или 2,5 кг, только после подтверждения результата.",R.string.intermediate_11);
+        ids.put("Настроить начальные веса",R.string.intermediate_12);
+        ids.put("Старт: тяжёлый вес — 80% от 1ПМ, объёмный — 65%, лёгкий — 70% тяжёлого. Округление вниз до 1,25 кг. Далее тяжёлый и лёгкий веса растут на одну прибавку по контрольному дню; объёмный блок — отдельно по минимуму повторов. 6+ повторов: +2,5 кг; 5: +1,25 кг; 4 и меньше: вес остаётся. Облегчённые подходы контрольного дня: −15 кг на турнике, −20 кг на брусьях, минимум 0 кг. Это адаптация без микроблинов и ежемесячного теста 1ПМ.",R.string.intermediate_13);
+        ids.put("Источник программы",R.string.intermediate_14);
+        ids.put("Введи известный максимум дополнительного веса на одно повторение. Массу тела не добавляй. Настройка пересчитает будущие занятия.",R.string.intermediate_15);
+        ids.put("Турник · 1ПМ, кг",R.string.intermediate_16);
+        ids.put("Брусья · 1ПМ, кг",R.string.intermediate_17);
+        ids.put("Начальные веса",R.string.intermediate_18);
+        ids.put("Проверь фактические повторы в подходах. Для объёмного блока учитывается худший подход, для контрольного — первый тяжёлый. При необходимости вернись и исправь повторы.",R.string.intermediate_19);
+
         ids.put("О редакторе",R.string.editor_extra_0);
         ids.put("Действия упражнения",R.string.editor_extra_1);
 
@@ -563,10 +585,10 @@ public final class Lang {
         ids.put("Русский",R.string.tr_368);
         ids.put("English",R.string.tr_369);
         ids.put("Выбери язык интерфейса",R.string.tr_370);
-        ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 → +0,5 кг; меньше 5 → без прибавки. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
+        ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 и меньше → без прибавки. Адаптация Trace под блины от 1,25 кг: прибавка 0,5 кг отключена. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.22.0",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.22.1",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}
@@ -576,6 +598,7 @@ public final class Lang {
     public static String t(String source){Integer id=ids.get(source);return !english()||localized==null||id==null?source:localized.getString(id);}
     public static String content(String source){if(!english()||source==null)return source;String translated=t(source);if(!translated.equals(source))return translated;
         if(source.matches("Неделя \\d+ · День \\d+"))return source.replace("Неделя ","Week ").replace("День ","Day ");
+        if(source.startsWith("Неделя ")&&source.contains(" · ")){String[] parts=source.split(" · ",2);String tail=t(parts[1]);if(!tail.equals(parts[1]))return parts[0].replace("Неделя ","Week ")+" · "+tail;}
         if(source.matches("День \\d+"))return source.replace("День ","Day ");
         if(source.startsWith("Подтягивания: ")&&source.contains("Брусья: "))return source.replace("Подтягивания: ","Pull-ups: ").replace("Брусья: ","Dips: ").replace(" кг"," kg");
         return source;

@@ -30,7 +30,7 @@ public final class Zlat {
         for(int d=from;d<days.length();d++){JSONArray groups=days.optJSONObject(d).optJSONArray("groups");for(int g=0;g<groups.length();g++){JSONObject group=groups.optJSONObject(g);String key=group.optString("zlatLift");if(weights.has(key)){Engine.put(group,"kg",weights.optDouble(key));Engine.put(group,"sets",p.optInt("zlatSets",3));}}}
     }
     public static JSONObject last(JSONObject session,String key){JSONObject result=null;JSONArray sets=session.optJSONArray("sets");for(int i=0;i<sets.length();i++){JSONObject set=sets.optJSONObject(i);if(key.equals(set.optString("zlatLift")))result=set;}return result;}
-    public static double increment(int reps){return reps>=8?5:reps==7?2.5:reps==6?1.25:reps==5?.5:0;}
+    public static double increment(int reps){return reps>=8?5:reps==7?2.5:reps==6?1.25:0;}
     public static void advance(JSONObject p,JSONObject session){
         if(!is(p)||session.optString("id").equals(p.optString("lastProgressedSession")))return;
         JSONObject weights=Engine.copy(p.optJSONObject("workingWeights"));StringBuilder note=new StringBuilder();

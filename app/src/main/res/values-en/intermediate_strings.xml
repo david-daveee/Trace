@@ -1,0 +1,23 @@
+<resources>
+<string name="intermediate_0" formatted="false">Three distinct days: volume, light technique and a top set. Trace adaptation: no 0.5 kg increases or automatic 1RM tests. 12 sessions cover four regular weeks.</string>
+<string name="intermediate_1" formatted="false">Zlat · intermediate</string>
+<string name="intermediate_2" formatted="false">Volume</string>
+<string name="intermediate_3" formatted="false">Light technique</string>
+<string name="intermediate_4" formatted="false">Top-set day</string>
+<string name="intermediate_5" formatted="false">Enter maximum added weights from 1.25 to 1900 kg</string>
+<string name="intermediate_6" formatted="false">Pause in a full dead hang, then pull up explosively. No swinging.</string>
+<string name="intermediate_7" formatted="false">Pause for 3 counts at the bottom of each rep.</string>
+<string name="intermediate_8" formatted="false">Volume block · 4–6 reps. Progression uses the lowest rep count.</string>
+<string name="intermediate_9" formatted="false">Top set · 4–6 reps. Your result sets next week’s heavy weight.</string>
+<string name="intermediate_10" formatted="false">Heavy block · 3 sets of 3 reps.</string>
+<string name="intermediate_11" formatted="false">Volume → technique → top set. Increases of 1.25 or 2.5 kg follow confirmed results.</string>
+<string name="intermediate_12" formatted="false">Set starting weights</string>
+<string name="intermediate_13" formatted="false">Initial loads: heavy 80% of 1RM, volume 65%, light 70% of heavy. Round down to 1.25 kg. Heavy and light loads then change by the same amount after the top-set day; volume progresses independently using the lowest reps. 6+ reps: +2.5 kg; 5: +1.25 kg; 4 or fewer: hold. Top-day backoffs: −15 kg for pull-ups, −20 kg for dips, floored at 0 kg. This adaptation omits microplates and monthly 1RM tests.</string>
+<string name="intermediate_14" formatted="false">Program source</string>
+<string name="intermediate_15" formatted="false">Enter your known one-rep maximum added weight, excluding body weight. Setup recalculates future sessions.</string>
+<string name="intermediate_16" formatted="false">Pull-ups · added 1RM, kg</string>
+<string name="intermediate_17" formatted="false">Dips · added 1RM, kg</string>
+<string name="intermediate_18" formatted="false">Starting weights</string>
+<string name="intermediate_19" formatted="false">Check your actual repetitions. Volume progression uses the lowest set; the top-set day uses the heavy top set. Go back and edit reps if needed.</string>
+<string name="intermediate_finish">6+ reps: +2.5 kg · 5: +1.25 kg · 4 or fewer: hold weight</string>
+</resources>

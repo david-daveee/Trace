@@ -164,3 +164,8 @@ Add **Exercise note** from the editor, a day preview, or your current workout. N
 
 ## Backup history
 Open **Settings → Backup history** for dates, file sizes, and Restore buttons. Automatic copies in Downloads/Trace/Backup and the configured custom folder are discovered, and newly saved manual copies are recorded. Restoring uses the existing validation and confirmation before replacing data. Files removed or made inaccessible outside Trace cannot be restored; use **Restore from file** for older manual copies or copies from another device. Android folder permissions are not transferred in a backup.
+
+The built-in 2018 Zlat routine uses a Trace adaptation for gyms without microplates: the final planned set gives +5 kg at 8+ reps, +2.5 kg at 7, +1.25 kg at 6, and no increase at 5 or fewer. The original 0.5 kg increase is disabled. This beginner routine is distinct from Zlat’s three-day intermediate program. Existing saved results are preserved.
+
+## Zlat intermediate adaptation
+A separate catalog plan provides volume, light technique, and top-set days. Configure known added-weight 1RMs before starting. This Trace adaptation rounds initial weights down to 1.25 kg and holds weight when the original progression would call for microplates; it runs regular weeks without automatic monthly 1RM tests. Volume and top-set progression are independent and require confirmation of actual reps. Existing beginner plans and history are retained. See the in-app source and rules for details.

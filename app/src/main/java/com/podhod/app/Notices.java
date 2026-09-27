@@ -26,7 +26,7 @@ public final class Notices {
         v.setTextViewText(R.id.notice_title,finished?Lang.t("Тренировка выполнена"):Lang.content(set.optString("exercise")));
         v.setTextViewText(R.id.notice_weight,weight);
         v.setImageViewBitmap(R.id.notice_art,artwork(c,s));
-        boolean zlat=finished&&Zlat.is(Store.get(c).program(s.optString("programId")));
+        boolean zlat=finished&&(Zlat.is(Store.get(c).program(s.optString("programId")))||ZlatIntermediate.is(Store.get(c).program(s.optString("programId"))));
         String nextLabel=finished?(zlat?Lang.t("Указать повторы и сохранить"):Lang.t("Сохранить тренировку")):paused?Lang.t("Продолжить тренировку"):missing?Lang.t("Указать рабочий вес"):Lang.t("Закончил подход");
         PendingIntent next=finished?(zlat?open(c):action(c,s,"finish")):paused?action(c,s,"pause"):missing?open(c):action(c,s,"next");
         v.setImageViewResource(R.id.notice_next,finished?R.drawable.notice_check:paused?R.drawable.notice_play:R.drawable.notice_complete);
