@@ -11,7 +11,7 @@ public final class Zlat {
         plans.put(create());return true;
     }
     public static JSONObject create(){
-        JSONObject p=Engine.obj("{\"id\":\"builtin-zlat-2018\",\"routine\":\"zlat-beginner-2018\",\"name\":\"Матвей Злат · турник и брусья\",\"mine\":false,\"nextDay\":0,\"restSeconds\":240,\"maxima\":{},\"days\":[]}");
+        JSONObject p=Engine.obj("{\"id\":\"builtin-zlat-2018\",\"routine\":\"zlat-beginner-2018\",\"name\":\"Злат · Начальный\",\"mine\":false,\"nextDay\":0,\"restSeconds\":240,\"maxima\":{},\"days\":[]}");
         Engine.put(p,"description","Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.");
         Engine.put(p,"source","https://www.youtube.com/watch?v=AeB4znuGuSo");
         for(int d=0;d<12;d++){

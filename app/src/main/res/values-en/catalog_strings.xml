@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="catalog_0">Zlat · Beginner</string>
+    <string name="catalog_1">Zlat · Intermediate</string>
+    <string name="catalog_2">Zlat · Advanced</string>
+    <string name="catalog_3">Sheiko · Preparation</string>
+    <string name="catalog_4">Sheiko · Competition</string>
+    <string name="catalog_5">BEGINNER · 3 DAYS A WEEK</string>
+    <string name="catalog_6">INTERMEDIATE · 3 DAYS A WEEK</string>
+    <string name="catalog_7">ADVANCED · 3-WEEK CYCLE</string>
+    <string name="catalog_8">CMS / MS · PREPARATION</string>
+    <string name="catalog_9">12 WEEKS · COMPETITION PREP</string>
+    <string name="catalog_10">A three-week cycle: volume, recovery, realization. 9 sessions. Trace adaptation without microplates; rate difficulty before saving. Choose max attempts manually.</string>
+    <string name="catalog_11">Check your maxes and body weight</string>
+    <string name="catalog_12">Pause for 3 counts at the top and bottom of each rep.</string>
+    <string name="catalog_13">Choose your attempt weight manually. Record a successful result; do not mark a failed attempt as completed.</string>
+    <string name="catalog_14">Controlled form, no failure. Pause at the bottom on dips; start pull-ups from a dead hang.</string>
+    <string name="catalog_15">3 weeks · 9 sessions · performance-based loads</string>
+    <string name="catalog_16">Percentages include half your body weight: (1RM + body weight / 2) × percentage − body weight / 2. Round down to 1.25 kg. Rate the whole heavy or technique block: reps in reserve +2.5 kg; solid +1.25 kg; at your limit hold. Missing the minimum reps reduces heavy or technique loads by 5%. Volume: at least 6 reps in every set +2.5 kg; 5 +1.25 kg; otherwise hold. Trace adaptation: no 0.5 kg increments, max attempts are manual, preparatory loads follow heavy-load changes. Keep the scheduled rest days.</string>
+    <string name="catalog_17">Enter known added-weight maxes and your body weight. Future sessions update; current sets are preserved.</string>
+    <string name="catalog_18">Body weight, kg</string>
+    <string name="catalog_19">Check actual reps and rate the entire block. If any set was at your limit, hold the weight.</string>
+    <string name="catalog_20">Strength</string>
+    <string name="catalog_21">Technique</string>
+    <string name="catalog_22">At my limit · hold weight</string>
+    <string name="catalog_23">Solid · +1.25 kg</string>
+    <string name="catalog_24">Reps in reserve · +2.5 kg</string>
+    <string name="catalog_25">Week 1 · Mon · Strength and volume</string>
+    <string name="catalog_26">Week 1 · Tue · Double pauses</string>
+    <string name="catalog_27">Week 1 · Thu · Recovery</string>
+    <string name="catalog_28">Week 1 · Fri · Strength and volume</string>
+    <string name="catalog_29">Week 1 · Sun · Double pauses</string>
+    <string name="catalog_30">Week 2 · Wed · Deload</string>
+    <string name="catalog_31">Week 2 · Sat · Preparation</string>
+    <string name="catalog_32">Week 3 · Tue · Max test</string>
+    <string name="catalog_33">Week 3 · Fri · Next cycle</string>
+</resources>

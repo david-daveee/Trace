@@ -271,7 +271,7 @@
     <string name="tr_269" formatted="false">"Sheiko XLS · CSV · XLSX · JSON"</string>
     <string name="tr_270" formatted="false">"Import an original Sheiko XLS file, a plan in JSON, or a CSV / XLSX using the template. XLSX uses the first sheet with five columns."</string>
     <string name="tr_271" formatted="false">"Import plan"</string>
-    <string name="tr_272" formatted="false">"Trace  /  VERSION 0.22.2"</string>
+    <string name="tr_272" formatted="false">"Trace  /  VERSION 0.23.0"</string>
     <string name="tr_273" formatted="false">"Saved workouts are corrupted"</string>
     <string name="tr_274" formatted="false">"Workout-to-plan link is corrupted"</string>
     <string name="tr_275" formatted="false">"This is not a Trace backup"</string>
@@ -373,5 +373,5 @@
     <string name="tr_371" formatted="false">"Zlat\'s public 2018 routine, based on the Russian translation of his video.\n\nFinal set: 8+ reps → +5 kg; 7 → +2.5 kg; 6 → +1.25 kg; 5 or fewer → no increase. Trace adaptation for plates starting at 1.25 kg: the 0.5 kg increase is disabled. Each exercise is calculated separately, using the weight of its final planned set.\n\nStart with a weight you can lift for 10–12 clean reps and train in the 5–8 range. Do warm-up sets separately.\n\nThe 12 workouts are a journal layout, not an author-imposed cycle length. Copy the cycle when you finish. Past results are not recalculated."</string>
     <string name="tr_372" formatted="false">"day;exercise;sets;reps;kg\nDay 1;Squat;3;5;60\nDay 1;Bench press;3;5;40\nDay 2;Deadlift;3;5;80\n"</string>
     <string name="tr_373" formatted="false">"Base routine from 2018: 3 workouts per week, 3–4 sets of 5–8 reps. The 12 workouts are a journal layout, not a prescribed cycle length. Take a rest day between workouts. Copy the plan for a new cycle."</string>
-    <string name="tr_374" formatted="false">"Trace  /  VERSION 0.22.2"</string>
+    <string name="tr_374" formatted="false">"Trace  /  VERSION 0.23.0"</string>
 </resources>

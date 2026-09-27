@@ -8,6 +8,41 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Злат · Начальный",R.string.catalog_0);
+        ids.put("Злат · Средний",R.string.catalog_1);
+        ids.put("Злат · Продвинутый",R.string.catalog_2);
+        ids.put("Шейко · Подготовка",R.string.catalog_3);
+        ids.put("Шейко · Соревнования",R.string.catalog_4);
+        ids.put("НАЧАЛЬНЫЙ · 3 ДНЯ В НЕДЕЛЮ",R.string.catalog_5);
+        ids.put("СРЕДНИЙ · 3 ДНЯ В НЕДЕЛЮ",R.string.catalog_6);
+        ids.put("ПРОДВИНУТЫЙ · ЦИКЛ 3 НЕДЕЛИ",R.string.catalog_7);
+        ids.put("КМС / МС · ПОДГОТОВКА",R.string.catalog_8);
+        ids.put("12 НЕДЕЛЬ · К СОРЕВНОВАНИЯМ",R.string.catalog_9);
+        ids.put("Трёхнедельный цикл: объём, восстановление, реализация. 9 занятий. Адаптация Trace без микроблинов; оценка тяжести перед сохранением. Максимальные попытки выбираются вручную.",R.string.catalog_10);
+        ids.put("Проверь максимумы и массу тела",R.string.catalog_11);
+        ids.put("Пауза на 3 счёта в верхней и нижней точках каждого повторения.",R.string.catalog_12);
+        ids.put("Выбери вес попытки вручную. Запиши успешный результат; не отмечай неудачную попытку выполненной.",R.string.catalog_13);
+        ids.put("Контрольная техника, без отказа. На брусьях — пауза внизу; на турнике — полный вис перед подъёмом.",R.string.catalog_14);
+        ids.put("3 недели · 9 занятий · нагрузка по результату",R.string.catalog_15);
+        ids.put("Проценты учитывают половину массы тела: (1ПМ + масса / 2) × процент − масса / 2. Округление вниз до 1,25 кг. После тяжёлого и технического блоков оцени все подходы: с запасом — +2,5 кг; уверенно — +1,25 кг; на пределе — удержать. При недоборе повторов тяжёлый или технический блок снижается на 5%. Объём: минимум 6 повторов — +2,5 кг; 5 — +1,25 кг; иначе удержать. Это адаптация Trace: без 0,5 кг, максимум выбирается вручную, подготовительные веса меняются вместе с тяжёлым блоком. В цикле сохраняй указанные дни отдыха.",R.string.catalog_16);
+        ids.put("Укажи известные максимумы дополнительного веса и массу тела. Будущие занятия пересчитаются; текущие подходы сохранятся.",R.string.catalog_17);
+        ids.put("Масса тела, кг",R.string.catalog_18);
+        ids.put("Проверь реальные повторы и оцени весь блок. Если хотя бы один подход был на пределе, оставь вес.",R.string.catalog_19);
+        ids.put("Сила",R.string.catalog_20);
+        ids.put("Техника",R.string.catalog_21);
+        ids.put("На пределе · оставить вес",R.string.catalog_22);
+        ids.put("Уверенно · +1,25 кг",R.string.catalog_23);
+        ids.put("С запасом · +2,5 кг",R.string.catalog_24);
+        ids.put("Неделя 1 · Пн · Сила и объём",R.string.catalog_25);
+        ids.put("Неделя 1 · Вт · Двойные паузы",R.string.catalog_26);
+        ids.put("Неделя 1 · Чт · Восстановление",R.string.catalog_27);
+        ids.put("Неделя 1 · Пт · Сила и объём",R.string.catalog_28);
+        ids.put("Неделя 1 · Вс · Двойные паузы",R.string.catalog_29);
+        ids.put("Неделя 2 · Ср · Разгрузка",R.string.catalog_30);
+        ids.put("Неделя 2 · Сб · Подготовка",R.string.catalog_31);
+        ids.put("Неделя 3 · Вт · Проверка максимума",R.string.catalog_32);
+        ids.put("Неделя 3 · Пт · Следующий цикл",R.string.catalog_33);
+
         ids.put("6+ повторов: +2,5 кг · 5: +1,25 кг · 4 и меньше: без прибавки",R.string.intermediate_finish);
         ids.put("Три разных дня: объём, лёгкая техника, контрольный подход. Адаптация Trace: без прибавок 0,5 кг и без автоматических тестов 1ПМ. 12 занятий — четыре обычные недели.",R.string.intermediate_0);
         ids.put("Злат · intermediate",R.string.intermediate_1);
@@ -588,7 +623,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 и меньше → без прибавки. Адаптация Trace под блины от 1,25 кг: прибавка 0,5 кг отключена. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.22.2",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.23.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

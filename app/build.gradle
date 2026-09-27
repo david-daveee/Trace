@@ -2,7 +2,7 @@ plugins { id 'com.android.application' }
 android {
     namespace 'com.podhod.app'
     compileSdk 35
-    defaultConfig { applicationId 'com.podhod.app'; minSdk 26; targetSdk 35; versionCode 51; versionName '0.22.2'; testInstrumentationRunner (providers.gradleProperty('smokeRunner').getOrElse('design') == 'notice' ? 'com.podhod.app.NoticeSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'progress' ? 'com.podhod.app.LibraryProgressSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'language' ? 'com.podhod.app.LanguageSmoke' : 'com.podhod.app.DesignSmoke') }
+    defaultConfig { applicationId 'com.podhod.app'; minSdk 26; targetSdk 35; versionCode 52; versionName '0.23.0'; testInstrumentationRunner (providers.gradleProperty('smokeRunner').getOrElse('design') == 'notice' ? 'com.podhod.app.NoticeSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'progress' ? 'com.podhod.app.LibraryProgressSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'language' ? 'com.podhod.app.LanguageSmoke' : 'com.podhod.app.DesignSmoke') }
     compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
     testOptions { unitTests.returnDefaultValues = true }
 }

@@ -29,7 +29,7 @@ You do not need Android Studio or a computer. An iPhone version is not available
 ## Start your first workout
 
 1. Open **Plans**, choose a program, and tap **Add to my plans**.
-2. Enter your weights in the program card. Sheiko plans use your **squat, bench press, and deadlift maxes** to calculate percentages. The Zlat plan uses **added working weight** for pull-ups and dips.
+2. Enter your weights in the program card. Sheiko plans use your **squat, bench press, and deadlift maxes** to calculate percentages. Zlat Beginner uses **added working weight**; Intermediate asks for added-weight one-rep maxes; Advanced also asks for body weight.
 3. Open your program in **My plans** and start a workout.
 4. Complete a set and mark it done. The next set appears immediately; there is no rest timer.
 5. At the end, tap **Save workout**. Your results appear in history and progress, and the next session advances to the next day.
@@ -82,11 +82,18 @@ The map uses © OpenStreetMap contributors tiles. Internet is needed for uncache
 
 | Program | What's inside |
 | --- | --- |
-| **Sheiko · CMS / MS** | A four-week preparation cycle with 16 workouts. |
-| **Sheiko · 12 weeks to competition** | Eight weeks of preparation and a four-week competition phase: 35 workouts followed by a competition event. |
-| **Matvey Zlat · pull-ups and dips** | A basic weighted routine from 2018. Next-session increases are calculated after you confirm your results. |
+| **Sheiko · Preparation** | A four-week preparation cycle with 16 workouts. |
+| **Sheiko · Competition** | Eight weeks of preparation and a four-week competition phase: 35 workouts followed by a competition event. |
+| **Zlat · Beginner** | A basic weighted routine from 2018. Next-session increases are calculated after you confirm your results. |
 
-Sheiko weights follow the percentages prescribed in each plan. Zlat increases depend on the result of the final planned set of each exercise.
+| **Zlat · Intermediate** | Separate volume, technique, and control days. A Trace adaptation with independent progression for volume and heavy work. |
+| **Zlat · Advanced** | A three-week cycle with nine sessions. Confirm actual reps and rate heavy or technique blocks before saving. |
+
+Sheiko weights follow the percentages prescribed in each plan. Zlat Beginner uses the last planned set. Intermediate uses confirmed repetitions; Advanced also uses your difficulty rating. All three Zlat plans avoid automatic 0.5 kg increases. Advanced starting loads include half your body weight in the percentage calculation and round down to 1.25 kg. Max attempts are chosen manually; follow the weekdays shown in the plan rather than training nine days in a row.
+
+The Intermediate and Advanced entries are explicitly labelled Trace adaptations of [Mathew Zlat’s guide](https://www.scribd.com/document/654317739/The-complete-guide-to-weighted-calisthenics-1), with their calculation rules explained in the app. Existing workout history, custom plan names, and chosen cover photos are preserved.
+
+<img src="docs/trace-zlat-plans.png" alt="Trace Beginner, Intermediate and Advanced plan covers featuring parallel bars" width="360">
 
 ## Bring your own plan
 

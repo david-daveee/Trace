@@ -27,11 +27,13 @@ public final class Store {
     }
     public void ensureCatalog() {
         ZlatIntermediate.ensure(data);
+        ZlatAdvanced.ensure(data);
         Zlat.repairMicroplateProgression(data);
         try(var in=context.getAssets().open("sheiko_competition.json")) {
             BuiltinPlans.ensure(data,Engine.obj(new String(Importer.read(in),StandardCharsets.UTF_8)));
             JSONArray plans=data.optJSONArray("programs");for(int i=0;i<plans.length();i++){JSONObject p=plans.optJSONObject(i);if(!p.has("category")&&PlanCategory.sheiko(p))Engine.put(p,"category","powerlifting");}
         } catch(Exception e) { throw new IllegalStateException(Lang.t("Не удалось загрузить программу"),e); }
+        PlanPresentation.normalize(data);
     }
     public synchronized void save() {
         Engine.clearRest(active());
@@ -57,7 +59,7 @@ public final class Store {
         Engine.put(p,"mine",false);save();
     }
     public synchronized void start(JSONObject p) {
-        if((Zlat.is(p)&&(!p.optBoolean("configured")||p.optJSONObject("workingWeights")==null))||(ZlatIntermediate.is(p)&&(!p.optBoolean("configured")||p.optJSONObject("intermediateWeights")==null)))throw new IllegalStateException(Lang.t("Сначала задай рабочие веса Злата"));
+        if((ZlatAdvanced.is(p)&&(!p.optBoolean("configured")||p.optJSONObject("advancedWeights")==null))||(Zlat.is(p)&&(!p.optBoolean("configured")||p.optJSONObject("workingWeights")==null))||(ZlatIntermediate.is(p)&&(!p.optBoolean("configured")||p.optJSONObject("intermediateWeights")==null)))throw new IllegalStateException(Lang.t("Сначала задай рабочие веса Злата"));
         Engine.selectProgram(data,p,System.currentTimeMillis());save();
     }
     public synchronized void updateMaxima(JSONObject p,JSONObject maxima,int seconds) {
@@ -69,9 +71,10 @@ public final class Store {
         if(s==null||!s.optString("id").equals(id)||s.optInt("revision")!=revision) return false;
         if(action.equals("finish")) {
             if(Engine.doneCount(s)!=s.optJSONArray("sets").length()) return false;
-            if((Zlat.is(program(s.optString("programId")))||(ZlatIntermediate.is(program(s.optString("programId")))&&ZlatIntermediate.confirmation(s)))&&s.optInt("confirmedRevision",-1)!=s.optInt("revision"))return false;
+            JSONObject finishingPlan=program(s.optString("programId"));
+            if((Zlat.is(finishingPlan)||(ZlatIntermediate.is(finishingPlan)&&ZlatIntermediate.confirmation(s))||(ZlatAdvanced.is(finishingPlan)&&ZlatAdvanced.confirmation(s)))&&s.optInt("confirmedRevision",-1)!=s.optInt("revision"))return false;
             Engine.put(s,"ended",System.currentTimeMillis());data.optJSONArray("history").put(Engine.copy(s));
-            JSONObject p=program(s.optString("programId")); if(p!=null){if(Zlat.is(p))Zlat.advance(p,s);if(ZlatIntermediate.is(p))ZlatIntermediate.advance(p,s);Engine.put(p,"nextDay",s.optInt("day")+1);}
+            JSONObject p=program(s.optString("programId")); if(p!=null){if(ZlatAdvanced.is(p))ZlatAdvanced.advance(p,s);if(Zlat.is(p))Zlat.advance(p,s);if(ZlatIntermediate.is(p))ZlatIntermediate.advance(p,s);Engine.put(p,"nextDay",s.optInt("day")+1);}
             data.remove("active");save();return true;
         }
         boolean changed=Engine.act(s,action,System.currentTimeMillis());if(changed){ZlatIntermediate.syncBackoffs(s);save();}return changed;
