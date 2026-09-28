@@ -22,7 +22,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -32,7 +33,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -42,7 +44,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -52,7 +55,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -62,7 +66,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -72,7 +77,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -82,7 +88,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -92,7 +99,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -109,7 +117,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -119,7 +128,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -129,7 +139,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Пресс",
@@ -151,7 +162,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -161,7 +173,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -171,7 +184,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -181,7 +195,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -191,7 +206,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -201,7 +217,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -211,7 +228,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -221,7 +239,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -231,7 +250,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -241,7 +261,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -251,7 +272,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -261,7 +283,8 @@
           "kg": 85.0,
           "lift": "bench",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -271,7 +294,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -281,7 +305,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -298,7 +323,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -308,7 +334,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -318,14 +345,16 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны стоя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 16,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     },
@@ -340,7 +369,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -350,7 +380,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -360,7 +391,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -370,7 +402,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -380,7 +413,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -390,7 +424,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -400,7 +435,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -410,7 +446,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -420,7 +457,8 @@
           "kg": 72.5,
           "lift": "bench",
           "factor": 0.55,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -430,7 +468,8 @@
           "kg": 85.0,
           "lift": "bench",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -440,7 +479,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -469,7 +509,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -479,14 +520,16 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклонный жим",
           "sets": 6,
           "reps": 4,
           "sourceRow": 24,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         },
         {
           "exercise": "Брусья",
@@ -503,7 +546,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -513,7 +557,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -523,7 +568,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -533,14 +579,16 @@
           "kg": 170.0,
           "lift": "deadlift",
           "factor": 0.9,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны сидя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 27,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     },
@@ -555,7 +603,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -565,7 +614,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -575,7 +625,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -585,7 +636,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -595,7 +647,8 @@
           "kg": 110.5,
           "lift": "bench",
           "factor": 0.85,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -605,7 +658,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -615,7 +669,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -625,7 +680,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -635,7 +691,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -645,7 +702,8 @@
           "kg": 72.5,
           "lift": "bench",
           "factor": 0.55,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -655,7 +713,8 @@
           "kg": 85.0,
           "lift": "bench",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -665,7 +724,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -694,7 +754,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -704,7 +765,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -714,7 +776,8 @@
           "kg": 122.5,
           "lift": "deadlift",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -724,7 +787,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -734,7 +798,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -744,7 +809,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -754,7 +820,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -764,7 +831,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -774,7 +842,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -784,7 +853,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -794,7 +864,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -811,7 +882,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -821,7 +893,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -831,7 +904,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -841,14 +915,16 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны стоя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 39,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     },
@@ -863,7 +939,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -873,7 +950,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -883,7 +961,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -893,7 +972,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -903,7 +983,8 @@
           "kg": 72.5,
           "lift": "bench",
           "factor": 0.55,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -913,7 +994,8 @@
           "kg": 85.0,
           "lift": "bench",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -923,7 +1005,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -940,7 +1023,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -950,7 +1034,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -960,7 +1045,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Пресс",
@@ -979,14 +1065,16 @@
           "sets": 5,
           "reps": 5,
           "sourceRow": 46,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         },
         {
           "exercise": "Наклонный жим",
           "sets": 6,
           "reps": 4,
           "sourceRow": 47,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         },
         {
           "exercise": "Брусья",
@@ -1003,7 +1091,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -1013,7 +1102,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -1023,7 +1113,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -1033,14 +1124,16 @@
           "kg": 142.5,
           "lift": "deadlift",
           "factor": 0.75,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны сидя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 50,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     },
@@ -1055,7 +1148,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1065,7 +1159,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1075,7 +1170,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1085,7 +1181,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1095,7 +1192,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1105,7 +1203,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1115,7 +1214,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1125,7 +1225,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -1142,7 +1243,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1152,7 +1254,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1162,7 +1265,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Пресс",
@@ -1184,7 +1288,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1194,7 +1299,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1204,7 +1310,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1214,7 +1321,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1224,7 +1332,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1234,7 +1343,8 @@
           "kg": 72.5,
           "lift": "bench",
           "factor": 0.55,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1244,7 +1354,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1254,7 +1365,8 @@
           "kg": 85.0,
           "lift": "bench",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1264,7 +1376,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1274,7 +1387,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1284,7 +1398,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1294,7 +1409,8 @@
           "kg": 110.0,
           "lift": "bench",
           "factor": 0.85,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1304,7 +1420,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1314,7 +1431,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -1331,7 +1449,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -1341,7 +1460,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -1351,14 +1471,16 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны сидя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 63,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     },
@@ -1373,7 +1495,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1383,7 +1506,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1393,7 +1517,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1403,7 +1528,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1413,7 +1539,8 @@
           "kg": 152.5,
           "lift": "squat",
           "factor": 0.85,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1423,7 +1550,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1433,7 +1561,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1443,7 +1572,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1453,7 +1583,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -1470,7 +1601,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1480,7 +1612,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1490,7 +1623,8 @@
           "kg": 117.5,
           "lift": "squat",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Брусья",
@@ -1519,7 +1653,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -1529,7 +1664,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -1539,7 +1675,8 @@
           "kg": 122.5,
           "lift": "deadlift",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1549,7 +1686,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1559,7 +1697,8 @@
           "kg": 78.0,
           "lift": "bench",
           "factor": 0.6,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1569,7 +1708,8 @@
           "kg": 85.0,
           "lift": "bench",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Разгибания рук",
@@ -1586,7 +1726,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -1596,7 +1737,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -1606,7 +1748,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -1616,7 +1759,8 @@
           "kg": 162.5,
           "lift": "deadlift",
           "factor": 0.85,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "наклоны стоя",
@@ -1638,7 +1782,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1648,7 +1793,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1658,7 +1804,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1668,7 +1815,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1678,7 +1826,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1688,7 +1837,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1698,7 +1848,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1708,7 +1859,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1718,7 +1870,8 @@
           "kg": 110.0,
           "lift": "bench",
           "factor": 0.85,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1728,7 +1881,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Брусья",
@@ -1764,7 +1918,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -1774,7 +1929,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга из ямы",
@@ -1784,7 +1940,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1794,7 +1951,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1804,7 +1962,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1814,7 +1973,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1824,7 +1984,8 @@
           "kg": 97.5,
           "lift": "bench",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Разводка",
@@ -1841,7 +2002,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1851,7 +2013,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1861,7 +2024,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1871,7 +2035,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Становая тяга",
@@ -1881,14 +2046,16 @@
           "kg": 162.5,
           "lift": "deadlift",
           "factor": 0.85,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны стоя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 87,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     },
@@ -1903,7 +2070,8 @@
           "kg": 90.0,
           "lift": "squat",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1913,7 +2081,8 @@
           "kg": 107.5,
           "lift": "squat",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1923,7 +2092,8 @@
           "kg": 125.0,
           "lift": "squat",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1933,7 +2103,8 @@
           "kg": 145.0,
           "lift": "squat",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -1943,7 +2114,8 @@
           "kg": 152.5,
           "lift": "squat",
           "factor": 0.85,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1953,7 +2125,8 @@
           "kg": 65.0,
           "lift": "bench",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1963,7 +2136,8 @@
           "kg": 77.5,
           "lift": "bench",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1973,7 +2147,8 @@
           "kg": 90.0,
           "lift": "bench",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим лёжа",
@@ -1983,7 +2158,8 @@
           "kg": 105.0,
           "lift": "bench",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Брусья",
@@ -2007,7 +2183,8 @@
           "kg": 99.0,
           "lift": "squat",
           "factor": 0.55,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -2017,7 +2194,8 @@
           "kg": 117.5,
           "lift": "squat",
           "factor": 0.65,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Присед",
@@ -2027,7 +2205,8 @@
           "kg": 135.0,
           "lift": "squat",
           "factor": 0.75,
-          "round": 0
+          "round": 0,
+          "barbell": true
         },
         {
           "exercise": "Пресс",
@@ -2049,7 +2228,8 @@
           "kg": 95.0,
           "lift": "deadlift",
           "factor": 0.5,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -2059,7 +2239,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -2069,7 +2250,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга до колен",
@@ -2079,21 +2261,24 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Жим из-за головы",
           "sets": 5,
           "reps": 5,
           "sourceRow": 96,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         },
         {
           "exercise": "Наклонный жим",
           "sets": 6,
           "reps": 4,
           "sourceRow": 97,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -2103,7 +2288,8 @@
           "kg": 115.0,
           "lift": "deadlift",
           "factor": 0.6,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -2113,7 +2299,8 @@
           "kg": 132.5,
           "lift": "deadlift",
           "factor": 0.7,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -2123,7 +2310,8 @@
           "kg": 152.5,
           "lift": "deadlift",
           "factor": 0.8,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Тяга с плинтов",
@@ -2133,14 +2321,16 @@
           "kg": 170.0,
           "lift": "deadlift",
           "factor": 0.9,
-          "round": 2.5
+          "round": 2.5,
+          "barbell": true
         },
         {
           "exercise": "Наклоны сидя",
           "sets": 5,
           "reps": 5,
           "sourceRow": 99,
-          "kg": -1
+          "kg": -1,
+          "barbell": true
         }
       ]
     }

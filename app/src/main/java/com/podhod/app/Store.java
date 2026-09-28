@@ -34,6 +34,7 @@ public final class Store {
             JSONArray plans=data.optJSONArray("programs");for(int i=0;i<plans.length();i++){JSONObject p=plans.optJSONObject(i);if(!p.has("category")&&PlanCategory.sheiko(p))Engine.put(p,"category","powerlifting");}
         } catch(Exception e) { throw new IllegalStateException(Lang.t("Не удалось загрузить программу"),e); }
         PlanPresentation.normalize(data);
+        SheikoBarbells.migrate(data);
     }
     public synchronized void save() {
         Engine.clearRest(active());
