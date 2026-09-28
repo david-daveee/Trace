@@ -28,7 +28,7 @@ These are public certificate fingerprints, not private keys. Recheck them with `
 5. Set up Firestore with private-by-default access. Deploy and test per-UID rules before any user data upload; do not use public test-mode rules.
 6. Implement and test the revision/conflict protocol described in `ACCOUNT_SYNC.md` before enabling production sync.
 
-Never embed service-account private keys or admin credentials in the APK. Account setup alone must not start uploading the existing user's workouts or precise routes without the in-app first-sync choice.
+Never embed service-account private keys or admin credentials in the APK. Account setup alone does not upload user data. The in-app sign-in copy explains that an existing account is loaded automatically and an empty account receives phone data.
 
 ## Official implementation references
 

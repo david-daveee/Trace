@@ -48,7 +48,7 @@ final class SyncRecovery {
                 }
                 if(!editor.commit())throw new IOException("Cannot recover "+name);
             }
-            if(!c.getSharedPreferences("trace-account",0).edit().remove("consentUid").putString("status","choose").commit())throw new IOException("Cannot suspend sync after recovery");
+            if(!c.getSharedPreferences("trace-account",0).edit().remove("consentUid").putString("status","restored").commit())throw new IOException("Cannot suspend sync after recovery");
             journal.delete();
         }catch(Exception e){throw new IllegalStateException("Could not recover interrupted restore; safety copy retained",e);}
     }

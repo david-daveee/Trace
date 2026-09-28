@@ -34,14 +34,14 @@ The button opens your browser. Open the downloaded APK and confirm the Android u
 
 ## Your account and a new phone
 
-An account is optional. In **Settings**, sign in with Google and choose whether to load account data or use this phone's data. Signing in alone does not replace your library.
+An account is optional. In **Settings**, sign in with Google: existing account data loads automatically. If the account is empty, Trace saves this phone's data to it. A local safety copy is created before replacement.
 
 - Sync plans, covers, working weights, notes, completed history, **current and paused workouts**, step history, goals, step length and language.
 - Completed walks and their GPS routes combine without duplicates. Deleted walks stay deleted. Steps follow the selected source; counts from different phones are not added together.
 - Workout edits trigger a sync attempt after a short delay. Background timing depends on Android and connectivity. Check the status in Settings or use **Sync now**.
-- If both devices changed, Trace asks which version to keep. A safety copy is saved before applying a replacement.
+- If both devices changed, the account version takes priority. The replaced phone version remains in its local safety backup. A safety copy is saved before applying a replacement.
 
-**Moving phones:** update Trace on the old phone, wait for **Synced**, install the latest APK on the new phone, sign into the same Google account and choose **Load from account**. Current and paused workouts retain their completed sets, weights and notes.
+**Moving phones:** update Trace on the old phone, wait for **Synced**, install the latest APK on the new phone, sign into the same Google account. Your account data restores automatically. Current and paused workouts retain their completed sets, weights and notes.
 
 Live GPS recording, Android permissions, sensor enablement and automatic-backup folder settings stay device-local. Re-enable tracking and grant permissions on the new phone. Finish an ongoing walk on the original phone before moving. Keep an exported backup before uninstalling.
 

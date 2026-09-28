@@ -39,7 +39,7 @@ final class WelcomeScreen {
         google.setEnabled(configured);google.setAlpha(configured?1f:.45f);
         a.button(content,AccountPanel.s("Continue without an account","Продолжить без аккаунта"),false,()->enter(a));
         a.space(content,18);
-        content.addView(a.text(AccountPanel.s("An account is optional. Sign in to sync across phones, or start now and connect later in Settings.","Аккаунт необязателен. Войди для синхронизации между телефонами или начни сейчас — подключить аккаунт можно позже в настройках."),13,a.MUTED));
+        content.addView(a.text(AccountPanel.s("Sign in to automatically restore your account data. An empty account saves this phone’s data. You can also start without an account.","Войди — данные аккаунта восстановятся автоматически. В пустой аккаунт сохранятся данные телефона. Можно начать и без аккаунта."),13,a.MUTED));
         if(!configured){a.space(content,8);content.addView(a.text(AccountPanel.s("Google sign-in is unavailable in this build.","В этой сборке вход через Google недоступен."),13,a.MUTED));}
         root.setOnApplyWindowInsetsListener((v,insets)->{v.setPadding(insets.getSystemWindowInsetLeft(),insets.getSystemWindowInsetTop(),insets.getSystemWindowInsetRight(),insets.getSystemWindowInsetBottom());return insets;});
         a.setContentView(root);root.requestApplyInsets();

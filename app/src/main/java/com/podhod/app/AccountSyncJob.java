@@ -10,8 +10,8 @@ public final class AccountSyncJob extends JobService {
     static void cancel(Context c){c.getSystemService(JobScheduler.class).cancel(ID);}
     @Override public boolean onStartJob(JobParameters params){
         AccountSync sync=AccountSync.get(this);
-        if(!sync.enabled()||sync.busy()||sync.prefs().getString("status", "").equals("choose"))return false;
-        sync.prepare(new AccountSync.Listener(){public void choice(AccountSync.Pending p){jobFinished(params,false);}public void done(){jobFinished(params,false);}public void error(Exception e){jobFinished(params,true);}},false);return true;
+        if(sync.user()==null||sync.busy()||sync.prefs().getString("status", "").equals("restored"))return false;
+        sync.prepare(new AccountSync.Listener(){public void done(){jobFinished(params,false);}public void error(Exception e){jobFinished(params,true);}},false);return true;
     }
     @Override public boolean onStopJob(JobParameters params){return true;}
 }

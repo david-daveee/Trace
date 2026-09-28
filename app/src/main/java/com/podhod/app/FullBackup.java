@@ -26,7 +26,7 @@ final class FullBackup {
    store.data=workouts;Zlat.ensure(store.data);store.ensureCatalog();store.save();
    if(backup.has("format"))restoreSettings(c,backup);
   }catch(Exception e){store.data=previous;store.save();restorePrefs(steps,oldSteps);restorePrefs(settings,oldSettings);restorePrefs(Walks.prefs(c),oldWalks);Lang.init(c);throw new IllegalArgumentException(Lang.t("Не удалось восстановить копию"),e);}}
-  AccountSync.get(c).resetConsent();
+  AccountSync.get(c).resetConsent();AccountSync.get(c).state("restored");
   if(backup.has("walks"))c.stopService(new Intent(c,WalkService.class));
   if(!Steps.enabled(c))c.stopService(new Intent(c,StepsService.class));
  }

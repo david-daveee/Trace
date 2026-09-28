@@ -8,7 +8,7 @@ import java.util.concurrent.*;
 import org.json.JSONObject;
 
 final class AccountSync {
-    interface Listener { void choice(Pending pending); void done(); void error(Exception e); }
+    interface Listener { void done(); void error(Exception e); }
     static final class Pending {
         final String uid,localHash;final int epoch;final JSONObject local;final CloudStore.Revision remote;
         Pending(String uid,int epoch,JSONObject local,CloudStore.Revision remote){this.uid=uid;this.epoch=epoch;this.local=local;this.remote=remote;localHash=SyncPayload.fingerprint(local);}
@@ -28,10 +28,10 @@ final class AccountSync {
     boolean busy(){return busy;}
     boolean same(String uid,int token){FirebaseUser u=user();return token==epoch&&u!=null&&u.getUid().equals(uid);}
     void state(String value){prefs().edit().putString("status",value).apply();context.sendBroadcast(new Intent("com.podhod.app.CHANGED").setPackage(context.getPackageName()),"com.podhod.app.INTERNAL");}
-    void resetConsent(){epoch++;busy=false;prefs().edit().remove("consentUid").remove("baseRevision").remove("baseHash").remove("lastSync").putString("status","choose").commit();}
+    void resetConsent(){epoch++;busy=false;prefs().edit().remove("consentUid").remove("baseRevision").remove("baseHash").remove("lastSync").putString("status","pending").commit();}
     void signOut(){resetConsent();FirebaseAuth.getInstance().signOut();AccountSyncJob.cancel(context);state("guest");}
-    void refresh(){if(enabled()&&!busy&&!prefs().getString("status", "").equals("choose"))prepare(null,false);}
-    void prepare(Listener listener,boolean forceChoice){
+    void refresh(){if(user()!=null&&!busy&&!prefs().getString("status", "").equals("restored"))prepare(null,false);}
+    void prepare(Listener listener,boolean accountFirst){
         FirebaseUser u=user();if(u==null||busy)return;
 
         String uid=u.getUid();int token=epoch;JSONObject local=SyncLocal.capture(context);String hash=SyncPayload.fingerprint(local);
@@ -43,10 +43,8 @@ final class AccountSync {
                 if(!same(uid,token))return;busy=false;
                 if(!hash.equals(SyncPayload.fingerprint(SyncLocal.capture(context)))){state("pending");if(listener!=null)listener.error(new IllegalStateException(AccountPanel.s("Data changed while checking. Please sync again.","Данные изменились во время проверки. Повтори синхронизацию.")));return;}
                 Pending pending=new Pending(uid,token,local,remote);
-                SyncDecision.Action action=forceChoice?SyncDecision.Action.CHOOSE:SyncDecision.decide(consent,base,remote.id,baseHash,hash);
+                SyncDecision.Action action=SyncDecision.decide(consent&&!accountFirst,base,remote.id,baseHash,hash);
                 if(action==SyncDecision.Action.NOTHING){state("synced");if(listener!=null)listener.done();}
-                else if(action==SyncDecision.Action.CHOOSE || (action==SyncDecision.Action.CLOUD&&remote.payload==null)){state("choose");if(listener!=null)listener.choice(pending);}
-                else if(action==SyncDecision.Action.CLOUD&&SyncLocal.active(context)){state("choose");if(listener!=null)listener.choice(pending);}
                 else accept(pending,action==SyncDecision.Action.PHONE,listener);
             });
         }catch(Exception e){main.post(()->fail(uid,token,listener,e));}});
