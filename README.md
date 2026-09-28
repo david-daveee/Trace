@@ -198,6 +198,10 @@ Add **Exercise note** from the editor, a day preview, or your current workout. N
 ## Backup history
 Open **Settings → Backup history** for dates, file sizes, and Restore buttons. Automatic copies in Downloads/Trace/Backup and the configured custom folder are discovered, and newly saved manual copies are recorded. Restoring uses the existing validation and confirmation before replacing data. Files removed or made inaccessible outside Trace cannot be restored; use **Restore from file** for older manual copies or copies from another device. Android folder permissions are not transferred in a backup.
 
+## Muscle map artwork
+
+Detailed front and back anatomical diagrams highlight muscle groups involved in completed sets and work offline. Color intensity follows the relative number of sets involving each group; it does not measure fatigue or recovery. Anatomical vector contours are adapted from [react-native-body-highlighter](https://github.com/HichamELBSI/react-native-body-highlighter), copyright 2022 ELABBASSI Hicham, under the [MIT license](app/src/main/assets/licenses/body-highlighter.txt). The license is also included in the APK.
+
 The built-in 2018 Zlat routine uses a Trace adaptation for gyms without microplates: the final planned set gives +5 kg at 8+ reps, +2.5 kg at 7, +1.25 kg at 6, and no increase at 5 or fewer. The original 0.5 kg increase is disabled. This beginner routine is distinct from Zlat’s three-day intermediate program. Existing saved results are preserved.
 
 ## Zlat intermediate adaptation

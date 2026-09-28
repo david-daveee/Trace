@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Adapted from react-native-body-highlighter (MIT); see assets/licenses/body-highlighter.txt. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android" android:width="180dp" android:height="360dp" android:viewportWidth="724" android:viewportHeight="1448">
+<group>
+  <path android:fillColor="#FFFFFFFF" android:pathData="M 285.01,307.01 C 284.843490744,306.953537132 284.69738871,306.848979091 284.590226546,306.709588781 S 284.419573206,306.402129859 284.407806702,306.226701989 S 284.436517849,305.876231988 284.524105172,305.723779213 S 284.742522585,305.448193681 284.9,305.37 q 19.44,-9.61 35.65,-24.8 q 1.68,-1.57 3.31,-0.31 q 0.4,0.32 0.45,0.82 q 1.25,12.61 -1.57,25.41 c -0.74,3.32 -2.55,4.23 -5.9,4.48 q -16.02,1.24 -31.83,-3.96 z"/>
+  <path android:fillColor="#FFFFFFFF" android:pathData="M 414,311.19 c -5.24,-0.12 -7.81,-0.64 -8.9,-6.27 q -2.33,-12.09 -1.17,-23.94 q 0.06,-0.61 0.61,-0.89 q 1.66,-0.85 3.65,0.99 q 16.12,14.87 33.97,23.63 q 3.65,1.79 -0.27,2.89 q -13.88,3.91 -27.89,3.59 z"/>
+</group>
+</vector>
