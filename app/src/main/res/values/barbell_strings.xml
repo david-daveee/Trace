@@ -1,0 +1,10 @@
+<resources>
+<string name="barbell_0">"Упражнение со штангой · гриф 20 кг"</string>
+<string name="barbell_1">"Без блинов"</string>
+<string name="barbell_2">"КАК СОБРАТЬ ШТАНГУ"</string>
+<string name="barbell_3">"Гриф весит 20 кг. Укажи общий вес не меньше 20 кг."</string>
+<string name="barbell_4">"С каждой стороны: "</string>
+<string name="barbell_5">"Гриф 20 кг · всего "</string>
+<string name="barbell_6">"Этот вес нельзя собрать точно. На рисунке "</string>
+<string name="barbell_7">" кг. Вес подхода не изменён."</string>
+</resources>

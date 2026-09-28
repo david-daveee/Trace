@@ -8,6 +8,15 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Упражнение со штангой · гриф 20 кг",R.string.barbell_0);
+        ids.put("Без блинов",R.string.barbell_1);
+        ids.put("КАК СОБРАТЬ ШТАНГУ",R.string.barbell_2);
+        ids.put("Гриф весит 20 кг. Укажи общий вес не меньше 20 кг.",R.string.barbell_3);
+        ids.put("С каждой стороны: ",R.string.barbell_4);
+        ids.put("Гриф 20 кг · всего ",R.string.barbell_5);
+        ids.put("Этот вес нельзя собрать точно. На рисунке ",R.string.barbell_6);
+        ids.put(" кг. Вес подхода не изменён.",R.string.barbell_7);
+
         ids.put("Не найден браузер для скачивания",R.string.updates_0);
         ids.put("ОБНОВЛЕНИЯ TRACE",R.string.updates_1);
         ids.put("Установлена версия ",R.string.updates_2);
@@ -643,7 +652,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 и меньше → без прибавки. Адаптация Trace под блины от 1,25 кг: прибавка 0,5 кг отключена. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.24.0",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.25.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

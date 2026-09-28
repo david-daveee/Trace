@@ -84,6 +84,12 @@ The map uses © OpenStreetMap contributors tiles. Internet is needed for uncache
 - **Switch programs freely.** Your unfinished session stays paused so you can return to it later.
 - **Keep your list tidy.** Use **Remove from my plans** to hide a program from your list. Its history stays, and you can add it again from Plans.
 
+### Barbell loading diagram
+
+When creating or editing an exercise, enable **Barbell exercise · 20 kg bar**. Trace shows a symmetric plate diagram in the plan editor and during that exercise. It uses 1.25, 2.5, 5, 10, and 20 kg plates, assuming enough plates are available. Enter the total weight including the bar: 100 kg means two 20 kg plates on each side.
+
+If the weight cannot be assembled exactly, the diagram shows the closest lower load and a warning. Your recorded set weight is never changed by the calculator. Existing active sessions keep their exercise settings; edits apply to future workouts.
+
 ## Included programs
 
 | Program | What's inside |

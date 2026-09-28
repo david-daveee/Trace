@@ -1,0 +1,10 @@
+<resources>
+<string name="barbell_0">"Barbell exercise · 20 kg bar"</string>
+<string name="barbell_1">"No plates"</string>
+<string name="barbell_2">"LOAD YOUR BAR"</string>
+<string name="barbell_3">"The bar weighs 20 kg. Enter a total weight of at least 20 kg."</string>
+<string name="barbell_4">"Each side: "</string>
+<string name="barbell_5">"20 kg bar · total "</string>
+<string name="barbell_6">"This weight cannot be loaded exactly. The diagram shows "</string>
+<string name="barbell_7">" kg. Your set weight is unchanged."</string>
+</resources>
