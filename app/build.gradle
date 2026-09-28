@@ -1,12 +1,19 @@
 plugins { id 'com.android.application' }
+if (file('google-services.json').exists()) { apply plugin: 'com.google.gms.google-services' }
 android {
     namespace 'com.podhod.app'
     compileSdk 35
-    defaultConfig { applicationId 'com.podhod.app'; minSdk 26; targetSdk 35; versionCode 60; versionName '0.27.1'; testInstrumentationRunner (providers.gradleProperty('smokeRunner').getOrElse('design') == 'notice' ? 'com.podhod.app.NoticeSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'progress' ? 'com.podhod.app.LibraryProgressSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'language' ? 'com.podhod.app.LanguageSmoke' : 'com.podhod.app.DesignSmoke') }
+    defaultConfig { applicationId 'com.podhod.app'; minSdk 26; targetSdk 35; versionCode 61; versionName '0.28.0'; testInstrumentationRunner (providers.gradleProperty('smokeRunner').getOrElse('design') == 'welcome' ? 'com.podhod.app.WelcomeSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'account' ? 'com.podhod.app.AccountSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'map' ? 'com.podhod.app.MapSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'notice' ? 'com.podhod.app.NoticeSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'progress' ? 'com.podhod.app.LibraryProgressSmoke' : providers.gradleProperty('smokeRunner').getOrElse('design') == 'language' ? 'com.podhod.app.LanguageSmoke' : 'com.podhod.app.DesignSmoke') }
     compileOptions { sourceCompatibility JavaVersion.VERSION_17; targetCompatibility JavaVersion.VERSION_17 }
     testOptions { unitTests.returnDefaultValues = true }
 }
 dependencies {
+    implementation platform('com.google.firebase:firebase-bom:34.19.0')
+    implementation 'com.google.firebase:firebase-auth'
+    implementation 'com.google.firebase:firebase-firestore'
+    implementation 'androidx.credentials:credentials:1.3.0'
+    implementation 'androidx.credentials:credentials-play-services-auth:1.3.0'
+    implementation 'com.google.android.libraries.identity.googleid:googleid:1.1.1'
     implementation 'net.sourceforge.jexcelapi:jxl:2.6.12'
     testImplementation 'junit:junit:4.13.2'
     testImplementation 'org.json:json:20240303'

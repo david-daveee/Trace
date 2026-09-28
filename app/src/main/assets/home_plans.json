@@ -1,0 +1,5962 @@
+[
+  {
+    "id": "builtin-home-beginner",
+    "routine": "home-beginner",
+    "name": "Home · Beginner",
+    "category": "custom",
+    "categoryName": "Домашняя",
+    "mine": false,
+    "nextDay": 0,
+    "maxima": {},
+    "source": "https://www.nerdfitness.com/wp-content/uploads/2023/11/New-Beginner-Bodyweight-Resources_v1_compressed.pdf",
+    "description": "Nerd Fitness · начальный комплекс. Одна гантель и устойчивая опора. Разминка перед занятием; 2 круга, занятия в несмежные дни. Тяга — 10 на каждую руку, шаги — 10 на сторону. Планка: одна отметка означает удержание 15–30 секунд. Вес гантели выбери в редакторе. 12 занятий — организация дневника Trace, не авторский срок программы.",
+    "exerciseNotes": {
+      "Планка с колен · 15–30 секунд": "Удерживай 15–30 секунд. 1 повтор в журнале = одно удержание."
+    },
+    "days": [
+      {
+        "name": "День 1",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 2",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 3",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 4",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 5",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 6",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 7",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 8",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 9",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 10",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 11",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 12",
+        "groups": [
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания с поддержкой",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания от возвышения или с колен",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Тяга гантели — каждая рука",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Планка с колен · 15–30 секунд",
+            "sets": 1,
+            "reps": 1,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны good morning без веса",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Шаги jumping jack — каждая сторона",
+            "sets": 1,
+            "reps": 10,
+            "kg": -1,
+            "muscles": [
+              "calves",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "builtin-home-strength",
+    "routine": "home-strength",
+    "name": "Home · Strength",
+    "category": "custom",
+    "categoryName": "Домашняя",
+    "mine": false,
+    "nextDay": 0,
+    "maxima": {},
+    "source": "https://www.reddit.com/r/bodyweightfitness/wiki/kb/recommended_routine/",
+    "description": "Адаптация Recommended Routine. Турник, оборудование для горизонтальных подтягиваний и брусьев, резинка для жима Палофа и устойчивая опора для обратной гиперэкстензии. 3 занятия в неделю через день. Разминка 5–10 минут. Первые 6 упражнений выполняются парами, по 3 круга; затем 3 круга на корпус. Отдых между подходами пары около 90 секунд, в блоке корпуса — 60 секунд. Выбери подходящий вариант каждого упражнения: начни с 3×5, дойди до 3×8 и усложни вариант. Корпус: 3×8–12. Прогрессию меняй вручную в редакторе. Односторонние упражнения — на каждую сторону. Здесь выбраны стартовые варианты ног и корпуса, их можно заменить по источнику. 12 занятий — четыре недели дневника.",
+    "exerciseNotes": {},
+    "days": [
+      {
+        "name": "День 1",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 2",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 3",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 4",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 5",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 6",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 7",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 8",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 9",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 10",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 11",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      },
+      {
+        "name": "День 12",
+        "groups": [
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Подтягивания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Приседания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "quads",
+              "glutes"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Брусья — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Наклоны на одной ноге без веса",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "hamstrings",
+              "glutes",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Горизонтальные подтягивания",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "back",
+              "biceps",
+              "forearms"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Отжимания — свой уровень",
+            "sets": 1,
+            "reps": 5,
+            "kg": -1,
+            "muscles": [
+              "chest",
+              "triceps",
+              "shoulders"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Dead bug — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Жим Палофа с резинкой — каждая сторона",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "abs"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          },
+          {
+            "exercise": "Обратная гиперэкстензия",
+            "sets": 1,
+            "reps": 8,
+            "kg": -1,
+            "muscles": [
+              "glutes",
+              "hamstrings",
+              "lowerback"
+            ],
+            "barbell": false,
+            "dipBelt": false
+          }
+        ]
+      }
+    ]
+  }
+]

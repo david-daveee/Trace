@@ -5,7 +5,7 @@ import java.util.*;
 /** Display-only localization. Stored workout names and identifiers never change. */
 public final class Lang {
     private static Context localized;
-    private static String language="ru";
+    private static String language="en";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
         ids.put("Спереди",R.string.muscle_front);
@@ -692,10 +692,30 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 и меньше → без прибавки. Адаптация Trace под блины от 1,25 кг: прибавка 0,5 кг отключена. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.27.1",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.28.0",R.string.tr_374);
     }
-    public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
-    public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}
+    static {
+        ids.put("Приседания с поддержкой",R.string.home_0);
+        ids.put("Отжимания от возвышения или с колен",R.string.home_1);
+        ids.put("Тяга гантели — каждая рука",R.string.home_2);
+        ids.put("Планка с колен · 15–30 секунд",R.string.home_3);
+        ids.put("Наклоны good morning без веса",R.string.home_4);
+        ids.put("Шаги jumping jack — каждая сторона",R.string.home_5);
+        ids.put("Подтягивания — свой уровень",R.string.home_6);
+        ids.put("Приседания — свой уровень",R.string.home_7);
+        ids.put("Брусья — свой уровень",R.string.home_8);
+        ids.put("Наклоны на одной ноге без веса",R.string.home_9);
+        ids.put("Горизонтальные подтягивания",R.string.home_10);
+        ids.put("Отжимания — свой уровень",R.string.home_11);
+        ids.put("Dead bug — каждая сторона",R.string.home_12);
+        ids.put("Жим Палофа с резинкой — каждая сторона",R.string.home_13);
+        ids.put("Обратная гиперэкстензия",R.string.home_14);
+        ids.put("Nerd Fitness · начальный комплекс. Одна гантель и устойчивая опора. Разминка перед занятием; 2 круга, занятия в несмежные дни. Тяга — 10 на каждую руку, шаги — 10 на сторону. Планка: одна отметка означает удержание 15–30 секунд. Вес гантели выбери в редакторе. 12 занятий — организация дневника Trace, не авторский срок программы.",R.string.home_15);
+        ids.put("Адаптация Recommended Routine. Турник, оборудование для горизонтальных подтягиваний и брусьев, резинка для жима Палофа и устойчивая опора для обратной гиперэкстензии. 3 занятия в неделю через день. Разминка 5–10 минут. Первые 6 упражнений выполняются парами, по 3 круга; затем 3 круга на корпус. Отдых между подходами пары около 90 секунд, в блоке корпуса — 60 секунд. Выбери подходящий вариант каждого упражнения: начни с 3×5, дойди до 3×8 и усложни вариант. Корпус: 3×8–12. Прогрессию меняй вручную в редакторе. Односторонние упражнения — на каждую сторону. Здесь выбраны стартовые варианты ног и корпуса, их можно заменить по источнику. 12 занятий — четыре недели дневника.",R.string.home_16);
+        ids.put("Удерживай 15–30 секунд. 1 повтор в журнале = одно удержание.",R.string.home_17);
+    }
+    public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","en");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
+    public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","en");localized=wrap(c.getApplicationContext());}
     public static boolean english(){return language.equals("en");}
     public static Locale locale(){return Locale.forLanguageTag(language);}
     public static void set(Context c,String code){if(!code.equals("ru")&&!code.equals("en"))throw new IllegalArgumentException("Unsupported language");c.getSharedPreferences("trace-settings",0).edit().putString("language",code).commit();init(c);}

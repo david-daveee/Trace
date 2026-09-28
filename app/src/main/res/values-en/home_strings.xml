@@ -1,0 +1,20 @@
+<resources>
+    <string name="home_0" formatted="false">"Assisted squats"</string>
+    <string name="home_1" formatted="false">"Incline or knee push-ups"</string>
+    <string name="home_2" formatted="false">"Dumbbell row — each arm"</string>
+    <string name="home_3" formatted="false">"Knee plank · 15–30 seconds"</string>
+    <string name="home_4" formatted="false">"Bodyweight good mornings"</string>
+    <string name="home_5" formatted="false">"Walking jacks — each side"</string>
+    <string name="home_6" formatted="false">"Pull-ups — your progression"</string>
+    <string name="home_7" formatted="false">"Squats — your progression"</string>
+    <string name="home_8" formatted="false">"Dips — your progression"</string>
+    <string name="home_9" formatted="false">"Single-leg bodyweight deadlifts"</string>
+    <string name="home_10" formatted="false">"Inverted rows"</string>
+    <string name="home_11" formatted="false">"Push-ups — your progression"</string>
+    <string name="home_12" formatted="false">"Dead bug — each side"</string>
+    <string name="home_13" formatted="false">"Band Pallof press — each side"</string>
+    <string name="home_14" formatted="false">"Reverse hyperextensions"</string>
+    <string name="home_15" formatted="false">"Nerd Fitness beginner workout. One dumbbell and a stable support. Warm up first; complete 2 circuits on non-consecutive days. Rows: 10 per arm; walking jacks: 10 per side. One plank entry means a 15–30 second hold. Set your dumbbell weight in the editor. The 12 sessions organize the Trace log; they are not an original program duration."</string>
+    <string name="home_16" formatted="false">"Recommended Routine adaptation. Pull-up bar, equipment for rows and dips, a band for Pallof presses, and a stable support for reverse hyperextensions. Train 3 times per week on non-consecutive days. Warm up for 5–10 minutes. Alternate each of the first three exercise pairs for 3 rounds, then do 3 core rounds. Rest about 90 seconds between paired sets and 60 seconds in the core block. Select appropriate variations: begin at 3×5, reach 3×8, then choose a harder variation. Core: 3×8–12. Update progression manually in the editor. Unilateral reps are per side. Starting leg and core variations are selected here; alternatives are in the source. Twelve sessions organize four weeks of logging."</string>
+    <string name="home_17" formatted="false">"Hold for 15–30 seconds. 1 logged rep = one hold."</string>
+</resources>

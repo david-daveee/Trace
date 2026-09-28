@@ -1,0 +1,20 @@
+<resources>
+    <string name="home_0" formatted="false">"Приседания с поддержкой"</string>
+    <string name="home_1" formatted="false">"Отжимания от возвышения или с колен"</string>
+    <string name="home_2" formatted="false">"Тяга гантели — каждая рука"</string>
+    <string name="home_3" formatted="false">"Планка с колен · 15–30 секунд"</string>
+    <string name="home_4" formatted="false">"Наклоны good morning без веса"</string>
+    <string name="home_5" formatted="false">"Шаги jumping jack — каждая сторона"</string>
+    <string name="home_6" formatted="false">"Подтягивания — свой уровень"</string>
+    <string name="home_7" formatted="false">"Приседания — свой уровень"</string>
+    <string name="home_8" formatted="false">"Брусья — свой уровень"</string>
+    <string name="home_9" formatted="false">"Наклоны на одной ноге без веса"</string>
+    <string name="home_10" formatted="false">"Горизонтальные подтягивания"</string>
+    <string name="home_11" formatted="false">"Отжимания — свой уровень"</string>
+    <string name="home_12" formatted="false">"Dead bug — каждая сторона"</string>
+    <string name="home_13" formatted="false">"Жим Палофа с резинкой — каждая сторона"</string>
+    <string name="home_14" formatted="false">"Обратная гиперэкстензия"</string>
+    <string name="home_15" formatted="false">"Nerd Fitness · начальный комплекс. Одна гантель и устойчивая опора. Разминка перед занятием; 2 круга, занятия в несмежные дни. Тяга — 10 на каждую руку, шаги — 10 на сторону. Планка: одна отметка означает удержание 15–30 секунд. Вес гантели выбери в редакторе. 12 занятий — организация дневника Trace, не авторский срок программы."</string>
+    <string name="home_16" formatted="false">"Адаптация Recommended Routine. Турник, оборудование для горизонтальных подтягиваний и брусьев, резинка для жима Палофа и устойчивая опора для обратной гиперэкстензии. 3 занятия в неделю через день. Разминка 5–10 минут. Первые 6 упражнений выполняются парами, по 3 круга; затем 3 круга на корпус. Отдых между подходами пары около 90 секунд, в блоке корпуса — 60 секунд. Выбери подходящий вариант каждого упражнения: начни с 3×5, дойди до 3×8 и усложни вариант. Корпус: 3×8–12. Прогрессию меняй вручную в редакторе. Односторонние упражнения — на каждую сторону. Здесь выбраны стартовые варианты ног и корпуса, их можно заменить по источнику. 12 занятий — четыре недели дневника."</string>
+    <string name="home_17" formatted="false">"Удерживай 15–30 секунд. 1 повтор в журнале = одно удержание."</string>
+</resources>

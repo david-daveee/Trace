@@ -1,0 +1,22 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    function owns(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    // A user's private sync namespace. There are no public collections.
+    match /users/{uid}/sync/{document} {
+      allow read, write: if owns(uid);
+    }
+    match /users/{uid}/revisions/{revision} {
+      allow read, write: if owns(uid);
+      match /chunks/{chunk} {
+        allow read, write: if owns(uid);
+      }
+    }
+    // Unauthenticated clients, other accounts and all other paths are denied.
+    match /{document=**} {
+      allow read, write: if false;
+    }
+  }
+}

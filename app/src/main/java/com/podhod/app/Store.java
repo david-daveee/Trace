@@ -26,6 +26,10 @@ public final class Store {
         save();
     }
     public void ensureCatalog() {
+        try(var in=context.getAssets().open("home_plans.json")) {
+            JSONArray home=new JSONArray(new String(Importer.read(in),StandardCharsets.UTF_8));
+            for(int i=0;i<home.length();i++)BuiltinPlans.ensure(data,home.getJSONObject(i));
+        } catch(Exception e) { throw new IllegalStateException(Lang.t("Не удалось загрузить программу"),e); }
         ZlatIntermediate.ensure(data);
         ZlatAdvanced.ensure(data);
         Zlat.repairMicroplateProgression(data);
@@ -41,6 +45,7 @@ public final class Store {
         JSONObject savedSessions=data.optJSONObject("savedSessions");
         if(savedSessions!=null){java.util.Iterator<String> keys=savedSessions.keys();while(keys.hasNext())Engine.clearRest(savedSessions.optJSONObject(keys.next()));}
         if(!context.getSharedPreferences("podhod",0).edit().putString("state",data.toString()).commit()) throw new IllegalStateException(Lang.t("Не удалось сохранить тренировку"));
+        AccountSync.changed(context);
     }
     public JSONObject active() { return data.optJSONObject("active"); }
     public JSONObject sessionFor(JSONObject p){JSONObject s=active();if(s!=null&&s.optString("programId").equals(p.optString("id")))return s;JSONObject saved=data.optJSONObject("savedSessions");return saved==null?null:saved.optJSONObject(p.optString("id"));}

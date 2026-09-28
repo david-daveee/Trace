@@ -8,6 +8,7 @@ import org.json.*;
 import java.util.*;
 import java.text.SimpleDateFormat;
 final class BackupHistory {
+ static synchronized void forget(Context c,Uri uri){JSONObject all=index(c);all.remove(uri.toString());c.getSharedPreferences("trace-backup-history",0).edit().putString("index",all.toString()).commit();}
  static synchronized JSONObject index(Context c){return Engine.obj(c.getSharedPreferences("trace-backup-history",0).getString("index","{}"));}
  static synchronized void record(Context c,Uri uri,long date,long size,String name){JSONObject all=index(c),entry=new JSONObject();Engine.put(entry,"uri",uri.toString());Engine.put(entry,"date",date);Engine.put(entry,"size",size);Engine.put(entry,"name",name);Engine.put(all,uri.toString(),entry);c.getSharedPreferences("trace-backup-history",0).edit().putString("index",all.toString()).commit();}
  static void remember(Context c,Uri uri,long date,long size){String name="Trace backup";try(Cursor cursor=c.getContentResolver().query(uri,new String[]{OpenableColumns.DISPLAY_NAME},null,null,null)){if(cursor!=null&&cursor.moveToFirst())name=cursor.getString(0);}catch(Exception ignored){}record(c,uri,date,size,name);}

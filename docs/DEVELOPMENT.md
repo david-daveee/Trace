@@ -1,6 +1,6 @@
 # Trace development notes
 
-Trace 0.16.0 is an offline Android workout journal. Its application ID is `com.podhod.app`.
+Trace 0.28.0 is an offline-first Android workout journal with optional Firebase account synchronization. See ACCOUNT_SYNC.md for transfer and recovery behavior. Its application ID is `com.podhod.app`.
 
 ## Build
 

@@ -11,3 +11,4 @@ outputs/
 .env.*
 *.log
 __pycache__/
+app/google-services.json

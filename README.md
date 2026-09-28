@@ -24,13 +24,32 @@ Train without opening a spreadsheet. Trace shows your next set, calculates your 
 
 You do not need Android Studio or a computer. An iPhone version is not available yet.
 
-**To switch the app to English:** tap the settings icon at the top and select **English** in the language selector.
+English is the default language. Choose English or Russian in Settings. On first launch, continue with Google or continue without an account; the welcome screen will not repeat after your choice.
 
 ## Update Trace
 
 Open **Settings → Trace updates → Check for updates**. Trace checks the public GitHub release, shows its version and release notes, and offers **Download APK** when a newer version is available. Release notes are published in English.
 
 The button opens your browser. Open the downloaded APK and confirm the Android update to keep your existing data. The app never installs an update silently. An internet connection is needed to check; the last successful result and its date remain visible offline.
+
+## Your account and a new phone
+
+An account is optional. In **Settings**, sign in with Google and choose whether to load account data or use this phone's data. Signing in alone does not replace your library.
+
+- Sync plans, covers, working weights, notes, completed history, **current and paused workouts**, step history, goals, step length and language.
+- Completed walks and their GPS routes combine without duplicates. Deleted walks stay deleted. Steps follow the selected source; counts from different phones are not added together.
+- Workout edits trigger a sync attempt after a short delay. Background timing depends on Android and connectivity. Check the status in Settings or use **Sync now**.
+- If both devices changed, Trace asks which version to keep. A safety copy is saved before applying a replacement.
+
+**Moving phones:** update Trace on the old phone, wait for **Synced**, install the latest APK on the new phone, sign into the same Google account and choose **Load from account**. Current and paused workouts retain their completed sets, weights and notes.
+
+Live GPS recording, Android permissions, sensor enablement and automatic-backup folder settings stay device-local. Re-enable tracking and grant permissions on the new phone. Finish an ongoing walk on the original phone before moving. Keep an exported backup before uninstalling.
+
+Google authentication and your private cloud data use Firebase. Account deletion from inside Trace is not available yet. Real account upload/readback and interrupted-restore recovery have been tested on one phone; simultaneous edits on two physical devices have not yet been verified end to end.
+
+## Home training
+
+The Plans library also includes Beginner and Strength home routines, with source links in each plan. Choose a plan suited to your equipment and adjust exercises and weights before starting.
 
 ## Start your first workout
 
@@ -72,9 +91,9 @@ The Steps tab opens the step counter by default. Use the **Steps / Walk** switch
 
 In **Steps**, choose **Walk** using the top switch, then tap **Start walk**, allow precise location, and take your phone outside. The map records your route; **Finish walk** saves its GPS distance and duration. You can also finish from the ongoing notification. Recording continues with the screen off while Android keeps the service running. Trace does not start location recording automatically or track you all day.
 
-Saved walks are listed below the map. To remove one, open its entry, tap **Delete walk**, and confirm. Daily steps, other saved walks, and an ongoing recording are preserved. Previously exported backups keep their own copy. Drag the map, use +/− to zoom, or tap **Fit route**. GPS gaps are displayed as breaks rather than invented paths. Recording stops at 24 hours or 10,000 accepted points. After a force-stop or service interruption, start a new walk; the previous points are retained. GPS recording needs precise location and may not work indoors. The daily distance estimate from steps remains separate from GPS walk distance.
+Saved walks are listed below the map. To remove one, open its entry, tap **Delete walk**, and confirm. Daily steps, other saved walks, and an ongoing recording are preserved. Previously exported backups keep their own copy. Drag the map, pinch or use +/− to zoom, double-tap to zoom in, or tap **Fit route**. Route colors transition smoothly from teal through gold to coral as speed increases; they indicate estimated GPS speed, not effort. GPS gaps are displayed as breaks rather than invented paths. Recording stops at 24 hours or 10,000 accepted points. After a force-stop or service interruption, start a new walk; the previous points are retained. GPS recording needs precise location and may not work indoors. The daily distance estimate from steps remains separate from GPS walk distance.
 
-The map uses © OpenStreetMap contributors tiles. Internet is needed for uncached map areas; the map server receives tile-area requests and your IP address. Routes stay on your phone and are included in full backups. Without internet, GPS points can still be recorded and the route line displayed, but some map tiles may be missing. Restoring a backup never starts location recording.
+The map uses © OpenStreetMap contributors tiles. Internet is needed for uncached map areas; the map server receives tile-area requests and your IP address. Routes stay on your phone in guest mode and are included in full backups. If you enable account synchronization, completed routes are also stored in your private Firebase account data. Without internet, GPS points can still be recorded and the route line displayed, but some map tiles may be missing. Restoring a backup never starts location recording.
 
 ## During your workout
 
@@ -147,12 +166,12 @@ You can also delete an exercise from a day and use **Undo** to return it to its 
 
 Download the latest **Trace.apk** using the link above and install it **over your current version**. You do not need to uninstall Trace first.
 
-Before updating, save a backup through **Settings → Save backup**. It includes plans, covers and their framing, history, unfinished workouts, recoverable deletions, step history, step goal and length, tracking preference, and language. Settings shows the last successful backup date.
+Before updating, save a backup through **Settings → Recovery & transfer → Export a backup**. It includes plans, covers and their framing, history, unfinished workouts, recoverable deletions, step history, step goal and length, tracking preference, and language. Settings shows the last successful backup date.
 
 ## Frequently asked questions
 
 **Where is my data stored?**  
-On your phone. There is no account or cloud sync. To move to another phone, save a backup, transfer the file, and choose **Settings → Restore from file** on the new device. Restoring a full backup replaces its current data after confirmation. Older workout-only backups still work and leave current steps and settings unchanged. Hardware step-counter baselines are reset on restore to avoid counting another device’s lifetime steps.
+Trace always keeps a local copy. Optional Google sign-in enables private Firebase synchronization after you confirm which data to use. You can also move to another phone without an account: export a backup, transfer the file, and choose **Settings → Recovery & transfer → Restore from a file** on the new device. Restoring a full backup replaces its current data after confirmation. Older workout-only backups still work and leave current steps and settings unchanged. Hardware step-counter baselines are reset on restore to avoid counting another device’s lifetime steps.
 
 **Why isn't my workout showing in Progress?**  
 The calendar counts saved workouts. After completing all sets, tap **Save workout**.
@@ -181,6 +200,8 @@ Open the project root in Android Studio and wait for Gradle sync. Build and run 
 ./gradlew.bat assembleDebug testDebugUnitTest lintDebug
 ```
 
+For optional account support, add your own Firebase Android configuration as `app/google-services.json` and configure Google Auth, signing fingerprints and private Firestore rules; see [Firebase setup](docs/FIREBASE_SETUP.md). Without this ignored local file, the app builds in guest mode.
+
 APK output: `app/build/outputs/apk/debug/app-debug.apk`. The downloadable build uses a debug signing key and is distributed through GitHub Releases.
 
 [Implementation details and development notes](docs/DEVELOPMENT.md).
@@ -188,7 +209,7 @@ APK output: `app/build/outputs/apk/debug/app-debug.apk`. The downloadable build 
 </details>
 
 ### Automatic backups
-In Settings, select **Automatic backup every 2 weeks** and turn on **Enable**. On Android 10+, Trace automatically creates **Downloads/Trace/Backup** when saving the first copy. Android 8–9 requires choosing a folder once. Trace saves a complete JSON backup there, verifies the written file, and keeps previous copies. A background job checks daily and saves when 14 days have passed since the last successful automatic backup. Android may delay background work; force-stopping Trace pauses it until the app is opened again. Settings show the last automatic backup and any save failure. Use Restore from file to recover a copy. After reinstalling, enable automatic backups again. Existing copies can be restored with the file picker. Previously configured custom folders continue to work until automatic backup is switched off and on.
+Without an account, automatic backup is visible in Settings. With an account, open **Settings → Recovery & transfer → Automatic backup** and turn on **Enable**. On Android 10+, Trace automatically creates **Downloads/Trace/Backup** when saving the first copy. Android 8–9 requires choosing a folder once. Trace saves a complete JSON backup there, verifies the written file, and keeps previous copies. A background job checks daily and saves when 14 days have passed since the last successful automatic backup. Android may delay background work; force-stopping Trace pauses it until the app is opened again. Settings show the last automatic backup and any save failure. Use Restore from file to recover a copy. After reinstalling, enable automatic backups again. Existing copies can be restored with the file picker. Previously configured custom folders continue to work until automatic backup is switched off and on.
 
 ## Exercise notes and plan editor
 Open a plan and choose **Plan editor**. Duplicate days or exercises, rename days, hold the grip to drag exercises, or use the up/down buttons. The −/+ controls adjust sets. Exercise forms edit weight and repetitions while preserving percentage-based calculation when selected. Existing workout sessions and saved history keep their snapshots.
@@ -196,7 +217,7 @@ Open a plan and choose **Plan editor**. Duplicate days or exercises, rename days
 Add **Exercise note** from the editor, a day preview, or your current workout. Notes are shared by exercises with the same name within a plan. They are included in shared plans and backups, and workout history retains its note snapshot.
 
 ## Backup history
-Open **Settings → Backup history** for dates, file sizes, and Restore buttons. Automatic copies in Downloads/Trace/Backup and the configured custom folder are discovered, and newly saved manual copies are recorded. Restoring uses the existing validation and confirmation before replacing data. Files removed or made inaccessible outside Trace cannot be restored; use **Restore from file** for older manual copies or copies from another device. Android folder permissions are not transferred in a backup.
+Open **Settings → Recovery & transfer → Backup history** for dates, file sizes, and Restore buttons. Automatic copies in Downloads/Trace/Backup and the configured custom folder are discovered, and newly saved manual copies are recorded. Restoring uses the existing validation and confirmation before replacing data. Files removed or made inaccessible outside Trace cannot be restored; use **Restore from file** for older manual copies or copies from another device. Android folder permissions are not transferred in a backup.
 
 ## Muscle map artwork
 
