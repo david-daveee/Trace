@@ -1,0 +1,6 @@
+<resources>
+<string name="belt_0">"Пояс с блинами · дополнительный вес"</string>
+<string name="belt_1">"БЛИНЫ НА ПОЯС"</string>
+<string name="belt_2">"Только собственный вес"</string>
+<string name="belt_3">"Дополнительный вес: +"</string>
+</resources>

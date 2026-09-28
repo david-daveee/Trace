@@ -90,6 +90,12 @@ When creating or editing an exercise, enable **Barbell exercise · 20 kg bar**. 
 
 If the weight cannot be assembled exactly, the diagram shows the closest lower load and a warning. Your recorded set weight is never changed by the calculator. Existing active sessions keep their exercise settings; edits apply to future workouts.
 
+### Dip-belt loading diagram
+
+All three Zlat plans automatically show a dip belt with labelled plates for weighted pull-ups and dips, including existing sessions. For custom exercises, select **Dip belt · added weight** in the exercise editor. Barbell and belt modes are mutually exclusive.
+
+The belt uses the same plate sizes, but counts only the added load: +26.25 kg is 20 + 5 + 1.25 kg. It never adds bar or body weight or divides the load between two sides. A zero load is shown as body weight only. Inexact loads show a warning without changing the recorded weight.
+
 ## Included programs
 
 | Program | What's inside |
