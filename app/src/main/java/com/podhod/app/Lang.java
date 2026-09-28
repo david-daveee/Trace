@@ -8,6 +8,41 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Спереди",R.string.muscle_front);
+        ids.put("Сзади",R.string.muscle_back);
+        ids.put("Грудь",R.string.walk_muscle_0);
+        ids.put("Спина",R.string.walk_muscle_1);
+        ids.put("Плечи",R.string.walk_muscle_2);
+        ids.put("Бицепс",R.string.walk_muscle_3);
+        ids.put("Трицепс",R.string.walk_muscle_4);
+        ids.put("Пресс",R.string.walk_muscle_5);
+        ids.put("Ягодицы",R.string.walk_muscle_6);
+        ids.put("Передняя поверхность бедра",R.string.walk_muscle_7);
+        ids.put("Задняя поверхность бедра",R.string.walk_muscle_8);
+        ids.put("Икры",R.string.walk_muscle_9);
+        ids.put("Поясница",R.string.walk_muscle_10);
+        ids.put("Предплечья",R.string.walk_muscle_11);
+        ids.put("Мышцы упражнения",R.string.walk_muscle_12);
+        ids.put("Какие мышцы работают?",R.string.walk_muscle_13);
+        ids.put("Определять автоматически",R.string.walk_muscle_14);
+        ids.put("КАРТА МЫШЦ",R.string.walk_muscle_15);
+        ids.put("Отмечай подходы — задействованные мышцы подсветятся.",R.string.walk_muscle_16);
+        ids.put("Подходы с участием мышцы, включая вспомогательную работу. Это оценка по упражнениям, а не измерение усталости.",R.string.walk_muscle_17);
+        ids.put("Есть нераспознанные упражнения. Укажи мышцы в редакторе плана.",R.string.walk_muscle_18);
+        ids.put("Мышцы спереди и сзади. Подробности перечислены ниже.",R.string.walk_muscle_19);
+        ids.put("В этой тренировке",R.string.walk_muscle_20);
+        ids.put("За последние 7 дней",R.string.walk_muscle_21);
+        ids.put("НА СВЕЖЕМ ВОЗДУХЕ",R.string.walk_muscle_22);
+        ids.put("Твой маршрут",R.string.walk_muscle_23);
+        ids.put("КИЛОМЕТРЫ",R.string.walk_muscle_24);
+        ids.put("ВРЕМЯ",R.string.walk_muscle_25);
+        ids.put("МИН / КМ",R.string.walk_muscle_26);
+        ids.put("Средний темп рассчитан по полному времени, включая остановки. GPS записывается только во время прогулки. Карта OpenStreetMap требует интернет; маршруты сохраняются на телефоне. Без сети запись продолжается, но фон карты может быть недоступен. Лимит — 24 часа.",R.string.walk_muscle_27);
+        ids.put(" прогулок · ",R.string.walk_muscle_28);
+        ids.put(" мин/км",R.string.walk_muscle_29);
+        ids.put("Открыть маршрут",R.string.walk_muscle_30);
+        ids.put("Миниатюра маршрута",R.string.walk_muscle_31);
+
         ids.put("Пояс с блинами · дополнительный вес",R.string.belt_0);
         ids.put("БЛИНЫ НА ПОЯС",R.string.belt_1);
         ids.put("Только собственный вес",R.string.belt_2);
@@ -657,7 +692,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 и меньше → без прибавки. Адаптация Trace под блины от 1,25 кг: прибавка 0,5 кг отключена. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.26.0",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.27.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

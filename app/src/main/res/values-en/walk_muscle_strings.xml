@@ -1,0 +1,34 @@
+<resources>
+<string name="walk_muscle_0">"Chest"</string>
+<string name="walk_muscle_1">"Back"</string>
+<string name="walk_muscle_2">"Shoulders"</string>
+<string name="walk_muscle_3">"Biceps"</string>
+<string name="walk_muscle_4">"Triceps"</string>
+<string name="walk_muscle_5">"Abs"</string>
+<string name="walk_muscle_6">"Glutes"</string>
+<string name="walk_muscle_7">"Quads"</string>
+<string name="walk_muscle_8">"Hamstrings"</string>
+<string name="walk_muscle_9">"Calves"</string>
+<string name="walk_muscle_10">"Lower back"</string>
+<string name="walk_muscle_11">"Forearms"</string>
+<string name="walk_muscle_12">"Exercise muscles"</string>
+<string name="walk_muscle_13">"Which muscles are involved?"</string>
+<string name="walk_muscle_14">"Detect automatically"</string>
+<string name="walk_muscle_15">"MUSCLE MAP"</string>
+<string name="walk_muscle_16">"Complete sets to highlight the muscles involved."</string>
+<string name="walk_muscle_17">"Sets involving each muscle, including assisting work. Estimated from exercises, not a measurement of fatigue."</string>
+<string name="walk_muscle_18">"Some exercises are unrecognized. Assign their muscles in the plan editor."</string>
+<string name="walk_muscle_19">"Front and back muscle views. Details are listed below."</string>
+<string name="walk_muscle_20">"This workout"</string>
+<string name="walk_muscle_21">"Last 7 days"</string>
+<string name="walk_muscle_22">"OUTDOORS"</string>
+<string name="walk_muscle_23">"Your route"</string>
+<string name="walk_muscle_24">"KILOMETERS"</string>
+<string name="walk_muscle_25">"TIME"</string>
+<string name="walk_muscle_26">"MIN / KM"</string>
+<string name="walk_muscle_27">"Average pace uses elapsed time, including stops. GPS is recorded only during walks. OpenStreetMap needs internet; routes stay on your phone. Recording continues offline, but map tiles may be unavailable. Limit: 24 hours."</string>
+<string name="walk_muscle_28">" walks · "</string>
+<string name="walk_muscle_29">" min/km"</string>
+<string name="walk_muscle_30">"Open route"</string>
+<string name="walk_muscle_31">"Route preview"</string>
+<string name="muscle_front">Front</string><string name="muscle_back">Back</string></resources>

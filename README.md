@@ -96,6 +96,14 @@ All three Zlat plans automatically show a dip belt with labelled plates for weig
 
 The belt uses the same plate sizes, but counts only the added load: +26.25 kg is 20 + 5 + 1.25 kg. It never adds bar or body weight or divides the load between two sides. A zero load is shown as body weight only. Inexact loads show a warning without changing the recorded weight.
 
+### Muscle involvement
+
+The workout screen and saved workout details include front/back muscle diagrams based on completed sets. Progress also shows the last seven days. Counts include assisting muscles and are an exercise-based estimate, not a fatigue or recovery measurement. Unrecognized exercises are flagged rather than assigned guessed muscles. In the plan editor, open an exercise and choose **Exercise muscles** to override the mapping for future sessions; session snapshots retain those choices.
+
+### Walk overview
+
+Walk now puts the route first, with elapsed time, GPS kilometers, and average pace. Pace includes stops and is shown after at least 50 meters. Saved walks have route previews and a detailed map; deletion remains available in the detail view. Existing routes and recording behavior are preserved.
+
 ## Included programs
 
 | Program | What's inside |

@@ -1,0 +1,34 @@
+<resources>
+<string name="walk_muscle_0">"Грудь"</string>
+<string name="walk_muscle_1">"Спина"</string>
+<string name="walk_muscle_2">"Плечи"</string>
+<string name="walk_muscle_3">"Бицепс"</string>
+<string name="walk_muscle_4">"Трицепс"</string>
+<string name="walk_muscle_5">"Пресс"</string>
+<string name="walk_muscle_6">"Ягодицы"</string>
+<string name="walk_muscle_7">"Передняя поверхность бедра"</string>
+<string name="walk_muscle_8">"Задняя поверхность бедра"</string>
+<string name="walk_muscle_9">"Икры"</string>
+<string name="walk_muscle_10">"Поясница"</string>
+<string name="walk_muscle_11">"Предплечья"</string>
+<string name="walk_muscle_12">"Мышцы упражнения"</string>
+<string name="walk_muscle_13">"Какие мышцы работают?"</string>
+<string name="walk_muscle_14">"Определять автоматически"</string>
+<string name="walk_muscle_15">"КАРТА МЫШЦ"</string>
+<string name="walk_muscle_16">"Отмечай подходы — задействованные мышцы подсветятся."</string>
+<string name="walk_muscle_17">"Подходы с участием мышцы, включая вспомогательную работу. Это оценка по упражнениям, а не измерение усталости."</string>
+<string name="walk_muscle_18">"Есть нераспознанные упражнения. Укажи мышцы в редакторе плана."</string>
+<string name="walk_muscle_19">"Мышцы спереди и сзади. Подробности перечислены ниже."</string>
+<string name="walk_muscle_20">"В этой тренировке"</string>
+<string name="walk_muscle_21">"За последние 7 дней"</string>
+<string name="walk_muscle_22">"НА СВЕЖЕМ ВОЗДУХЕ"</string>
+<string name="walk_muscle_23">"Твой маршрут"</string>
+<string name="walk_muscle_24">"КИЛОМЕТРЫ"</string>
+<string name="walk_muscle_25">"ВРЕМЯ"</string>
+<string name="walk_muscle_26">"МИН / КМ"</string>
+<string name="walk_muscle_27">"Средний темп рассчитан по полному времени, включая остановки. GPS записывается только во время прогулки. Карта OpenStreetMap требует интернет; маршруты сохраняются на телефоне. Без сети запись продолжается, но фон карты может быть недоступен. Лимит — 24 часа."</string>
+<string name="walk_muscle_28">" прогулок · "</string>
+<string name="walk_muscle_29">" мин/км"</string>
+<string name="walk_muscle_30">"Открыть маршрут"</string>
+<string name="walk_muscle_31">"Миниатюра маршрута"</string>
+<string name="muscle_front">Спереди</string><string name="muscle_back">Сзади</string></resources>
