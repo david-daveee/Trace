@@ -1,0 +1,16 @@
+<resources>
+<string name="updates_0">"No browser available for the download"</string>
+<string name="updates_1">"TRACE UPDATES"</string>
+<string name="updates_2">"Installed version "</string>
+<string name="updates_3">"Available version "</string>
+<string name="updates_4">"Your version is up to date"</string>
+<string name="updates_5">"Checked: "</string>
+<string name="updates_6">"What is new"</string>
+<string name="updates_7">"Download APK"</string>
+<string name="updates_8">"The download opens in your browser. Open the APK from Downloads and confirm the Android update. Your data is preserved."</string>
+<string name="updates_9">"Check GitHub for a new version."</string>
+<string name="updates_10">"Could not check for updates. Check your connection and try again."</string>
+<string name="updates_11">"Checking for updates…"</string>
+<string name="updates_12">"Check for updates"</string>
+<string name="updates_13">"All versions on GitHub"</string>
+</resources>

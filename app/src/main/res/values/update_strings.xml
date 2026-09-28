@@ -1,0 +1,16 @@
+<resources>
+<string name="updates_0">"Не найден браузер для скачивания"</string>
+<string name="updates_1">"ОБНОВЛЕНИЯ TRACE"</string>
+<string name="updates_2">"Установлена версия "</string>
+<string name="updates_3">"Доступна версия "</string>
+<string name="updates_4">"У тебя актуальная версия"</string>
+<string name="updates_5">"Проверено: "</string>
+<string name="updates_6">"Что нового"</string>
+<string name="updates_7">"Скачать APK"</string>
+<string name="updates_8">"Скачивание откроется в браузере. Открой APK из загрузок и подтверди обновление Android. Данные сохранятся."</string>
+<string name="updates_9">"Проверь, появилась ли новая версия на GitHub."</string>
+<string name="updates_10">"Не удалось проверить обновление. Проверь интернет и попробуй ещё раз."</string>
+<string name="updates_11">"Проверяем обновления…"</string>
+<string name="updates_12">"Проверить обновления"</string>
+<string name="updates_13">"Все версии на GitHub"</string>
+</resources>

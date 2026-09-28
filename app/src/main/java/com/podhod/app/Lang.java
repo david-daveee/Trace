@@ -8,6 +8,21 @@ public final class Lang {
     private static String language="ru";
     private static final Map<String,Integer> ids=new HashMap<>();
     static {
+        ids.put("Не найден браузер для скачивания",R.string.updates_0);
+        ids.put("ОБНОВЛЕНИЯ TRACE",R.string.updates_1);
+        ids.put("Установлена версия ",R.string.updates_2);
+        ids.put("Доступна версия ",R.string.updates_3);
+        ids.put("У тебя актуальная версия",R.string.updates_4);
+        ids.put("Проверено: ",R.string.updates_5);
+        ids.put("Что нового",R.string.updates_6);
+        ids.put("Скачать APK",R.string.updates_7);
+        ids.put("Скачивание откроется в браузере. Открой APK из загрузок и подтверди обновление Android. Данные сохранятся.",R.string.updates_8);
+        ids.put("Проверь, появилась ли новая версия на GitHub.",R.string.updates_9);
+        ids.put("Не удалось проверить обновление. Проверь интернет и попробуй ещё раз.",R.string.updates_10);
+        ids.put("Проверяем обновления…",R.string.updates_11);
+        ids.put("Проверить обновления",R.string.updates_12);
+        ids.put("Все версии на GitHub",R.string.updates_13);
+
         ids.put("Домашняя",R.string.category_home_training);
         ids.put("Все",R.string.catalog_filter_0);
         ids.put("В этой категории пока нет планов",R.string.catalog_filter_1);
@@ -628,7 +643,7 @@ public final class Lang {
         ids.put("Открытая схема Злата 2018 года, по русскому переводу ролика.\n\nПоследний подход: 8 и более повторений → +5 кг; 7 → +2,5 кг; 6 → +1,25 кг; 5 и меньше → без прибавки. Адаптация Trace под блины от 1,25 кг: прибавка 0,5 кг отключена. Расчёт отдельно для каждого упражнения, от веса последнего подхода по порядку в плане.\n\nНачинай с веса, с которым можешь выполнить 10–12 чистых повторений, работая в диапазоне 5–8. Разминочные подходы выполняй отдельно.\n\n12 занятий — организация дневника, не авторское ограничение длительности. В конце можно создать копию цикла. Исторические результаты не пересчитываются.",R.string.tr_371);
         ids.put("день;упражнение;подходы;повторения;вес\nДень 1;Присед;3;5;60\nДень 1;Жим лёжа;3;5;40\nДень 2;Становая тяга;3;5;80\n",R.string.tr_372);
         ids.put("Базовая схема 2018 года: 3 занятия в неделю, 3–4 подхода по 5–8 повторений. Здесь 12 занятий для удобства дневника, а не авторский срок цикла. Между занятиями — день отдыха. После цикла можно создать копию.",R.string.tr_373);
-        ids.put("Trace  /  ВЕРСИЯ 0.23.2",R.string.tr_374);
+        ids.put("Trace  /  ВЕРСИЯ 0.24.0",R.string.tr_374);
     }
     public static Context wrap(Context c){String code=c.getSharedPreferences("trace-settings",0).getString("language","ru");Configuration config=new Configuration(c.getResources().getConfiguration());config.setLocale(Locale.forLanguageTag(code));return c.createConfigurationContext(config);}
     public static void init(Context c){language=c.getSharedPreferences("trace-settings",0).getString("language","ru");localized=wrap(c.getApplicationContext());}

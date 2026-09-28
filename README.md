@@ -26,6 +26,12 @@ You do not need Android Studio or a computer. An iPhone version is not available
 
 **To switch the app to English:** tap the settings icon at the top and select **English** in the language selector.
 
+## Update Trace
+
+Open **Settings → Trace updates → Check for updates**. Trace checks the public GitHub release, shows its version and release notes, and offers **Download APK** when a newer version is available. Release notes are published in English.
+
+The button opens your browser. Open the downloaded APK and confirm the Android update to keep your existing data. The app never installs an update silently. An internet connection is needed to check; the last successful result and its date remain visible offline.
+
 ## Start your first workout
 
 1. Open **Plans**, choose a program, and tap **Add to my plans**.
