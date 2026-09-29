@@ -51,11 +51,12 @@ Google authentication and your private cloud data use Firebase. Account deletion
 
 Open **Friends** using the people icon beside Settings. Sign in, choose your display name, and share your friend code. A request must be accepted before either person can see shared items.
 
-- Share a plan with all friends or one selected friend. They can preview it and add a separate copy to My plans.
-- Share a completed walk as **Stats only**, or explicitly choose **With route** to include its exact GPS path.
-- Everything starts private. Publish only the items you want friends to see. Hide individual publications, or switch off all shared plans or walks in Friends.
-- Your email, private backup, workout history and personal exercise notes are not included in shared plans. A plan includes its exercises, weights and cover.
-- Publications are snapshots: share again to update the item or replace its audience. Hiding an item or removing a friend stops future access, but cannot erase copies they already saved.
+- Open a friend’s chat from the message icon or their profile. Text messages sync while the chat is open, with earlier history available on demand. Push notifications and attachments are not included yet.
+- Tap your avatar to choose and crop a profile photo. **Edit profile** lets you change your display name and short training bio; only accepted friends can see them.
+- Each plan and completed walk has a privacy eye: crossed out means hidden, open means visible to all accepted friends. New walks start hidden.
+- Opening a walk's eye includes its GPS route. Older stats-only publications remain stats-only until you hide and reopen them.
+- Friends can preview visible plans and add a separate copy to My plans. Use **Send plan file** to send a file through another app.
+- Publications are snapshots: hide and reopen an item to publish its latest version. Hiding it or removing a friend stops future access, but cannot erase copies they already saved.
 
 Friends requires an internet connection. Friend requests, visibility settings and publications belong to your account and are separate from phone backups. The first version displays up to 100 connections and 100 items per query; it does not send push notifications for requests.
 
@@ -160,7 +161,7 @@ Trace supports JSON, CSV and XLSX using the in-app template, plus the supported 
 
 ### Share a plan
 
-Tap **Share plan** on a card in **Plans**, or open the plan and use the same action. Choose a messaging app, email, or another destination from the Android share sheet. Trace attaches a JSON file with the exercises, weights, cover, and cover framing. Workout history and session progress are excluded.
+Tap **Send plan file** on a card in **Plans**, or open the plan and use the same action. Choose a messaging app, email, or another destination from the Android share sheet. Trace attaches a JSON file with the exercises, weights, cover, and cover framing. Workout history and session progress are excluded.
 
 The recipient taps the attachment and chooses **Trace** in Android’s Open with menu. Trace shows a preview; the plan is added only after confirmation. If the messaging app does not offer Open with, use **Share → Trace**, or save the file and import it through **Plans → From file**. The imported plan starts separately from day one.
 

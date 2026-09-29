@@ -18,6 +18,8 @@ final class FriendsStore {
     DocumentReference privacy(String owner){return db.document("social/"+owner+"/settings/privacy");}
     CollectionReference items(String owner){return db.collection("social/"+owner+"/items");}
     Map<String,Object> profileData()throws Exception{return waitFor(profile().get(Source.SERVER)).getData();}
+    Map<String,Object> portrait(String owner)throws Exception{Map<String,Object> p=waitFor(db.document("social/"+owner+"/settings/profile").get(Source.SERVER)).getData();return p==null?new HashMap<>():p;}
+    void updatePortrait(Map<String,Object> fields)throws Exception{check();waitFor(db.document("social/"+uid+"/settings/profile").set(fields,SetOptions.merge()));}
     Map<String,Object> createProfile(String name)throws Exception{
         name=name.trim();if(name.isEmpty()||name.length()>40)throw new IllegalArgumentException("Use 1–40 characters");
         final String label=name,code=UUID.randomUUID().toString().replace("-","").substring(0,12).toUpperCase(Locale.ROOT);
@@ -48,24 +50,26 @@ final class FriendsStore {
     Map<String,Object> privacyData()throws Exception{Map<String,Object> p=waitFor(privacy(uid).get(Source.SERVER)).getData();return p==null?Collections.emptyMap():p;}
     void privacy(String field,boolean value)throws Exception{check();waitFor(privacy(uid).set(Collections.singletonMap(field,value),SetOptions.merge()));}
     List<DocumentSnapshot> ownItems()throws Exception{return new ArrayList<>(waitFor(items(uid).limit(100).get(Source.SERVER)).getDocuments());}
+    List<DocumentSnapshot> allOwnItems()throws Exception{List<DocumentSnapshot> result=new ArrayList<>();Query q=items(uid).orderBy(FieldPath.documentId()).limit(100);while(true){List<DocumentSnapshot> page=waitFor(q.get(Source.SERVER)).getDocuments();result.addAll(page);if(page.size()<100)return result;q=items(uid).orderBy(FieldPath.documentId()).startAfter(page.get(page.size()-1)).limit(100);}}
     List<DocumentSnapshot> feed(String owner,String kind)throws Exception{
         if(!friends(owner))throw new IllegalStateException("Friendship no longer active");
         Map<String,Object> settings=waitFor(privacy(owner).get(Source.SERVER)).getData();
-        if(settings==null||!Boolean.TRUE.equals(settings.get(kind.equals("plan")?"plansVisible":"walksVisible")))return new ArrayList<>();
+        boolean legacyVisible=settings!=null&&Boolean.TRUE.equals(settings.get(kind.equals("plan")?"plansVisible":"walksVisible"));
         Map<String,DocumentSnapshot> unique=new LinkedHashMap<>();
         Query all=items(owner).whereEqualTo("kind",kind).whereEqualTo("visible",true).whereEqualTo("audience","friends").limit(100);
         Query direct=items(owner).whereEqualTo("kind",kind).whereEqualTo("visible",true).whereEqualTo("audience","direct").whereArrayContains("recipients",uid).limit(100);
-        for(Query q:new Query[]{all,direct})for(DocumentSnapshot item:waitFor(q.get(Source.SERVER)).getDocuments())unique.put(item.getId(),item);
+        for(Query q:(legacyVisible?new Query[]{all,direct}:new Query[]{all.whereEqualTo("individualPrivacy",true)})){for(DocumentSnapshot item:waitFor(q.get(Source.SERVER)).getDocuments())unique.put(item.getId(),item);}
         ArrayList<DocumentSnapshot> result=new ArrayList<>(unique.values());result.sort((x,y)->Long.compare(y.getLong("updatedAt"),x.getLong("updatedAt")));return result;
     }
     void hide(String id)throws Exception{check();waitFor(items(uid).document(id).update("visible",false));}
-    void publish(String kind,String sourceId,String name,JSONObject payload,List<String> recipients)throws Exception{
+    void publish(String kind,String sourceId,String name,JSONObject payload,List<String> recipients)throws Exception{publish(kind,sourceId,name,payload,recipients,false);}
+    void publish(String kind,String sourceId,String name,JSONObject payload,List<String> recipients,boolean individual)throws Exception{
         check();SocialPayload.validate(payload,kind);CloudSnapshot snapshot=CloudSnapshot.encode(payload);
         if(snapshot.bytes>5*1024*1024)throw new IOException("Shared item exceeds 5 MB");
         if(recipients!=null)for(String recipient:recipients)if(!friends(recipient))throw new IllegalStateException("Recipient is no longer a friend");
         String id=SocialPayload.itemId(kind,sourceId),revision=UUID.randomUUID().toString();DocumentReference item=items(uid).document(id);
         for(int offset=0;offset<snapshot.chunks.size();offset+=16){check();WriteBatch batch=db.batch();for(int i=offset;i<Math.min(offset+16,snapshot.chunks.size());i++)batch.set(item.collection("revisions").document(revision).collection("chunks").document(Integer.toString(i)),Collections.singletonMap("data",Blob.fromBytes(snapshot.chunks.get(i))));waitFor(batch.commit());}
-        Map<String,Object> data=new HashMap<>();data.put("kind",kind);data.put("name",name.length()>120?name.substring(0,120):name);data.put("audience",recipients==null?"friends":"direct");data.put("recipients",recipients==null?Collections.emptyList():recipients);data.put("visible",true);data.put("revision",revision);data.put("bytes",snapshot.bytes);data.put("chunks",snapshot.chunks.size());data.put("sha256",snapshot.sha256);data.put("updatedAt",System.currentTimeMillis());data.put("routeShared",payload.optBoolean("routeShared"));
+        Map<String,Object> data=new HashMap<>();data.put("kind",kind);data.put("name",name.length()>120?name.substring(0,120):name);data.put("audience",recipients==null?"friends":"direct");data.put("recipients",recipients==null?Collections.emptyList():recipients);data.put("visible",true);data.put("revision",revision);data.put("bytes",snapshot.bytes);data.put("chunks",snapshot.chunks.size());data.put("sha256",snapshot.sha256);data.put("updatedAt",System.currentTimeMillis());data.put("routeShared",payload.optBoolean("routeShared"));if(individual)data.put("individualPrivacy",true);
         check();waitFor(item.set(data));
     }
     JSONObject download(String owner,String id)throws Exception{

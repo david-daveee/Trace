@@ -9,9 +9,9 @@ service cloud.firestore {
   }
   function friend(uid) { return signed() && accepted(uid,request.auth.uid); }
   function shared(uid,item) {
-   let privacy = get(/databases/$(database)/documents/social/$(uid)/settings/privacy).data;
+   let privacy = exists(/databases/$(database)/documents/social/$(uid)/settings/privacy) ? get(/databases/$(database)/documents/social/$(uid)/settings/privacy).data : {};
    return friend(uid) && item.visible == true
-    && ((item.kind == 'plan' && privacy.plansVisible == true) || (item.kind == 'walk' && privacy.walksVisible == true))
+    && (item.get('individualPrivacy',false) == true || (item.kind == 'plan' && privacy.plansVisible == true) || (item.kind == 'walk' && privacy.walksVisible == true))
     && (item.audience == 'friends' || (item.audience == 'direct' && request.auth.uid in item.recipients));
   }
   // Friends NEVER receive access to the private backup namespace.
@@ -52,6 +52,23 @@ service cloud.firestore {
     && request.resource.data.status == 'accepted' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']);
    allow delete: if signed() && request.auth.uid in resource.data.members;
   }
+  match /connections/{id}/messages/{message} {
+   function member() { let c = get(/databases/$(database)/documents/connections/$(id)).data; return signed() && c.status == 'accepted' && request.auth.uid in c.members; }
+   allow get: if member();
+   allow list: if member() && request.query.limit <= 100;
+   allow create: if member() && request.resource.data.keys().hasOnly(['sender','text','sentAt'])
+    && request.resource.data.sender == request.auth.uid
+    && request.resource.data.text is string && request.resource.data.text.size() > 0 && request.resource.data.text.size() <= 2000
+    && request.resource.data.sentAt == request.time;
+  }
+  // Voluntary display name, short bio and avatar, visible to confirmed friends only.
+  match /social/{uid}/settings/profile {
+   allow get: if owns(uid) || friend(uid);
+   allow create, update: if owns(uid) && request.resource.data.keys().hasOnly(['displayName','bio','avatar'])
+    && (!('displayName' in request.resource.data) || (request.resource.data.displayName is string && request.resource.data.displayName.size() > 0 && request.resource.data.displayName.size() <= 40))
+    && (!('bio' in request.resource.data) || (request.resource.data.bio is string && request.resource.data.bio.size() <= 160))
+    && (!('avatar' in request.resource.data) || (request.resource.data.avatar is string && request.resource.data.avatar.size() <= 160000));
+  }
   match /social/{uid}/settings/privacy {
    allow get: if owns(uid) || friend(uid);
    allow create, update: if owns(uid) && request.resource.data.keys().hasOnly(['plansVisible','walksVisible'])
@@ -61,10 +78,11 @@ service cloud.firestore {
    allow get: if owns(uid) || shared(uid,resource.data);
    allow list: if request.query.limit <= 100 && (owns(uid) || shared(uid,resource.data));
    allow create, update: if owns(uid)
-    && request.resource.data.keys().hasOnly(['kind','name','audience','recipients','visible','revision','bytes','chunks','sha256','updatedAt','routeShared'])
+    && request.resource.data.keys().hasOnly(['kind','name','audience','recipients','visible','revision','bytes','chunks','sha256','updatedAt','routeShared','individualPrivacy'])
     && request.resource.data.kind in ['plan','walk'] && request.resource.data.name is string && request.resource.data.name.size() <= 120
     && request.resource.data.audience in ['friends','direct'] && request.resource.data.recipients is list && request.resource.data.recipients.size() <= 100
     && request.resource.data.visible is bool && request.resource.data.routeShared is bool
+    && (!('individualPrivacy' in request.resource.data) || request.resource.data.individualPrivacy is bool)
     && request.resource.data.revision.matches('[a-f0-9-]{36}')
     && request.resource.data.bytes is int && request.resource.data.bytes > 0 && request.resource.data.bytes <= 5242880
     && request.resource.data.chunks is int && request.resource.data.chunks > 0 && request.resource.data.chunks <= 20

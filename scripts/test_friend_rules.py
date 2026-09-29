@@ -1,6 +1,6 @@
 """Runs only against the local Firestore emulator with disposable demo data."""
-import base64, json, time, urllib.request, urllib.error
-HOST="http://127.0.0.1:8181"
+import base64, json, time, urllib.request, urllib.error, os
+HOST="http://127.0.0.1:"+str(int(os.environ.get("TRACE_EMULATOR_PORT","8181")))
 PROJECT="demo-trace-friends"
 BASE=f"{HOST}/v1/projects/{PROJECT}/databases/(default)/documents"
 PREFIX=f"projects/{PROJECT}/databases/(default)/documents/"
@@ -45,6 +45,13 @@ call(f"{HOST}/emulator/v1/projects/{PROJECT}/databases/(default)/documents","DEL
 for uid,code in [("alice","AAAAAAAAAAAA"),("bob","BBBBBBBBBBBB"),("carol","CCCCCCCCCCCC")]:
     p={"uid":uid,"name":uid.title(),"code":code}
     call(BASE+":commit","POST",{"writes":[write("socialProfiles/"+uid,p),write("friendCodes/"+code,p),write(f"social/{uid}/settings/privacy",{"plansVisible":True,"walksVisible":True})]},uid,label="Create own profile and code: "+uid)
+put("social/alice/settings/profile",{"displayName":"Ace","bio":"Streetlifting","avatar":"sample"},"alice",label="Owner edits voluntary profile")
+get("social/alice/settings/profile","alice",label="Owner reads profile")
+get("social/alice/settings/profile","bob",403,"Stranger cannot read profile")
+get("social/alice/settings/profile",None,403,"Anonymous cannot read profile")
+put("social/alice/settings/profile",{"bio":"intruder"},"bob",403,"Other account cannot edit profile")
+put("social/alice/settings/profile",{"bio":"a"*161},"alice",403,"Reject oversized profile bio")
+put("social/alice/settings/profile",{"avatar":"a"*160001},"alice",403,"Reject oversized avatar")
 get("friendCodes/AAAAAAAAAAAA","bob",label="Exact code lookup")
 get("friendCodes/AAAAAAAAAAAA",None,403,"No anonymous code lookup")
 query("","friendCodes",[],"bob",403,"Cannot enumerate codes")
@@ -67,6 +74,7 @@ get(path,"bob",403,"Pending request has no access")
 put("connections/alice~bob",connection("bob","accepted"),"alice",403,"Sender still cannot accept")
 put("connections/alice~bob",connection("bob","accepted"),"bob",label="Recipient accepts")
 get(path,"bob",label="Accepted friend reads selected plan")
+get("social/alice/settings/profile","bob",label="Accepted friend reads profile")
 get(path,None,403,"No anonymous plan access")
 get(path,"carol",403,"Stranger cannot read plan")
 get("users/alice/sync/head","bob",403,"Friend cannot read private sync")
@@ -77,6 +85,14 @@ query("social/alice","items",[],"bob",403,"Unfiltered feed cannot expose hidden 
 put("social/alice/settings/privacy",{"plansVisible":False,"walksVisible":True},"alice",label="Hide all plans")
 get(path,"bob",403,"Category hide revokes plan")
 get(path+f"/revisions/{rev}/chunks/0","bob",403,"Category hide revokes chunks")
+eye=dict(item,individualPrivacy=True)
+eyePath="social/alice/items/plan-eye"
+put(eyePath,eye,"alice",label="Open eye on one plan with legacy category hidden")
+get(eyePath,"bob",label="Eye enables exactly selected plan")
+get(path,"bob",403,"Other plans remain hidden")
+query("social/alice","items",[("kind","EQUAL","plan"),("visible","EQUAL",True),("audience","EQUAL","friends"),("individualPrivacy","EQUAL",True)],"bob",label="Individual visibility feed query")
+eye["visible"]=False;put(eyePath,eye,"alice",label="Close eye")
+get(eyePath,"bob",403,"Closed eye revokes access")
 put("social/alice/settings/privacy",{"plansVisible":True,"walksVisible":True},"alice",label="Restore category visibility")
 put("connections/alice~carol",connection("carol"),"alice",label="Request second friend")
 put("connections/alice~carol",connection("carol","accepted"),"carol",label="Second friend accepts")
@@ -87,8 +103,28 @@ query("social/alice","items",[("kind","EQUAL","plan"),("visible","EQUAL",True),(
 item["visible"]=False;put(path,item,"alice",label="Hide individual plan")
 get(path,"bob",403,"Individual hide revokes access")
 item["visible"]=True;put(path,item,"alice",label="Reshare item")
+# Text messages: only accepted participants; immutable and server-timestamped.
+chat="connections/alice~bob/messages/one"
+def message(path,sender,text,actor,expected=200,label=""):
+ w=write(path,{"sender":sender,"text":text});w["updateTransforms"]=[{"fieldPath":"sentAt","setToServerValue":"REQUEST_TIME"}]
+ return call(BASE+":commit","POST",{"writes":[w]},actor,expected,label)
+message(chat,"alice","Hello Bob","alice",label="Participant sends chat message")
+get(chat,"bob",label="Recipient reads chat")
+get(chat,"carol",403,"Another accepted friend cannot read chat")
+get(chat,None,403,"Anonymous cannot read chat")
+query("connections/alice~bob","messages",[],"bob",label="Participant reads bounded chat history")
+query("connections/alice~bob","messages",[],"carol",403,"Other friend cannot list chat")
+message("connections/alice~bob/messages/spoof","alice","Fake","bob",403,"Cannot impersonate message sender")
+message("connections/alice~bob/messages/empty","alice","","alice",403,"Reject empty message")
+message("connections/alice~bob/messages/long","alice","x"*2001,"alice",403,"Reject oversized message")
+message(chat,"alice","Changed","alice",403,"Messages cannot be overwritten")
+call(BASE+"/"+chat,"DELETE",uid="alice",expected=403,label="Message deletion is not exposed")
+put("connections/alice~bob/messages/clock",{"sender":"alice","text":"Bad time","sentAt":1},"alice",403,"Reject client timestamp")
 call(BASE+"/connections/alice~bob","DELETE",uid="bob",label="Either friend can remove friendship")
 get(path,"bob",403,"Unfriend revokes shared plan")
+get("social/alice/settings/profile","bob",403,"Unfriend revokes profile access")
 get(path+f"/revisions/{rev}/chunks/0","bob",403,"Unfriend revokes chunks")
 put(path,item,"bob",403,"Friend cannot change owner publications")
+get(chat,"alice",403,"Removed friendship revokes chat history")
+message("connections/alice~bob/messages/after","alice","No access","alice",403,"Removed friendship cannot send")
 print(f"{checks} Firestore access checks passed")
