@@ -47,6 +47,18 @@ Live GPS recording, Android permissions, sensor enablement and automatic-backup 
 
 Google authentication and your private cloud data use Firebase. Account deletion from inside Trace is not available yet. Real account upload/readback and interrupted-restore recovery have been tested on one phone; simultaneous edits on two physical devices have not yet been verified end to end.
 
+## Friends and sharing
+
+Open **Friends** using the people icon beside Settings. Sign in, choose your display name, and share your friend code. A request must be accepted before either person can see shared items.
+
+- Share a plan with all friends or one selected friend. They can preview it and add a separate copy to My plans.
+- Share a completed walk as **Stats only**, or explicitly choose **With route** to include its exact GPS path.
+- Everything starts private. Publish only the items you want friends to see. Hide individual publications, or switch off all shared plans or walks in Friends.
+- Your email, private backup, workout history and personal exercise notes are not included in shared plans. A plan includes its exercises, weights and cover.
+- Publications are snapshots: share again to update the item or replace its audience. Hiding an item or removing a friend stops future access, but cannot erase copies they already saved.
+
+Friends requires an internet connection. Friend requests, visibility settings and publications belong to your account and are separate from phone backups. The first version displays up to 100 connections and 100 items per query; it does not send push notifications for requests.
+
 ## Home training
 
 The Plans library also includes Beginner and Strength home routines, with source links in each plan. Choose a plan suited to your equipment and adjust exercises and weights before starting.

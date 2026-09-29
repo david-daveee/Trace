@@ -2,10 +2,10 @@ package com.podhod.app;
 import android.app.*;
 import android.os.*;
 import org.json.*;
-/** Read-only validation against the installed app's actual library. No sign-in or uploads. */
+/** Read-only by default. Explicit createFriendName creates the requested social profile only. */
 public class AccountSmoke extends Instrumentation {
- boolean cloudRead;
- public void onCreate(Bundle b){super.onCreate(b);cloudRead="true".equals(b.getString("cloudRead"));start();}
+ boolean cloudRead,friendsRead;String createFriendName;
+ public void onCreate(Bundle b){super.onCreate(b);cloudRead="true".equals(b.getString("cloudRead"));friendsRead="true".equals(b.getString("friendsRead"));createFriendName=b.getString("createFriendName");start();}
  public void onStart(){Bundle result=new Bundle();final Throwable[] failure={null};runOnMainSync(()->{try{
   var c=getTargetContext();Lang.init(c);
   if(!AccountSync.configured(c))throw new AssertionError("Firebase missing");
@@ -38,7 +38,23 @@ public class AccountSmoke extends Instrumentation {
   if(revision.payload!=null)SyncLocal.validate(revision.payload);
   remote=revision.payload==null?" Cloud read passed: empty account.":" Cloud read and validation passed. Active workout: "+revision.payload.optJSONObject("workouts").has("active")+"; paused: "+(revision.payload.optJSONObject("workouts").optJSONObject("savedSessions")==null?0:revision.payload.optJSONObject("workouts").optJSONObject("savedSessions").length())+".";
  }catch(Throwable e){failure[0]=e;}
- result.putString("stream",failure[0]==null?"PASS: Firebase/OAuth configured, real local snapshot valid, compressed transfer round trip, walk merge valid, no uploads or data changes."+remote+"\n":"FAIL: "+failure[0]);
+ if(failure[0]==null&&friendsRead)try{
+  FriendsStore social=new FriendsStore();boolean profileExists=social.profileData()!=null;social.connections();social.ownItems();
+  social.db.batch().set(social.privacy(social.uid),new java.util.HashMap<String,Object>(){{put("plansVisible",true);put("walksVisible",true);}});
+  remote+=" Social profile exists: "+profileExists+". Profile write serialization passed (not committed).";
+  for(String audience:new String[]{"friends","direct"}){
+   com.google.firebase.firestore.Query q=social.items(social.uid).whereEqualTo("kind","plan").whereEqualTo("visible",true).whereEqualTo("audience",audience).limit(100);
+   if(audience.equals("direct"))q=q.whereArrayContains("recipients",social.uid);
+   social.waitFor(q.get(com.google.firebase.firestore.Source.SERVER));
+  }
+  remote+=" Friends server reads and both publication queries passed. No social data created.";
+ }catch(Throwable e){failure[0]=e;}
+ if(failure[0]==null&&createFriendName!=null)try{
+  FriendsStore social=new FriendsStore();social.createProfile(createFriendName);
+  if(social.profileData()==null)throw new AssertionError("Profile was not persisted");
+  social.connections();social.privacyData();social.ownItems();remote+=" Requested friend profile creation and dashboard reads passed.";
+ }catch(Throwable e){failure[0]=e;android.util.Log.e("TraceFriends","Profile creation diagnostic",e);}
+ result.putString("stream",failure[0]==null?"PASS: Firebase/OAuth configured, real local snapshot valid, compressed transfer round trip, walk merge valid, private training data unchanged."+remote+"\n":"FAIL: "+failure[0]+"; cause: "+failure[0].getCause());
  finish(failure[0]==null?Activity.RESULT_OK:Activity.RESULT_CANCELED,result);
  }
 }

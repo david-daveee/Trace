@@ -69,13 +69,14 @@ public class MainActivity extends Activity {
         LinearLayout top=new LinearLayout(this);top.setPadding(dp(22),dp(6),dp(14),dp(6));top.setGravity(Gravity.CENTER_VERTICAL);
         ImageView mark=new ImageView(this);mark.setImageResource(R.drawable.ic_trace);top.addView(mark,new LinearLayout.LayoutParams(dp(26),dp(26)));
         TextView brand=title("  Trace",20);brand.setGravity(Gravity.CENTER_VERTICAL);top.addView(brand,new LinearLayout.LayoutParams(0,dp(48),1));
+        ImageView friends=new ImageView(this);friends.setImageDrawable(new LineIcon("friends",MUTED));friends.setPadding(dp(12),dp(12),dp(12),dp(12));friends.setContentDescription(AccountPanel.s("Friends","Друзья"));clickable(friends,()->{page="friends";render();});top.addView(friends,new LinearLayout.LayoutParams(dp(48),dp(48)));
         ImageView settings=new ImageView(this);settings.setImageDrawable(new LineIcon("settings",MUTED));settings.setPadding(dp(13),dp(13),dp(13),dp(13));settings.setContentDescription(Lang.t("Настройки"));clickable(settings,()->{page="settings";render();});top.addView(settings,new LinearLayout.LayoutParams(dp(48),dp(48)));root.addView(top);
         ScrollView scroll=new StepsSwipeScroll(this);scroll.setFillViewport(true);scroll.setClipToPadding(false);scroll.setVerticalScrollBarEnabled(false);body=column();body.setPadding(dp(20),dp(14),dp(20),dp(16));scroll.addView(body);root.addView(scroll,new LinearLayout.LayoutParams(-1,0,1));
         actionDock=column();actionDock.setPadding(dp(20),dp(4),dp(20),dp(10));actionDock.setBackground(shape(CARD,24));
-        switch(page){case "mine":programs(true);break;case "library":programs(false);break;case "history":history();break;case "progress":progressPage();break;case "steps":stepsView=new StepsPage(this);break;case "program":programView();break;case "workout":workout();break;case "settings":settings();break;default:programs(true);}
+        switch(page){case "friends":FriendsPanel.show(this);break;case "mine":programs(true);break;case "library":programs(false);break;case "history":history();break;case "progress":progressPage();break;case "steps":stepsView=new StepsPage(this);break;case "program":programView();break;case "workout":workout();break;case "settings":settings();break;default:programs(true);}
         if(actionDock.getChildCount()>0)root.addView(actionDock);
         LinearLayout nav=new LinearLayout(this);nav.setPadding(dp(8),dp(10),dp(8),dp(10));nav.setBackgroundColor(BG);String[] names={Lang.t("Планы"),Lang.t("Мои планы"),Lang.t("Тренировка"),Lang.t("Прогресс"),Lang.t("Шаги")},keys={"library","mine","workout","progress","steps"};
-        String activeTab=(page.equals("program")||page.equals("history")||page.equals("settings"))?"mine":page;
+        String activeTab=(page.equals("program")||page.equals("history")||(page.equals("settings")||page.equals("friends")))?"mine":page;
         for(int i=0;i<keys.length;i++){
             final String key=keys[i];boolean current=activeTab.equals(key);
             LinearLayout item=column();item.setGravity(Gravity.CENTER);item.setMinimumHeight(dp(80));item.setPadding(dp(2),dp(8),dp(2),dp(8));
@@ -200,7 +201,7 @@ public class MainActivity extends Activity {
     void category(JSONObject p){String[] labels=new String[PlanCategory.LABELS.length];for(int i=0;i<labels.length;i++)labels[i]=Lang.t(PlanCategory.LABELS[i]);
         new AlertDialog.Builder(this).setTitle(Lang.t("Категория плана")).setSingleChoiceItems(labels,PlanCategory.index(p),(dialog,index)->{dialog.dismiss();if(index==6){LinearLayout box=form();EditText name=input(box,Lang.t("Название категории"),p.optString("categoryName"),false);formDialog(Lang.t("Своя категория"),box,Lang.t("Сохранить"),()->{PlanCategory.set(p,index,name.getText().toString());store.save();render();});}else{PlanCategory.set(p,index,"");store.save();render();}}).setNegativeButton(Lang.t("Отмена"),null).show();
     }
-    void sharePlan(JSONObject p){try{startActivity(Intent.createChooser(PlanShare.intent(this,p),Lang.t("Поделиться планом")));}catch(Exception e){error(e);}}
+    void sharePlan(JSONObject p){new AlertDialog.Builder(this).setTitle(Lang.t("Поделиться планом")).setItems(new String[]{AccountPanel.s("Friends in Trace","Друзья в Trace"),AccountPanel.s("Send a file","Отправить файлом")},(dialog,which)->{try{if(which==0)FriendsPanel.sharePlan(this,p);else startActivity(Intent.createChooser(PlanShare.intent(this,p),Lang.t("Поделиться планом")));}catch(Exception e){error(e);}}).show();}
     void coverOptions(JSONObject p){
         String[] options=p.optString("coverImage").isEmpty()?new String[]{Lang.t("Выбрать фото или скриншот")}:new String[]{Lang.t("Выбрать фото или скриншот"),Lang.t("Настроить обложку"),Lang.t("Вернуть стандартную обложку")};
         new AlertDialog.Builder(this).setTitle(Lang.t("Обложка плана")).setItems(options,(d,which)->{

@@ -1,0 +1,1 @@
+{"indexes":[{"collectionGroup":"items","queryScope":"COLLECTION","fields":[{"fieldPath":"kind","order":"ASCENDING"},{"fieldPath":"visible","order":"ASCENDING"},{"fieldPath":"audience","order":"ASCENDING"},{"fieldPath":"recipients","arrayConfig":"CONTAINS"}]}],"fieldOverrides":[]}

@@ -1,22 +1,82 @@
 rules_version = '2';
 service cloud.firestore {
-  match /databases/{database}/documents {
-    function owns(uid) {
-      return request.auth != null && request.auth.uid == uid;
-    }
-    // A user's private sync namespace. There are no public collections.
-    match /users/{uid}/sync/{document} {
-      allow read, write: if owns(uid);
-    }
-    match /users/{uid}/revisions/{revision} {
-      allow read, write: if owns(uid);
-      match /chunks/{chunk} {
-        allow read, write: if owns(uid);
-      }
-    }
-    // Unauthenticated clients, other accounts and all other paths are denied.
-    match /{document=**} {
-      allow read, write: if false;
-    }
+ match /databases/{database}/documents {
+  function signed() { return request.auth != null; }
+  function owns(uid) { return signed() && request.auth.uid == uid; }
+  function accepted(a,b) {
+   return (exists(/databases/$(database)/documents/connections/$(a + '~' + b)) && get(/databases/$(database)/documents/connections/$(a + '~' + b)).data.status == 'accepted')
+    || (exists(/databases/$(database)/documents/connections/$(b + '~' + a)) && get(/databases/$(database)/documents/connections/$(b + '~' + a)).data.status == 'accepted');
   }
+  function friend(uid) { return signed() && accepted(uid,request.auth.uid); }
+  function shared(uid,item) {
+   let privacy = get(/databases/$(database)/documents/social/$(uid)/settings/privacy).data;
+   return friend(uid) && item.visible == true
+    && ((item.kind == 'plan' && privacy.plansVisible == true) || (item.kind == 'walk' && privacy.walksVisible == true))
+    && (item.audience == 'friends' || (item.audience == 'direct' && request.auth.uid in item.recipients));
+  }
+  // Friends NEVER receive access to the private backup namespace.
+  match /users/{uid}/sync/{document} { allow read, write: if owns(uid); }
+  match /users/{uid}/revisions/{revision} {
+   allow read, write: if owns(uid);
+   match /chunks/{chunk} { allow read, write: if owns(uid); }
+  }
+  match /socialProfiles/{uid} {
+   allow get: if owns(uid);
+   allow create: if owns(uid) && request.resource.data.keys().hasOnly(['uid','name','code'])
+    && request.resource.data.uid == uid && request.resource.data.name is string
+    && request.resource.data.name.size() > 0 && request.resource.data.name.size() <= 40
+    && request.resource.data.code.matches('[A-F0-9]{12}')
+    && getAfter(/databases/$(database)/documents/friendCodes/$(request.resource.data.code)).data.uid == uid;
+  }
+  match /friendCodes/{code} {
+   allow get: if signed();
+   allow create: if signed() && request.resource.data.keys().hasOnly(['uid','name','code'])
+    && request.resource.data.uid == request.auth.uid && request.resource.data.code == code
+    && code.matches('[A-F0-9]{12}')
+    && getAfter(/databases/$(database)/documents/socialProfiles/$(request.auth.uid)).data == request.resource.data;
+   // Exact-code lookup only: the directory cannot be listed or overwritten.
+  }
+  match /connections/{id} {
+   allow get: if signed() && request.auth.uid in id.split('~');
+   allow list: if signed() && request.auth.uid in resource.data.members && request.query.limit <= 100;
+   allow create: if signed() && request.resource.data.keys().hasOnly(['from','to','fromName','toName','members','status','createdAt'])
+    && request.resource.data.from == request.auth.uid && request.resource.data.to != request.auth.uid
+    && request.resource.data.to.matches('[a-zA-Z0-9_-]{1,128}')
+    && id == request.auth.uid + '~' + request.resource.data.to
+    && request.resource.data.members == [request.auth.uid,request.resource.data.to]
+    && request.resource.data.status == 'pending' && request.resource.data.createdAt is int
+    && request.resource.data.fromName == get(/databases/$(database)/documents/socialProfiles/$(request.auth.uid)).data.name
+    && request.resource.data.toName == get(/databases/$(database)/documents/socialProfiles/$(request.resource.data.to)).data.name
+    && !exists(/databases/$(database)/documents/connections/$(request.resource.data.to + '~' + request.auth.uid));
+   allow update: if signed() && request.auth.uid == resource.data.to && resource.data.status == 'pending'
+    && request.resource.data.status == 'accepted' && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status']);
+   allow delete: if signed() && request.auth.uid in resource.data.members;
+  }
+  match /social/{uid}/settings/privacy {
+   allow get: if owns(uid) || friend(uid);
+   allow create, update: if owns(uid) && request.resource.data.keys().hasOnly(['plansVisible','walksVisible'])
+    && request.resource.data.plansVisible is bool && request.resource.data.walksVisible is bool;
+  }
+  match /social/{uid}/items/{itemId} {
+   allow get: if owns(uid) || shared(uid,resource.data);
+   allow list: if request.query.limit <= 100 && (owns(uid) || shared(uid,resource.data));
+   allow create, update: if owns(uid)
+    && request.resource.data.keys().hasOnly(['kind','name','audience','recipients','visible','revision','bytes','chunks','sha256','updatedAt','routeShared'])
+    && request.resource.data.kind in ['plan','walk'] && request.resource.data.name is string && request.resource.data.name.size() <= 120
+    && request.resource.data.audience in ['friends','direct'] && request.resource.data.recipients is list && request.resource.data.recipients.size() <= 100
+    && request.resource.data.visible is bool && request.resource.data.routeShared is bool
+    && request.resource.data.revision.matches('[a-f0-9-]{36}')
+    && request.resource.data.bytes is int && request.resource.data.bytes > 0 && request.resource.data.bytes <= 5242880
+    && request.resource.data.chunks is int && request.resource.data.chunks > 0 && request.resource.data.chunks <= 20
+    && request.resource.data.sha256.matches('[a-f0-9]{64}') && request.resource.data.updatedAt is int;
+   allow delete: if owns(uid);
+   match /revisions/{revision}/chunks/{chunk} {
+    allow read: if owns(uid) || (shared(uid,get(/databases/$(database)/documents/social/$(uid)/items/$(itemId)).data)
+     && get(/databases/$(database)/documents/social/$(uid)/items/$(itemId)).data.revision == revision);
+    allow create, update: if owns(uid) && request.resource.data.keys().hasOnly(['data']) && request.resource.data.data is bytes && request.resource.data.data.size() <= 262144;
+    allow delete: if owns(uid);
+   }
+  }
+  match /{document=**} { allow read, write: if false; }
+ }
 }
