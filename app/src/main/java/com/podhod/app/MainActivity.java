@@ -79,7 +79,7 @@ public class MainActivity extends Activity {
         switch(page){case "profile":case "friends":FriendsPanel.show(this);break;case "mine":programs(true);break;case "library":programs(false);break;case "history":history();break;case "progress":progressPage();break;case "steps":stepsView=new StepsPage(this);break;case "program":programView();break;case "workout":workout();break;case "settings":settings();break;default:programs(true);}
         if(actionDock.getChildCount()>0)root.addView(actionDock);
         LinearLayout nav=new LinearLayout(this);nav.setPadding(dp(8),dp(10),dp(8),dp(10));nav.setBackgroundColor(BG);String[] names={Lang.t("Планы"),Lang.t("Мои планы"),Lang.t("Тренировка"),Lang.t("Прогресс"),Lang.t("Шаги")},keys={"library","mine","workout","progress","steps"};
-        String activeTab=(page.equals("program")||page.equals("history")||(page.equals("settings")||page.equals("friends")||page.equals("profile")))?"mine":page;
+        String activeTab=(page.equals("program")||page.equals("history"))?"mine":page;
         for(int i=0;i<keys.length;i++){
             final String key=keys[i];boolean current=activeTab.equals(key);
             LinearLayout item=column();item.setGravity(Gravity.CENTER);item.setMinimumHeight(dp(80));item.setPadding(dp(2),dp(8),dp(2),dp(8));
