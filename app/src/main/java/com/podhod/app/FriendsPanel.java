@@ -21,6 +21,8 @@ final class FriendsPanel {
         worker.execute(()->{try{T result=work.run(store);a.runOnUiThread(()->{if(a.isDestroyed())return;try{store.check();done.accept(result);}catch(Exception e){a.error(e);}});}catch(Exception e){android.util.Log.e("TraceFriends","Operation failed",e);a.runOnUiThread(()->{if(a.isDestroyed())return;try{store.check();}catch(Exception changed){return;}failed.run();a.error(new IllegalStateException(errorMessage(e)));});}});
     }
     static String errorMessage(Throwable error){
+        if(error instanceof GmailAddress.NotFound)return s("No available profile at this Gmail. Ask your friend to enable Find me by Gmail in My profile, or use their friend code.","Профиль по этому Gmail недоступен. Попроси друга включить поиск по Gmail в своём профиле или используй его код.");
+        if(error instanceof IllegalArgumentException)return error.getMessage();
         for(Throwable cause=error;cause!=null;cause=cause.getCause()){
             if(cause instanceof com.google.firebase.firestore.FirebaseFirestoreException){
                 switch(((com.google.firebase.firestore.FirebaseFirestoreException)cause).getCode()){
@@ -42,7 +44,7 @@ final class FriendsPanel {
         int generation=++a.friendsGeneration;
         run(a,store->{State state=new State();state.profile=store.profileData();if(state.profile!=null){state.connections=store.connections();state.privacy=store.privacyData();state.items=store.ownItems();state.portrait=store.portrait(store.uid);for(DocumentSnapshot friend:state.connections)if("accepted".equals(friend.getString("status"))){String peer=store.peer(friend);try{state.portraits.put(peer,store.portrait(peer));}catch(Exception ignored){/* A removed friend must not block the rest of the list. */}}}return state;},state->{if(!host.isAttachedToWindow()||generation!=a.friendsGeneration)return;State old=a.friendsState;a.friendsState=state;
             if(state.profile==null&&old!=null&&old.profile==null)return;
-            android.widget.ScrollView scroll=(android.widget.ScrollView)a.body.getParent();int y=scroll.getScrollY();host.removeAllViews();if(state.profile==null)create(a,host);else if(a.page.equals("profile"))own(a,host,state);else draw(a,host,state);FriendsProfile.headerImage(a);scroll.post(()->scroll.scrollTo(0,y));
+            android.widget.ScrollView scroll=(android.widget.ScrollView)a.body.getParent();int y=scroll.getScrollY();host.removeAllViews();if(state.profile==null)create(a,host);else if(a.page.equals("profile"))own(a,host,state);else draw(a,host,state);FriendsProfile.remember(a,state.portrait);scroll.post(()->scroll.scrollTo(0,y));
         },()->{if(!host.isAttachedToWindow()||generation!=a.friendsGeneration||a.friendsState!=null)return;host.removeAllViews();host.addView(a.text(s("Friends is unavailable. Try again when connected.","Друзья пока недоступны. Попробуй ещё раз при подключении."),15,a.MUTED));a.button(host,s("Try again","Повторить"),true,()->refresh(a));});
     }
     static void show(MainActivity a){
@@ -76,6 +78,7 @@ final class FriendsPanel {
         long count=state.connections.stream().filter(c->"accepted".equals(c.getString("status"))).count();a.space(hero,14);hero.addView(a.text(s("Friends: ","Друзья: ")+count+s(" · Shared: "," · Публикации: ")+state.items.stream().filter(c->Boolean.TRUE.equals(c.getBoolean("visible"))).count(),13,a.GREEN));
         a.link(hero,s("Edit profile","Изменить профиль"),()->FriendsProfile.edit(a,state));
         a.link(hero,s("My friend code","Мой код друга"),()->code(a,state));
+        GmailFriends.settings(a,host);
         a.actionRow(host,"friends",s("My friends","Мои друзья"),s("Explore their plans and walks","Смотреть планы и прогулки друзей"),()->{a.page="friends";a.render();});
         a.space(host,16);host.addView(a.text(s("Your photo and bio are visible only to accepted friends. Manage each plan and walk with its privacy eye.","Фото и описание видны только подтверждённым друзьям. Видимость планов и прогулок меняется глазком у каждой записи."),14,a.MUTED));
     }
@@ -94,7 +97,7 @@ final class FriendsPanel {
         a.link(host,s("Refresh friends","Обновить друзей"),()->refresh(a));
     }
     static void compact(MainActivity a,LinearLayout row,String title,boolean primary,Runnable action){TextView button=a.button(row,title,primary,action);LinearLayout.LayoutParams lp=new LinearLayout.LayoutParams(0,a.dp(50),1);lp.setMargins(0,a.dp(8),a.dp(6),0);button.setLayoutParams(lp);button.setTextSize(14);button.setPadding(a.dp(8),0,a.dp(8),0);}
-    static void addFriend(MainActivity a){LinearLayout box=a.form();EditText input=a.input(box,s("Friend code","Код друга"),"",false);a.formDialog(s("Add a friend","Добавить друга"),box,s("Send request","Отправить запрос"),()->{String code=input.getText().toString();run(a,store->{store.request(code);return true;},ok->{Toast.makeText(a,s("Request sent","Запрос отправлен"),Toast.LENGTH_SHORT).show();refresh(a);});});}
+    static void addFriend(MainActivity a){GmailFriends.add(a);}
     static void code(MainActivity a,State state){LinearLayout box=a.form();String code=SocialPayload.displayCode(String.valueOf(state.profile.get("code")));box.addView(a.title(code,26));a.space(box,12);box.addView(a.text(s("Send this code to a friend. You choose which requests to accept.","Отправь код другу. Ты выбираешь, какие запросы принять."),15,a.MUTED));a.button(box,s("Share code","Поделиться кодом"),true,()->a.startActivity(Intent.createChooser(new Intent(Intent.ACTION_SEND).setType("text/plain").putExtra(Intent.EXTRA_TEXT,"Trace: "+code+"\nhttps://github.com/david-daveee/Trace/releases/latest"),s("Share code","Поделиться кодом"))));a.panel(s("My friend code","Мой код друга"),box,Lang.t("Закрыть"),()->{},false);}
     static void privacy(MainActivity a,LinearLayout host,State state){
         host.addView(a.title(s("You control each item","Ты выбираешь для каждой записи"),23));a.space(host,16);

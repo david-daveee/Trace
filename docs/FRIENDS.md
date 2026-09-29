@@ -16,7 +16,7 @@ All social reads use the server. No automatic publication, push notification del
 
 ## Verification
 
-Run the Firestore emulator locally on port 8181 with project `demo-trace-friends` and this repository's rules, then run `python scripts/test_friend_rules.py`. This resets only the disposable local demo database and checks 73 access cases.
+Run the Firestore emulator locally on port 8181 with project `demo-trace-friends` and this repository's rules, then run `python scripts/test_friend_rules.py`. This resets only the disposable local demo database and checks 86 access cases.
 
 `SocialPayloadTest` verifies private-field removal, explicit route opt-in, deep copying, rejection of unfinished walks and code formatting.
 
@@ -43,3 +43,7 @@ The top bar has a dedicated My profile avatar beside Friends and Settings. It op
 ## Private text chats
 
 The chat icon on a friend row and Message in a friend profile open a private conversation. Messages live in `connections/{id}/messages`; only members of an accepted connection can read or create them. Sender identity and server timestamp are enforced, text is limited to 2,000 characters, and updates/deletes are denied. Removing the connection revokes access. The client listens to the latest 40 messages and loads older pages on demand. It reports success only after the server acknowledges the write; failed sends retain the draft. Chats are separate from workout backups and account snapshot replacement. This version has no attachments, read receipts, push notifications, or end-to-end encryption. Server rules protect access, and messages are stored in Firebase. Tests send only disposable emulator messages; production verification must not send messages to real friends without explicit authorization.
+
+## Optional Gmail lookup
+
+My profile offers Find me by Gmail, off by default. Enabling stores only the verified sign-in Gmail as an exact document key with UID, existing friend code and an enabled flag. Owners alone can write their token-verified address. Signed-in users may get an enabled exact address; directory listing is denied. Disabled and missing addresses return the same unavailable message. Lookup sends a normal pending Trace friend request, never an email or automatic acceptance. Exact sign-in Gmail spelling is required apart from case and surrounding whitespace; dot and plus aliases are not collapsed. This index is separate from profile, backup and workout sync. Gmail discovery is never enabled automatically by setup or tests.

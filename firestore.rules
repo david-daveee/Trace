@@ -36,6 +36,15 @@ service cloud.firestore {
     && getAfter(/databases/$(database)/documents/socialProfiles/$(request.auth.uid)).data == request.resource.data;
    // Exact-code lookup only: the directory cannot be listed or overwritten.
   }
+  // Exact Gmail lookup is opt-in; no directory listing or address impersonation.
+  match /friendEmails/{email} {
+   function ownEmail() { return signed() && request.auth.token.email_verified == true && request.auth.token.email.lower() == email; }
+   allow get: if ownEmail() || (signed() && resource.data.enabled == true);
+   allow create, update: if ownEmail() && email.matches('[a-z0-9._+\\-]+@gmail[.]com')
+    && request.resource.data.keys().hasAll(['uid','code','enabled']) && request.resource.data.keys().hasOnly(['uid','code','enabled'])
+    && request.resource.data.uid == request.auth.uid && request.resource.data.enabled is bool
+    && request.resource.data.code == get(/databases/$(database)/documents/socialProfiles/$(request.auth.uid)).data.code;
+  }
   match /connections/{id} {
    allow get: if signed() && request.auth.uid in id.split('~');
    allow list: if signed() && request.auth.uid in resource.data.members && request.query.limit <= 100;

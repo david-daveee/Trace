@@ -24,18 +24,19 @@ public class MainActivity extends Activity {
     final int BLUE=Color.rgb(146,174,255); LinearLayout actionDock,quickActions;
     android.graphics.Bitmap backgroundPhoto;
     final android.util.SparseArray<android.graphics.Bitmap> covers=new android.util.SparseArray<>();
+    final PageScroll pageScroll=new PageScroll();
     boolean walkTab;
     String catalogCategory="all";
     StepsPage stepsView; final Handler stepHandler=new Handler(Looper.getMainLooper());
     final Runnable stepTick=new Runnable(){public void run(){if(page.equals("steps")&&stepsView!=null)stepsView.refresh();stepHandler.postDelayed(this,2000);}};
     final Runnable accountTick=new Runnable(){public void run(){AccountSync.get(MainActivity.this).refresh();stepHandler.postDelayed(this,60000);}};
     Store store; LinearLayout root,body;String page="mine",selected="";String exportText="";String coverTarget="";
-    FrameLayout profileButton; PrivacyEye.Controller privacyEyes; FriendsPanel.State friendsState; LinearLayout friendsHost; String friendsUid="",friendsPhotoUid=""; int friendsGeneration;
+    FriendsProfile.Header headerProfile; FrameLayout profileButton; PrivacyEye.Controller privacyEyes; FriendsPanel.State friendsState; LinearLayout friendsHost; String friendsUid="",friendsPhotoUid=""; int friendsGeneration;
     final BroadcastReceiver changed=new BroadcastReceiver(){public void onReceive(Context c,Intent i){if(!FriendsPanel.keepScreen(MainActivity.this))render();}};
     int dp(float n){return (int)(n*getResources().getDisplayMetrics().density+0.5f);}
     @Override protected void attachBaseContext(Context base){super.attachBaseContext(Lang.wrap(base));}
-    @Override public void onCreate(Bundle saved){super.onCreate(saved);store=Store.get(this);AutoBackup.schedule(this);if(saved!=null){friendsPhotoUid=saved.getString("friendsPhotoUid","");catalogCategory=saved.getString("catalogCategory","all");walkTab=saved.getBoolean("walkTab",false);page=saved.getString("page","mine");selected=saved.getString("selected","");try(InputStream in=openFileInput("pending-export.json")){exportText=new String(FullBackup.read(in),StandardCharsets.UTF_8);}catch(Exception ignored){}coverTarget=saved.getString("coverTarget","");}if(saved==null&&getIntent().getBooleanExtra("workout",false))page="workout";if(getIntent().getBooleanExtra("steps",false)&&saved==null){page="steps";walkTab=getIntent().getBooleanExtra("walk",false);}render();receivePlan(getIntent());}
-    @Override protected void onSaveInstanceState(Bundle b){super.onSaveInstanceState(b);b.putString("friendsPhotoUid",friendsPhotoUid);b.putString("catalogCategory",catalogCategory);b.putBoolean("walkTab",walkTab);b.putString("page",page);b.putString("selected",selected);b.putString("coverTarget",coverTarget);}
+    @Override public void onCreate(Bundle saved){super.onCreate(saved);pageScroll.read(saved);store=Store.get(this);AutoBackup.schedule(this);if(saved!=null){friendsPhotoUid=saved.getString("friendsPhotoUid","");catalogCategory=saved.getString("catalogCategory","all");walkTab=saved.getBoolean("walkTab",false);page=saved.getString("page","mine");selected=saved.getString("selected","");try(InputStream in=openFileInput("pending-export.json")){exportText=new String(FullBackup.read(in),StandardCharsets.UTF_8);}catch(Exception ignored){}coverTarget=saved.getString("coverTarget","");}if(saved==null&&getIntent().getBooleanExtra("workout",false))page="workout";if(getIntent().getBooleanExtra("steps",false)&&saved==null){page="steps";walkTab=getIntent().getBooleanExtra("walk",false);}render();receivePlan(getIntent());}
+    @Override protected void onSaveInstanceState(Bundle b){super.onSaveInstanceState(b);pageScroll.save(b);b.putString("friendsPhotoUid",friendsPhotoUid);b.putString("catalogCategory",catalogCategory);b.putBoolean("walkTab",walkTab);b.putString("page",page);b.putString("selected",selected);b.putString("coverTarget",coverTarget);}
     @Override protected void onNewIntent(Intent i){super.onNewIntent(i);setIntent(i);if(i.getBooleanExtra("workout",false))page="workout";if(i.getBooleanExtra("steps",false)){page="steps";walkTab=i.getBooleanExtra("walk",false);}render();receivePlan(i);}
     @android.annotation.SuppressLint("UnspecifiedRegisterReceiverFlag") // Older Android is protected by a signature permission.
     @Override protected void onStart(){super.onStart();IntentFilter filter=new IntentFilter("com.podhod.app.CHANGED");if(Build.VERSION.SDK_INT>=33)registerReceiver(changed,filter,Context.RECEIVER_NOT_EXPORTED);else registerReceiver(changed,filter,"com.podhod.app.INTERNAL",null);Notices.update(this);try{Steps.resume(this);}catch(RuntimeException ignored){}stepHandler.post(stepTick);if(!FriendsPanel.keepScreen(this))render();stepHandler.post(accountTick);}
@@ -65,6 +66,7 @@ public class MainActivity extends Activity {
         if(WelcomeScreen.pending(this)){WelcomeScreen.show(this);return;}
         if(page.equals("home"))page="mine";
         if(!page.equals("steps"))walkTab=false;
+        pageScroll.begin(page+"|"+(page.equals("program")?selected:page.equals("steps")?String.valueOf(walkTab):page.equals("library")?catalogCategory:"")+"|"+FriendsPanel.uid(this));
         stepsView=null;quickActions=null;root=column();if(page.equals("home"))photoBackground(root,0);else root.setBackgroundColor(page.equals("library")?0xFF171525:page.equals("history")?0xFF191813:page.equals("workout")?0xFF0B1718:page.equals("progress")?0xFF101E18:BG);
         root.setFocusableInTouchMode(true);setContentView(root);root.requestApplyInsets();
         LinearLayout top=new LinearLayout(this);top.setPadding(dp(22),dp(6),dp(14),dp(6));top.setGravity(Gravity.CENTER_VERTICAL);
@@ -99,7 +101,7 @@ public class MainActivity extends Activity {
             nav.setPadding(dp(8),dp(10),dp(8),dp(10)+insets.getSystemWindowInsetBottom());
             return insets;
         });
-        root.requestApplyInsets();root.requestFocus();
+        root.requestApplyInsets();root.requestFocus();pageScroll.bind(scroll,body);
     }
 
     ArrayList<JSONObject> programsSorted(boolean mine){ArrayList<JSONObject> list=new ArrayList<>();JSONArray a=store.data.optJSONArray("programs");for(int i=0;i<a.length();i++)if(!mine||a.optJSONObject(i).optBoolean("mine"))list.add(a.optJSONObject(i));list.sort((a1,b)->Long.compare(b.optLong("lastUsed"),a1.optLong("lastUsed")));return list;}

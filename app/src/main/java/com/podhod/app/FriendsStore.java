@@ -35,6 +35,15 @@ final class FriendsStore {
     boolean friends(String peer)throws Exception{
         for(String id:new String[]{uid+"~"+peer,peer+"~"+uid}){DocumentSnapshot c=waitFor(db.document("connections/"+id).get(Source.SERVER));if(c.exists()&&"accepted".equals(c.getString("status")))return true;}return false;
     }
+    String gmail(){check();FirebaseUser user=FirebaseAuth.getInstance().getCurrentUser();if(user==null||!user.isEmailVerified())throw new IllegalArgumentException("Verified Gmail required");return GmailAddress.normalize(user.getEmail());}
+    boolean gmailVisible()throws Exception{return Boolean.TRUE.equals(waitFor(db.document("friendEmails/"+gmail()).get(Source.SERVER)).getBoolean("enabled"));}
+    void gmailVisible(boolean enabled)throws Exception{String email=gmail();Map<String,Object> profile=profileData();if(profile==null)throw new IllegalStateException("Create a profile first");Map<String,Object> data=new HashMap<>();data.put("uid",uid);data.put("code",profile.get("code"));data.put("enabled",enabled);waitFor(db.document("friendEmails/"+email).set(data));}
+    void requestGmail(String input)throws Exception{
+        String email=GmailAddress.normalize(input);DocumentSnapshot match;
+        try{match=waitFor(db.document("friendEmails/"+email).get(Source.SERVER));}catch(Exception e){for(Throwable c=e;c!=null;c=c.getCause())if(c instanceof FirebaseFirestoreException&&((FirebaseFirestoreException)c).getCode()==FirebaseFirestoreException.Code.PERMISSION_DENIED)throw new GmailAddress.NotFound();throw e;}
+        if(!match.exists()||!Boolean.TRUE.equals(match.getBoolean("enabled")))throw new GmailAddress.NotFound();
+        request(match.getString("code"));
+    }
     void request(String input)throws Exception{
         String code=SocialPayload.code(input);if(!code.matches("[A-F0-9]{12}"))throw new IllegalArgumentException("Invalid friend code");
         DocumentSnapshot target=waitFor(db.document("friendCodes/"+code).get(Source.SERVER));

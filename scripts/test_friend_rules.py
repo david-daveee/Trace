@@ -8,7 +8,7 @@ checks=0
 
 def token(uid):
     enc=lambda v:base64.urlsafe_b64encode(json.dumps(v).encode()).decode().rstrip("=")
-    return enc({"alg":"none","typ":"JWT"})+"."+enc({"iss":f"https://securetoken.google.com/{PROJECT}","aud":PROJECT,"iat":int(time.time()),"exp":int(time.time())+3600,"sub":uid,"user_id":uid,"firebase":{"identities":{},"sign_in_provider":"custom"}})+"."
+    return enc({"alg":"none","typ":"JWT"})+"."+enc({"iss":f"https://securetoken.google.com/{PROJECT}","aud":PROJECT,"iat":int(time.time()),"exp":int(time.time())+3600,"sub":uid,"user_id":uid,"email":uid+"@gmail.com","email_verified":uid!="unverified","firebase":{"identities":{},"sign_in_provider":"custom"}})+"."
 def call(url,method="GET",data=None,uid=None,expected=200,label=""):
     global checks
     headers={"Content-Type":"application/json"}
@@ -45,6 +45,20 @@ call(f"{HOST}/emulator/v1/projects/{PROJECT}/databases/(default)/documents","DEL
 for uid,code in [("alice","AAAAAAAAAAAA"),("bob","BBBBBBBBBBBB"),("carol","CCCCCCCCCCCC")]:
     p={"uid":uid,"name":uid.title(),"code":code}
     call(BASE+":commit","POST",{"writes":[write("socialProfiles/"+uid,p),write("friendCodes/"+code,p),write(f"social/{uid}/settings/privacy",{"plansVisible":True,"walksVisible":True})]},uid,label="Create own profile and code: "+uid)
+emailPath="friendEmails/alice@gmail.com"
+get(emailPath,"alice",404,"Owner reads missing Gmail opt-in")
+put(emailPath,{"uid":"alice","code":"AAAAAAAAAAAA","enabled":True},"alice",label="Verified Gmail owner enables lookup")
+get(emailPath,"bob",label="Exact enabled Gmail lookup")
+get(emailPath,None,403,"Anonymous cannot look up Gmail")
+query("","friendEmails",[],"bob",403,"Cannot enumerate Gmail directory")
+put(emailPath,{"uid":"bob","code":"BBBBBBBBBBBB","enabled":True},"bob",403,"Cannot claim another Gmail")
+put("friendEmails/unverified@gmail.com",{"uid":"unverified","code":"AAAAAAAAAAAA","enabled":True},"unverified",403,"Unverified email cannot enable lookup")
+put(emailPath,{"uid":"alice","code":"BBBBBBBBBBBB","enabled":True},"alice",403,"Cannot redirect Gmail to another code")
+put(emailPath,{"uid":"bob","code":"AAAAAAAAAAAA","enabled":True},"alice",403,"Cannot redirect Gmail UID")
+put(emailPath,{"uid":"alice","code":"AAAAAAAAAAAA","enabled":False},"alice",label="Disable Gmail lookup")
+get(emailPath,"bob",403,"Disabled Gmail is not discoverable")
+get(emailPath,"alice",label="Owner can read disabled lookup")
+get("friendEmails/absent@gmail.com","bob",403,"Missing Gmail is not discoverable")
 put("social/alice/settings/profile",{"displayName":"Ace","bio":"Streetlifting","avatar":"sample"},"alice",label="Owner edits voluntary profile")
 get("social/alice/settings/profile","alice",label="Owner reads profile")
 get("social/alice/settings/profile","bob",403,"Stranger cannot read profile")

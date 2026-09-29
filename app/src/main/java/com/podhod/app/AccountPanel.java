@@ -28,7 +28,9 @@ final class AccountPanel {
         String message=status.equals("syncing")?s("Syncing…","Синхронизация…"):status.equals("restored")?s("Backup restored · automatic sync paused. Sync now will load account data.","Копия восстановлена · автосинхронизация приостановлена. При синхронизации загрузятся данные аккаунта."):status.equals("active")?s("Will sync after the workout or walk","Синхронизация после тренировки или прогулки"):status.equals("error")?s("Not synced yet · check your connection and retry","Пока не синхронизировано · проверь подключение и повтори"):status.equals("pending")?s("Changes waiting to sync","Изменения ожидают синхронизации"):s("Synced","Синхронизировано");
         card.addView(a.text(message,15,status.equals("error")?a.BLUE:a.GREEN));
         long last=sync.prefs().getLong("lastSync",0);if(last>0)card.addView(a.text(DateFormat.getDateTimeInstance(DateFormat.MEDIUM,DateFormat.SHORT,Lang.locale()).format(new Date(last)),12,a.MUTED));
-        if(!sync.busy())a.button(card,sync.enabled()?s("Sync now","Синхронизировать"):s("Sync now","Синхронизировать"),true,()->sync.prepare(listener(a),false));
+        android.widget.TextView syncButton=a.button(card,sync.busy()?s("Syncing…","Синхронизация…"):s("Sync now","Синхронизировать"),true,()->sync.prepare(listener(a),false));
+        syncButton.setEnabled(!sync.busy());
+        syncButton.setAlpha(sync.busy()?0.65f:1f);
         a.link(card,s("Sign out","Выйти из аккаунта"),()->new AlertDialog.Builder(a).setTitle(s("Sign out?","Выйти из аккаунта?")).setMessage(s("Your data stays on this phone. Cloud sync will stop.","Данные останутся на телефоне. Облачная синхронизация остановится.")).setNegativeButton(s("Cancel","Отмена"),null).setPositiveButton(s("Sign out","Выйти"),(d,w)->{
             sync.signOut();CredentialManager.create(a).clearCredentialStateAsync(new ClearCredentialStateRequest(),null,a::runOnUiThread,new CredentialManagerCallback<Void,ClearCredentialException>(){public void onResult(Void ignored){}public void onError(ClearCredentialException ignored){}});a.render();
         }).show());

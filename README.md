@@ -51,6 +51,7 @@ Google authentication and your private cloud data use Firebase. Account deletion
 
 Open **Friends** using the people icon beside Settings. Sign in, choose your display name, and share your friend code. A request must be accepted before either person can see shared items.
 
+- Add friends using their code or Gmail. For Gmail requests, your friend first enables **My profile → Find me by Gmail**. Use their exact sign-in address; the request arrives inside Trace. Gmail lookup is off by default and your address is not displayed on your profile.
 - Open a friend’s chat from the message icon or their profile. Text messages sync while the chat is open, with earlier history available on demand. Push notifications and attachments are not included yet.
 - Tap your avatar to choose and crop a profile photo. **Edit profile** lets you change your display name and short training bio; only accepted friends can see them.
 - Each plan and completed walk has a privacy eye: crossed out means hidden, open means visible to all accepted friends. New walks start hidden.
