@@ -84,10 +84,10 @@
     <string name="tr_082" formatted="false">"Расписание и упражнения"</string>
     <string name="tr_083" formatted="false">"Убрать из моих"</string>
     <string name="tr_084" formatted="false">"Пока нет программ"</string>
-    <string name="tr_085" formatted="false">"Выбери план из каталога или создай свой."</string>
+    <string name="tr_085" formatted="false">"Выбери план из библиотеки или создай свой."</string>
     <string name="tr_086" formatted="false">"Добавить программу"</string>
-    <string name="tr_087" formatted="false">"Перейти к каталогу и импорту"</string>
-    <string name="tr_088" formatted="false">"КАТАЛОГ ПРОГРАММ"</string>
+    <string name="tr_087" formatted="false">"Перейти к библиотеке и импорту"</string>
+    <string name="tr_088" formatted="false">"БИБЛИОТЕКА ПЛАНОВ"</string>
     <string name="tr_089" formatted="false">"Найди свой план"</string>
     <string name="tr_090" formatted="false">"Готовые программы и твои собственные идеи."</string>
     <string name="tr_091" formatted="false">"Из файла"</string>

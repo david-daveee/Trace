@@ -32,6 +32,12 @@ Open **Settings → Trace updates → Check for updates**. Trace checks the publ
 
 The button opens your browser. Open the downloaded APK and confirm the Android update to keep your existing data. The app never installs an update silently. An internet connection is needed to check; the last successful result and its date remain visible offline.
 
+## Library and community plans
+
+Find plans by name, exercise, or category. Use **+** in the Library to create a plan, import a file, download the spreadsheet template, or view your submissions. Plans are sorted by shared likes; signed-in users can like each plan once.
+
+Choose **Submit to library** in a plan's menu to send a copy for review. Approval makes the plan, submitted author name, and photo public. Workout history and private exercise notes are excluded. Later edits require a new review. Your saved copy keeps its own training progress. Moderators open the review queue with the shield button in the top bar.
+
 ## Your account and a new phone
 
 An account is optional. In **Settings**, sign in with Google: existing account data loads automatically. If the account is empty, Trace saves this phone's data to it. A local safety copy is created before replacement.
@@ -241,3 +247,20 @@ The built-in 2018 Zlat routine uses a Trace adaptation for gyms without micropla
 
 ## Zlat intermediate adaptation
 A separate catalog plan provides volume, light technique, and top-set days. Configure known added-weight 1RMs before starting. This Trace adaptation rounds initial weights down to 1.25 kg and holds weight when the original progression would call for microplates; it runs regular weeks without automatic monthly 1RM tests. Volume and top-set progression are independent and require confirmation of actual reps. Existing beginner plans and history are retained. See the in-app source and rules for details.
+
+### Plan likes and library search
+
+Tap the heart on a plan to like it or remove your like. Each signed-in account has one vote per plan. Guests can see totals; individual votes are private. The library sorts plans by likes, then by name for ties. Search filters the selected category by plan name, category and exercise names.
+
+Sharing a plan through Trace keeps its like identity. Liking a plan does not publish its contents or change its privacy eye. Counts refresh when the screen is opened (cached for up to one minute); saving a vote requires a connection.
+
+
+### Authors and reviewed public plans
+
+Official Trace plans show a small Trace mark. Contributor plans show the author's submitted name and avatar; tapping the badge opens their public author page. Importing or adding a published plan preserves its author and like identity.
+
+To propose a personal plan, open its **…** menu and choose **Submit to catalog**. The confirmation explains which information will become public. **My submissions** shows pending, approved and rejected copies with the moderator's explanation. Each plan can have one pending revision.
+
+The Trace administrator uses **Review submissions** in the catalog or profile to inspect every day, exercise, set and weight, then approve or decline. Only the server-authorized administrator can publish. Approval publishes the reviewed snapshot; later local edits and new submissions cannot change the public version without another approval. Names and avatars are snapshots too. Public author pages do not expose private friends profiles, walks, chats or cloud backups.
+
+Public plans load online. Adding one to **My plans** saves a local copy for offline training. Existing personal copies are not overwritten by later catalog revisions. Large submissions above 700 KB compressed should use a smaller cover. Sharing a plan directly with a friend remains separate from public submission.

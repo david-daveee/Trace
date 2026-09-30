@@ -403,10 +403,10 @@ public final class Lang {
         ids.put("Расписание и упражнения",R.string.tr_082);
         ids.put("Убрать из моих",R.string.tr_083);
         ids.put("Пока нет программ",R.string.tr_084);
-        ids.put("Выбери план из каталога или создай свой.",R.string.tr_085);
+        ids.put("Выбери план из библиотеки или создай свой.",R.string.tr_085);
         ids.put("Добавить программу",R.string.tr_086);
-        ids.put("Перейти к каталогу и импорту",R.string.tr_087);
-        ids.put("КАТАЛОГ ПРОГРАММ",R.string.tr_088);
+        ids.put("Перейти к библиотеке и импорту",R.string.tr_087);
+        ids.put("БИБЛИОТЕКА ПЛАНОВ",R.string.tr_088);
         ids.put("Найди свой план",R.string.tr_089);
         ids.put("Готовые программы и твои собственные идеи.",R.string.tr_090);
         ids.put("Из файла",R.string.tr_091);

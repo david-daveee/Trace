@@ -142,3 +142,70 @@ put(path,item,"bob",403,"Friend cannot change owner publications")
 get(chat,"alice",403,"Removed friendship revokes chat history")
 message("connections/alice~bob/messages/after","alice","No access","alice",403,"Removed friendship cannot send")
 print(f"{checks} Firestore access checks passed")
+
+
+like="planLikes/"+("a"*64)
+get(like,None,404,"Guest reads missing public count")
+put(like,{"count":99},"alice",403,"Cannot forge count without a vote")
+put(like+"/votes/alice",{"liked":True},"alice",403,"Cannot vote without counter transaction")
+def vote(uid,count,liked,expected=200):
+    return call(BASE+":commit","POST",{"writes":[write(like,{"count":count}),write(like+"/votes/"+uid,{"liked":liked})]},uid,expected,"Atomic like "+uid+" "+str(count)+" "+str(liked))
+vote("alice",1,True)
+vote("alice",2,True,403)
+vote("bob",2,True)
+get(like,None,label="Guests see total likes")
+get(like+"/votes/alice","alice",label="Owner sees own vote")
+get(like+"/votes/alice","bob",403,"Cannot read another vote")
+query(like,"votes",[],"alice",403,"Cannot enumerate voters")
+vote("alice",1,False)
+vote("alice",0,False,403)
+vote("bob",0,False)
+vote("alice",1,True)
+call(BASE+":commit","POST",{"writes":[write(like,{"count":2}),write(like+"/votes/carol",{"liked":True})]},"alice",403,"Cannot vote for another account")
+vote("bob",100,True,403)
+put(like,{"count":-1},"alice",403,"Cannot make count negative")
+print("ALL CHECKS PASSED:",checks)
+
+
+admin="I8mrFaI4vhXFpGOM8Dxmg4mOf7w1"
+planKey="b"*64
+requestPath="catalogSubmissions/alice~"+planKey
+publicPath="publicPlans/"+planKey
+def submission_write(path,owner="alice",status="pending",reason="",payload=b"snapshot"):
+    w=write(path,{"owner":owner,"authorName":"Alice","authorAvatar":"","planKey":planKey,"title":"Test plan","payload":payload,"sha256":"c"*64,"status":status,"reason":reason})
+    w["updateTransforms"]=[{"fieldPath":"submittedAt","setToServerValue":"REQUEST_TIME"}]
+    return w
+get(requestPath,"alice",404,"Owner reads missing submission")
+call(BASE+":commit","POST",{"writes":[submission_write(requestPath)]},"alice",label="Author submits snapshot")
+get(requestPath,"alice",label="Author sees own submission")
+get(requestPath,"bob",403,"Other user cannot read submission")
+get(requestPath,None,403,"Guest cannot read submission")
+get(requestPath,admin,label="Admin reads submission")
+query("","catalogSubmissions",[("owner","EQUAL","alice")],"alice",label="Owner lists own submissions")
+query("","catalogSubmissions",[],"alice",403,"User cannot list review queue")
+query("","catalogSubmissions",[("status","EQUAL","pending")],admin,label="Admin lists pending submissions")
+put(publicPath,{"title":"bypass"},"alice",403,"Cannot publish without admin")
+put("catalogSubmissions/bob~"+planKey,{"owner":"bob"},"alice",403,"Cannot impersonate author")
+def decision(status,reason="",who=admin,publish=False):
+    fields0=get(requestPath,who=who) if False else get(requestPath,admin)["fields"]
+    request=write(requestPath,{})
+    request["update"]["fields"]=dict(fields0,status=value(status),reason=value(reason))
+    writes=[request]
+    if publish:
+        public={k:v for k,v in fields0.items() if k not in ("status","reason")}
+        public["requestId"]=value("alice~"+planKey)
+        w={"update":{"name":PREFIX+publicPath,"fields":public},"updateTransforms":[{"fieldPath":"publishedAt","setToServerValue":"REQUEST_TIME"}]}
+        writes.append(w)
+    return {"writes":writes}
+call(BASE+":commit","POST",decision("approved",who="alice",publish=True),"alice",403,"Author cannot approve own submission")
+call(BASE+":commit","POST",{"writes":[submission_write(requestPath,payload=b"changed")]},"alice",403,"Cannot silently replace pending snapshot")
+call(BASE+":commit","POST",decision("approved",publish=True),admin,label="Admin approves exact snapshot atomically")
+get(publicPath,None,label="Guests read approved plan")
+query("","publicPlans",[],None,label="Guests browse public catalog")
+put(publicPath,{"title":"changed"},"alice",403,"Author cannot edit published copy")
+call(BASE+":commit","POST",{"writes":[submission_write(requestPath,payload=b"revision2")]},"alice",label="Author submits new revision")
+assert get(publicPath,None)["fields"]["payload"]==value(b"snapshot")
+call(BASE+":commit","POST",decision("rejected",""),admin,403,"Rejection needs explanation")
+call(BASE+":commit","POST",decision("rejected","Please clarify the exercises"),admin,label="Admin rejects revision with reason")
+assert get(publicPath,None)["fields"]["payload"]==value(b"snapshot")
+print("ALL CHECKS INCLUDING MODERATION PASSED:",checks)

@@ -28,11 +28,12 @@ final class AccountSync {
     boolean busy(){return busy;}
     boolean same(String uid,int token){FirebaseUser u=user();return token==epoch&&u!=null&&u.getUid().equals(uid);}
     void state(String value){prefs().edit().putString("status",value).apply();context.sendBroadcast(new Intent("com.podhod.app.CHANGED").setPackage(context.getPackageName()),"com.podhod.app.INTERNAL");}
-    void resetConsent(){epoch++;busy=false;prefs().edit().remove("consentUid").remove("baseRevision").remove("baseHash").remove("lastSync").putString("status","pending").commit();}
+    void resetConsent(){epoch++;busy=false;prefs().edit().remove("consentUid").remove("baseRevision").remove("baseHash").remove("lastSync").remove("uploadUid").remove("uploadHash").putString("status","pending").commit();}
     void signOut(){resetConsent();FirebaseAuth.getInstance().signOut();AccountSyncJob.cancel(context);state("guest");}
     void refresh(){if(user()!=null&&!busy&&!prefs().getString("status", "").equals("restored"))prepare(null,false);}
     void prepare(Listener listener,boolean accountFirst){
         FirebaseUser u=user();if(u==null||busy)return;
+        AccountSyncJob.schedule(context);
 
         String uid=u.getUid();int token=epoch;JSONObject local=SyncLocal.capture(context);String hash=SyncPayload.fingerprint(local);
         String base=prefs().getString("baseRevision",""),baseHash=prefs().getString("baseHash","");boolean consent=enabled();
@@ -41,21 +42,26 @@ final class AccountSync {
             CloudStore.Revision remote=new CloudStore(uid,()->same(uid,token)).read();if(remote.payload!=null)SyncLocal.validate(remote.payload);
             main.post(()->{
                 if(!same(uid,token))return;busy=false;
-                if(!hash.equals(SyncPayload.fingerprint(SyncLocal.capture(context)))){state("pending");if(listener!=null)listener.error(new IllegalStateException(AccountPanel.s("Data changed while checking. Please sync again.","Данные изменились во время проверки. Повтори синхронизацию.")));return;}
+                if(!hash.equals(SyncPayload.fingerprint(SyncLocal.capture(context)))){state("pending");changed(context);if(listener!=null)listener.error(new IllegalStateException(AccountPanel.s("Data changed while checking. Please sync again.","Данные изменились во время проверки. Повтори синхронизацию.")));return;}
                 Pending pending=new Pending(uid,token,local,remote);
-                SyncDecision.Action action=SyncDecision.decide(consent&&!accountFirst,base,remote.id,baseHash,hash);
-                if(action==SyncDecision.Action.NOTHING){state("synced");if(listener!=null)listener.done();}
+                SyncDecision.Action action=SyncDecision.afterUpload(accountFirst,
+                    uid.equals(prefs().getString("uploadUid","")),prefs().getString("uploadHash",""),
+                    remote.payload==null?"":SyncPayload.fingerprint(remote.payload),consent,base,remote.id,baseHash,hash);
+                if(action==SyncDecision.Action.NOTHING){prefs().edit().putLong("lastSync",System.currentTimeMillis()).apply();state("synced");if(listener!=null)listener.done();}
                 else accept(pending,action==SyncDecision.Action.PHONE,listener);
             });
         }catch(Exception e){main.post(()->fail(uid,token,listener,e));}});
     }
     void accept(Pending pending,boolean usePhone,Listener listener){
         if(busy||!same(pending.uid,pending.epoch))return;
-        if(!pending.localHash.equals(SyncPayload.fingerprint(SyncLocal.capture(context)))){state("pending");if(listener!=null)listener.error(new IllegalStateException(AccountPanel.s("Phone data changed. Check the account again before choosing.","Данные телефона изменились. Повтори проверку аккаунта перед выбором.")));return;}
+        if(!pending.localHash.equals(SyncPayload.fingerprint(SyncLocal.capture(context)))){state("pending");changed(context);if(listener!=null)listener.error(new IllegalStateException(AccountPanel.s("Phone data changed. Check the account again before choosing.","Данные телефона изменились. Повтори проверку аккаунта перед выбором.")));return;}
 
         JSONObject chosen=pending.remote.payload==null?pending.local:SyncPayload.choose(pending.local,pending.remote.payload,usePhone);
         try { SyncLocal.validate(chosen); } catch(Exception e) { fail(pending.uid,pending.epoch,listener,e); return; }
         JSONObject rollback=FullBackup.create(context,Store.get(context).data);
+        if(usePhone && !prefs().edit().putString("uploadUid",pending.uid).putString("uploadHash",SyncPayload.fingerprint(chosen)).commit()){
+            fail(pending.uid,pending.epoch,listener,new IllegalStateException("Cannot save upload checkpoint"));return;
+        }
         busy=true;state("syncing");
         worker.execute(()->{try{
             SyncLocal.backup(context,rollback);
@@ -63,10 +69,10 @@ final class AccountSync {
             if(pending.remote.payload==null||!SyncPayload.fingerprint(chosen).equals(SyncPayload.fingerprint(pending.remote.payload)))revision=new CloudStore(pending.uid,()->same(pending.uid,pending.epoch)).publish(chosen,pending.remote.id);
             final String published=revision;
             main.post(()->{if(!same(pending.uid,pending.epoch))return;try{
-                if(!pending.localHash.equals(SyncPayload.fingerprint(SyncLocal.capture(context))))throw new IllegalStateException(AccountPanel.s("Phone data changed during transfer. Nothing on this phone was replaced; sync again.","Данные телефона изменились во время передачи. На телефоне ничего не заменено — повтори синхронизацию."));
+                if(!pending.localHash.equals(SyncPayload.fingerprint(SyncLocal.capture(context)))){changed(context);throw new IllegalStateException(AccountPanel.s("Phone data changed during transfer. Nothing on this phone was replaced; sync again.","Данные телефона изменились во время передачи. На телефоне ничего не заменено — повтори синхронизацию."));}
                 SyncLocal.apply(context,chosen);
                 String appliedHash=SyncPayload.fingerprint(chosen);
-                if(!prefs().edit().putString("consentUid",pending.uid).putString("baseRevision",published).putString("baseHash",appliedHash).putLong("lastSync",System.currentTimeMillis()).commit())throw new IllegalStateException("Cannot save sync status");
+                if(!prefs().edit().putString("consentUid",pending.uid).putString("baseRevision",published).putString("baseHash",appliedHash).remove("uploadUid").remove("uploadHash").putLong("lastSync",System.currentTimeMillis()).commit())throw new IllegalStateException("Cannot save sync status");
                 busy=false;state("synced");AccountSyncJob.schedule(context);if(listener!=null)listener.done();
             }catch(Exception e){fail(pending.uid,pending.epoch,listener,e);}});
         }catch(Exception e){main.post(()->fail(pending.uid,pending.epoch,listener,e));}});

@@ -79,8 +79,9 @@ final class FriendsPanel {
         a.link(hero,s("Edit profile","Изменить профиль"),()->FriendsProfile.edit(a,state));
         a.link(hero,s("My friend code","Мой код друга"),()->code(a,state));
         GmailFriends.settings(a,host);
+        CommunityUi.shortcuts(a,host);
         a.actionRow(host,"friends",s("My friends","Мои друзья"),s("Explore their plans and walks","Смотреть планы и прогулки друзей"),()->{a.page="friends";a.render();});
-        a.space(host,16);host.addView(a.text(s("Your photo and bio are visible only to accepted friends. Manage each plan and walk with its privacy eye.","Фото и описание видны только подтверждённым друзьям. Видимость планов и прогулок меняется глазком у каждой записи."),14,a.MUTED));
+        a.space(host,16);host.addView(a.text(s("Your profile photo and bio are shared with accepted friends. Approved public plans also show the author name and submitted photo. Manage each plan and walk with its privacy eye.","Фото и описание профиля видны друзьям. В одобренных публичных планах также показываются имя и отправленное фото автора. Видимость планов и прогулок меняется глазком у каждой записи."),14,a.MUTED));
     }
     static void draw(MainActivity a,LinearLayout host,State state){
         String uid=uid(a);long count=state.connections.stream().filter(c->"accepted".equals(c.getString("status"))).count();

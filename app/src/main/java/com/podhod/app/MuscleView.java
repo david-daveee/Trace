@@ -7,7 +7,23 @@ import org.json.*;
 import java.util.*;
 
 final class MuscleView {
- static void editor(MainActivity a,LinearLayout box,JSONObject draft){a.link(box,Lang.t("Мышцы упражнения"),()->{Set<String> current=Muscles.of(draft);boolean[] selected=new boolean[Muscles.KEYS.length];String[] labels=new String[selected.length];for(int i=0;i<labels.length;i++){labels[i]=Lang.t(Muscles.LABELS[i]);selected[i]=current.contains(Muscles.KEYS[i]);}new AlertDialog.Builder(a).setTitle(Lang.t("Какие мышцы работают?")).setMultiChoiceItems(labels,selected,(d,i,on)->selected[i]=on).setPositiveButton(Lang.t("Сохранить"),(d,w)->{JSONArray values=new JSONArray();for(int i=0;i<selected.length;i++)if(selected[i])values.put(Muscles.KEYS[i]);Engine.put(draft,"muscles",values);}).setNeutralButton(Lang.t("Определять автоматически"),(d,w)->draft.remove("muscles")).setNegativeButton(Lang.t("Отмена"),null).show();});}
+ static void editor(MainActivity a,LinearLayout box,JSONObject draft){
+  LinearLayout section=a.column();box.addView(section);a.space(section,10);
+  TextView summary=a.text("",13,a.MUTED);
+  Runnable update=()->{
+   if(!draft.has("muscles"))summary.setText(AccountPanel.s("Optional · detected from the exercise name","Необязательно · определяются по названию упражнения"));
+   else {Set<String> chosen=Muscles.of(draft);List<String> names=new ArrayList<>();for(int i=0;i<Muscles.KEYS.length;i++)if(chosen.contains(Muscles.KEYS[i]))names.add(Lang.t(Muscles.LABELS[i]));summary.setText(names.isEmpty()?AccountPanel.s("No muscles selected","Мышцы не выбраны"):android.text.TextUtils.join(" · ",names));}
+  };
+  a.link(section,Lang.t("Мышцы упражнения"),()->{
+   Set<String> current=Muscles.of(draft);boolean[] selected=new boolean[Muscles.KEYS.length];String[] labels=new String[selected.length];
+   for(int i=0;i<labels.length;i++){labels[i]=Lang.t(Muscles.LABELS[i]);selected[i]=current.contains(Muscles.KEYS[i]);}
+   new AlertDialog.Builder(a).setTitle(Lang.t("Какие мышцы работают?")).setMultiChoiceItems(labels,selected,(d,i,on)->selected[i]=on)
+    .setPositiveButton(Lang.t("Сохранить"),(d,w)->{JSONArray values=new JSONArray();for(int i=0;i<selected.length;i++)if(selected[i])values.put(Muscles.KEYS[i]);Engine.put(draft,"muscles",values);update.run();})
+    .setNeutralButton(Lang.t("Определять автоматически"),(d,w)->{draft.remove("muscles");update.run();})
+    .setNegativeButton(Lang.t("Отмена"),null).show();
+  });
+  section.addView(summary);a.space(section,10);update.run();
+ }
  static void show(MainActivity a,LinearLayout parent,JSONArray sets,String subtitle){LinearLayout card=a.card(parent);a.label(card,Lang.t("КАРТА МЫШЦ"));card.addView(a.title(subtitle,21));a.space(card,8);Map<String,Integer> counts=Muscles.count(sets);card.addView(new Body(a,counts),new LinearLayout.LayoutParams(-1,a.dp(350)));LinearLayout captions=new LinearLayout(a);for(String label:new String[]{"Спереди","Сзади"}){TextView caption=a.text(Lang.t(label),12,a.MUTED);caption.setGravity(android.view.Gravity.CENTER);captions.addView(caption,new LinearLayout.LayoutParams(0,-2,1));}card.addView(captions);a.space(card,16);int max=0;for(int n:counts.values())max=Math.max(max,n);if(max==0)card.addView(a.text(Lang.t("Отмечай подходы — задействованные мышцы подсветятся."),14,a.MUTED));for(int i=0;i<Muscles.KEYS.length;i++){int n=counts.get(Muscles.KEYS[i]);if(n==0)continue;LinearLayout row=new LinearLayout(a);TextView label=a.text(Lang.t(Muscles.LABELS[i]),14,a.TEXT);row.addView(label,new LinearLayout.LayoutParams(0,-2,1));row.addView(a.text(String.valueOf(n),14,a.GREEN));card.addView(row);a.space(card,4);a.progress(card,n,max);a.space(card,10);}card.addView(a.text(Lang.t("Подходы с участием мышцы, включая вспомогательную работу. Это оценка по упражнениям, а не измерение усталости."),12,a.MUTED));if(Muscles.unknown(sets)>0){a.space(card,8);card.addView(a.text(Lang.t("Есть нераспознанные упражнения. Укажи мышцы в редакторе плана."),13,0xFFE7C46D));}}
  static final class Body extends View {
   final java.util.List<android.graphics.drawable.Drawable> regions=new ArrayList<>();

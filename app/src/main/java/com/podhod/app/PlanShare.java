@@ -6,7 +6,7 @@ import java.io.*;
 import java.nio.charset.StandardCharsets;
 import java.util.UUID;
 final class PlanShare {
-    static JSONObject snapshot(JSONObject plan){JSONObject copy=Engine.copy(plan);for(String key:new String[]{"id","mine","nextDay","lastUsed","lastProgressedSession","lastProgression","history","active","savedSessions"})copy.remove(key);return copy;}
+    static JSONObject snapshot(JSONObject plan){JSONObject copy=Engine.copy(plan);PlanPopularity.identity(copy);for(String key:new String[]{"id","mine","nextDay","lastUsed","lastProgressedSession","lastProgression","history","active","savedSessions"})copy.remove(key);return copy;}
     static Intent intent(Context context,JSONObject plan)throws IOException{
         byte[] bytes=snapshot(plan).toString().getBytes(StandardCharsets.UTF_8);
         if(bytes.length>5*1024*1024)throw new IOException(Lang.t("Файл больше 5 МБ"));

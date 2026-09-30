@@ -41,6 +41,7 @@ public final class Store {
         SheikoBarbells.migrate(data);
     }
     public synchronized void save() {
+        JSONArray allPlans=data.optJSONArray("programs");if(allPlans!=null)for(int i=0;i<allPlans.length();i++){JSONObject p=allPlans.optJSONObject(i);PlanPopularity.identity(p);}
         Engine.clearRest(active());
         JSONObject savedSessions=data.optJSONObject("savedSessions");
         if(savedSessions!=null){java.util.Iterator<String> keys=savedSessions.keys();while(keys.hasNext())Engine.clearRest(savedSessions.optJSONObject(keys.next()));}

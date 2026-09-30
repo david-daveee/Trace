@@ -20,6 +20,64 @@ service cloud.firestore {
    allow read, write: if owns(uid);
    match /chunks/{chunk} { allow read, write: if owns(uid); }
   }
+  // Moderation is restricted to the project owner's Trace account, never a client role flag.
+  function catalogAdmin() { return signed() && request.auth.uid == 'I8mrFaI4vhXFpGOM8Dxmg4mOf7w1'; }
+  function submissionFields(d) {
+   return d.keys().hasAll(['owner','authorName','authorAvatar','planKey','title','payload','sha256','status','reason','submittedAt'])
+    && d.keys().hasOnly(['owner','authorName','authorAvatar','planKey','title','payload','sha256','status','reason','submittedAt'])
+    && d.owner == request.auth.uid && d.authorName is string && d.authorName.size()>0 && d.authorName.size()<=40
+    && d.authorAvatar is string && d.authorAvatar.size()<=160000 && d.planKey.matches('[a-f0-9]{64}')
+    && d.title is string && d.title.size()>0 && d.title.size()<=120
+    && d.payload is bytes && d.payload.size()>0 && d.payload.size()<=700000 && d.sha256.matches('[a-f0-9]{64}')
+    && d.status == 'pending' && d.reason == '' && d.submittedAt == request.time;
+  }
+  match /catalogSubmissions/{id} {
+   allow get: if catalogAdmin() || (signed() && (resource.data.owner == request.auth.uid || id.matches(request.auth.uid + '~[a-f0-9]{64}')));
+   allow list: if signed() && request.query.limit<=100 && (catalogAdmin() || resource.data.owner == request.auth.uid);
+   allow create: if signed() && submissionFields(request.resource.data) && id == request.auth.uid + '~' + request.resource.data.planKey;
+   allow update: if (owns(resource.data.owner) && resource.data.status != 'pending' && submissionFields(request.resource.data)
+      && request.resource.data.owner == resource.data.owner && request.resource.data.planKey == resource.data.planKey)
+    || (catalogAdmin() && resource.data.status == 'pending'
+      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','reason'])
+      && request.resource.data.status in ['approved','rejected'] && request.resource.data.reason is string
+      && request.resource.data.reason.size()<=400 && (request.resource.data.status == 'approved' || request.resource.data.reason.size()>0));
+  }
+  match /publicPlans/{id} {
+   allow get: if true;
+   allow list: if request.query.limit<=100;
+   allow create, update: if catalogAdmin()
+    && request.resource.data.keys().hasOnly(['owner','authorName','authorAvatar','planKey','title','payload','sha256','submittedAt','requestId','publishedAt'])
+    && request.resource.data.planKey == id
+    && request.resource.data.requestId == request.resource.data.owner + '~' + id
+    && request.resource.data.title == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.title
+    && request.resource.data.submittedAt == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.submittedAt
+    && request.resource.data.publishedAt == request.time
+    && getAfter(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.status == 'approved'
+    && request.resource.data.payload == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.payload
+    && request.resource.data.sha256 == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.sha256
+    && request.resource.data.owner == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.owner
+    && request.resource.data.authorName == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.authorName
+    && request.resource.data.authorAvatar == get(/databases/$(database)/documents/catalogSubmissions/$(request.resource.data.requestId)).data.authorAvatar;
+  }
+  // Public counts only. Individual votes can only be read and changed by their owner.
+  match /planLikes/{plan} {
+   function oldVote() { return exists(/databases/$(database)/documents/planLikes/$(plan)/votes/$(request.auth.uid)) && get(/databases/$(database)/documents/planLikes/$(plan)/votes/$(request.auth.uid)).data.liked; }
+   function nextVote() { return getAfter(/databases/$(database)/documents/planLikes/$(plan)/votes/$(request.auth.uid)).data.liked; }
+   function validCount() { return plan.matches('[a-f0-9]{64}') && request.resource.data.keys().hasOnly(['count']) && request.resource.data.count is int && request.resource.data.count >= 0; }
+   allow get: if true;
+   allow create: if signed() && validCount() && request.resource.data.count == 1 && !oldVote() && nextVote() == true;
+   allow update: if signed() && validCount() && nextVote() != oldVote()
+    && request.resource.data.count == resource.data.count + (nextVote() ? 1 : -1);
+   match /votes/{uid} {
+    function beforeCount() { return exists(/databases/$(database)/documents/planLikes/$(plan)) ? get(/databases/$(database)/documents/planLikes/$(plan)).data.count : 0; }
+    function beforeVote() { return exists(/databases/$(database)/documents/planLikes/$(plan)/votes/$(uid)) && get(/databases/$(database)/documents/planLikes/$(plan)/votes/$(uid)).data.liked; }
+    allow get: if owns(uid);
+    allow create, update: if owns(uid) && plan.matches('[a-f0-9]{64}')
+     && request.resource.data.keys().hasOnly(['liked']) && request.resource.data.liked is bool
+     && request.resource.data.liked != beforeVote()
+     && getAfter(/databases/$(database)/documents/planLikes/$(plan)).data.count == beforeCount() + (request.resource.data.liked ? 1 : -1);
+   }
+  }
   match /socialProfiles/{uid} {
    allow get: if owns(uid);
    allow create: if owns(uid) && request.resource.data.keys().hasOnly(['uid','name','code'])

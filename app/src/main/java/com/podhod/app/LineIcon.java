@@ -8,11 +8,16 @@ public final class LineIcon extends Drawable {
     void line(Canvas c,float x,float y,float xx,float yy){c.drawLine(x,y,xx,yy,p);}
     @Override public void draw(Canvas c){c.save();c.translate(getBounds().left,getBounds().top);c.scale(getBounds().width()/24f,getBounds().height()/24f);
         switch(name){
+            case "plus":line(c,12,5,12,19);line(c,5,12,19,12);break;
+            case "search":c.drawCircle(10.5f,10.5f,6.5f,p);line(c,15.5f,15.5f,21,21);break;
+            case "heart":case "heart-filled":{Path h=new Path();h.moveTo(12,21);h.cubicTo(9,18.5f,2,13.5f,2,8);h.cubicTo(2,2.5f,9,1.5f,12,6);h.cubicTo(15,1.5f,22,2.5f,22,8);h.cubicTo(22,13.5f,15,18.5f,12,21);h.close();if(name.equals("heart-filled"))p.setStyle(Paint.Style.FILL);c.drawPath(h,p);p.setStyle(Paint.Style.STROKE);break;}
+
             case "eye":case "eye-off":case "eye-pending":{Path eye=new Path();eye.moveTo(2,12);eye.cubicTo(7,3,17,3,22,12);eye.cubicTo(17,21,7,21,2,12);c.drawPath(eye,p);c.drawCircle(12,12,3,p);if(name.equals("eye-off")){p.setStrokeWidth(2.4f);line(c,3,3,21,21);}if(name.equals("eye-pending")){c.drawCircle(19,5,3,p);}break;}
             case "back":line(c,19,12,5,12);line(c,5,12,11,6);line(c,5,12,11,18);break;
             case "refresh":c.drawArc(4,4,20,20,40,285,false,p);line(c,19,3,19,9);line(c,19,9,13,9);break;
             case "chat":{Path q=new Path();q.moveTo(5,3);q.lineTo(19,3);q.quadTo(21,3,21,5);q.lineTo(21,15);q.quadTo(21,17,19,17);q.lineTo(10,17);q.lineTo(4,21);q.lineTo(4,17);q.quadTo(3,17,3,15);q.lineTo(3,5);q.quadTo(3,3,5,3);c.drawPath(q,p);line(c,7,8,17,8);line(c,7,12,14,12);break;}
             case "person":c.drawCircle(12,7,4,p);c.drawArc(3,13,21,29,180,180,false,p);break;
+            case "moderator":{Path shield=new Path();shield.moveTo(12,2);shield.lineTo(20,5);shield.lineTo(20,11);shield.cubicTo(20,16,16,20,12,22);shield.cubicTo(8,20,4,16,4,11);shield.lineTo(4,5);shield.close();c.drawPath(shield,p);line(c,8,11,11,14);line(c,11,14,16,9);break;}
             case "friends":c.drawCircle(9,8,3,p);c.drawCircle(18,9,2.5f,p);c.drawArc(2,13,16,26,180,180,false,p);c.drawArc(14,14,23,24,190,155,false,p);break;
             case "steps":c.drawOval(4,3,10,12,p);c.drawOval(14,9,20,18,p);c.drawArc(4,13,10,19,0,180,false,p);c.drawArc(14,19,20,23,0,180,false,p);break;
             case "file":c.drawRoundRect(5,3,19,21,2,2,p);line(c,8,8,16,8);line(c,8,12,16,12);line(c,8,16,13,16);break;
