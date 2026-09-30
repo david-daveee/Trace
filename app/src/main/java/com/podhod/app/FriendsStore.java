@@ -67,16 +67,19 @@ final class FriendsStore {
         Map<String,DocumentSnapshot> unique=new LinkedHashMap<>();
         Query all=items(owner).whereEqualTo("kind",kind).whereEqualTo("visible",true).whereEqualTo("audience","friends").limit(100);
         Query direct=items(owner).whereEqualTo("kind",kind).whereEqualTo("visible",true).whereEqualTo("audience","direct").whereArrayContains("recipients",uid).limit(100);
-        for(Query q:(legacyVisible?new Query[]{all,direct}:new Query[]{all.whereEqualTo("individualPrivacy",true)})){for(DocumentSnapshot item:waitFor(q.get(Source.SERVER)).getDocuments())unique.put(item.getId(),item);}
+        for(Query q:(legacyVisible?new Query[]{all,direct}:new Query[]{all.whereEqualTo("individualPrivacy",true)})){Query pageQuery=q;while(true){List<DocumentSnapshot> page=waitFor(pageQuery.get(Source.SERVER)).getDocuments();for(DocumentSnapshot item:page)if(!kind.equals("walk")||!item.getId().matches("walk-[a-f0-9]{64}-[a-f0-9]{64}"))unique.put(item.getId(),item);if(page.size()<100)break;pageQuery=q.startAfter(page.get(page.size()-1));}}
         ArrayList<DocumentSnapshot> result=new ArrayList<>(unique.values());result.sort((x,y)->Long.compare(y.getLong("updatedAt"),x.getLong("updatedAt")));return result;
     }
     void hide(String id)throws Exception{check();waitFor(items(uid).document(id).update("visible",false));}
     void publish(String kind,String sourceId,String name,JSONObject payload,List<String> recipients)throws Exception{publish(kind,sourceId,name,payload,recipients,false);}
     void publish(String kind,String sourceId,String name,JSONObject payload,List<String> recipients,boolean individual)throws Exception{
+        publishTo(kind,SocialPayload.itemId(kind,sourceId),name,payload,recipients,individual);
+    }
+    void publishTo(String kind,String id,String name,JSONObject payload,List<String> recipients,boolean individual)throws Exception{
         check();SocialPayload.validate(payload,kind);CloudSnapshot snapshot=CloudSnapshot.encode(payload);
         if(snapshot.bytes>5*1024*1024)throw new IOException("Shared item exceeds 5 MB");
         if(recipients!=null)for(String recipient:recipients)if(!friends(recipient))throw new IllegalStateException("Recipient is no longer a friend");
-        String id=SocialPayload.itemId(kind,sourceId),revision=UUID.randomUUID().toString();DocumentReference item=items(uid).document(id);
+        String revision=UUID.randomUUID().toString();DocumentReference item=items(uid).document(id);
         for(int offset=0;offset<snapshot.chunks.size();offset+=16){check();WriteBatch batch=db.batch();for(int i=offset;i<Math.min(offset+16,snapshot.chunks.size());i++)batch.set(item.collection("revisions").document(revision).collection("chunks").document(Integer.toString(i)),Collections.singletonMap("data",Blob.fromBytes(snapshot.chunks.get(i))));waitFor(batch.commit());}
         Map<String,Object> data=new HashMap<>();data.put("kind",kind);data.put("name",name.length()>120?name.substring(0,120):name);data.put("audience",recipients==null?"friends":"direct");data.put("recipients",recipients==null?Collections.emptyList():recipients);data.put("visible",true);data.put("revision",revision);data.put("bytes",snapshot.bytes);data.put("chunks",snapshot.chunks.size());data.put("sha256",snapshot.sha256);data.put("updatedAt",System.currentTimeMillis());data.put("routeShared",payload.optBoolean("routeShared"));if(individual)data.put("individualPrivacy",true);
         check();waitFor(item.set(data));

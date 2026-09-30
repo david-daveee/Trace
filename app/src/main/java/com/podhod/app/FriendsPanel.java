@@ -87,6 +87,7 @@ final class FriendsPanel {
     static void draw(MainActivity a,LinearLayout host,State state){
         String uid=uid(a);long count=state.connections.stream().filter(c->"accepted".equals(c.getString("status"))).count();
         LinearLayout tools=new LinearLayout(a);host.addView(tools);compact(a,tools,s("Add friend","Добавить друга"),true,()->addFriend(a));compact(a,tools,s("My code","Мой код"),false,()->code(a,state));a.space(host,22);
+        a.actionRow(host,"steps",s("Friends’ walks","Прогулки друзей"),s("Routes and moments from your circle","Маршруты и моменты твоих друзей"),()->WalkFeed.open(a));a.space(host,16);
         a.label(host,s("FRIENDS","ДРУЗЬЯ"));
         if(count==0){LinearLayout empty=a.card(host);empty.addView(a.title(s("A little company goes a long way","Вместе интереснее"),20));a.space(empty,8);empty.addView(a.text(s("Add your first friend to explore their plans and walks.","Добавь первого друга, чтобы смотреть его планы и прогулки."),14,a.MUTED));}
         for(DocumentSnapshot c:state.connections)if("accepted".equals(c.getString("status"))){String peer=uid.equals(c.getString("from"))?c.getString("to"):c.getString("from"),fallback=uid.equals(c.getString("from"))?c.getString("toName"):c.getString("fromName");Map<String,Object> details=state.portraits.getOrDefault(peer,new HashMap<>());String name=FriendsProfile.name(details,fallback);
@@ -104,11 +105,16 @@ final class FriendsPanel {
     static void privacy(MainActivity a,LinearLayout host,State state){
         host.addView(a.title(s("You control each item","Ты выбираешь для каждой записи"),23));a.space(host,16);
         host.addView(a.text(s("Crossed-out eye: hidden. Open eye: visible to all accepted friends. Use the eye on each plan or completed walk — no separate sharing step.","Перечёркнутый глаз — скрыто. Открытый глаз — видно всем подтверждённым друзьям. Нажимай на глаз у плана или завершённой прогулки — отдельно делиться не нужно."),16,a.TEXT));a.space(host,16);
-        host.addView(a.text(s("New walks start hidden. Opening a walk also makes its GPS route visible. Hiding cannot erase a copy a friend already saved.","Новые прогулки скрыты по умолчанию. Открывая прогулку, ты показываешь и её GPS-маршрут. Скрытие не удаляет копии, которые друг уже сохранил."),14,a.MUTED));
+        host.addView(a.text(s("New walks start hidden. Share statistics or choose to include a route, with optional start and finish protection. Hiding revokes shared links, but cannot erase copies a friend already saved.","Новые прогулки скрыты. Можно отправить статистику или добавить маршрут, скрыв его начало и конец. Скрытие закрывает ссылки, но не удаляет уже сохранённые другом копии."),14,a.MUTED));
     }
     static String walkName(JSONObject walk){return new java.text.SimpleDateFormat("d MMM yyyy · HH:mm",Lang.locale()).format(new Date(walk.optLong("started")));}
     static void profile(MainActivity a,String owner,String name,Map<String,Object> details,String connection){
         FriendPage.open(a,owner,name,details,connection);
     }
-    static void viewWalk(MainActivity a,JSONObject data){JSONObject walk=data.optJSONObject("walk");LinearLayout box=a.form();box.addView(a.title(walkName(walk),22));a.space(box,12);box.addView(a.text(Walks.summary(walk),18,a.GREEN));a.space(box,14);if(data.optBoolean("routeShared")){WalkMap map=new WalkMap(a);map.route(walk);WalkPanel.mapFrame(a,box,map);WalkPanel.mapTools(a,box,map);}else box.addView(a.text(s("Your friend shared the result without a GPS route.","Друг поделился результатом без GPS-маршрута."),15,a.MUTED));a.panel(s("Friend's walk","Прогулка друга"),box,Lang.t("Закрыть"),()->{},false);}
+    static AlertDialog viewWalk(MainActivity a,JSONObject data){
+        JSONObject walk=data.optJSONObject("walk");LinearLayout box=a.form();LinearLayout hero=a.card(box);hero.setMinimumHeight(a.dp(140));WalkSocial.backdrop(a,hero,walk);hero.addView(a.title(WalkSocial.title(walk),25));hero.addView(a.text(walkName(walk),13,a.TEXT));WalkSocial.metrics(a,box,walk);a.space(box,14);
+        if(data.optBoolean("routeShared")&&walk.optJSONArray("points").length()>0){WalkMap map=new WalkMap(a);map.route(walk);WalkPanel.mapFrame(a,box,map);WalkPanel.mapTools(a,box,map);}
+        else box.addView(a.text(data.optBoolean("routeShared")?s("The route is entirely inside the hidden area.","Весь маршрут оказался в скрытой области."):s("Shared statistics · GPS route is private","Открыта статистика · GPS-маршрут скрыт"),15,a.MUTED));
+        if(data.optBoolean("routeTrimmed"))box.addView(a.text(s("Start and finish areas are hidden. Totals describe the full walk.","Области начала и конца скрыты. Статистика относится ко всей прогулке."),13,a.MUTED));return a.panel(s("Walk","Прогулка"),box,Lang.t("Закрыть"),()->{},false);
+    }
 }

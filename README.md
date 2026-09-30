@@ -60,8 +60,8 @@ Open **Friends** using the people icon beside Settings. Sign in, choose your dis
 - Add friends using their code or Gmail. For Gmail requests, your friend first enables **My profile → Find me by Gmail**. Use their exact sign-in address; the request arrives inside Trace. Gmail lookup is off by default and your address is not displayed on your profile.
 - Open a friend’s chat from the message icon or their profile. Text messages sync while the chat is open, with earlier history available on demand. Push notifications and attachments are not included yet.
 - Tap your avatar to choose and crop a profile photo. **Edit profile** lets you change your display name and short training bio; only accepted friends can see them.
-- Each plan and completed walk has a privacy eye: crossed out means hidden, open means visible to all accepted friends. New walks start hidden.
-- Opening a walk's eye includes its GPS route. Older stats-only publications remain stats-only until you hide and reopen them.
+- Privacy eyes appear on your personal plans and completed walks, not on public library cards. Crossed out means hidden; the label explains whether an item is available to all friends or selected friends. New walks start hidden.
+- A walk’s eye opens sharing choices: publish to your friends’ feed, send to one friend in chat, or hide from everyone. Sharing defaults to statistics only. You can explicitly include a GPS route, preview it, and hide points within 200 meters of its start and finish.
 - Friends can preview visible plans and add a separate copy to My plans. Use **Send plan file** to send a file through another app.
 - Publications are snapshots: hide and reopen an item to publish its latest version. Hiding it or removing a friend stops future access, but cannot erase copies they already saved.
 
@@ -270,3 +270,17 @@ Public plans load online. Adding one to **My plans** saves a local copy for offl
 The moderator can choose **Edit before approval** on a pending submission, save the revised draft, then review and approve it. In the Library, **⋯ → Edit library plan** edits a published plan or creates a public revision of a built-in plan. The editor supports titles, descriptions, categories, sources, covers, days, exercises, sets, repetitions, weights, existing percentage formulas and muscle selections.
 
 Changes are staged in a separate draft until saved. Public revisions keep their author and like identity. The Library displays the latest published copy; existing personal plans, active sessions and training history are not overwritten. Concurrent edits are rejected so an older draft cannot silently replace a newer version. Updated Firestore rules must be deployed before moderator saves can succeed.
+
+### Walks with friends
+
+After finishing a walk in Trace, the result screen shows distance, duration, pace and an interactive route. You can add a title and a gallery photo with adjustable cropping. These edits are included in account sync and backups; share again to update a published copy.
+
+Tap **Share this walk** to choose:
+
+- **Show in friends’ feed** — publish to accepted friends. Open **Friends → Friends’ walks** to browse their results, visit a profile or start a private conversation.
+- **Send to a friend** — choose one friend and send a tappable walk card to the existing private chat. This does not publish the walk to everyone.
+- **Hide from everyone** — close access to both the feed publication and direct chat links. Previously received message text and copies already saved by a friend cannot be erased by hiding.
+
+Statistics are selected by default. **Include GPS route** is optional; **Hide 200 m around start and finish** is enabled by default when a route is included. Protected coordinates are removed from the uploaded social copy, including return visits near either endpoint. A short route may be completely hidden. Distance and time still describe the complete walk. Check the preview before sending; a photo or title can also reveal a location.
+
+Walk cards check current access when opened. Removing a friendship or hiding a walk prevents the recipient from reopening it. Deleting a shared walk first revokes its shared links and requires a connection to Firebase. Personal recording, daily steps and other walks are unaffected.

@@ -134,6 +134,33 @@ message("connections/alice~bob/messages/long","alice","x"*2001,"alice",403,"Reje
 message(chat,"alice","Changed","alice",403,"Messages cannot be overwritten")
 call(BASE+"/"+chat,"DELETE",uid="alice",expected=403,label="Message deletion is not exposed")
 put("connections/alice~bob/messages/clock",{"sender":"alice","text":"Bad time","sentAt":1},"alice",403,"Reject client timestamp")
+# Walk cards reference an owner's publication; they never bypass its visibility.
+walkId="walk-"+"b"*64+"-"+"c"*64
+walkPath="social/alice/items/"+walkId
+walkItem=dict(item,kind="walk",individualPrivacy=True,recipients=["bob"],visible=True)
+put(walkPath,walkItem,"alice",label="Publish private walk for Bob")
+def walk_message(suffix,actor="alice",owner="alice",ref=walkId,expected=200,extra=None):
+ d={"sender":actor,"text":"Evening walk · 3 km","kind":"walk","walkOwner":owner,"walkItem":ref}
+ if extra:d.update(extra)
+ w=write("connections/alice~bob/messages/"+suffix,d);w["updateTransforms"]=[{"fieldPath":"sentAt","setToServerValue":"REQUEST_TIME"}]
+ return call(BASE+":commit","POST",{"writes":[w]},actor,expected,"Walk card: "+suffix)
+walk_message("valid")
+get("connections/alice~bob/messages/valid","bob",label="Friend reads walk card")
+get(walkPath,"bob",label="Recipient can open referenced walk")
+get(walkPath,"carol",403,"Other friend cannot open direct walk")
+walk_message("wrong-owner",owner="carol",expected=403)
+walk_message("forged-sender",actor="bob",expected=403)
+walk_message("missing",ref="walk-"+"d"*64,expected=403)
+walk_message("extra-gps",extra={"points":[1,2]},expected=403)
+walk_message("stranger",actor="carol",expected=403)
+walkItem["recipients"]=["carol"];put(walkPath,walkItem,"alice",label="Walk shared with a different recipient")
+walk_message("wrong-recipient",expected=403)
+walkItem["recipients"]=["bob"];walkItem["visible"]=False;put(walkPath,walkItem,"alice",label="Hide referenced walk")
+walk_message("hidden",expected=403)
+get(walkPath,"bob",403,"Existing card cannot reopen a hidden walk")
+walkItem.update(visible=True,audience="friends",recipients=[]);put(walkPath,walkItem,"alice",label="Publish walk for friends")
+walk_message("friends-visible")
+
 call(BASE+"/connections/alice~bob","DELETE",uid="bob",label="Either friend can remove friendship")
 get(path,"bob",403,"Unfriend revokes shared plan")
 get("social/alice/settings/profile","bob",403,"Unfriend revokes profile access")

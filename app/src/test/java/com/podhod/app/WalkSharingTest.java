@@ -1,0 +1,14 @@
+package com.podhod.app;
+import org.json.*;
+import org.junit.Test;
+import java.util.*;
+import static org.junit.Assert.*;
+public class WalkSharingTest {
+ JSONObject walk(){JSONObject w=WalkData.start(1000);Engine.put(w,"id","walk-a");Engine.put(w,"ended",600000);Engine.put(w,"meters",2000);JSONArray points=new JSONArray();double[] lat={32,32.001,32.004,32.005,32.001,32.006,32.01};for(int i=0;i<lat.length;i++)points.put(new JSONArray().put((Object)lat[i]).put(34).put(1000+i*60000).put(5).put(false));Engine.put(w,"points",points);return w;}
+ @Test public void hidesEndpointsAndReturnVisitsWithoutConnectingGaps(){JSONObject w=walk();String before=w.toString();JSONObject p=WalkSharing.payload(w,true,200),safe=p.optJSONObject("walk");JSONArray points=safe.optJSONArray("points");assertEquals(3,points.length());assertEquals(32.004,points.optJSONArray(0).optDouble(0),.00001);assertTrue(points.optJSONArray(0).optBoolean(4));assertFalse(points.optJSONArray(1).optBoolean(4));assertTrue(points.optJSONArray(2).optBoolean(4));assertEquals(2000,safe.optInt("meters"));assertTrue(p.optBoolean("routeTrimmed"));assertEquals(before,w.toString());SocialPayload.validate(p,"walk");}
+ @Test public void shortWalkMayHaveNoVisibleRoute() throws Exception{JSONObject w=walk();Engine.put(w,"points",new JSONArray().put(new JSONArray("[32,34,1000,5,false]")).put(new JSONArray("[32.0001,34,2000,5,false]")));assertEquals(0,WalkSharing.payload(w,true,200).optJSONObject("walk").optJSONArray("points").length());}
+ @Test public void statisticsNeverLeakGps(){JSONObject safe=WalkSharing.payload(walk(),false,200).optJSONObject("walk");assertEquals(0,safe.optJSONArray("points").length());assertFalse(safe.has("lastFix"));}
+ @Test public void recipientsHaveIndependentPublications(){assertNotEquals(WalkSharing.direct("walk-a","bob"),WalkSharing.direct("walk-a","carol"));assertNotEquals(WalkSharing.item("walk-a"),WalkSharing.direct("walk-a","bob"));assertTrue(WalkSharing.belongs(WalkSharing.direct("walk-a","bob"),"walk-a"));assertFalse(WalkSharing.belongs(WalkSharing.item("walk-b"),"walk-a"));}
+ @Test public void photoAndTitleSurviveNewerEditOnEitherDevice(){JSONObject old=walk(),edited=Engine.copy(old);Engine.put(edited,"title","Morning");Engine.put(edited,"coverImage","photo");Engine.put(edited,"metadataUpdatedAt",2000);JSONObject merged=SyncMerge.walks(new JSONArray().put(old),new JSONArray().put(edited),Collections.emptySet()).optJSONObject(0);assertEquals("Morning",merged.optString("title"));assertEquals("photo",merged.optString("coverImage"));assertEquals(merged.toString(),SyncMerge.walks(new JSONArray().put(edited),new JSONArray().put(old),Collections.emptySet()).optJSONObject(0).toString());}
+ @Test(expected=IllegalArgumentException.class) public void rejectsOversizedTitle(){JSONObject w=walk();Engine.put(w,"title","x".repeat(101));SocialPayload.walk(w,false);}
+}

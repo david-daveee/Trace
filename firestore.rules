@@ -144,7 +144,18 @@ service cloud.firestore {
    function member() { let c = get(/databases/$(database)/documents/connections/$(id)).data; return signed() && c.status == 'accepted' && request.auth.uid in c.members; }
    allow get: if member();
    allow list: if member() && request.query.limit <= 100;
-   allow create: if member() && request.resource.data.keys().hasOnly(['sender','text','sentAt'])
+   function walkCard() {
+    let d = request.resource.data;
+    let c = get(/databases/$(database)/documents/connections/$(id)).data;
+    let w = get(/databases/$(database)/documents/social/$(request.auth.uid)/items/$(d.walkItem)).data;
+    let peer = c.from == request.auth.uid ? c.to : c.from;
+    return d.keys().hasOnly(['sender','text','sentAt','kind','walkOwner','walkItem'])
+     && d.kind == 'walk' && d.walkOwner == request.auth.uid
+     && d.walkItem is string && d.walkItem.matches('walk-[a-f0-9]{64}(-[a-f0-9]{64})?')
+     && w.kind == 'walk' && w.visible == true && w.individualPrivacy == true
+     && (w.audience == 'friends' || (w.audience == 'direct' && peer in w.recipients));
+   }
+   allow create: if member() && (request.resource.data.keys().hasOnly(['sender','text','sentAt']) || walkCard())
     && request.resource.data.sender == request.auth.uid
     && request.resource.data.text is string && request.resource.data.text.size() > 0 && request.resource.data.text.size() <= 2000
     && request.resource.data.sentAt == request.time;

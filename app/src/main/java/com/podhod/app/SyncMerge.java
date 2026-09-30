@@ -28,6 +28,7 @@ final class SyncMerge {
  static int compare(JSONObject a,JSONObject b){
   int c=Long.compare(a.optLong("ended"),b.optLong("ended"));if(c!=0)return c;
   c=Integer.compare(a.optJSONArray("points")==null?0:a.optJSONArray("points").length(),b.optJSONArray("points")==null?0:b.optJSONArray("points").length());
+  if(c!=0)return c;c=Long.compare(a.optLong("metadataUpdatedAt"),b.optLong("metadataUpdatedAt"));
   return c!=0?c:canonical(a).compareTo(canonical(b));
  }
  static String canonical(Object value){
