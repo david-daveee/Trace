@@ -10,7 +10,7 @@ import java.util.concurrent.TimeUnit;
 final class CommunityPlans {
  static final String ADMIN="I8mrFaI4vhXFpGOM8Dxmg4mOf7w1";
  static boolean admin(MainActivity a){return ADMIN.equals(FriendsPanel.uid(a));}
- static boolean builtin(JSONObject p){String r=p.optString("routine");return Arrays.asList("sheiko-cms-ms","sheiko-12-week","zlat-beginner-2018","zlat-intermediate-trace","zlat-advanced-trace","home-beginner","home-strength").contains(r);}
+ static boolean builtin(JSONObject p){String r=PlanIdentity.routine(p);return Arrays.asList("sheiko-cms-ms","sheiko-12-week","zlat-beginner-2018","zlat-intermediate-trace","zlat-advanced-trace","home-beginner","home-strength").contains(r);}
  static JSONObject snapshot(JSONObject p){
   JSONObject clean=new JSONObject();
   for(String k:new String[]{"name","description","category","categoryName","days","maxima","step","coverImage","coverX","coverY","coverZoom","routine","source","terminalNote","workingWeights","increment","configured","popularityId"})

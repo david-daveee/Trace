@@ -28,9 +28,9 @@ English is the default language. Choose English or Russian in Settings. On first
 
 ## Update Trace
 
-Open **Settings → Trace updates → Check for updates**. Trace checks the public GitHub release, shows its version and release notes, and offers **Download APK** when a newer version is available. Release notes are published in English.
+Open **Settings → Trace updates → Check for updates**. Trace checks the public GitHub release, shows its version and release notes, and offers **Update Trace** when a newer version is available. Release notes are published in English.
 
-The button opens your browser. Open the downloaded APK and confirm the Android update to keep your existing data. The app never installs an update silently. An internet connection is needed to check; the last successful result and its date remain visible offline.
+Trace downloads the APK inside the app with progress and a cancel option, checks its checksum and signing certificate, and opens Android’s update confirmation. On first use, Android may ask you to allow installation from Trace. If you leave the screen, return and tap **Install update**. Your existing data stays in place. The app never installs an update silently. An internet connection is needed to check; the last successful result and its date remain visible offline.
 
 ## Library and community plans
 

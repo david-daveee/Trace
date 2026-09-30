@@ -18,7 +18,7 @@ final class CommunityCatalog {
   for(JSONObject p:published)result.putIfAbsent(catalogKey(p),p);
   return new ArrayList<>(result.values());
  }
- static String catalogKey(JSONObject p){String id=p.optString("catalogId");return id.isEmpty()?PlanPopularity.key(p):id;}
+ static String catalogKey(JSONObject p){String routine=PlanIdentity.routine(p);if(!routine.isEmpty())return "routine:"+routine;String id=p.optString("catalogId");return id.isEmpty()?PlanPopularity.key(p):id;}
 
  void load(boolean force){
   if(loading||(!force&&checked>0&&System.currentTimeMillis()-checked<60000)||!AccountSync.configured(a))return;loading=true;

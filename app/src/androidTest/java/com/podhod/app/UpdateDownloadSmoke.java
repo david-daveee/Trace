@@ -1,0 +1,11 @@
+package com.podhod.app;
+import android.app.*;import android.os.*;import android.graphics.*;import android.widget.*;import android.view.*;import java.io.*;import org.json.*;
+final class UpdateDownloadSmoke {
+ static void verify(Instrumentation i,MainActivity a){Bundle result=new Bundle();File file=new File(a.getCacheDir(),"update-smoke.apk");try{
+  JSONObject release=AppUpdates.fetch();UpdateDownload.cancelled=false;UpdateDownload.download(release,file);UpdateDownload.verify(a,file,release,false);
+  JSONObject wrong=Engine.copy(release);Engine.put(wrong,"version","v99.0.0");boolean rejected=false;try{UpdateDownload.verify(a,file,wrong,false);}catch(SecurityException expected){rejected=true;}if(!rejected)throw new AssertionError("Version mismatch accepted");
+  try(RandomAccessFile truncated=new RandomAccessFile(file,"rw")){truncated.setLength(128);}rejected=false;try{UpdateDownload.verify(a,file,release,false);}catch(SecurityException expected){rejected=true;}if(!rejected)throw new AssertionError("Invalid APK accepted");
+  Throwable[] failed={null};i.runOnMainSync(()->{try{LinearLayout box=a.column();box.setBackgroundColor(a.BG);box.setPadding(a.dp(20),a.dp(20),a.dp(20),a.dp(20));a.label(box,"TRACE UPDATES");box.addView(a.title("Download & install",24));UpdateDownload.controls(a,box,true);box.measure(View.MeasureSpec.makeMeasureSpec(1080,View.MeasureSpec.EXACTLY),View.MeasureSpec.makeMeasureSpec(1500,View.MeasureSpec.AT_MOST));box.layout(0,0,1080,box.getMeasuredHeight());Bitmap image=Bitmap.createBitmap(1080,box.getMeasuredHeight(),Bitmap.Config.ARGB_8888);box.draw(new Canvas(image));try(FileOutputStream out=a.openFileOutput("update-download-preview.png",0)){image.compress(Bitmap.CompressFormat.PNG,100,out);}image.recycle();a.page="settings";a.render();}catch(Throwable e){failed[0]=e;}});if(failed[0]!=null)throw new AssertionError(failed[0]);
+  result.putString("stream","PASS: real GitHub APK download, size/checksum/signature validation; mismatched version and invalid APK rejected. No installer launched or permission changed.");i.finish(Activity.RESULT_OK,result);
+ }catch(Throwable e){result.putString("stream","FAIL: "+e);i.finish(Activity.RESULT_CANCELED,result);}finally{file.delete();}}
+}
