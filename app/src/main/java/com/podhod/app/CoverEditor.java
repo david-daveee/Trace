@@ -7,6 +7,9 @@ import org.json.JSONObject;
 /** Adjusts a local draft; cancel never changes the stored cover. */
 final class CoverEditor {
     static AlertDialog show(MainActivity a,JSONObject plan,String encoded,boolean existing){
+        return show(a,plan,encoded,existing,null);
+    }
+    static AlertDialog show(MainActivity a,JSONObject plan,String encoded,boolean existing,Runnable draftSaved){
         Bitmap photo=PlanImages.decode(encoded);if(photo==null){a.error(new IllegalArgumentException(Lang.t("Не удалось открыть изображение")));return null;}
         CoverFrame frame=new CoverFrame(existing?(float)plan.optDouble("coverX",.5):.5f,existing?(float)plan.optDouble("coverY",.5):.5f,existing?(float)plan.optDouble("coverZoom",1):1);
         LinearLayout panel=a.column();panel.setPadding(a.dp(20),a.dp(12),a.dp(20),a.dp(8));
@@ -19,8 +22,8 @@ final class CoverEditor {
         a.link(panel,Lang.t("Сбросить положение"),()->{frame.x=.5f;frame.y=.5f;frame.zoom=1;preview.invalidate();sync.run();});sync.run();
         AlertDialog dialog=new AlertDialog.Builder(a).setTitle(Lang.t("Настроить обложку")).setView(panel).setNegativeButton(Lang.t("Отмена"),null).setPositiveButton(Lang.t("Сохранить"),null).create();
         dialog.setOnShowListener(d->dialog.getButton(AlertDialog.BUTTON_POSITIVE).setOnClickListener(v->{
-            JSONObject current=a.store.program(plan.optString("id"));if(current==null){dialog.dismiss();return;}
-            try{Engine.put(current,"coverImage",encoded);Engine.put(current,"coverX",frame.x);Engine.put(current,"coverY",frame.y);Engine.put(current,"coverZoom",frame.zoom);a.store.save();dialog.dismiss();a.open(current);}catch(Exception e){a.error(e);}
+            JSONObject current=draftSaved==null?a.store.program(plan.optString("id")):plan;if(current==null){dialog.dismiss();return;}
+            try{Engine.put(current,"coverImage",encoded);Engine.put(current,"coverX",frame.x);Engine.put(current,"coverY",frame.y);Engine.put(current,"coverZoom",frame.zoom);if(draftSaved==null)a.store.save();dialog.dismiss();if(draftSaved==null)a.open(current);else draftSaved.run();}catch(Exception e){a.error(e);}
         }));dialog.show();return dialog;
     }
     static final class CropView extends View {

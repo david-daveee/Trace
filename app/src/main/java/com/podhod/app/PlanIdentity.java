@@ -4,7 +4,7 @@ import org.json.*;
 final class PlanIdentity {
  static String routine(JSONObject p){
   String routine=p.optString("routine");if(!routine.isEmpty())return routine;
-  if(p.optBoolean("createdLocally")||!"Подготовительный цикл · 4 недели · Б. И. Шейко".equals(p.optString("description")))return "";
+  if(p.optBoolean("createdLocally")||!("Подготовительный цикл · 4 недели · Б. И. Шейко".equals(p.optString("description"))||"Preparatory cycle · 4 weeks · B. I. Sheiko".equals(p.optString("description"))))return "";
   JSONObject author=p.optJSONObject("author");if(author!=null&&!CommunityPlans.ADMIN.equals(author.optString("uid")))return "";
   JSONArray days=p.optJSONArray("days");int[] rows={6,12,18,23,29,35,41,46,52,58,65,71,77,83,89,95};
   if(days==null||days.length()!=rows.length)return "";

@@ -19,7 +19,7 @@ public final class Zlat {
             for(String key:new String[]{"pullup","dip"}){
                 JSONObject g=Engine.obj("{\"sets\":3,\"reps\":5,\"kg\":-1}");Engine.put(g,"zlatLift",key);Engine.put(g,"exercise",key.equals("pullup")?"Подтягивания с весом":"Брусья с весом");day.optJSONArray("groups").put(g);
             }p.optJSONArray("days").put(day);
-        }return p;
+        }EnglishPlans.plan(p);return p;
     }
     public static void configure(JSONObject p,double pull,double dip,int sets){
         if(!Double.isFinite(pull)||!Double.isFinite(dip)||pull<0||dip<0||pull>1995||dip>1995||(sets!=3&&sets!=4))throw new IllegalArgumentException(Lang.t("Укажи дополнительный вес от 0 до 1995 кг и 3 или 4 подхода"));

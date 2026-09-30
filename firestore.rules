@@ -40,12 +40,33 @@ service cloud.firestore {
     || (catalogAdmin() && resource.data.status == 'pending'
       && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['status','reason'])
       && request.resource.data.status in ['approved','rejected'] && request.resource.data.reason is string
-      && request.resource.data.reason.size()<=400 && (request.resource.data.status == 'approved' || request.resource.data.reason.size()>0));
+      && request.resource.data.reason.size()<=400 && (request.resource.data.status == 'approved' || request.resource.data.reason.size()>0))
+    || (catalogAdmin() && resource.data.status == 'pending'
+      && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['title','payload','sha256'])
+      && validCatalogContent(request.resource.data));
+  }
+  function validCatalogContent(d) {
+   return d.title is string && d.title.size()>0 && d.title.size()<=120
+    && d.payload is bytes && d.payload.size()>0 && d.payload.size()<=700000 && d.sha256.matches('[a-f0-9]{64}');
   }
   match /publicPlans/{id} {
    allow get: if true;
    allow list: if request.query.limit<=100;
+   // A moderator may fix content but cannot transfer authorship or vote identity.
+   allow update: if catalogAdmin() && validCatalogContent(request.resource.data)
+    && request.resource.data.diff(resource.data).affectedKeys().hasOnly(['title','payload','sha256','publishedAt'])
+    && request.resource.data.publishedAt == request.time;
+   // Built-in plans can receive a public override without a user submission.
+   allow create: if catalogAdmin() && validCatalogContent(request.resource.data)
+    && id.matches('[a-f0-9]{64}') && request.resource.data.planKey == id
+    && request.resource.data.keys().hasAll(['owner','authorName','authorAvatar','planKey','title','payload','sha256','submittedAt','requestId','publishedAt'])
+    && request.resource.data.keys().hasOnly(['owner','authorName','authorAvatar','planKey','title','payload','sha256','submittedAt','requestId','publishedAt'])
+    && request.resource.data.owner == request.auth.uid && request.resource.data.authorName == 'Trace'
+    && request.resource.data.authorAvatar == '' && request.resource.data.requestId == request.auth.uid + '~' + id
+    && request.resource.data.submittedAt == request.time && request.resource.data.publishedAt == request.time;
+
    allow create, update: if catalogAdmin()
+    && (!exists(/databases/$(database)/documents/publicPlans/$(id)) || request.resource.data.owner == resource.data.owner)
     && request.resource.data.keys().hasOnly(['owner','authorName','authorAvatar','planKey','title','payload','sha256','submittedAt','requestId','publishedAt'])
     && request.resource.data.planKey == id
     && request.resource.data.requestId == request.resource.data.owner + '~' + id

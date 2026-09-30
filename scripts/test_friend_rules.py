@@ -209,3 +209,34 @@ call(BASE+":commit","POST",decision("rejected",""),admin,403,"Rejection needs ex
 call(BASE+":commit","POST",decision("rejected","Please clarify the exercises"),admin,label="Admin rejects revision with reason")
 assert get(publicPath,None)["fields"]["payload"]==value(b"snapshot")
 print("ALL CHECKS INCLUDING MODERATION PASSED:",checks)
+
+# Moderator content editing: identity and authorship remain immutable.
+call(BASE+":commit","POST",{"writes":[submission_write(requestPath,payload=b"draft3")]},"alice",label="Author submits editable draft")
+def patch_existing(path,changes,uid,expected=200,label="",timestamp=False):
+    old=get(path,admin)["fields"]
+    updated=dict(old,**fields(changes))
+    w={"update":{"name":PREFIX+path,"fields":updated}}
+    if timestamp:w["updateTransforms"]=[{"fieldPath":"publishedAt","setToServerValue":"REQUEST_TIME"}]
+    return call(BASE+":commit","POST",{"writes":[w]},uid,expected,label)
+patch_existing(requestPath,{"title":"Reviewed title","payload":b"reviewed","sha256":"d"*64},admin,label="Moderator edits pending content")
+patch_existing(requestPath,{"owner":"bob"},admin,403,"Moderator cannot transfer submission author")
+patch_existing(requestPath,{"planKey":"e"*64},admin,403,"Moderator cannot change submission identity")
+patch_existing(requestPath,{"payload":b"bad"},"alice",403,"Author cannot replace moderator draft while pending")
+patch_existing(requestPath,{"title":""},admin,403,"Moderator cannot save empty title")
+call(BASE+":commit","POST",decision("approved",publish=True),admin,label="Approve edited draft atomically")
+assert get(publicPath,None)["fields"]["payload"]==value(b"reviewed")
+patch_existing(publicPath,{"title":"Corrected public title","payload":b"corrected","sha256":"e"*64},admin,label="Moderator corrects public content",timestamp=True)
+assert get(publicPath,None)["fields"]["owner"]==value("alice")
+patch_existing(publicPath,{"owner":admin},admin,403,"Cannot steal public authorship",timestamp=True)
+patch_existing(publicPath,{"authorName":"Trace"},admin,403,"Cannot change public author credit",timestamp=True)
+patch_existing(publicPath,{"planKey":"f"*64},admin,403,"Cannot move public vote identity",timestamp=True)
+patch_existing(publicPath,{"title":"User edit"},"alice",403,"Author cannot bypass moderation",timestamp=True)
+patch_existing(publicPath,{"title":"Stranger edit"},"bob",403,"Other account cannot edit library",timestamp=True)
+patch_existing(publicPath,{"title":"Guest edit"},None,403,"Guest cannot edit library",timestamp=True)
+newkey="f"*64
+builtin=write("publicPlans/"+newkey,{"owner":admin,"authorName":"Trace","authorAvatar":"","planKey":newkey,"requestId":admin+"~"+newkey,"title":"Sheiko update","payload":b"builtin","sha256":"a"*64})
+builtin["updateTransforms"]=[{"fieldPath":k,"setToServerValue":"REQUEST_TIME"} for k in ["submittedAt","publishedAt"]]
+call(BASE+":commit","POST",{"writes":[builtin]},"alice",403,"Regular account cannot publish built-in override")
+call(BASE+":commit","POST",{"writes":[builtin]},admin,label="Moderator publishes built-in override")
+get("publicPlans/"+newkey,None,label="Guests can load corrected built-in")
+print("ALL CHECKS INCLUDING MODERATOR EDITS PASSED:",checks)

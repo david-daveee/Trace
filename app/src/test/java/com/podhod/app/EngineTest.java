@@ -18,7 +18,7 @@ public class EngineTest {
         double before=s.getJSONArray("sets").getJSONObject(0).getDouble("kg");p.getJSONObject("maxima").put("squat",200);
         assertEquals(before,s.getJSONArray("sets").getJSONObject(0).getDouble("kg"),0);
         assertEquals(100,Engine.start(p,2000).getJSONArray("sets").getJSONObject(0).getDouble("kg"),0);
-        assertEquals("Присед",s.getJSONArray("sets").getJSONObject(0).getString("exercise"));
+        assertEquals("Squat",s.getJSONArray("sets").getJSONObject(0).getString("exercise"));
     }
     @Test public void eachTapCompletesOneSetWithoutRestAndUndoWorks()throws Exception{
         JSONObject s=Engine.start(source(),1000);assertTrue(Engine.act(s,"next",2000));assertEquals(1,s.getInt("cursor"));assertFalse(s.optBoolean("rest"));

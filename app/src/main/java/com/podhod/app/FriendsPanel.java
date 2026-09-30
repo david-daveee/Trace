@@ -27,6 +27,7 @@ final class FriendsPanel {
             if(cause instanceof com.google.firebase.firestore.FirebaseFirestoreException){
                 switch(((com.google.firebase.firestore.FirebaseFirestoreException)cause).getCode()){
                     case PERMISSION_DENIED:return s("Friends access is unavailable. The cloud access rules may not be enabled yet, or this item is no longer shared. Your private training data is unchanged.","Доступ к друзьям пока недоступен. Возможно, облачные правила ещё не включены или публикация больше не открыта. Твои личные тренировки не изменены.");
+                    case ABORTED:return s("This item has changed. Reopen it to load the latest version before saving or approving.","Этот объект уже изменился. Открой его заново, чтобы загрузить последнюю версию перед сохранением или одобрением.");
                     case FAILED_PRECONDITION:return s("Friends is not ready on the server yet. A database index may still need to be configured. Please try again later.","Раздел друзей ещё не готов на сервере. Возможно, требуется настройка индекса базы данных. Попробуй позже.");
                     case UNAVAILABLE:return s("Cannot connect to Friends. Check your internet connection and try again.","Не удалось подключиться к друзьям. Проверь интернет и попробуй снова.");
                     default:break;

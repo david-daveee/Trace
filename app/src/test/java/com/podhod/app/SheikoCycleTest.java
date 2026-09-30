@@ -33,7 +33,7 @@ public class SheikoCycleTest {
         JSONObject first=p.getJSONArray("days").getJSONObject(0).getJSONArray("groups").getJSONObject(0);
         assertEquals(75,first.getDouble("kg"),0);
         assertEquals(50.5,Engine.weight(first,Engine.obj("{\"bench\":101}"),2.5),0);
-        assertTrue(p.getString("terminalNote").contains("№36"));
+        assertTrue(p.getString("terminalNote").contains("#36"));
         Engine.put(p,"nextDay",35);assertThrows(IllegalArgumentException.class,()->Engine.start(p,1));
         boolean found=false;
         JSONArray g=p.getJSONArray("days").getJSONObject(33).getJSONArray("groups");

@@ -12,10 +12,9 @@ final class CommunityCatalog {
  }
  static ArrayList<JSONObject> merge(List<JSONObject> local,List<JSONObject> published){
   LinkedHashMap<String,JSONObject> result=new LinkedHashMap<>();
-  // A saved plan and its approved snapshot share the same identity, even before
-  // the saved copy has a catalogId. Keep the local object and its training state.
+  // The library shows the current public version. Personal copies remain in Store.
   for(JSONObject p:local)result.putIfAbsent(catalogKey(p),p);
-  for(JSONObject p:published)result.putIfAbsent(catalogKey(p),p);
+  for(JSONObject p:published){JSONObject localPlan=result.get(catalogKey(p));if(localPlan!=null)Engine.put(p,"mine",localPlan.optBoolean("mine"));result.put(catalogKey(p),p);}
   return new ArrayList<>(result.values());
  }
  static String catalogKey(JSONObject p){String routine=PlanIdentity.routine(p);if(!routine.isEmpty())return "routine:"+routine;String id=p.optString("catalogId");return id.isEmpty()?PlanPopularity.key(p):id;}
@@ -28,9 +27,9 @@ final class CommunityCatalog {
    a.runOnUiThread(()->{if(a.isDestroyed())return;published.clear();published.addAll(all);loading=false;loaded=true;failed=false;checked=System.currentTimeMillis();if(a.page.equals("library"))a.render();});
   }catch(Exception e){a.runOnUiThread(()->{if(a.isDestroyed())return;loading=false;failed=true;checked=System.currentTimeMillis();if(a.page.equals("library"))a.render();});}});
  }
- static boolean remote(MainActivity a,JSONObject p){return a.store.program(p.optString("id"))==null;}
+ static boolean remote(MainActivity a,JSONObject p){return a.store.program(p.optString("id"))!=p;}
  static void add(MainActivity a,JSONObject source){
-  JSONObject p=a.store.program(source.optString("id"));if(p==null){p=Engine.copy(source);Engine.put(p,"nextDay",0);a.store.data.optJSONArray("programs").put(p);}
+  JSONObject p=a.store.program(source.optString("id"));if(p==null)for(int i=0;i<a.store.data.optJSONArray("programs").length();i++){JSONObject candidate=a.store.data.optJSONArray("programs").optJSONObject(i);if(catalogKey(candidate).equals(catalogKey(source))&&candidate.optBoolean("mine")){p=candidate;break;}}if(p==null){p=Engine.copy(source);Engine.put(p,"nextDay",0);a.store.data.optJSONArray("programs").put(p);}
   Engine.put(p,"mine",true);Engine.put(p,"lastUsed",System.currentTimeMillis());a.store.save();a.render();
  }
 }

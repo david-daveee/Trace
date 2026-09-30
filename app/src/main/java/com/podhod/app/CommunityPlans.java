@@ -13,7 +13,7 @@ final class CommunityPlans {
  static boolean builtin(JSONObject p){String r=PlanIdentity.routine(p);return Arrays.asList("sheiko-cms-ms","sheiko-12-week","zlat-beginner-2018","zlat-intermediate-trace","zlat-advanced-trace","home-beginner","home-strength").contains(r);}
  static JSONObject snapshot(JSONObject p){
   JSONObject clean=new JSONObject();
-  for(String k:new String[]{"name","description","category","categoryName","days","maxima","step","coverImage","coverX","coverY","coverZoom","routine","source","terminalNote","workingWeights","increment","configured","popularityId"})
+  for(String k:new String[]{"name","description","category","categoryName","days","maxima","step","coverImage","coverX","coverY","coverZoom","routine","source","terminalNote","workingWeights","intermediateWeights","advancedWeights","bodyWeight","zlatSets","increment","configured","popularityId"})
    if(p.has(k))Engine.put(clean,k,p.opt(k));
   // Do not publish private exercise notes embedded in a day's groups.
   JSONArray days=clean.optJSONArray("days");if(days!=null){days=Engine.copy(p).optJSONArray("days");Engine.put(clean,"days",days);for(int d=0;d<days.length();d++){JSONObject day=days.optJSONObject(d);day.remove("note");JSONArray groups=day.optJSONArray("groups");for(int g=0;g<groups.length();g++)groups.optJSONObject(g).remove("note");}}
@@ -30,7 +30,7 @@ final class CommunityPlans {
  }
  static JSONObject published(DocumentSnapshot doc)throws Exception{
   Map<String,Object> d=doc.getData();JSONObject p=decode(d);Engine.put(p,"catalogId",doc.getId());Engine.put(p,"id","community-"+doc.getId());Engine.put(p,"mine",false);Engine.put(p,"nextDay",0);
-  JSONObject author=new JSONObject();Engine.put(author,"uid",d.get("owner"));Engine.put(author,"name",d.get("authorName"));Engine.put(author,"avatar",d.get("authorAvatar"));Engine.put(author,"official",ADMIN.equals(d.get("owner")));Engine.put(p,"author",author);return p;
+  JSONObject author=new JSONObject();Engine.put(author,"uid",d.get("owner"));Engine.put(author,"name",d.get("authorName"));Engine.put(author,"avatar",d.get("authorAvatar"));Engine.put(author,"official",ADMIN.equals(d.get("owner")));Engine.put(p,"author",author);EnglishPlans.plan(p);return p;
  }
  static String requestId(String uid,JSONObject p){return uid+"~"+PlanPopularity.key(p);}
  static Map<String,Object> submission(MainActivity a,JSONObject p,FriendsStore store)throws Exception{
@@ -51,6 +51,24 @@ final class CommunityPlans {
    if(existing.exists()&&!Objects.equals(existing.getString("owner"),fresh.getString("owner")))throw new FirebaseFirestoreException("Plan belongs to another author",FirebaseFirestoreException.Code.PERMISSION_DENIED);
    if(approve){Map<String,Object> publicData=new HashMap<>(fresh.getData());publicData.remove("status");publicData.remove("reason");publicData.put("requestId",fresh.getId());publicData.put("publishedAt",FieldValue.serverTimestamp());tx.set(target,publicData);}
    tx.update(request,"status",approve?"approved":"rejected","reason",approve?"":reason);return null;
+  }));
+ }
+ static void saveSubmission(FriendsStore store,DocumentSnapshot expected,JSONObject draft)throws Exception{
+  if(!ADMIN.equals(store.uid))throw new IllegalStateException("Admin only");
+  Map<String,Object> content=encode(draft);
+  store.waitFor(store.db.runTransaction(tx->{store.check();DocumentSnapshot current=tx.get(expected.getReference());
+   if(!"pending".equals(current.getString("status"))||!Objects.equals(current.getString("sha256"),expected.getString("sha256")))throw new FirebaseFirestoreException("Submission changed. Reopen it before editing.",FirebaseFirestoreException.Code.ABORTED);
+   tx.update(expected.getReference(),content);return null;
+  }));
+ }
+ static void saveLibrary(FriendsStore store,DocumentSnapshot expected,JSONObject draft)throws Exception{
+  if(!ADMIN.equals(store.uid))throw new IllegalStateException("Admin only");
+  Map<String,Object> content=encode(draft);
+  store.waitFor(store.db.runTransaction(tx->{store.check();DocumentSnapshot current=tx.get(expected.getReference());
+   if(current.exists()!=expected.exists()||(current.exists()&&!Objects.equals(current.getString("sha256"),expected.getString("sha256"))))throw new FirebaseFirestoreException("Library plan changed. Reopen it before editing.",FirebaseFirestoreException.Code.ABORTED);
+   Map<String,Object> updated=current.exists()?new HashMap<>(current.getData()):new HashMap<>();
+   if(!current.exists()){updated.put("owner",ADMIN);updated.put("authorName","Trace");updated.put("authorAvatar","");updated.put("planKey",current.getId());updated.put("requestId",ADMIN+"~"+current.getId());updated.put("submittedAt",FieldValue.serverTimestamp());}
+   updated.putAll(content);updated.put("publishedAt",FieldValue.serverTimestamp());tx.set(expected.getReference(),updated);return null;
   }));
  }
  static <T>T read(com.google.android.gms.tasks.Task<T> task)throws Exception{return Tasks.await(task,45,TimeUnit.SECONDS);}

@@ -264,3 +264,9 @@ To propose a personal plan, open its **…** menu and choose **Submit to catalog
 The Trace administrator uses **Review submissions** in the catalog or profile to inspect every day, exercise, set and weight, then approve or decline. Only the server-authorized administrator can publish. Approval publishes the reviewed snapshot; later local edits and new submissions cannot change the public version without another approval. Names and avatars are snapshots too. Public author pages do not expose private friends profiles, walks, chats or cloud backups.
 
 Public plans load online. Adding one to **My plans** saves a local copy for offline training. Existing personal copies are not overwritten by later catalog revisions. Large submissions above 700 KB compressed should use a smaller cover. Sharing a plan directly with a friend remains separate from public submission.
+
+### Moderator editing
+
+The moderator can choose **Edit before approval** on a pending submission, save the revised draft, then review and approve it. In the Library, **⋯ → Edit library plan** edits a published plan or creates a public revision of a built-in plan. The editor supports titles, descriptions, categories, sources, covers, days, exercises, sets, repetitions, weights, existing percentage formulas and muscle selections.
+
+Changes are staged in a separate draft until saved. Public revisions keep their author and like identity. The Library displays the latest published copy; existing personal plans, active sessions and training history are not overwritten. Concurrent edits are rejected so an older draft cannot silently replace a newer version. Updated Firestore rules must be deployed before moderator saves can succeed.

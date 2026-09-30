@@ -4,10 +4,10 @@
   "routine": "sheiko-12-week",
   "mine": false,
   "nextDay": 0,
-  "name": "Шейко · Соревнования",
-  "description": "Цикл для разрядников из файла sheyko.xlsx: недели 1–8 — подготовка, 9–12 — соревновательный этап. 35 тренировок; затем соревнования №36 без заданных попыток. Веса — проценты от твоих максимумов, округление 0,5 кг. Подсобные веса выбираются вручную. В расхождениях между краткой записью и ячейками использованы подробные ячейки подходов.",
-  "source": "sheyko.xlsx · План тренировок разрядников из книги Б. И. Шейко «Пауэрлифтинг»",
-  "terminalNote": "Неделя 12 · Соревнования №36. В таблице нет весов и попыток для этого дня.",
+  "name": "Sheiko · Competition",
+  "description": "A graded-lifter cycle from sheyko.xlsx: weeks 1–8 build up, weeks 9–12 prepare for competition. 35 workouts, then competition #36 with no prescribed attempts. Weights follow your maxes, rounded to 0.5 kg. Choose accessory weights manually. Where the summary and detailed cells differ, the detailed set cells are used.",
+  "source": "sheyko.xlsx · Training plan for ranked lifters from B. I. Sheiko’s Powerlifting",
+  "terminalNote": "Week 12 · Competition #36. The spreadsheet does not specify weights or attempts for this day.",
   "maxima": {
     "squat": 175,
     "bench": 150,
@@ -16,12 +16,12 @@
   "step": 0.5,
   "days": [
     {
-      "name": "Неделя 1 · День 1",
-      "phase": "План 1 подготовительный",
+      "name": "Week 1 · Day 1",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 1,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 4,
@@ -33,7 +33,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 4,
@@ -45,7 +45,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 4,
@@ -57,7 +57,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 4,
@@ -69,7 +69,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 8,
@@ -81,7 +81,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 8,
@@ -93,7 +93,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 8,
@@ -105,7 +105,7 @@
           "barbell": true
         },
         {
-          "exercise": "Попеременный жим гантелей сидя",
+          "exercise": "Seated alternating dumbbell press",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 12,
@@ -113,7 +113,7 @@
           "reps": 6
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 13,
@@ -121,7 +121,7 @@
           "reps": 10
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 14,
@@ -132,12 +132,12 @@
       ]
     },
     {
-      "name": "Неделя 1 · День 2",
-      "phase": "План 1 подготовительный",
+      "name": "Week 1 · Day 2",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 2,
       "groups": [
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 15,
@@ -149,7 +149,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 15,
@@ -161,7 +161,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 15,
@@ -173,7 +173,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 15,
@@ -185,7 +185,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим сидя под углом",
+          "exercise": "Incline seated press",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 19,
@@ -194,7 +194,7 @@
           "barbell": true
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 20,
@@ -202,7 +202,7 @@
           "reps": 5
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 21,
@@ -214,7 +214,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 21,
@@ -226,7 +226,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 21,
@@ -238,7 +238,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 21,
@@ -250,7 +250,7 @@
           "barbell": true
         },
         {
-          "exercise": "Приседания со штангой в \"ножницах\"",
+          "exercise": "Barbell split squat",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 25,
@@ -259,7 +259,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План подг. 1",
           "sourceRow": 26,
@@ -269,12 +269,12 @@
       ]
     },
     {
-      "name": "Неделя 1 · День 3",
-      "phase": "План 1 подготовительный",
+      "name": "Week 1 · Day 3",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 3,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -286,7 +286,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -298,7 +298,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -310,7 +310,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -322,7 +322,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -334,7 +334,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -346,7 +346,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -358,7 +358,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -370,7 +370,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 27,
@@ -382,7 +382,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 31,
@@ -390,7 +390,7 @@
           "reps": 10
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 32,
@@ -402,7 +402,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 32,
@@ -414,7 +414,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 32,
@@ -426,7 +426,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 32,
@@ -438,7 +438,7 @@
           "barbell": true
         },
         {
-          "exercise": "Подъем штанги на трицепсы",
+          "exercise": "Barbell triceps extension",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 36,
@@ -447,7 +447,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 37,
@@ -458,12 +458,12 @@
       ]
     },
     {
-      "name": "Неделя 2 · День 1",
-      "phase": "План 1 подготовительный",
+      "name": "Week 2 · Day 1",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 4,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 38,
@@ -475,7 +475,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 38,
@@ -487,7 +487,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 38,
@@ -499,7 +499,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 38,
@@ -511,7 +511,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 42,
@@ -523,7 +523,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 42,
@@ -535,7 +535,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 42,
@@ -547,7 +547,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 42,
@@ -559,7 +559,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 46,
@@ -567,7 +567,7 @@
           "reps": 10
         },
         {
-          "exercise": "Отжимания от пола (руки на ширине плеч)",
+          "exercise": "Shoulder-width push-ups",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 47,
@@ -575,7 +575,7 @@
           "reps": 10
         },
         {
-          "exercise": "Присед со штангой на груди",
+          "exercise": "Front squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 48,
@@ -587,7 +587,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед со штангой на груди",
+          "exercise": "Front squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 48,
@@ -599,7 +599,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед со штангой на груди",
+          "exercise": "Front squat",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 48,
@@ -611,7 +611,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 52,
@@ -622,12 +622,12 @@
       ]
     },
     {
-      "name": "Неделя 2 · День 2",
-      "phase": "План 1 подготовительный",
+      "name": "Week 2 · Day 2",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 5,
       "groups": [
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 53,
@@ -639,7 +639,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 53,
@@ -651,7 +651,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 53,
@@ -663,7 +663,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 53,
@@ -675,7 +675,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 57,
@@ -687,7 +687,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 57,
@@ -699,7 +699,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 57,
@@ -711,7 +711,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 61,
@@ -719,7 +719,7 @@
           "reps": 10
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 62,
@@ -731,7 +731,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 62,
@@ -743,7 +743,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 62,
@@ -755,7 +755,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 62,
@@ -767,7 +767,7 @@
           "barbell": true
         },
         {
-          "exercise": "Широчайшие на блоке",
+          "exercise": "Lat pulldown",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 66,
@@ -775,7 +775,7 @@
           "reps": 8
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 67,
@@ -785,12 +785,12 @@
       ]
     },
     {
-      "name": "Неделя 2 · День 3",
-      "phase": "План 1 подготовительный",
+      "name": "Week 2 · Day 3",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 6,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 68,
@@ -802,7 +802,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 68,
@@ -814,7 +814,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 68,
@@ -826,7 +826,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 68,
@@ -838,7 +838,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -850,7 +850,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -862,7 +862,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -874,7 +874,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -886,7 +886,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -898,7 +898,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -910,7 +910,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -922,7 +922,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 72,
@@ -934,7 +934,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 76,
@@ -942,7 +942,7 @@
           "reps": 10
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 77,
@@ -954,7 +954,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 77,
@@ -966,7 +966,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 77,
@@ -978,7 +978,7 @@
           "barbell": true
         },
         {
-          "exercise": "Гиперэкстензии",
+          "exercise": "Back extension",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 81,
@@ -986,7 +986,7 @@
           "reps": 8
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 82,
@@ -996,12 +996,12 @@
       ]
     },
     {
-      "name": "Неделя 3 · День 1",
-      "phase": "План 1 подготовительный",
+      "name": "Week 3 · Day 1",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 7,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 83,
@@ -1013,7 +1013,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 83,
@@ -1025,7 +1025,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 83,
@@ -1037,7 +1037,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 83,
@@ -1049,7 +1049,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 87,
@@ -1061,7 +1061,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 87,
@@ -1073,7 +1073,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 87,
@@ -1085,7 +1085,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 87,
@@ -1097,7 +1097,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 91,
@@ -1105,7 +1105,7 @@
           "reps": 10
         },
         {
-          "exercise": "Отжимания от пола (руки шире плеч)",
+          "exercise": "Wide-grip push-ups",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 92,
@@ -1113,7 +1113,7 @@
           "reps": 10
         },
         {
-          "exercise": "Приседания в глубину",
+          "exercise": "Deep squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 93,
@@ -1121,7 +1121,7 @@
           "reps": 5
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 94,
@@ -1132,12 +1132,12 @@
       ]
     },
     {
-      "name": "Неделя 3 · День 2",
-      "phase": "План 1 подготовительный",
+      "name": "Week 3 · Day 2",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 8,
       "groups": [
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 95,
@@ -1149,7 +1149,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 95,
@@ -1161,7 +1161,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 95,
@@ -1173,7 +1173,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 99,
@@ -1185,7 +1185,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 99,
@@ -1197,7 +1197,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 99,
@@ -1209,7 +1209,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 99,
@@ -1221,7 +1221,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 99,
@@ -1233,7 +1233,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 99,
@@ -1245,7 +1245,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 103,
@@ -1253,7 +1253,7 @@
           "reps": 10
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 104,
@@ -1265,7 +1265,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 104,
@@ -1277,7 +1277,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 104,
@@ -1289,7 +1289,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 3,
           "sourceSheet": "План подг. 1",
           "sourceRow": 104,
@@ -1301,7 +1301,7 @@
           "barbell": true
         },
         {
-          "exercise": "Приседания со штангой в \"ножницах\"",
+          "exercise": "Barbell split squat",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 108,
@@ -1310,7 +1310,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 109,
@@ -1320,12 +1320,12 @@
       ]
     },
     {
-      "name": "Неделя 3 · День 3",
-      "phase": "План 1 подготовительный",
+      "name": "Week 3 · Day 3",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 9,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 110,
@@ -1337,7 +1337,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 110,
@@ -1349,7 +1349,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 110,
@@ -1361,7 +1361,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 110,
@@ -1373,7 +1373,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 114,
@@ -1385,7 +1385,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 114,
@@ -1397,7 +1397,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 114,
@@ -1409,7 +1409,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 7,
           "sourceSheet": "План подг. 1",
           "sourceRow": 114,
@@ -1421,7 +1421,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 118,
@@ -1429,7 +1429,7 @@
           "reps": 10
         },
         {
-          "exercise": "Жим сидя под углом",
+          "exercise": "Incline seated press",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 119,
@@ -1438,7 +1438,7 @@
           "barbell": true
         },
         {
-          "exercise": "Широчайшие мышцы",
+          "exercise": "Lat exercise",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 120,
@@ -1446,7 +1446,7 @@
           "reps": 8
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 121,
@@ -1457,12 +1457,12 @@
       ]
     },
     {
-      "name": "Неделя 4 · День 1",
-      "phase": "План 1 подготовительный",
+      "name": "Week 4 · Day 1",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 10,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 122,
@@ -1474,7 +1474,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 122,
@@ -1486,7 +1486,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 122,
@@ -1498,7 +1498,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 122,
@@ -1510,7 +1510,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 126,
@@ -1522,7 +1522,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 126,
@@ -1534,7 +1534,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 126,
@@ -1546,7 +1546,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 130,
@@ -1554,7 +1554,7 @@
           "reps": 10
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 131,
@@ -1562,7 +1562,7 @@
           "reps": 8
         },
         {
-          "exercise": "Присед со штангой на груди",
+          "exercise": "Front squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 132,
@@ -1574,7 +1574,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед со штангой на груди",
+          "exercise": "Front squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 132,
@@ -1586,7 +1586,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед со штангой на груди",
+          "exercise": "Front squat",
           "sets": 3,
           "sourceSheet": "План подг. 1",
           "sourceRow": 132,
@@ -1598,7 +1598,7 @@
           "barbell": true
         },
         {
-          "exercise": "Гиперэкстензии",
+          "exercise": "Back extension",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 136,
@@ -1608,12 +1608,12 @@
       ]
     },
     {
-      "name": "Неделя 4 · День 2",
-      "phase": "План 1 подготовительный",
+      "name": "Week 4 · Day 2",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 11,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 137,
@@ -1625,7 +1625,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 137,
@@ -1637,7 +1637,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 137,
@@ -1649,7 +1649,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 137,
@@ -1661,7 +1661,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 1",
           "sourceRow": 137,
@@ -1673,7 +1673,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 141,
@@ -1685,7 +1685,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 141,
@@ -1697,7 +1697,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 141,
@@ -1709,7 +1709,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 141,
@@ -1721,7 +1721,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 3,
           "sourceSheet": "План подг. 1",
           "sourceRow": 141,
@@ -1733,7 +1733,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 141,
@@ -1745,7 +1745,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 145,
@@ -1757,7 +1757,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 145,
@@ -1769,7 +1769,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 145,
@@ -1781,7 +1781,7 @@
           "barbell": true
         },
         {
-          "exercise": "Широчайшие мышцы",
+          "exercise": "Lat exercise",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 149,
@@ -1789,7 +1789,7 @@
           "reps": 8
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 4,
           "sourceSheet": "План подг. 1",
           "sourceRow": 150,
@@ -1799,12 +1799,12 @@
       ]
     },
     {
-      "name": "Неделя 4 · День 3",
-      "phase": "План 1 подготовительный",
+      "name": "Week 4 · Day 3",
+      "phase": "Preparation · Block 1",
       "sourceNumber": 12,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 151,
@@ -1816,7 +1816,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 151,
@@ -1828,7 +1828,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 151,
@@ -1840,7 +1840,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 6,
           "sourceSheet": "План подг. 1",
           "sourceRow": 151,
@@ -1852,7 +1852,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1864,7 +1864,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1876,7 +1876,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1888,7 +1888,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1900,7 +1900,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1912,7 +1912,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1924,7 +1924,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1936,7 +1936,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1948,7 +1948,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 1",
           "sourceRow": 155,
@@ -1960,7 +1960,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 159,
@@ -1968,7 +1968,7 @@
           "reps": 10
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 160,
@@ -1976,7 +1976,7 @@
           "reps": 8
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 1",
           "sourceRow": 161,
@@ -1987,12 +1987,12 @@
       ]
     },
     {
-      "name": "Неделя 5 · День 1",
-      "phase": "План 2 подготовительный",
+      "name": "Week 5 · Day 1",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 13,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 4,
@@ -2004,7 +2004,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 4,
@@ -2016,7 +2016,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 4,
@@ -2028,7 +2028,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 4,
@@ -2040,7 +2040,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 4,
@@ -2052,7 +2052,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 4,
@@ -2064,7 +2064,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 8,
@@ -2076,7 +2076,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 8,
@@ -2088,7 +2088,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 8,
@@ -2100,7 +2100,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 8,
@@ -2112,7 +2112,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 12,
@@ -2124,7 +2124,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 12,
@@ -2136,7 +2136,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 12,
@@ -2148,7 +2148,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 16,
@@ -2156,7 +2156,7 @@
           "reps": 10
         },
         {
-          "exercise": "Жим ногами",
+          "exercise": "Leg press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 17,
@@ -2164,7 +2164,7 @@
           "reps": 6
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 18,
@@ -2175,12 +2175,12 @@
       ]
     },
     {
-      "name": "Неделя 5 · День 2",
-      "phase": "План 2 подготовительный",
+      "name": "Week 5 · Day 2",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 14,
       "groups": [
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 19,
@@ -2192,7 +2192,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 19,
@@ -2204,7 +2204,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 19,
@@ -2216,7 +2216,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 19,
@@ -2228,7 +2228,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 19,
@@ -2240,7 +2240,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2252,7 +2252,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2264,7 +2264,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2276,7 +2276,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2288,7 +2288,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2300,7 +2300,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2312,7 +2312,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2324,7 +2324,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2336,7 +2336,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2348,7 +2348,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2360,7 +2360,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2372,7 +2372,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2384,7 +2384,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2396,7 +2396,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2408,7 +2408,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 23,
@@ -2420,7 +2420,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 27,
@@ -2428,7 +2428,7 @@
           "reps": 10
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 28,
@@ -2440,7 +2440,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 28,
@@ -2452,7 +2452,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 28,
@@ -2464,7 +2464,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 28,
@@ -2476,7 +2476,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 28,
@@ -2488,7 +2488,7 @@
           "barbell": true
         },
         {
-          "exercise": "Приседания со штангой в \"ножницах\"",
+          "exercise": "Barbell split squat",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 32,
@@ -2497,7 +2497,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 33,
@@ -2507,12 +2507,12 @@
       ]
     },
     {
-      "name": "Неделя 5 · День 3",
-      "phase": "План 2 подготовительный",
+      "name": "Week 5 · Day 3",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 15,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 34,
@@ -2524,7 +2524,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 34,
@@ -2536,7 +2536,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 34,
@@ -2548,7 +2548,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 34,
@@ -2560,7 +2560,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 34,
@@ -2572,7 +2572,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 38,
@@ -2584,7 +2584,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 38,
@@ -2596,7 +2596,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 38,
@@ -2608,7 +2608,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 38,
@@ -2620,7 +2620,7 @@
           "barbell": true
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 42,
@@ -2628,7 +2628,7 @@
           "reps": 6
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 43,
@@ -2640,7 +2640,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 43,
@@ -2652,7 +2652,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 43,
@@ -2664,7 +2664,7 @@
           "barbell": true
         },
         {
-          "exercise": "Подъем штанги на трицепсы",
+          "exercise": "Barbell triceps extension",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 47,
@@ -2673,7 +2673,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 48,
@@ -2684,12 +2684,12 @@
       ]
     },
     {
-      "name": "Неделя 6 · День 1",
-      "phase": "План 2 подготовительный",
+      "name": "Week 6 · Day 1",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 16,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 49,
@@ -2701,7 +2701,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 49,
@@ -2713,7 +2713,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 49,
@@ -2725,7 +2725,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 49,
@@ -2737,7 +2737,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 53,
@@ -2749,7 +2749,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 53,
@@ -2761,7 +2761,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 53,
@@ -2773,7 +2773,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 53,
@@ -2785,7 +2785,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 57,
@@ -2793,7 +2793,7 @@
           "reps": 10
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 58,
@@ -2801,7 +2801,7 @@
           "reps": 8
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 59,
@@ -2813,7 +2813,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 59,
@@ -2825,7 +2825,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 59,
@@ -2837,7 +2837,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 59,
@@ -2849,7 +2849,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 63,
@@ -2860,12 +2860,12 @@
       ]
     },
     {
-      "name": "Неделя 6 · День 2",
-      "phase": "План 2 подготовительный",
+      "name": "Week 6 · Day 2",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 17,
       "groups": [
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 64,
@@ -2877,7 +2877,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 64,
@@ -2889,7 +2889,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 64,
@@ -2901,7 +2901,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2913,7 +2913,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2925,7 +2925,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2937,7 +2937,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2949,7 +2949,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2961,7 +2961,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2973,7 +2973,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2985,7 +2985,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -2997,7 +2997,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 68,
@@ -3009,7 +3009,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 72,
@@ -3017,7 +3017,7 @@
           "reps": 10
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 73,
@@ -3029,7 +3029,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 73,
@@ -3041,7 +3041,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 73,
@@ -3053,7 +3053,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 73,
@@ -3065,7 +3065,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим ногами",
+          "exercise": "Leg press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 77,
@@ -3073,7 +3073,7 @@
           "reps": 5
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 78,
@@ -3083,12 +3083,12 @@
       ]
     },
     {
-      "name": "Неделя 6 · День 3",
-      "phase": "План 2 подготовительный",
+      "name": "Week 6 · Day 3",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 18,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 79,
@@ -3100,7 +3100,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 79,
@@ -3112,7 +3112,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 79,
@@ -3124,7 +3124,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 7,
           "sourceSheet": "План подг. 2",
           "sourceRow": 79,
@@ -3136,7 +3136,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 83,
@@ -3148,7 +3148,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 83,
@@ -3160,7 +3160,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 83,
@@ -3172,7 +3172,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 83,
@@ -3184,7 +3184,7 @@
           "barbell": true
         },
         {
-          "exercise": "Отжимания от пола (руки шире плеч)",
+          "exercise": "Wide-grip push-ups",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 87,
@@ -3192,7 +3192,7 @@
           "reps": 8
         },
         {
-          "exercise": "Разгибание бедра в тренажере",
+          "exercise": "Machine hip extension",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 88,
@@ -3200,7 +3200,7 @@
           "reps": 10
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 89,
@@ -3211,12 +3211,12 @@
       ]
     },
     {
-      "name": "Неделя 7 · День 1",
-      "phase": "План 2 подготовительный",
+      "name": "Week 7 · Day 1",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 19,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 90,
@@ -3228,7 +3228,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 90,
@@ -3240,7 +3240,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 90,
@@ -3252,7 +3252,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 90,
@@ -3264,7 +3264,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 90,
@@ -3276,7 +3276,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 94,
@@ -3288,7 +3288,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 94,
@@ -3300,7 +3300,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 94,
@@ -3312,7 +3312,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 94,
@@ -3324,7 +3324,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 94,
@@ -3336,7 +3336,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 98,
@@ -3348,7 +3348,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 98,
@@ -3360,7 +3360,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 98,
@@ -3372,7 +3372,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 102,
@@ -3380,7 +3380,7 @@
           "reps": 10
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 103,
@@ -3391,12 +3391,12 @@
       ]
     },
     {
-      "name": "Неделя 7 · День 2",
-      "phase": "План 2 подготовительный",
+      "name": "Week 7 · Day 2",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 20,
       "groups": [
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 104,
@@ -3408,7 +3408,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 104,
@@ -3420,7 +3420,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 104,
@@ -3432,7 +3432,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 104,
@@ -3444,7 +3444,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 104,
@@ -3456,7 +3456,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 104,
@@ -3468,7 +3468,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3480,7 +3480,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3492,7 +3492,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3504,7 +3504,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3516,7 +3516,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3528,7 +3528,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3540,7 +3540,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3552,7 +3552,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3564,7 +3564,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 108,
@@ -3576,7 +3576,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 112,
@@ -3584,7 +3584,7 @@
           "reps": 10
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 113,
@@ -3596,7 +3596,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 113,
@@ -3608,7 +3608,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга с плинтов",
+          "exercise": "Block pull",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 113,
@@ -3620,7 +3620,7 @@
           "barbell": true
         },
         {
-          "exercise": "Приседания со штангой в \"ножницах\"",
+          "exercise": "Barbell split squat",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 117,
@@ -3629,7 +3629,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 118,
@@ -3639,12 +3639,12 @@
       ]
     },
     {
-      "name": "Неделя 7 · День 3",
-      "phase": "План 2 подготовительный",
+      "name": "Week 7 · Day 3",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 21,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 119,
@@ -3656,7 +3656,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 119,
@@ -3668,7 +3668,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 119,
@@ -3680,7 +3680,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 119,
@@ -3692,7 +3692,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 123,
@@ -3704,7 +3704,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 123,
@@ -3716,7 +3716,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 123,
@@ -3728,7 +3728,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 123,
@@ -3740,7 +3740,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 123,
@@ -3752,7 +3752,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 127,
@@ -3764,7 +3764,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 127,
@@ -3776,7 +3776,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 127,
@@ -3788,7 +3788,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 131,
@@ -3796,7 +3796,7 @@
           "reps": 10
         },
         {
-          "exercise": "Жим ногами",
+          "exercise": "Leg press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 132,
@@ -3804,7 +3804,7 @@
           "reps": 6
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 133,
@@ -3815,12 +3815,12 @@
       ]
     },
     {
-      "name": "Неделя 8 · День 1",
-      "phase": "План 2 подготовительный",
+      "name": "Week 8 · Day 1",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 22,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 134,
@@ -3832,7 +3832,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 134,
@@ -3844,7 +3844,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 134,
@@ -3856,7 +3856,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 134,
@@ -3868,7 +3868,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 138,
@@ -3880,7 +3880,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 138,
@@ -3892,7 +3892,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 138,
@@ -3904,7 +3904,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 138,
@@ -3916,7 +3916,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 138,
@@ -3928,7 +3928,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 142,
@@ -3936,7 +3936,7 @@
           "reps": 10
         },
         {
-          "exercise": "Брусья с весом",
+          "exercise": "Weighted dips",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 143,
@@ -3944,7 +3944,7 @@
           "reps": 8
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 144,
@@ -3956,7 +3956,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 144,
@@ -3968,7 +3968,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 144,
@@ -3980,7 +3980,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 144,
@@ -3992,7 +3992,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 148,
@@ -4003,12 +4003,12 @@
       ]
     },
     {
-      "name": "Неделя 8 · День 2",
-      "phase": "План 2 подготовительный",
+      "name": "Week 8 · Day 2",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 23,
       "groups": [
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 149,
@@ -4020,7 +4020,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 149,
@@ -4032,7 +4032,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 149,
@@ -4044,7 +4044,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга до колен",
+          "exercise": "Deadlift to knees",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 149,
@@ -4056,7 +4056,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4068,7 +4068,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4080,7 +4080,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4092,7 +4092,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4104,7 +4104,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4116,7 +4116,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4128,7 +4128,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4140,7 +4140,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4152,7 +4152,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4164,7 +4164,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4176,7 +4176,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 153,
@@ -4188,7 +4188,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 157,
@@ -4200,7 +4200,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 157,
@@ -4212,7 +4212,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 157,
@@ -4224,7 +4224,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 157,
@@ -4236,7 +4236,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 161,
@@ -4244,7 +4244,7 @@
           "reps": 10
         },
         {
-          "exercise": "Приседания со штангой в \"ножницах\"",
+          "exercise": "Barbell split squat",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 162,
@@ -4253,7 +4253,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 163,
@@ -4263,12 +4263,12 @@
       ]
     },
     {
-      "name": "Неделя 8 · День 3",
-      "phase": "План 2 подготовительный",
+      "name": "Week 8 · Day 3",
+      "phase": "Preparation · Block 2",
       "sourceNumber": 24,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 164,
@@ -4280,7 +4280,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 164,
@@ -4292,7 +4292,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 164,
@@ -4304,7 +4304,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 164,
@@ -4316,7 +4316,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 164,
@@ -4328,7 +4328,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План подг. 2",
           "sourceRow": 164,
@@ -4340,7 +4340,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 168,
@@ -4352,7 +4352,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 168,
@@ -4364,7 +4364,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План подг. 2",
           "sourceRow": 168,
@@ -4376,7 +4376,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План подг. 2",
           "sourceRow": 168,
@@ -4388,7 +4388,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 172,
@@ -4396,7 +4396,7 @@
           "reps": 10
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 173,
@@ -4408,7 +4408,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План подг. 2",
           "sourceRow": 173,
@@ -4420,7 +4420,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План подг. 2",
           "sourceRow": 173,
@@ -4432,7 +4432,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклон со штангой сидя",
+          "exercise": "Seated good morning",
           "sets": 5,
           "sourceSheet": "План подг. 2",
           "sourceRow": 177,
@@ -4443,12 +4443,12 @@
       ]
     },
     {
-      "name": "Неделя 9 · День 1",
-      "phase": "План 3 соревновательный",
+      "name": "Week 9 · Day 1",
+      "phase": "Competition · Block 3",
       "sourceNumber": 25,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 4,
@@ -4460,7 +4460,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 4,
@@ -4472,7 +4472,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 4,
@@ -4484,7 +4484,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 4,
@@ -4496,7 +4496,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 8,
@@ -4508,7 +4508,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 8,
@@ -4520,7 +4520,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 8,
@@ -4532,7 +4532,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 8,
@@ -4544,7 +4544,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 12,
@@ -4554,12 +4554,12 @@
       ]
     },
     {
-      "name": "Неделя 9 · День 2",
-      "phase": "План 3 соревновательный",
+      "name": "Week 9 · Day 2",
+      "phase": "Competition · Block 3",
       "sourceNumber": 26,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4571,7 +4571,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4583,7 +4583,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4595,7 +4595,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4607,7 +4607,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4619,7 +4619,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4631,7 +4631,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 13,
@@ -4643,7 +4643,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4655,7 +4655,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4667,7 +4667,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4679,7 +4679,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4691,7 +4691,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4703,7 +4703,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4715,7 +4715,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 17,
@@ -4727,7 +4727,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4739,7 +4739,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4751,7 +4751,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4763,7 +4763,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4775,7 +4775,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4787,7 +4787,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4799,7 +4799,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 21,
@@ -4811,15 +4811,15 @@
           "barbell": true
         }
       ],
-      "note": "Проходка: в исходном плане есть подходы до 105% от заданных максимумов."
+      "note": "Max test: the source plan includes sets up to 105% of the entered maxes."
     },
     {
-      "name": "Неделя 9 · День 3",
-      "phase": "План 3 соревновательный",
+      "name": "Week 9 · Day 3",
+      "phase": "Competition · Block 3",
       "sourceNumber": 27,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 25,
@@ -4831,7 +4831,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 25,
@@ -4843,7 +4843,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 25,
@@ -4855,7 +4855,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 25,
@@ -4867,7 +4867,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 29,
@@ -4879,7 +4879,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 29,
@@ -4891,7 +4891,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 6,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 29,
@@ -4903,7 +4903,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 33,
@@ -4911,7 +4911,7 @@
           "reps": 10
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 34,
@@ -4920,7 +4920,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 35,
@@ -4930,12 +4930,12 @@
       ]
     },
     {
-      "name": "Неделя 10 · День 1",
-      "phase": "План 3 соревновательный",
+      "name": "Week 10 · Day 1",
+      "phase": "Competition · Block 3",
       "sourceNumber": 28,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 36,
@@ -4947,7 +4947,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 36,
@@ -4959,7 +4959,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 36,
@@ -4971,7 +4971,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 36,
@@ -4983,7 +4983,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 40,
@@ -4995,7 +4995,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 40,
@@ -5007,7 +5007,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 40,
@@ -5019,7 +5019,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 40,
@@ -5031,7 +5031,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 44,
@@ -5039,7 +5039,7 @@
           "reps": 10
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 45,
@@ -5051,7 +5051,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 45,
@@ -5063,7 +5063,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 45,
@@ -5077,12 +5077,12 @@
       ]
     },
     {
-      "name": "Неделя 10 · День 2",
-      "phase": "План 3 соревновательный",
+      "name": "Week 10 · Day 2",
+      "phase": "Competition · Block 3",
       "sourceNumber": 29,
       "groups": [
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 49,
@@ -5094,7 +5094,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 49,
@@ -5106,7 +5106,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 49,
@@ -5118,7 +5118,7 @@
           "barbell": true
         },
         {
-          "exercise": "Тяга на подставке",
+          "exercise": "Deficit deadlift",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 49,
@@ -5130,7 +5130,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 53,
@@ -5142,7 +5142,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 53,
@@ -5154,7 +5154,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 53,
@@ -5166,7 +5166,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 53,
@@ -5178,7 +5178,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 53,
@@ -5190,7 +5190,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 57,
@@ -5198,7 +5198,7 @@
           "reps": 10
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 58,
@@ -5210,7 +5210,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 58,
@@ -5222,7 +5222,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 58,
@@ -5234,7 +5234,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 58,
@@ -5246,7 +5246,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 62,
@@ -5256,12 +5256,12 @@
       ]
     },
     {
-      "name": "Неделя 10 · День 3",
-      "phase": "План 3 соревновательный",
+      "name": "Week 10 · Day 3",
+      "phase": "Competition · Block 3",
       "sourceNumber": 30,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 63,
@@ -5273,7 +5273,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 63,
@@ -5285,7 +5285,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 63,
@@ -5297,7 +5297,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 63,
@@ -5309,7 +5309,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 67,
@@ -5321,7 +5321,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 67,
@@ -5333,7 +5333,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 67,
@@ -5345,7 +5345,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 6,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 67,
@@ -5357,7 +5357,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 71,
@@ -5369,7 +5369,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 71,
@@ -5381,7 +5381,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 71,
@@ -5393,7 +5393,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 75,
@@ -5401,7 +5401,7 @@
           "reps": 10
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 76,
@@ -5412,12 +5412,12 @@
       ]
     },
     {
-      "name": "Неделя 11 · День 1",
-      "phase": "План 3 соревновательный",
+      "name": "Week 11 · Day 1",
+      "phase": "Competition · Block 3",
       "sourceNumber": 31,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 77,
@@ -5429,7 +5429,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 77,
@@ -5441,7 +5441,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 77,
@@ -5453,7 +5453,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 77,
@@ -5465,7 +5465,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 81,
@@ -5477,7 +5477,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 81,
@@ -5489,7 +5489,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 81,
@@ -5501,7 +5501,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 81,
@@ -5513,7 +5513,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 81,
@@ -5525,7 +5525,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 85,
@@ -5533,7 +5533,7 @@
           "reps": 8
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 86,
@@ -5543,12 +5543,12 @@
       ]
     },
     {
-      "name": "Неделя 11 · День 2",
-      "phase": "План 3 соревновательный",
+      "name": "Week 11 · Day 2",
+      "phase": "Competition · Block 3",
       "sourceNumber": 32,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 87,
@@ -5560,7 +5560,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 87,
@@ -5572,7 +5572,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 87,
@@ -5584,7 +5584,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 87,
@@ -5596,7 +5596,7 @@
           "barbell": true
         },
         {
-          "exercise": "Разведение рук с гантелями лежа",
+          "exercise": "Dumbbell fly",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 91,
@@ -5604,7 +5604,7 @@
           "reps": 8
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 92,
@@ -5616,7 +5616,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 92,
@@ -5628,7 +5628,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 92,
@@ -5640,7 +5640,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 5,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 92,
@@ -5652,7 +5652,7 @@
           "barbell": true
         },
         {
-          "exercise": "Наклоны со штангой стоя",
+          "exercise": "Standing good morning",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 96,
@@ -5663,12 +5663,12 @@
       ]
     },
     {
-      "name": "Неделя 11 · День 3",
-      "phase": "План 3 соревновательный",
+      "name": "Week 11 · Day 3",
+      "phase": "Competition · Block 3",
       "sourceNumber": 33,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 97,
@@ -5680,7 +5680,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 97,
@@ -5692,7 +5692,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 97,
@@ -5704,7 +5704,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 97,
@@ -5716,7 +5716,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 101,
@@ -5728,7 +5728,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 101,
@@ -5740,7 +5740,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 101,
@@ -5752,7 +5752,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 101,
@@ -5764,7 +5764,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 105,
@@ -5774,12 +5774,12 @@
       ]
     },
     {
-      "name": "Неделя 12 · День 1",
-      "phase": "План 3 соревновательный",
+      "name": "Week 12 · Day 1",
+      "phase": "Competition · Block 3",
       "sourceNumber": 34,
       "groups": [
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 106,
@@ -5791,7 +5791,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 106,
@@ -5803,7 +5803,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 106,
@@ -5815,7 +5815,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 106,
@@ -5827,7 +5827,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 110,
@@ -5839,7 +5839,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 110,
@@ -5851,7 +5851,7 @@
           "barbell": true
         },
         {
-          "exercise": "Становая тяга",
+          "exercise": "Deadlift",
           "sets": 4,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 110,
@@ -5863,7 +5863,7 @@
           "barbell": true
         },
         {
-          "exercise": "Пресс",
+          "exercise": "Abs",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 114,
@@ -5873,12 +5873,12 @@
       ]
     },
     {
-      "name": "Неделя 12 · День 2",
-      "phase": "План 3 соревновательный",
+      "name": "Week 12 · Day 2",
+      "phase": "Competition · Block 3",
       "sourceNumber": 35,
       "groups": [
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 115,
@@ -5890,7 +5890,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 115,
@@ -5902,7 +5902,7 @@
           "barbell": true
         },
         {
-          "exercise": "Присед",
+          "exercise": "Squat",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 115,
@@ -5914,7 +5914,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 1,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 119,
@@ -5926,7 +5926,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 2,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 119,
@@ -5938,7 +5938,7 @@
           "barbell": true
         },
         {
-          "exercise": "Жим лёжа",
+          "exercise": "Bench press",
           "sets": 3,
           "sourceSheet": "План соревн. 3",
           "sourceRow": 119,

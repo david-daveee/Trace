@@ -39,8 +39,10 @@ public final class Store {
         } catch(Exception e) { throw new IllegalStateException(Lang.t("Не удалось загрузить программу"),e); }
         PlanPresentation.normalize(data);
         SheikoBarbells.migrate(data);
+        EnglishPlans.migrate(data);
     }
     public synchronized void save() {
+        EnglishPlans.migrate(data);
         JSONArray allPlans=data.optJSONArray("programs");if(allPlans!=null)for(int i=0;i<allPlans.length();i++){JSONObject p=allPlans.optJSONObject(i);PlanPopularity.identity(p);}
         Engine.clearRest(active());
         JSONObject savedSessions=data.optJSONObject("savedSessions");

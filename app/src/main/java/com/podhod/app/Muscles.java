@@ -6,7 +6,7 @@ import java.util.*;
 final class Muscles {
  static final String[] KEYS={"chest","back","shoulders","biceps","triceps","abs","glutes","quads","hamstrings","calves","lowerback","forearms"};
  static final String[] LABELS={"Грудь","Спина","Плечи","Бицепс","Трицепс","Пресс","Ягодицы","Передняя поверхность бедра","Задняя поверхность бедра","Икры","Поясница","Предплечья"};
- static Set<String> of(JSONObject set){Set<String> result=new LinkedHashSet<>();JSONArray custom=set.optJSONArray("muscles");if(custom!=null){for(int i=0;i<custom.length();i++)if(Arrays.asList(KEYS).contains(custom.optString(i)))result.add(custom.optString(i));return result;}String n=set.optString("exercise").toLowerCase(Locale.ROOT).replace('ё','е');
+ static Set<String> of(JSONObject set){Set<String> result=new LinkedHashSet<>();JSONArray custom=set.optJSONArray("muscles");if(custom!=null){for(int i=0;i<custom.length();i++)if(Arrays.asList(KEYS).contains(custom.optString(i)))result.add(custom.optString(i));return result;}String n=EnglishPlanText.original(set.optString("exercise")).toLowerCase(Locale.ROOT).replace('ё','е');
   if(n.contains("развод")||n.contains("разведение рук")||n.contains("fly"))add(result,"chest","shoulders");
   else if(n.contains("брусь")||n.contains("dip"))add(result,"chest","triceps","shoulders");
   else if(n.contains("подтяг")||n.contains("pull-up")||n.contains("pull up")||n.contains("широчайш")||n.contains("pulldown"))add(result,"back","biceps","forearms");
