@@ -6,6 +6,15 @@ import org.json.*;
 import com.google.firebase.firestore.DocumentSnapshot;
 /** Server-confirmed item visibility. Never queues an optimistic public state. */
 final class PrivacyEye {
+ static boolean planAllowed(MainActivity a,JSONObject plan,boolean library){
+  if(plan==null||a.store.program(plan.optString("id"))!=plan)return false;
+  if(!library&&plan.optBoolean("mine"))return true;
+  if(CommunityPlans.builtin(plan)||!plan.optString("catalogId").isEmpty())return false;
+  JSONObject author=plan.optJSONObject("author");
+  if(author!=null&&!author.optString("uid").isEmpty()&&!author.optString("uid").equals(FriendsPanel.uid(a)))return false;
+  for(JSONObject published:CommunityCatalog.get(a).published)if(CommunityCatalog.catalogKey(published).equals(CommunityCatalog.catalogKey(plan)))return false;
+  return true;
+ }
  static String s(String en,String ru){return FriendsPanel.s(en,ru);}
  static final class Controller {
   final MainActivity a;final String uid;final Map<String,Map<String,Object>> items=new HashMap<>();Map<String,Object> categories=new HashMap<>();final List<Row> rows=new ArrayList<>();final Set<String> busy=new HashSet<>();boolean loaded,loading,failed;
